@@ -18,15 +18,15 @@
   "frameCaptureSHA256": "de851d4d186f41f476d6a81f4bdbbeee9b8df8bb9ffc8b0cd3612471985486c5",
   "inputs": {
     "Configuration/replays/arcade.json": "879f5744f4543ab650083247cc9ca2111f90ae9e1224d2ec72a718d28f184770",
-    "build/Virtua Fighter 3.app/Contents/MacOS/VirtuaFighter3": "19039f5b414d203dd16d3b9a539b249e9ab38a3526d025cfff5d2d088d44296f",
-    "build/package-manifest.json": "c5404cbf09ca0137fff790403b444b222619ee830f109c6eb8adf27ec5c04e53",
+    "build/Virtua Fighter 3.app/Contents/MacOS/VirtuaFighter3": "dd00b992e5a7600556c7d4501be4d72d013f87448149f3fae1f7047704b772cb",
+    "build/package-manifest.json": "fb155eb3eadbf107721d07c472e29ac48ca1b13ee9e8d993557405168ffae9ec",
     "scripts/verify_live.py": "aafb4ce05b260e56df45dd90f0f4efadadf0253f7f5b68407ea8af4cc350ee27"
   },
   "observedFramesPerSecond": 60.025,
   "passed": true,
-  "presentedFramesPerSecond": 58.175,
+  "presentedFramesPerSecond": 59.9875,
   "scope": "Visible AppKit/SpriteKit fight and AVFoundation output-device counters. Keep the app focused and run without competing engine workloads. No subjective listening, physical button actuation or physical arcade-board accuracy claim.",
-  "seconds": 80,
+  "seconds": 80.0,
   "telemetry": {
     "assignedControllers": [
       "DualSense Wireless Controller",
@@ -40,13 +40,13 @@
     "engineFailureCount": 0,
     "engineStartCount": 1,
     "engineTiming": {
-      "audioSeconds": 0.059023125053499825,
+      "audioSeconds": 0.04607849999001701,
       "engineMilliseconds": {
-        "maximum": 24.837499993736856,
-        "p50": 8.755458329687826,
-        "p95": 9.243666660040617
+        "maximum": 20.85158333329673,
+        "p50": 8.913374999792723,
+        "p95": 9.512458333119866
       },
-      "engineSeconds": 40.270038500078954,
+      "engineSeconds": 40.79673116666709,
       "timingSamples": 4802
     },
     "flushCounts": {
@@ -59,9 +59,11 @@
       "frame": 4802,
       "framesPerSecond": 60,
       "height": 384,
+      "invincible": false,
       "sampleRate": 44100,
       "width": 496
     },
+    "invincible": false,
     "isPlaying": true,
     "isRunning": true,
     "lastInput": {
@@ -72,21 +74,21 @@
     "outputLatencySeconds": 0.059604166666666666,
     "outputSampleRate": 48000,
     "pausedByHost": false,
-    "peakPendingFrames": 3851,
-    "pendingFrames": 3351,
+    "peakPendingFrames": 3792,
+    "pendingFrames": 2881,
     "preferredDisplayFramesPerSecond": 60,
     "presentationTiming": {
-      "textureSeconds": 3.1192292499617906,
+      "textureSeconds": 3.270186625003589,
       "timingSamples": 4804,
       "updateMilliseconds": {
-        "maximum": 5.188375012949109,
-        "p50": 0.6632083386648446,
-        "p95": 0.7777083374094218
+        "maximum": 2.396500000031665,
+        "p50": 0.6797500000175205,
+        "p95": 0.7890416668487887
       },
-      "updateSeconds": 3.1730052505154163
+      "updateSeconds": 3.3356363333273293
     },
-    "presentedFrames": 4654,
-    "renderedFrames": 3526119,
+    "presentedFrames": 4799,
+    "renderedFrames": 3526589,
     "scheduledFrames": 3529470,
     "sourceSampleRate": 44100,
     "underrunCount": 0,

@@ -4,6 +4,7 @@
 #include <vector>
 #include <cmath>
 #include "FIXTURE_CORE"
+extern "C" bool vf3_player_one_invincible(){return false;}
 
 void DebugLog(const char *, ...) {}
 void InfoLog(const char *, ...) {}

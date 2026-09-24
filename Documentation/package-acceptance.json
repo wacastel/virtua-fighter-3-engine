@@ -3,10 +3,10 @@
   "appIdentity": "local.william.virtuafighter3",
   "cpuReplacementManifests": {
     "Musashi-SCSP": "7029b1c4a4fe4ca5a980b14edcc3930f0fb492679022ae87d20cd26a83b56a3e",
-    "PowerPC": "ac03d300554925f8d099a1f9ec299702eceadfd7ee2b83c9c4dfa282a9c677b8",
+    "PowerPC": "468437e90d809cfc7c6918ccc57acc5dd5effbb9ab7b399a2cfac282fb15e1a8",
     "Z80": "b5f00addb15c05ade2788cb5d3a6039b01e01252658a71eb69d59cd4a52231c6"
   },
-  "engineManifestSHA256": "e07c44381e883f80fa0d9bfd045c158fff0e257af47abb65a3dafb69a8fa7185",
+  "engineManifestSHA256": "37c4d90077508a0dc9b3f202170179c2c1336aef69025021e680f0c1aabcd95a",
   "executable": {
     "architecture": "arm64",
     "dependencies": [
@@ -59,10 +59,10 @@
     ],
     "forbiddenSymbolMatches": [],
     "minimumMacOS": "14.0",
-    "sha256": "19039f5b414d203dd16d3b9a539b249e9ab38a3526d025cfff5d2d088d44296f",
-    "symbolInventorySHA256": "061115e23945b4b1ab4601941b9ff778e34affb30ad84940c2f253be65b46bf9"
+    "sha256": "dd00b992e5a7600556c7d4501be4d72d013f87448149f3fae1f7047704b772cb",
+    "symbolInventorySHA256": "af2f1ccfbe8c169b78facd2acbf34d959ea2698ea20bb66b1d166f79223d0db8"
   },
-  "hostSourceFilesVerified": 8,
+  "hostSourceFilesVerified": 9,
   "iconSHA256": "dc99b4fc706aab0737ef6ab913b9e6e74b54a6213f00cc85ea78b351a7752955",
   "licenseFilesVerified": 6,
   "mediaFilesVerified": 2,
@@ -85,12 +85,12 @@
     ],
     "forbiddenSymbolMatches": [],
     "minimumMacOS": "14.0",
-    "sha256": "e248519e5456c1ed9ee0a82f2e1c18c0a05ab0fdcab708be70485a648a0ed252",
-    "symbolInventorySHA256": "a4f4cf105172b9e1c28555ef763b2c1131166d00537c5c9c67716f0829023e81"
+    "sha256": "94f1d959d940447d5b5cc219052b578fa55f966f90de8ee9b5fa0ce851137900",
+    "symbolInventorySHA256": "94846e07d7bf01b53cdfaa0f5743eb0fa77c0f9665ba6a7bbca673ad9d4667d8"
   },
-  "packageManifestSHA256": "c5404cbf09ca0137fff790403b444b222619ee830f109c6eb8adf27ec5c04e53",
+  "packageManifestSHA256": "fb155eb3eadbf107721d07c472e29ac48ca1b13ee9e8d993557405168ffae9ec",
   "packagingSourceFilesVerified": 6,
   "passed": true,
   "scope": "Actual packaged artifact and library architecture, dependencies, known decoder/diagnostic symbol boundaries, fixed execution symbol families, build provenance, signature and resources. A symbol audit is not a proof of all execution semantics; CPU fixtures, original-reference replay and live-host observations are separate.",
-  "scriptSHA256": "4e7b1b3aaa43717c82fb6b7d84ae372e1050fad2aa310c32b8d39d8254d25661"
+  "scriptSHA256": "95786dba957a7c4c31663b2f6bb1f31e6a4f4103354f03f5de08ac085913a2cd"
 }

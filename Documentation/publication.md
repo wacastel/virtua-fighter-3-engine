@@ -14,6 +14,12 @@ measured 60.025 game frames per second and zero audio underruns. Exact inputs,
 artifact identities and limitations are recorded in the acceptance reports;
 publication does not expand those claims.
 
+The subsequent invincibility and startup-credit update rebuilds the native engine
+and host, reruns the seventeen ordinary routes, and adds guarded damage,
+OFF/ON/OFF packaged replay and backed-up startup-save checks. The initial clean
+reconstruction report remains historical evidence for its own artifact hashes.
+Current package and live reports identify the updated executable.
+
 The selected target is Virtua Fighter 3 Japan Revision D (`vf3`). Each gameplay,
 processor, package, audio and UI claim must come from a current Virtua Fighter 3
 report bound to its tested inputs. Prior ports provide implementation methods;

@@ -1,0 +1,233 @@
+{
+  "passed": true,
+  "routes": {
+    "invincibility-arcade": {
+      "frames": 4500,
+      "originalOFFExactFrameComparisons": 4500,
+      "p1DropsReference": [
+        2117,
+        2290,
+        2366,
+        2384,
+        2840,
+        2853,
+        3253,
+        3292,
+        3488,
+        4128,
+        4390,
+        4461
+      ],
+      "p1DropsON": [],
+      "p2DropsON": [
+        2241,
+        2547,
+        2667
+      ],
+      "traces": {
+        "reference": "06476e8b24303c21e02094070a7f04a3fbebb9e8a2f980d2f48fd64261e423d7",
+        "off": "06476e8b24303c21e02094070a7f04a3fbebb9e8a2f980d2f48fd64261e423d7",
+        "on": "ca923072bbdfb548733e45c840adb543ddc50d4f1270330b0fbc7653cd7d7cea"
+      },
+      "routeSHA256": "906560617d1ab4a3c2a4913a852e3ceb86a02127262a215607d541202c16bffb",
+      "enableHealth": 162,
+      "disabledFrame": 3001,
+      "damageResumedFrames": [
+        3253,
+        3292,
+        3488,
+        3654,
+        3667,
+        4318
+      ]
+    },
+    "invincibility-attract": {
+      "frames": 4000,
+      "originalOFFExactFrameComparisons": 4000,
+      "p1DropsReference": [],
+      "p1DropsON": [],
+      "p2DropsON": [],
+      "traces": {
+        "reference": "1c3bb7f39d3bddfc4fa4bf9571fb3786b4220bd646f59e49f9cbdc2f8d161795",
+        "off": "1c3bb7f39d3bddfc4fa4bf9571fb3786b4220bd646f59e49f9cbdc2f8d161795",
+        "on": "7f981e77b5a0d57b25de3587cccb00107de8d85e5c14030c479c025cda8ecdab"
+      },
+      "routeSHA256": "aa8c6680ee72cf8a874168c4a370fe316b912ff6de6e6ec2100a9bc386cd883d"
+    },
+    "invincibility-p2": {
+      "frames": 4000,
+      "originalOFFExactFrameComparisons": 4000,
+      "p1DropsReference": [
+        2157,
+        2230,
+        2470
+      ],
+      "p1DropsON": [
+        2157,
+        2230,
+        2470
+      ],
+      "p2DropsON": [
+        2104,
+        2122,
+        2192,
+        2284,
+        2513,
+        2893,
+        3094,
+        3278,
+        3333,
+        3338
+      ],
+      "traces": {
+        "reference": "46ed3a5938e437d083be753f9ea41dbdbc385ca9912a1f5f1c27771cefecdd58",
+        "off": "46ed3a5938e437d083be753f9ea41dbdbc385ca9912a1f5f1c27771cefecdd58",
+        "on": "19e57b5a324e3b15bd5e4f8bf4b45cfa6f707f8bfaa6fce3da7da9f52dc4e86b"
+      },
+      "routeSHA256": "1627c139eff89f405aa9224c44b1b36fe5c7993daef24e0f5c20a877f73d2590"
+    },
+    "invincibility-ringout": {
+      "frames": 3300,
+      "originalOFFExactFrameComparisons": 3300,
+      "p1DropsReference": [],
+      "p1DropsON": [],
+      "p2DropsON": [],
+      "traces": {
+        "reference": "ed888e024b3b82bf6994c48eb0826963b081714c6f3be91175497b58035c67bb",
+        "off": "ed888e024b3b82bf6994c48eb0826963b081714c6f3be91175497b58035c67bb",
+        "on": "1e69c09eaaf25eb8ccd454b8d5fbe44090665202ef6e44ac878dd01cfaa368ec"
+      },
+      "routeSHA256": "4fb5f2cdff12410e572e513e63b446f739d70360775a194e888cb0eb321c8370",
+      "originalEnding": {
+        "reason": "ringout",
+        "frame": 2667,
+        "healthBefore": [
+          201,
+          201
+        ],
+        "healthAfter": [
+          0,
+          201
+        ],
+        "timer": 1198,
+        "invincible": true
+      },
+      "endingCaptureSHA256": "cf5e8eb3d2b6184cdb2b09eaceab67f9a3a3777834ad83065289ba4505cb29df"
+    },
+    "invincibility-timeout": {
+      "frames": 4300,
+      "originalOFFExactFrameComparisons": 4300,
+      "p1DropsReference": [],
+      "p1DropsON": [],
+      "p2DropsON": [],
+      "traces": {
+        "reference": "5debb4906ed6b4f47627ab262a919dab26344adeffb92494a631d77fb16cfe79",
+        "off": "5debb4906ed6b4f47627ab262a919dab26344adeffb92494a631d77fb16cfe79",
+        "on": "33783c8ca0e07e2cfd40e6bad682bddf2a7c31c36bfe532817caf6352b4bc02a"
+      },
+      "routeSHA256": "0bbfad71b206f607b56184807e43243a68c89c22e17ee8cc462a73ce48980f37",
+      "originalEnding": {
+        "reason": "timeout",
+        "frame": 3864,
+        "healthBefore": [
+          201,
+          201
+        ],
+        "healthAfter": [
+          201,
+          201
+        ],
+        "timer": 0,
+        "invincible": true
+      },
+      "endingCaptureSHA256": "25cc7659b3833c98986803545b1784bdf2fca999510338597be2c72e13fc6629"
+    },
+    "invincibility-versus": {
+      "frames": 4500,
+      "originalOFFExactFrameComparisons": 4500,
+      "p1DropsReference": [
+        2112,
+        2237,
+        2244,
+        2259,
+        3648,
+        3773,
+        3780,
+        3795
+      ],
+      "p1DropsON": [],
+      "p2DropsON": [
+        2342,
+        2410,
+        2460,
+        2496,
+        2654,
+        2689,
+        2846
+      ],
+      "traces": {
+        "reference": "81f374dc2b4619ae3a9a8cb99350ea03e72f100441370f51a8f7c6821088f881",
+        "off": "81f374dc2b4619ae3a9a8cb99350ea03e72f100441370f51a8f7c6821088f881",
+        "on": "146dd454034d53c6463081b2521b3b6067955704e6dab0a7a33f8282bb6d139c"
+      },
+      "routeSHA256": "98ddf2da885c02a38b6127fd222c10cad8a5f051a2ee8fe9da7d08a11390751e",
+      "enableHealth": 173,
+      "disabledFrame": 3001,
+      "damageResumedFrames": [
+        3648,
+        3773,
+        3780,
+        3795
+      ]
+    }
+  },
+  "shippingDiagnosticEquivalence": {
+    "shippingManifestSHA256": "37c4d90077508a0dc9b3f202170179c2c1336aef69025021e680f0c1aabcd95a",
+    "diagnosticManifestSHA256": "624d7591260aef0b5b29d3df8460d482f35a6a6f97b394158ee4a3f8023c224e",
+    "sameCompiledSources": true,
+    "sameGeneratedSources": true,
+    "shippingONFrameComparisons": 4500,
+    "shippingONTraceSHA256": "ca714f3a003bfd070c4a0fb94240fe5bd66e44f076c805ac32ff66325bce2c76"
+  },
+  "lockedInputs": {
+    "Sources/Bridge/vf3.cpp": "df5febe1f4be1ece764548cfaefaf52e0b80f156fe2a9c8f064aef314cc7fa44",
+    "Sources/Bridge/vf3.h": "d8f2d85d2348dbf9c969035c24f6a36221d15e7148153bea3803a82738def576",
+    "scripts/compile_ppc.py": "eed11a78c356f89b590f777768fe7829ee0fee03278a2c226bc690b201426c02",
+    "scripts/build_engine.py": "80ddb4f72e258021a128c3ec22688951576075082bd6f1ad8afd3ef8771defe0",
+    "scripts/verify_invincibility.py": "7709a69900413234a972afccf9122870db0491bccc18309f307c0b6eece0c64c",
+    "Configuration/invincibility-ppc.json": "7dab2025dc9b47b827c82bfc03f0bfb052efe7958d1528b5e9378a1d8c160912",
+    "Documentation/invincibility-fixture-acceptance.json": "406129cb7320de189bc50bf251cac3ba8df3f182db509b8e1d9cf2dd1072c264",
+    "Documentation/invincibility-source-acceptance.json": "1da1f97ad36ecf3fa8144824a63816de88466847b29c9f608eed28f585cc88f3",
+    "build/generated/ppc/translation-manifest.json": "468437e90d809cfc7c6918ccc57acc5dd5effbb9ab7b399a2cfac282fb15e1a8",
+    "build/native/libvf3.dylib": "94f1d959d940447d5b5cc219052b578fa55f966f90de8ee9b5fa0ce851137900",
+    "build/native/engine-build-manifest.json": "37c4d90077508a0dc9b3f202170179c2c1336aef69025021e680f0c1aabcd95a",
+    "build/native-diagnostic/libvf3.dylib": "743e96a2da8e14fc9e1de412804490af68677ef57b60b8fdbc70eb7ee040e1eb",
+    "build/native-diagnostic/engine-build-manifest.json": "624d7591260aef0b5b29d3df8460d482f35a6a6f97b394158ee4a3f8023c224e",
+    "build/reference/libvf3.dylib": "5fb9f9256533e48225200cdc8c23f471e22e3893f0647b17ee05a1628f3598f9",
+    "build/reference/engine-build-manifest.json": "f2c9c478ac3e47a9facc6479127575f89bd78f20c16c80ccaa53c79120ec4d85",
+    "Configuration/replays/invincibility-arcade.json": "906560617d1ab4a3c2a4913a852e3ceb86a02127262a215607d541202c16bffb",
+    "Configuration/replays/invincibility-attract.json": "aa8c6680ee72cf8a874168c4a370fe316b912ff6de6e6ec2100a9bc386cd883d",
+    "Configuration/replays/invincibility-p2.json": "1627c139eff89f405aa9224c44b1b36fe5c7993daef24e0f5c20a877f73d2590",
+    "Configuration/replays/invincibility-ringout.json": "4fb5f2cdff12410e572e513e63b446f739d70360775a194e888cb0eb321c8370",
+    "Configuration/replays/invincibility-timeout.json": "0bbfad71b206f607b56184807e43243a68c89c22e17ee8cc462a73ce48980f37",
+    "Configuration/replays/invincibility-versus.json": "98ddf2da885c02a38b6127fd222c10cad8a5f051a2ee8fe9da7d08a11390751e"
+  },
+  "provenance": {
+    "Sources/Bridge/vf3.cpp": "df5febe1f4be1ece764548cfaefaf52e0b80f156fe2a9c8f064aef314cc7fa44",
+    "Sources/Bridge/vf3.h": "d8f2d85d2348dbf9c969035c24f6a36221d15e7148153bea3803a82738def576",
+    "scripts/compile_ppc.py": "eed11a78c356f89b590f777768fe7829ee0fee03278a2c226bc690b201426c02",
+    "scripts/build_engine.py": "80ddb4f72e258021a128c3ec22688951576075082bd6f1ad8afd3ef8771defe0",
+    "scripts/verify_invincibility.py": "7709a69900413234a972afccf9122870db0491bccc18309f307c0b6eece0c64c",
+    "Configuration/invincibility-ppc.json": "7dab2025dc9b47b827c82bfc03f0bfb052efe7958d1528b5e9378a1d8c160912",
+    "Documentation/invincibility-fixture-acceptance.json": "406129cb7320de189bc50bf251cac3ba8df3f182db509b8e1d9cf2dd1072c264",
+    "Documentation/invincibility-source-acceptance.json": "1da1f97ad36ecf3fa8144824a63816de88466847b29c9f608eed28f585cc88f3",
+    "build/generated/ppc/translation-manifest.json": "468437e90d809cfc7c6918ccc57acc5dd5effbb9ab7b399a2cfac282fb15e1a8",
+    "build/native/libvf3.dylib": "94f1d959d940447d5b5cc219052b578fa55f966f90de8ee9b5fa0ce851137900",
+    "build/native/engine-build-manifest.json": "37c4d90077508a0dc9b3f202170179c2c1336aef69025021e680f0c1aabcd95a",
+    "build/native-diagnostic/libvf3.dylib": "743e96a2da8e14fc9e1de412804490af68677ef57b60b8fdbc70eb7ee040e1eb",
+    "build/native-diagnostic/engine-build-manifest.json": "624d7591260aef0b5b29d3df8460d482f35a6a6f97b394158ee4a3f8023c224e",
+    "build/reference/libvf3.dylib": "5fb9f9256533e48225200cdc8c23f471e22e3893f0647b17ee05a1628f3598f9",
+    "build/reference/engine-build-manifest.json": "f2c9c478ac3e47a9facc6479127575f89bd78f20c16c80ccaa53c79120ec4d85"
+  },
+  "scope": "Fresh saves and ordinary inputs only. Exact per-frame original/reference to OFF-native RGBA/PCM/count/state equality; bounded native ON ownership/damage and non-health-ending semantics. No physical hardware or exhaustive move coverage claim."
+}

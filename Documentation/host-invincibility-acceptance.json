@@ -1,0 +1,31 @@
+{
+  "assistTransitionFrames": [
+    2201,
+    3001
+  ],
+  "enabledFrames": 800,
+  "exactRGBA_PCM_Count_AssistAgreement": true,
+  "excludedLaboratoryMetadata": [
+    "captures"
+  ],
+  "finalFaultCode": 0,
+  "framesCompared": 4500,
+  "freshPackagedRuns": 2,
+  "inputs": {
+    "Configuration/replays/invincibility-versus.json": "98ddf2da885c02a38b6127fd222c10cad8a5f051a2ee8fe9da7d08a11390751e",
+    "Documentation/invincibility-acceptance.json": "3197d45b1c3c493a49faa83cab5745d22de696fa3c85a2a5525efc83b64c3a09",
+    "Tools/ReferenceLab/replay.py": "8762d71b2d6ba72c76514bbec5ec875dbc2fc914b832c5121da85977313a583c",
+    "build/Virtua Fighter 3.app/Contents/MacOS/VirtuaFighter3": "dd00b992e5a7600556c7d4501be4d72d013f87448149f3fae1f7047704b772cb",
+    "build/native/engine-build-manifest.json": "37c4d90077508a0dc9b3f202170179c2c1336aef69025021e680f0c1aabcd95a",
+    "build/native/libvf3.dylib": "94f1d959d940447d5b5cc219052b578fa55f966f90de8ee9b5fa0ce851137900",
+    "build/package-manifest.json": "fb155eb3eadbf107721d07c472e29ac48ca1b13ee9e8d993557405168ffae9ec",
+    "build/validation/host-invincibility-final/replay.json": "b3d469f2078e9effccad616ac96d72e48bee3d1c3650c65cba1a7c763a3595e6",
+    "scripts/verify_host_invincibility.py": "cc66bfc82e057f3943e38aa0382a7fd3c3a984d47ecc525eff6605e92aca7619"
+  },
+  "nativeTraceSHA256": "5b41da40fe5ba55520ce5e53989a44d1f8c8b975266df6adaf0dd935ea2c138d",
+  "packagedTraceSHA256": "62177dc513f0e80aa2fa55b531bb4260678f236ee853c82bda138361e02065c7",
+  "passed": true,
+  "sameOriginalInputEvents": true,
+  "sampleFrames": 3307500,
+  "scope": "Actual bundled Swift executable versus shipping C ABI on the same original inputs and explicit assist requests, plus two deterministic fresh Swift sessions. Invincibility game semantics are qualified separately. No GUI or physical controller actuation claim."
+}

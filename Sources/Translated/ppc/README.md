@@ -31,6 +31,17 @@ Three inherited rotate expressions mask the complementary shift count when the
 rotation is zero, preserving the original arm64 behavior without a C++ shift by
 32. The processor fixture compares this behavior with the unchanged original.
 
+The optional player-one invincibility assist wraps one authenticated incoming
+damage subtraction. The generator verifies the original damage, phase, player
+ownership and ring-out contexts recorded in `Configuration/invincibility-ppc.json`.
+When enabled for a living human-owned P1 actor in an active round, it executes
+the same fixed subtraction with a temporary zero damage operand, then restores
+that operand register. No program memory is changed. With the assist off, the
+original operation runs without added predicate memory reads. Opponent damage,
+ring-out stores and timeouts remain original. The separate invincibility fixture
+checks complete processor state and guard failures; ordinary-input gameplay
+checks qualify health preservation, ownership, no healing and damage after OFF.
+
 The separately generated `ppc-observer.cpp` belongs only to the reference lab.
 Set `VF3_PPC_TRACE` to collect executed address/word identities. `--observations`
 admits only those fixed identities, while `--ram-image ADDRESS:PATH` admits

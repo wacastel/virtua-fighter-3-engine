@@ -1,0 +1,15 @@
+{
+  "frames": 4000,
+  "events": [
+    {
+      "start": 0,
+      "end": 1,
+      "invincible": true
+    }
+  ],
+  "captures": [
+    1800,
+    2500,
+    3500
+  ]
+}

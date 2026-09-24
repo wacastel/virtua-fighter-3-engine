@@ -26,6 +26,23 @@ RAM_COPY_BYTES = 0xa0000
 RAM_COPY_PROGRAM_OFFSET = 0x110000
 
 
+
+def verify_invincibility_contexts(rom: bytes) -> dict:
+    path = ROOT / "Configuration/invincibility-ppc.json"
+    config = json.loads(path.read_text())
+    if config["upstreamCommit"] != PIN:
+        raise ValueError("Invincibility source pin changed")
+    for context in config["contexts"]:
+        first, end = int(context["firstPC"], 0), int(context["endPC"], 0)
+        actual = hashlib.sha256(rom[0x710000 + first:0x710000 + end]).hexdigest()
+        if actual != context["sha256"]:
+            raise ValueError(f"Original invincibility context changed at {first:08x}")
+    if struct.unpack_from(">I", rom, 0x710000 + 0x104a4)[0] != 0x7d445051:
+        raise ValueError("Original incoming-damage subtraction changed")
+    return {"implemented": True, "configuration": str(path.relative_to(ROOT)),
+            "configurationSHA256": sha(path), "entry": config["entry"],
+            "contexts": config["contexts"], "predicate": config["predicate"]}
+
 def sha(path: Path) -> str:
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
@@ -185,9 +202,29 @@ def native_source(source: str, executor: str, operations: str, cpu: Path, out: P
     operations = operations.replace("(rs << sh) | (rs >> (32-sh))", "(rs << sh) | (rs >> ((32-sh) & 31))")
     if re.search(r"\bppc_\w+\(op\)", operations):
         raise ValueError("Unspecialized instruction call remains")
-    generated = [operations, "\nstruct VF3PPCOperation { UINT32 word; void (*run)(); };\n",
+    invincibility = verify_invincibility_contexts(rom)
+    assist = '''
+extern "C" bool vf3_player_one_invincible();
+static void vf3_ppc_incoming_damage() {
+ const UINT32 damage = ppc.r[4];
+ const bool protect = vf3_player_one_invincible()
+     && ppc.pc == 0x000104a4 && ppc.r[13] == 0x00108000
+     && INT32(ppc.r[10]) > 0 && ppc.r[10] <= 0xffff && INT32(damage) > 0
+     && ppc.r[14] >= 0x00100000 && ppc.r[14] <= 0x001ff000
+     && ppc.r[14] == READ32(0x00102108) && READ8(ppc.r[14] + 4) == 0
+     && READ32(0x00102008) == 0x07090709
+     && (READ8(0x00106029) == 1 || READ8(0x00106029) == 3);
+ // Preserve the original arithmetic implementation and flags for zero damage.
+ // The original operand register is restored; no RAM or program writes occur.
+ if (protect) ppc.r[4] = 0;
+ ppc_subfx<0x7d445051U>();
+ if (protect) ppc.r[4] = damage;
+}
+'''
+    generated = [operations, assist, "\nstruct VF3PPCOperation { UINT32 word; void (*run)(); };\n",
                  "static const VF3PPCOperation vf3_ppc_operations[] = {\n{0,nullptr},\n"]
-    generated += [f"{{0x{word:08x}U, &{handler(tables, word)}<0x{word:08x}U>}},\n" for word in unique]
+    generated += [f"{{0x{word:08x}U, &vf3_ppc_incoming_damage}},\n" if word == 0x7d445051 else
+                  f"{{0x{word:08x}U, &{handler(tables, word)}<0x{word:08x}U>}},\n" for word in unique]
     generated.append("};\n")
     if static_words:
         generated.append("static const UINT32 vf3_ppc_program[524288] = {\n")
@@ -259,7 +296,7 @@ def native_source(source: str, executor: str, operations: str, cpu: Path, out: P
     (out / "ppc.cpp").write_text(source)
     return {"fixedOperations": len(unique), "staticProgramWords": len(static_words),
             "observedAddresses": len(observations), "observedVariants": sum(map(len, observations.values())),
-            "extraVariants": len(chains) - 1, "extraPages": len(pages), "templateHandlers": count}
+            "extraVariants": len(chains) - 1, "extraPages": len(pages), "templateHandlers": count, "invincibility": invincibility}
 
 
 def main() -> None:

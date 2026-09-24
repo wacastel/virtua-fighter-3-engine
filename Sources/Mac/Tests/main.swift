@@ -32,9 +32,19 @@ do {
     }
     let neutral = try JSONDecoder().decode(VF3Input.self, from: Data("{}".utf8))
     try check(neutral == VF3Input(), "Missing player fields are neutral")
-    let source = VF3Input(player1: VF3Button.punch | VF3Button.guardButton, player2: VF3Button.kick | VF3Button.evade)
+    let source = VF3Input(player1: VF3Button.punch | VF3Button.guardButton, player2: VF3Button.kick | VF3Button.evade, invincible: true)
     let roundTrip = try JSONDecoder().decode(VF3Input.self, from: JSONEncoder().encode(source))
-    try check(roundTrip == source, "Input JSON round trip retains both players independently")
+    try check(roundTrip == source, "Input JSON round trip retains both players and explicit invincibility independently")
+    try check(source.normalized.invincible == true && source.diagnostic["invincible"] as? Bool == true && VF3Input().diagnostic["invincible"] == nil,
+              "Normalization and diagnostics retain explicit assist values and omit unspecified changes")
+    let assistSteps = try JSONDecoder().decode(VF3Replay.self, from: Data(#"{"steps":[{"frames":2,"invincible":true},{"frames":1},{"frames":1,"invincible":false}]}"#.utf8))
+    try assistSteps.validate()
+    try check(assistSteps.input(frame:0).invincible == true && assistSteps.input(frame:1).invincible == true && assistSteps.input(frame:2).invincible == nil && assistSteps.input(frame:3).invincible == false,
+              "Step replay distinguishes assist ON, omitted and OFF at exact boundaries")
+    let assistEvents = try JSONDecoder().decode(VF3Replay.self, from: Data(#"{"frames":5,"events":[{"start":1,"end":4,"invincible":true},{"start":2,"end":3,"player2":16},{"start":3,"end":4,"invincible":false}]}"#.utf8))
+    try assistEvents.validate()
+    try check(assistEvents.input(frame:0).invincible == nil && assistEvents.input(frame:2) == VF3Input(player2:16,invincible:true) && assistEvents.input(frame:3).invincible == false && assistEvents.input(frame:4).invincible == nil,
+              "Event replay merges assist independently in file order with half-open ranges")
     let route = try JSONDecoder().decode(VF3Replay.self, from: Data(#"{"steps":[{"frames":2,"player1":16},{"frames":1,"player2":128}]}"#.utf8))
     try route.validate()
     try check(route.frames == 3 && route.input(frame: 0).player1 == 16 && route.input(frame: 2).player2 == 128 && route.input(frame: 3) == VF3Input() && route.input(frame: -1) == VF3Input(), "Step replay has exact frame boundaries and neutral outside range")
@@ -65,6 +75,10 @@ do {
         (#"{"events":[{"start":0,"end":1,"steering":1}]}"#, "Reject unrelated analog replay fields"),
         (#"{"frames":1,"events":[],"unknown":true}"#, "Reject unrecognized replay metadata")
     ] { try rejectedReplay(json, reason) }
+    for value in ["1", "\"true\"", "[]", "{}"] {
+        try rejectedReplay("{\"steps\":[{\"frames\":1,\"invincible\":\(value)}]}", "Reject non-boolean assist in steps: \(value)")
+        try rejectedReplay("{\"events\":[{\"start\":0,\"end\":1,\"invincible\":\(value)}]}", "Reject non-boolean assist in events: \(value)")
+    }
 
     let c = VF3Controls()
     var pauses = 0, resumes = 0
@@ -95,21 +109,49 @@ do {
     tap(c,19); try check(!c.paused && resumes == 1 && c.reserveFrame() == VF3Input(), "Player2 Start resumes without entering a game Start")
     c.setActive(false); tap(c,6); tap(c,3); tap(c,35)
     try check(c.input() == VF3Input() && pauses == 1, "Inactive keyboard cannot fight or toggle pause")
-    c.setActive(true); tap(c,34); try check(c.reserveFrame() == VF3Input(), "Unassigned I is inert")
+    c.setActive(true)
+    c.key(34,down:true); c.key(34,down:true); c.key(34,down:true,repeated:true)
+    try check(c.input() == VF3Input(invincible:true), "I rising edge queues one assist change outside both fighting masks")
+    try check(c.reserveFrame() == VF3Input(invincible:true) && c.reserveFrame() == VF3Input(), "One assist request is consumed by exactly one worker reservation")
+    c.key(34,down:false); tap(c,34)
+    try check(c.reserveFrame() == VF3Input(invincible:false), "I release rearms the shared assist toggle")
+    tap(c,34); tap(c,34)
+    try check(c.reserveFrame() == VF3Input(), "Two toggles before a reservation preserve the original assist state")
+    tap(c,34); tap(c,6); tap(c,38)
+    try check(c.reserveFrame() == VF3Input(player1:16,player2:128,invincible:true), "Assist changes and both players' fighting input share one atomic reservation")
+    c.setPaused(true); tap(c,34); c.toggleInvincibility()
+    try check(c.reserveFrame() == VF3Input(), "Paused keyboard and menu assist requests are ignored")
+    c.setPaused(false); tap(c,34)
+    try check(c.reserveFrame().invincible == false, "Pause preserves previously applied assist state")
+    tap(c,34); c.setActive(false); tap(c,34); c.toggleInvincibility(); c.setActive(true)
+    try check(c.reserveFrame() == VF3Input(), "Focus loss drops pending assist requests and inactive toggles are ignored")
+    tap(c,34); _ = c.reserveFrame(VF3Input(player2:32))
+    tap(c,34)
+    try check(c.reserveFrame() == VF3Input(invincible:true), "Replay reservation discards pending live toggles without changing the applied assist baseline")
+    try check(c.reserveFrame(VF3Input(invincible:false)).invincible == false, "Replay applies explicit assist OFF")
+    _ = c.reserveFrame(VF3Input(invincible:true)); tap(c,34)
+    try check(c.reserveFrame().invincible == false, "Live toggle follows the last explicitly reserved replay assist state")
+    _ = c.reserveFrame(VF3Input(invincible:true)); c.resetInvincibility(); tap(c,34)
+    try check(c.reserveFrame().invincible == true, "Reset clears the router's assist baseline to OFF")
+    c.resetInvincibility()
 
     let first = GCController.withExtendedGamepad(), second = GCController.withExtendedGamepad(), third = GCController.withExtendedGamepad()
     let p1 = first.extendedGamepad!, p2 = second.extendedGamepad!, p3 = third.extendedGamepad!
     p1.buttonY.setValue(1)
     try check(!c.refreshControllers([first,second]), "Initial two controller assignments are not a disconnect")
-    c.pollController(); try check(c.input() == VF3Input(), "Held Punch on connect requires neutral")
+    c.pollController(); try check(c.input() == VF3Input(), "Held Triangle on connect requires neutral and cannot enable protection")
     p1.buttonY.setValue(0); c.pollController()
     try check(first.playerIndex == .index1 && second.playerIndex == .index2, "Controllers receive matching player indicators")
     for (pad,player) in [(p1,0),(p2,1)] {
-        for (button,mask) in [(pad.buttonY,UInt32(16)),(pad.buttonB,32),(pad.buttonA,64),(pad.buttonX,128),(pad.buttonMenu,256),(pad.rightShoulder,512)] {
+        for (button,mask) in [(pad.buttonX,UInt32(16)),(pad.buttonB,32),(pad.buttonA,64),(pad.leftShoulder,128),(pad.buttonMenu,256),(pad.rightShoulder,512)] {
             press(c,button)
             let expected = player == 0 ? VF3Input(player1:mask) : VF3Input(player2:mask)
             try check(c.reserveFrame() == expected && c.reserveFrame() == VF3Input(), "Player\(player+1) controller mask\(mask) preserves a released tap exactly once")
         }
+        pad.buttonY.setValue(1); c.pollController(); c.pollController()
+        try check(c.reserveFrame() == VF3Input(invincible:true) && c.reserveFrame() == VF3Input(), "Player\(player+1) Triangle toggles shared P1 protection once while held")
+        pad.buttonY.setValue(0); c.pollController(); press(c,pad.buttonY)
+        try check(c.reserveFrame() == VF3Input(invincible:false), "Player\(player+1) Triangle rearms after release without Punch or Evade")
     }
     p1.leftThumbstick.xAxis.setValue(0.3); p1.leftThumbstick.yAxis.setValue(-0.3); c.pollController()
     try check(c.reserveFrame() == VF3Input(), "Analog axes within the threshold are neutral")
@@ -118,11 +160,11 @@ do {
     p1.dpad.xAxis.setValue(1); c.pollController()
     try check(c.reserveFrame().player1 == 8, "D-pad overrides both left-stick axes")
     p1.leftThumbstick.xAxis.setValue(0); p1.leftThumbstick.yAxis.setValue(0); p1.dpad.xAxis.setValue(0); c.pollController()
-    p1.buttonY.setValue(1); p2.buttonX.setValue(1); c.pollController()
+    p1.buttonX.setValue(1); p2.leftShoulder.setValue(1); c.pollController()
     try check(c.reserveFrame() == VF3Input(player1:16,player2:128), "Two controllers fight independently in the same frame")
     try check(!c.refreshControllers([third,second,first]) && c.controllers[0] === first && c.controllers[1] === second, "Extra controller and discovery reordering preserve both assignments")
     c.pollController(); try check(c.reserveFrame() == VF3Input(player1:16,player2:128), "Ignored third controller cannot disturb held attacks")
-    p1.buttonY.setValue(0); p2.buttonX.setValue(0); c.pollController()
+    p1.buttonX.setValue(0); p2.leftShoulder.setValue(0); c.pollController()
     if let leftClick = p1.leftThumbstickButton, let rightClick = p1.rightThumbstickButton {
         leftClick.setValue(1); rightClick.setValue(1); p1.leftThumbstick.xAxis.setValue(1); c.pollController()
         try check(!c.paused && c.reserveFrame().player1 == 8, "Stick clicks are inert while moving")
@@ -138,19 +180,47 @@ do {
         pause.setValue(1); c.pollController(); pause.setValue(0); c.pollController()
         try check(!c.paused && pauses == 4 && c.reserveFrame() == VF3Input(), "Create itself can pause and resume without game input")
     }
-    p2.buttonA.setValue(1); c.pollController(); p3.buttonX.setValue(1)
+    p2.buttonA.setValue(1); c.pollController(); p3.leftShoulder.setValue(1)
     try check(c.refreshControllers([second,third]) && c.controllers[0] === third && c.controllers[1] === second,
               "Assigned disconnect replaces only the vacant player1 slot")
     c.pollController(); try check(c.reserveFrame() == VF3Input(player2:64), "Replacement held Evade is gated while surviving player2 stays assigned")
-    p3.buttonX.setValue(0); p2.buttonA.setValue(0); c.pollController(); press(c,p3.buttonX)
+    p3.leftShoulder.setValue(0); p2.buttonA.setValue(0); c.pollController(); press(c,p3.leftShoulder)
     try check(c.reserveFrame() == VF3Input(player1:128), "Replacement pad becomes usable after neutral and a fresh press")
-    press(c,p2.buttonY); c.setActive(false); c.setActive(true); c.pollController()
+    press(c,p2.buttonX); c.setActive(false); c.setActive(true); c.pollController()
     try check(c.reserveFrame() == VF3Input(), "Focus transition drops unreserved controller taps")
     p3.buttonA.setValue(1); c.pollController(); c.setPaused(true); c.setPaused(false); c.pollController()
     try check(c.reserveFrame() == VF3Input(), "Held attack cannot leak through pause and resume")
     p3.buttonA.setValue(0); c.pollController(); press(c,p3.buttonA)
     try check(c.reserveFrame() == VF3Input(player1:64), "Release and fresh attack rearm after pause")
     c.clear(); try check(c.reserveFrame() == VF3Input(), "Reset clearing leaves both players neutral")
+
+    c.pollController(); p3.buttonY.setValue(1); c.pollController(); c.setActive(false); c.setActive(true); c.pollController()
+    try check(c.reserveFrame() == VF3Input(), "Triangle held across focus return cannot queue protection")
+    p3.buttonY.setValue(0); c.pollController(); press(c,p3.buttonY)
+    try check(c.reserveFrame() == VF3Input(invincible:true), "Release and fresh Triangle press rearm after focus return")
+    c.setPaused(true); c.pollController(); press(c,p2.buttonY); c.setPaused(false); c.pollController()
+    try check(c.reserveFrame() == VF3Input(), "Triangle pressed while paused cannot leak through resume")
+    press(c,p2.buttonY)
+    try check(c.reserveFrame().invincible == false, "A fresh post-resume Triangle press toggles the preserved state")
+
+    // Exercise the same reservation boundary from two real threads. Inputs
+    // arriving after reservation must survive while the engine frame is in flight.
+    let threaded = VF3Controls(), routingLock = NSRecursiveLock()
+    let reserved = DispatchSemaphore(value:0), resume = DispatchSemaphore(value:0)
+    let finished = DispatchSemaphore(value:0)
+    var reservations = [VF3Input]()
+    tap(threaded,34); tap(threaded,6)
+    DispatchQueue.global().async {
+        routingLock.lock(); reservations.append(threaded.reserveFrame()); routingLock.unlock()
+        reserved.signal(); resume.wait()
+        routingLock.lock(); reservations.append(threaded.reserveFrame()); reservations.append(threaded.reserveFrame()); routingLock.unlock()
+        finished.signal()
+    }
+    try check(reserved.wait(timeout:.now()+5) == .success, "Dedicated-thread reservation completed without holding the routing lock during execution")
+    routingLock.lock(); tap(threaded,34); tap(threaded,38); routingLock.unlock(); resume.signal()
+    try check(finished.wait(timeout:.now()+5) == .success, "Dedicated-thread follow-up reservations completed")
+    try check(reservations == [VF3Input(player1:16,invincible:true), VF3Input(player2:128,invincible:false), VF3Input()],
+              "Assist and fighting events arriving during an in-flight frame survive for exactly the next reservation")
 
     let result: [String:Any] = ["game":"Virtua Fighter 3","passed":true,"checks":checks,"checkCount":checks.count,
         "engineLinked":false,"engineStubUsed":false,"physicalControllerActuationTested":false,

@@ -1,5 +1,5 @@
 {
-  "elapsedSeconds": 115.66160011291504,
+  "elapsedSeconds": 104.23032701015472,
   "exactPictureAudioCountAgreement": true,
   "finalFaultCode": 0,
   "frames": 11058,
@@ -14,9 +14,9 @@
   },
   "inputs": {
     "Configuration/replays/arcade.json": "879f5744f4543ab650083247cc9ca2111f90ae9e1224d2ec72a718d28f184770",
-    "Documentation/integration-acceptance.json": "76dbb5b0807ab3524f08a2953a5d41743a54a87687c1462cc8a22a3e93f92311",
-    "build/Virtua Fighter 3.app/Contents/MacOS/VirtuaFighter3": "19039f5b414d203dd16d3b9a539b249e9ab38a3526d025cfff5d2d088d44296f",
-    "build/package-manifest.json": "c5404cbf09ca0137fff790403b444b222619ee830f109c6eb8adf27ec5c04e53",
+    "Documentation/integration-acceptance.json": "fc9c1250869659a671c23a2d503a9b877847ca0a5ad2a94a53dd5115759522fc",
+    "build/Virtua Fighter 3.app/Contents/MacOS/VirtuaFighter3": "dd00b992e5a7600556c7d4501be4d72d013f87448149f3fae1f7047704b772cb",
+    "build/package-manifest.json": "fb155eb3eadbf107721d07c472e29ac48ca1b13ee9e8d993557405168ffae9ec",
     "scripts/verify_host.py": "19d4eedc5506815b26a33169d0df7fd5b3f567ed7e7df3f0c280498e788e8278"
   },
   "passed": true,

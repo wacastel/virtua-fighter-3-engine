@@ -12,4 +12,22 @@ The pinned upstream archive is extracted and verified byte for byte. All platfor
 
 Restart saves cabinet NVRAM, destroys the current context and creates a new one on the owning engine thread. The sound cycle remainder is reset during board initialization to prevent state from leaking between sessions. The app uses its own preferences and save identity, separate from earlier ports.
 
+Player-one invincibility is an optional native-context flag, initially off and
+cleared by restart. Triangle or I queues a toggle in the input router; the engine
+worker applies it when reserving a frame and publishes its actual state for the
+menu and visible indicator. The authenticated fixed PowerPC damage operation
+substitutes zero incoming damage only for a living, human-owned player-one actor
+during an active round. It retains the original arithmetic flags and restores
+the operand register. It does not heal, write game instructions, protect the
+opponent, or replace ring-out and timeout rules. The original reference rejects
+enabling the assist; separate guarded-operation and gameplay checks qualify the
+intentional difference, while ordinary assist-off routes retain reference parity.
+
+On a new bundled interactive launch, the host validates the cabinet save structure
+and clears only the two credit banks and their four coin-conversion remainders.
+It first preserves an exact SHA-named backup. Scores, settings, EEPROM and
+lifetime accounting remain byte-for-byte unchanged by this cleanup. Missing or
+already-clear saves need no migration; malformed saves are left unchanged and
+reported. In-session restart and diagnostic replay bypass this startup policy.
+
 These choices preserve the existing bounded validation method. Matching the reference does not establish accuracy against physical arcade hardware, and the listed routes do not exhaust every possible input or game state. The DSP instruction boundary is intentionally strict: an instruction outside its slot-specific catalog produces a reported fault instead of falling back to decoding. The finite upload closure admits some combinations not previously observed as complete programs; it is documented and differentially tested, rather than being represented as full-program observation.

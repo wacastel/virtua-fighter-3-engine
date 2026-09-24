@@ -28,21 +28,29 @@ private func rejectUnknownFields(_ decoder: Decoder, allowed: Set<String>) throw
 }
 struct VF3Input: Codable, Equatable {
     var player1: UInt32 = 0, player2: UInt32 = 0
-    init(player1: UInt32 = 0, player2: UInt32 = 0) { self.player1 = player1; self.player2 = player2 }
-    private enum CodingKeys: String, CodingKey { case player1, player2 }
+    var invincible: Bool?
+    init(player1: UInt32 = 0, player2: UInt32 = 0, invincible: Bool? = nil) {
+        self.player1 = player1; self.player2 = player2; self.invincible = invincible
+    }
+    private enum CodingKeys: String, CodingKey { case player1, player2, invincible }
     init(from decoder: Decoder) throws {
-        try rejectUnknownFields(decoder, allowed: ["player1", "player2", "frames"])
+        try rejectUnknownFields(decoder, allowed: ["player1", "player2", "invincible", "frames"])
         let values = try decoder.container(keyedBy: CodingKeys.self)
         player1 = try values.decodeIfPresent(UInt32.self, forKey: .player1) ?? 0
         player2 = try values.decodeIfPresent(UInt32.self, forKey: .player2) ?? 0
+        invincible = try values.decodeIfPresent(Bool.self, forKey: .invincible)
     }
     func validate() throws {
         guard (player1 | player2) & ~VF3Button.all == 0 else {
             throw VirtuaFighter3Error.message("Invalid fighting input: each player accepts only direction, Punch, Kick, Guard, Evade, Start and Coin flags (bits 0–9).")
         }
     }
-    var normalized: VF3Input { VF3Input(player1: VF3Button.normalize(player1), player2: VF3Button.normalize(player2)) }
-    var diagnostic: [String: Any] { ["player1": player1, "player2": player2] }
+    var normalized: VF3Input { VF3Input(player1: VF3Button.normalize(player1), player2: VF3Button.normalize(player2), invincible: invincible) }
+    var diagnostic: [String: Any] {
+        var result: [String: Any] = ["player1": player1, "player2": player2]
+        if let invincible { result["invincible"] = invincible }
+        return result
+    }
 }
 struct VF3Replay: Decodable {
     struct Step: Decodable {
@@ -57,16 +65,19 @@ struct VF3Replay: Decodable {
     struct Event: Decodable {
         let start: Int, end: Int
         let player1: UInt32?, player2: UInt32?
-        private enum CodingKeys: String, CodingKey { case start, end, player1, player2 }
+        let invincible: Bool?
+        private enum CodingKeys: String, CodingKey { case start, end, player1, player2, invincible }
         init(from decoder: Decoder) throws {
-            try rejectUnknownFields(decoder, allowed: ["start", "end", "player1", "player2"])
+            try rejectUnknownFields(decoder, allowed: ["start", "end", "player1", "player2", "invincible"])
             let values = try decoder.container(keyedBy: CodingKeys.self)
             start = try values.decode(Int.self, forKey: .start); end = try values.decode(Int.self, forKey: .end)
             player1 = try values.decodeIfPresent(UInt32.self, forKey: .player1)
             player2 = try values.decodeIfPresent(UInt32.self, forKey: .player2)
+            invincible = try values.decodeIfPresent(Bool.self, forKey: .invincible)
         }
         func applying(to input: VF3Input) -> VF3Input {
-            VF3Input(player1: player1 ?? input.player1, player2: player2 ?? input.player2)
+            VF3Input(player1: player1 ?? input.player1, player2: player2 ?? input.player2,
+                     invincible: invincible ?? input.invincible)
         }
     }
     let steps: [Step]

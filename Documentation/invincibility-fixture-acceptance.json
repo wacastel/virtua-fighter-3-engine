@@ -1,0 +1,25 @@
+{
+  "passed": true,
+  "cases": 26,
+  "registerAndFlagSeeds": 8,
+  "comparisons": 208,
+  "positiveCases": 4,
+  "negativeCases": 22,
+  "changedInstructionAndUnknownAddressRejections": 2,
+  "sourceIdentityNegativeControls": 1,
+  "fixtureSHA256": "e73ed95a4cf352e13257c5d64887a697f769f8f3e70fa3a6e43c4af579e67445",
+  "generatorSHA256": "eed11a78c356f89b590f777768fe7829ee0fee03278a2c226bc690b201426c02",
+  "configurationSHA256": "7dab2025dc9b47b827c82bfc03f0bfb052efe7958d1528b5e9378a1d8c160912",
+  "verifierSHA256": "7709a69900413234a972afccf9122870db0491bccc18309f307c0b6eece0c64c",
+  "generatedFixtureSHA256": "152255b1f164e57f0023b16cce19f558f267b016f50cde392f80adfe11dc5f0a",
+  "harnessSHA256": {
+    "reference": "9dd5e6626fb96d03b4a354625ef7f2e2e37a6cd70f0137440698d81a19ab5c10",
+    "native": "2ec48146f52fcb516baecbde0d19571419c374e248fb1832c1b30026bdc1c0be"
+  },
+  "binarySHA256": {
+    "reference": "1dd11bc4169b5d14eb9b4196211a81746debd1f7169204300ee23ede1c4a0249",
+    "native": "e5edc9e9d485f8ffa9cc3ab47716521f34428814e7185c2648197c7a7d77eb7d"
+  },
+  "resultSHA256": "2defa363da029d79d55e0bfb8df4361152fff1cfb11ede704f2696e82f3b9bc9",
+  "scope": "Full GPR/FPR/CR/control/cycle state and no bus writes, compared with independently compiled original subf. using literal zero damage for four prescribed positive cases and unchanged damage for 22 negative cases. OFF performs no added reads; ON reads only explicitly whitelisted ordinary RAM."
+}

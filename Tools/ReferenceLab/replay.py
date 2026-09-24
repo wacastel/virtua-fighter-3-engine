@@ -13,7 +13,7 @@ def main():
  os.environ.setdefault('VF3_RTC_EPOCH','946684800')
  library_sha=hashlib.sha256(args.library.read_bytes()).hexdigest()
  lib=C.CDLL(str(args.library));ptr=C.c_void_p
- signatures={'create':([C.c_char_p,C.c_char_p],ptr),'destroy':([ptr],None),'step':([ptr,C.c_uint32,C.c_uint32],C.c_int),'error':([ptr],C.c_char_p),'fault_code':([ptr],C.c_uint32),'pixels':([ptr],ptr),'audio':([ptr],ptr),'audio_count':([ptr],C.c_int)}
+ signatures={'create':([C.c_char_p,C.c_char_p],ptr),'destroy':([ptr],None),'step':([ptr,C.c_uint32,C.c_uint32],C.c_int),'error':([ptr],C.c_char_p),'fault_code':([ptr],C.c_uint32),'pixels':([ptr],ptr),'audio':([ptr],ptr),'audio_count':([ptr],C.c_int),'set_invincible':([ptr,C.c_int],C.c_int),'get_invincible':([ptr],C.c_int)}
  for name,(inputs,result) in signatures.items():f=getattr(lib,'vf3_'+name);f.argtypes=inputs;f.restype=result
  route=json.loads(args.route.read_text()) if args.route else {'events':[]}
  temp=tempfile.TemporaryDirectory(prefix='vf3-replay-');saves=args.saves or Path(temp.name)
@@ -23,13 +23,16 @@ def main():
  try:
   with (args.output/'trace.jsonl').open('w') as trace:
    for frame in range(args.frames):
-    state=dict(player1=0,player2=0)
+    state=dict(player1=0,player2=0,invincible=None)
     for event in route['events']:
      if event['start']<=frame<event['end']:state.update({k:v for k,v in event.items() if k in state})
+    if state['invincible'] is not None:
+     if type(state['invincible']) is not bool:raise ValueError('Invincibility replay value must be Boolean')
+     if lib.vf3_set_invincible(context,int(state['invincible']))!=1:raise RuntimeError(lib.vf3_error(context).decode())
     if lib.vf3_step(context,state['player1'],state['player2'])!=1:raise RuntimeError(f'Frame {frame}: '+lib.vf3_error(context).decode())
     rgba=C.string_at(lib.vf3_pixels(context),496*384*4);n=lib.vf3_audio_count(context);pcm=C.string_at(lib.vf3_audio(context),n*4)
     pictures.update(rgba);audio.update(pcm);samples+=n;nonzero+=sum(b!=0 for b in pcm)
-    trace.write(json.dumps({'frame':frame+1,'rgba':hashlib.sha256(rgba).hexdigest(),'pcm':hashlib.sha256(pcm).hexdigest(),'audioFrames':n})+'\n')
+    trace.write(json.dumps({'frame':frame+1,'rgba':hashlib.sha256(rgba).hexdigest(),'pcm':hashlib.sha256(pcm).hexdigest(),'audioFrames':n,'invincible':bool(lib.vf3_get_invincible(context))})+'\n')
     if frame==0 or (frame+1)%args.capture_every==0 or frame==args.frames-1:
      png(args.output/f'frame-{frame+1:06d}.png',rgba)
      pc=''

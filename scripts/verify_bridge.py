@@ -5,12 +5,14 @@ import ctypes as C, hashlib, json, os, tempfile
 from import_assets import ROOT, sha, write_json
 def main():
  libpath=ROOT/'build/native/libvf3.dylib';lib=C.CDLL(str(libpath));ptr=C.c_void_p
- definitions={'create':([C.c_char_p,C.c_char_p],ptr),'destroy':([ptr],None),'step':([ptr,C.c_uint32,C.c_uint32],C.c_int),'frame_number':([ptr],C.c_uint64),'fault_code':([ptr],C.c_uint32),'audio_count':([ptr],C.c_int),'error':([ptr],C.c_char_p)}
+ definitions={'create':([C.c_char_p,C.c_char_p],ptr),'destroy':([ptr],None),'step':([ptr,C.c_uint32,C.c_uint32],C.c_int),'frame_number':([ptr],C.c_uint64),'fault_code':([ptr],C.c_uint32),'audio_count':([ptr],C.c_int),'error':([ptr],C.c_char_p),'set_invincible':([ptr,C.c_int],C.c_int),'get_invincible':([ptr],C.c_int)}
  for name,(args,result) in definitions.items():f=getattr(lib,'vf3_'+name);f.argtypes=args;f.restype=result
  checks=[]
  def check(name,value):
   if not value:raise AssertionError(name)
   checks.append(name)
+ check('null invincibility enable rejected',lib.vf3_set_invincible(None,1)==0)
+ check('null invincibility reads off',lib.vf3_get_invincible(None)==0)
  os.environ['VF3_RTC_EPOCH']='946684800'
  with tempfile.TemporaryDirectory(prefix='vf3-boundary-') as work:
   directory=Path(work);saves=directory/'saves'
@@ -21,6 +23,14 @@ def main():
   check('changed media rejected',not lib.vf3_create(os.fsencode(directory),os.fsencode(saves)))
   context=lib.vf3_create(os.fsencode(ROOT/'build/assets'),os.fsencode(saves));check('canonical media accepted',bool(context))
   try:
+   check('new session invincibility off',lib.vf3_get_invincible(context)==0)
+   check('invincibility enable accepted',lib.vf3_set_invincible(context,1)==1)
+   check('invincibility reads enabled',lib.vf3_get_invincible(context)==1)
+   for value in [-1,2,2147483647]:
+    check('invalid invincibility '+str(value)+' rejected',lib.vf3_set_invincible(context,value)==0)
+    check('invalid invincibility preserves setting '+str(value),lib.vf3_get_invincible(context)==1)
+   check('assist requests do not advance',lib.vf3_frame_number(context)==0)
+   check('invincibility disable accepted',lib.vf3_set_invincible(context,0)==1 and lib.vf3_get_invincible(context)==0)
    check('second context rejected',not lib.vf3_create(os.fsencode(ROOT/'build/assets'),os.fsencode(directory/'other')))
    for name,p1,p2 in [('opposed vertical P1',3,0),('opposed horizontal P1',12,0),('opposed vertical P2',0,3),('opposed horizontal P2',0,12),('unexposed test',1<<16,0),('unexposed service',1<<17,0),('unknown P1 bit',1<<31,0),('unknown P2 bit',0,1<<31)]:
     check(name+' rejected',lib.vf3_step(context,p1,p2)==0)
@@ -32,11 +42,13 @@ def main():
    for _ in range(2399):
     if lib.vf3_step(context,0,0)!=1:raise RuntimeError(lib.vf3_error(context).decode())
    check('first session reaches 2400 frames',lib.vf3_frame_number(context)==2400)
+   check('enable before destroy',lib.vf3_set_invincible(context,1)==1 and lib.vf3_get_invincible(context)==1)
   finally:lib.vf3_destroy(context)
   check('cabinet state saved',(saves/'vf3.nv').is_file())
   context=lib.vf3_create(os.fsencode(ROOT/'build/assets'),os.fsencode(saves));check('recreate existing save',bool(context))
   if context:
    try:
+    check('cold restart invincibility off',lib.vf3_get_invincible(context)==0)
     check('cold restart frame zero',lib.vf3_frame_number(context)==0)
     for _ in range(2400):
      if lib.vf3_step(context,0,0)!=1:raise RuntimeError(lib.vf3_error(context).decode())

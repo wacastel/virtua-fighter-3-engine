@@ -1,0 +1,161 @@
+{
+  "allNonCreditBytesPreservedAtStartup": true,
+  "backupSHA256": "93ad7f17be10205c1d307d12e475e93f86b7ac92b58f3289e50385653f3c5af6",
+  "changedBackupRAMOffsetsAtStartup": [
+    "0x1e046"
+  ],
+  "checks": {
+    "allOtherBytesPreservedAtStartup": true,
+    "creditFieldsRemainZeroAfterNoInputRun": true,
+    "exactOriginalBackup": true,
+    "finalInputNeutral": true,
+    "frameCaptureWritten": true,
+    "inputsUnchanged": true,
+    "invincibilityStartsOff": true,
+    "nativeCallsOnDedicatedThread": true,
+    "nativeFramesRendered": true,
+    "noNativeFault": true,
+    "normalInteractiveBundleWithoutReplay": true,
+    "persistentEEPROMPreservedThroughExit": true,
+    "seedUnchanged": true,
+    "startupChangeObservedBeforeNativeExitSave": true,
+    "unpaused": true,
+    "visibleWindow": true
+  },
+  "creditFieldOffsets": [
+    "0x1e046",
+    "0x1e047",
+    "0x1e04a",
+    "0x1e04b",
+    "0x1e04e",
+    "0x1e04f"
+  ],
+  "creditFieldsAfterExit": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "creditFieldsBefore": [
+    2,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "eepromExitComparison": "Pinned C93C46::SaveState serializes all 128 persistent EEPROM bytes followed by 38 serial-interface state bytes. Persistent bytes must remain identical; original engine reads may change the trailing shift/latch state. The full 166-byte block is nevertheless preserved exactly by startup cleanup before the engine runs.",
+  "eepromSerialStateChangedOffsets": [
+    "0x90",
+    "0x91"
+  ],
+  "evidenceDirectory": "build/validation/startup-launch-verified",
+  "finalSaveSHA256": "721093da1bc439896f2bc8a1fb9abd2406f1b44c928631644467ab507f056353",
+  "frameCaptureSHA256": "c8047f077c84270dd64de27e4ca76b3a71367231c90103b551ba2204f6dec750",
+  "inputs": {
+    "Documentation/startup-credit-analysis.json": "195f91b0337e4a072efd0ece57fd6e79fa88c9657fd927f3f26238669008a58d",
+    "Sources/Mac/AudioOutput.swift": "deec57377d8a5bd1d15c66ccaf46aca1d47a5e9644381d0df8e65fbfd6bcd40d",
+    "Sources/Mac/CabinetSave.swift": "0895a7461055a80a493a881a2229fc2134a59fd8619b204513612b44d77857dc",
+    "Sources/Mac/Controls.swift": "3ff6ca059698cdc37f93dc912022d08624d8a51773df3f4d13d28d1b49e351fb",
+    "Sources/Mac/EngineWorker.swift": "1db38eb4ae243c3657be23795cd4ffbcf7e50d05de1650111f203d0ce24dbc3c",
+    "Sources/Mac/GameScene.swift": "6f825d03a3eef61f18adf17cb3a2a12a354a3d6d43d2d5d26de524daf6798945",
+    "Sources/Mac/Input.swift": "919ae3bcdf4980544c3a53dc2808f5a09f3d55b905a9b40695d09a4919187b87",
+    "Sources/Mac/Media.swift": "774588e2deba7d90f0eb127c919e758315a19a3ffd8637b05b25e16e18883ba0",
+    "Sources/Mac/NativeGame.swift": "8cd2ac58cff91d72fb91eff074ded8977f00ca6a0dcf85b933304cbe2258dbd4",
+    "Sources/Mac/main.swift": "8fe7caa4f46ff7573bd4424549cd761af7c517f4c370b7fef45ca735db338f1f",
+    "build/Virtua Fighter 3.app/Contents/MacOS/VirtuaFighter3": "dd00b992e5a7600556c7d4501be4d72d013f87448149f3fae1f7047704b772cb",
+    "build/native/engine-build-manifest.json": "37c4d90077508a0dc9b3f202170179c2c1336aef69025021e680f0c1aabcd95a",
+    "build/native/libvf3.a": "cb6b161cfa503efde6fb9911aaf473cb2938fdf8dc3da11a7b32cd3dd34a811b",
+    "build/package-manifest.json": "fb155eb3eadbf107721d07c472e29ac48ca1b13ee9e8d993557405168ffae9ec",
+    "build/upstream/supermodel/Src/Model3/93C46.cpp": "afc2a13013551492ef44da055a5b31c50d5240036d56b7f78437128b097ca7a0",
+    "build/upstream/supermodel/Src/Model3/93C46.h": "df43ba7d4357567f24e82f3ba51381db21b1470bc04bb55d0c119fd255a47390",
+    "scripts/verify_startup_launch.py": "126fd73f75537cec3c20e784e1915aed6627a425c90311543f83e42a9d5ebda4"
+  },
+  "passed": true,
+  "physicalControllerActuationTested": false,
+  "realUserSaveRead": false,
+  "realUserSaveWritten": false,
+  "scope": "Actual bundled normal interactive startup on a copied original-input positive-credit fixture. Exact backup and only the authenticated six credit/remainder bytes cleared are observed before native shutdown can write bookkeeping. No input automation is supplied; final input telemetry is neutral. Capture supports separate visual review. No physical controller or complete-game claim.",
+  "seconds": 60.0,
+  "seedBytes": 131487,
+  "seedSHA256": "93ad7f17be10205c1d307d12e475e93f86b7ac92b58f3289e50385653f3c5af6",
+  "startupSaveSHA256": "5dbc5f399f361da90e8cc462b87cbf41dabad79a330bfa10bbda0176adc73f16",
+  "telemetry": {
+    "assignedControllers": [
+      "DualSense Wireless Controller",
+      "Unassigned"
+    ],
+    "automaticRecoveryCount": 1,
+    "backlogRecoveryCount": 0,
+    "discardedClockGaps": 0,
+    "displayUpdates": 3604,
+    "engineCallsOnDedicatedThread": true,
+    "engineFailureCount": 0,
+    "engineStartCount": 1,
+    "engineTiming": {
+      "audioSeconds": 0.0730459166647961,
+      "engineMilliseconds": {
+        "maximum": 18.627708333269766,
+        "p50": 9.339291666719873,
+        "p95": 12.606416666585574
+      },
+      "engineSeconds": 32.14404433332993,
+      "timingSamples": 3602
+    },
+    "flushCounts": {
+      "host": 1,
+      "underrun": 1
+    },
+    "gameFrames": 3602,
+    "gameState": {
+      "closed": false,
+      "faultCode": 0,
+      "frame": 3602,
+      "framesPerSecond": 60,
+      "height": 384,
+      "invincible": false,
+      "sampleRate": 44100,
+      "width": 496
+    },
+    "invincible": false,
+    "isPlaying": true,
+    "isRunning": true,
+    "lastInput": {
+      "player1": 0,
+      "player2": 0
+    },
+    "minPendingFrames": -12,
+    "outputLatencySeconds": 0.059604166666666666,
+    "outputSampleRate": 48000,
+    "pausedByHost": false,
+    "peakPendingFrames": 4110,
+    "pendingFrames": 2346,
+    "preferredDisplayFramesPerSecond": 60,
+    "presentationTiming": {
+      "textureSeconds": 2.382275708321231,
+      "timingSamples": 3604,
+      "updateMilliseconds": {
+        "maximum": 2.6587500001369335,
+        "p50": 0.6816666666509263,
+        "p95": 0.7182916667716199
+      },
+      "updateSeconds": 2.451738666663232
+    },
+    "presentedFrames": 3584,
+    "renderedFrames": 604764,
+    "scheduledFrames": 607110,
+    "sourceSampleRate": 44100,
+    "underrunCount": 1,
+    "updatesOnMainThread": true,
+    "windowOccluded": false,
+    "windowVisible": true
+  },
+  "visualReview": {
+    "frameCaptureSHA256": "c8047f077c84270dd64de27e4ca76b3a71367231c90103b551ba2204f6dec750",
+    "method": "Independent visual inspection of the exact captured engine image after the successful bounded launch.",
+    "observed": "Original attract/demo fighting on the beach with Credit 0/2 at lower left and SEGA copyright at lower right. No character-selection screen or active-player fighting HUD is displayed.",
+    "scope": "One captured attract/demo frame; no physical input, exhaustive attract-cycle or full-game proof."
+  }
+}

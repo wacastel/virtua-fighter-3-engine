@@ -47,6 +47,7 @@ struct vf3_context {
  std::time_t clockBase=std::time(nullptr);
  uint32_t fault=0;
  bool loaded=false;
+ bool invincible=false;
 };
 static vf3_context* active=nullptr;
 unsigned vf3_default_framebuffer(){return active?active->framebuffer.GetFBOID():0;}
@@ -74,7 +75,18 @@ extern "C" {
 void vf3_native_fault(const char* message){throw std::runtime_error(message);}
 #ifdef VF3_REFERENCE
 void vf3_reference_probe_marker(){}
+uint64_t vf3_reference_frame_number(){return active?active->frame:0;}
 #endif
+bool vf3_player_one_invincible(){return active && active->loaded && !active->fault && active->invincible;}
+int vf3_set_invincible(vf3_context* c,int enabled){
+ if(!c||c!=active||c->fault)return 0;
+ if(enabled!=0&&enabled!=1){c->error="Invincibility must be 0 or 1";return 0;}
+#if !defined(VF3_INVINCIBILITY_VERIFIED)
+ if(enabled){c->error="Invincibility is unavailable in this engine";return 0;}
+#endif
+ c->invincible=enabled!=0;return 1;
+}
+int vf3_get_invincible(vf3_context* c){return c&&c==active&&!c->fault&&c->invincible?1:0;}
 const char* vf3_error(const vf3_context* c){return c?c->error.c_str():createError.c_str();}
 uint32_t vf3_fault_code(const vf3_context* c){return c?c->fault:1;}
 void vf3_destroy(vf3_context* c){
@@ -174,7 +186,10 @@ int vf3_audio_count(const vf3_context* c){return c?(int)c->audio.size()/2:0;}
 int vf3_width(const vf3_context*){return 496;}int vf3_height(const vf3_context*){return 384;}
 double vf3_frame_rate(const vf3_context*){return 60.;}int vf3_audio_sample_rate(const vf3_context*){return 44100;}
 uint64_t vf3_frame_number(const vf3_context* c){return c?c->frame:0;}
-#ifdef VF3_REFERENCE
+#if defined(VF3_REFERENCE) || defined(VF3_DIAGNOSTIC)
+#ifdef VF3_DIAGNOSTIC
+void vf3_diagnostic_engine_marker(){}
+#endif
 uint32_t vf3_diagnostic_read32(vf3_context* c,uint32_t address){return c->model->Read32(address);}
 uint32_t vf3_diagnostic_pc(vf3_context*){return ppc_get_pc();}
 uint32_t vf3_diagnostic_gpr(vf3_context*,unsigned n){return ppc_get_gpr(n);}

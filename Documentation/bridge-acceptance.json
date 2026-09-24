@@ -1,10 +1,23 @@
 {
-  "checkCount": 31,
+  "checkCount": 46,
   "checks": [
+    "null invincibility enable rejected",
+    "null invincibility reads off",
     "null asset path rejected",
     "absent media rejected",
     "changed media rejected",
     "canonical media accepted",
+    "new session invincibility off",
+    "invincibility enable accepted",
+    "invincibility reads enabled",
+    "invalid invincibility -1 rejected",
+    "invalid invincibility preserves setting -1",
+    "invalid invincibility 2 rejected",
+    "invalid invincibility preserves setting 2",
+    "invalid invincibility 2147483647 rejected",
+    "invalid invincibility preserves setting 2147483647",
+    "assist requests do not advance",
+    "invincibility disable accepted",
     "second context rejected",
     "opposed vertical P1 rejected",
     "opposed vertical P1 does not advance",
@@ -27,14 +40,16 @@
     "735 stereo frames",
     "no fault",
     "first session reaches 2400 frames",
+    "enable before destroy",
     "cabinet state saved",
     "recreate existing save",
+    "cold restart invincibility off",
     "cold restart frame zero",
     "cold restart plays 2400 frames",
     "cold restart sound ready"
   ],
-  "librarySHA256": "e248519e5456c1ed9ee0a82f2e1c18c0a05ab0fdcab708be70485a648a0ed252",
+  "librarySHA256": "94f1d959d940447d5b5cc219052b578fa55f966f90de8ee9b5fa0ce851137900",
   "passed": true,
   "scope": "Real fixed-native lifecycle and boundary checks; no stub, no gameplay or physical-controller claim.",
-  "scriptSHA256": "e723be812d54e07d990d4e9b69d538c56e541c92fef35374dfd1614dd92bf9a8"
+  "scriptSHA256": "fbef8b89f013d8476c54783078f485b1d11655334c9f34d7fd03e01a24c68c21"
 }

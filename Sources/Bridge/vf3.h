@@ -25,6 +25,11 @@ uint32_t vf3_fault_code(const vf3_context*);
  * Restart by destroying and recreating the context on its owning thread.
  */
 int vf3_step(vf3_context*,uint32_t player1,uint32_t player2);
+/* Optional first-player damage protection, initially OFF. The value must be
+ * exactly 0 or 1; the original reference rejects enabling. Returns 1 on success.
+ * Destroy/recreate resets this setting to OFF. */
+int vf3_set_invincible(vf3_context*,int enabled);
+int vf3_get_invincible(vf3_context*);
 const uint8_t* vf3_pixels(const vf3_context*);
 const int16_t* vf3_audio(const vf3_context*);
 int vf3_audio_count(const vf3_context*);

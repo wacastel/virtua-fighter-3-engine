@@ -11,6 +11,7 @@ final class VF3Scene: SKScene {
     private let shade = SKShapeNode(rectOf: CGSize(width: 512, height: 384))
     private let title = SKLabelNode(fontNamed: "AvenirNext-DemiBold")
     private let hint = SKLabelNode(fontNamed: "AvenirNext-Regular")
+    private let assistStatus = SKLabelNode(fontNamed: "AvenirNext-DemiBold")
     private var failed = false
     private var updateCount = 0, presentedFrames = 0
     private var lastPresentedSerial: UInt64?
@@ -23,6 +24,8 @@ final class VF3Scene: SKScene {
     var diagnosticReplay: VF3Replay? { didSet { worker.setReplay(diagnosticReplay) } }
     var savesPreferences = true
     var frameCount: Int { worker.frameCount }
+    var invincible: Bool { worker.presentation().invincible }
+    var canToggleInvincibility: Bool { !failed && !pausedByHost && routed { controls.isActive } }
     var muted: Bool {
         get { audio.muted }
         set { audio.muted = newValue; if savesPreferences { VF3Preferences.defaults.set(newValue, forKey: VF3Preferences.mutedKey) } }
@@ -45,6 +48,10 @@ final class VF3Scene: SKScene {
         shade.strokeColor = .clear; shade.zPosition = 10; shade.isHidden = true; addChild(shade)
         title.fontSize = 24; title.position = CGPoint(x: 0, y: 9); shade.addChild(title)
         hint.fontSize = 12; hint.position = CGPoint(x: 0, y: -20); shade.addChild(hint)
+        assistStatus.name = "invincibilityStatus"; assistStatus.text = "P1 INVINCIBLE"
+        assistStatus.fontSize = 13; assistStatus.fontColor = .systemGreen
+        assistStatus.position = CGPoint(x: 256, y: 10); assistStatus.zPosition = 20
+        assistStatus.isHidden = true; addChild(assistStatus)
         controls.onTogglePause = { [weak self] in self?.togglePause() }
         controls.onResume = { [weak self] in self?.setPaused(false) }
         _ = routed { controls.refreshControllers(GCController.controllers()) }
@@ -76,9 +83,14 @@ final class VF3Scene: SKScene {
         shade.isHidden = !paused; title.text = "Paused"; hint.text = "Release controls, then press Return / Create / Options"
     }
     func togglePause() { setPaused(!pausedByHost) }
+    func toggleInvincibility() {
+        guard canToggleInvincibility else { return }
+        routed { controls.toggleInvincibility() }
+    }
     func resetGame() {
         do {
-            try worker.reset(); routed { controls.clear() }; failed = false
+            try worker.reset(); routed { controls.resetInvincibility() }; failed = false
+            assistStatus.isHidden = true
             picture.texture = nil; lastPresentedSerial = nil; setPaused(false)
         } catch { showFailure(error) }
     }
@@ -92,6 +104,7 @@ final class VF3Scene: SKScene {
         updateCount += 1; updatesOnMainThread = updatesOnMainThread && Thread.isMainThread
         routed { controls.pollController() }
         let snapshot = worker.presentation()
+        assistStatus.isHidden = !snapshot.invincible
         if let failure = snapshot.failure, !failed { showFailure(VirtuaFighter3Error.message(failure)) }
         guard routed({ controls.isActive }), !pausedByHost, !failed else { return }
         worker.setPaused(false)

@@ -1,0 +1,45 @@
+{
+  "frames": 4300,
+  "events": [
+    {
+      "start": 1200,
+      "end": 1202,
+      "player1": 512,
+      "player2": 512
+    },
+    {
+      "start": 1210,
+      "end": 1212,
+      "player1": 512,
+      "player2": 512
+    },
+    {
+      "start": 1240,
+      "end": 1242,
+      "player1": 256,
+      "player2": 256
+    },
+    {
+      "start": 1480,
+      "end": 1482,
+      "player1": 2,
+      "player2": 8
+    },
+    {
+      "start": 1490,
+      "end": 1492,
+      "player1": 16,
+      "player2": 16
+    },
+    {
+      "start": 0,
+      "end": 1,
+      "invincible": true
+    }
+  ],
+  "captures": [
+    3500,
+    3700,
+    3900
+  ]
+}

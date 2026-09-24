@@ -35,9 +35,10 @@ if arguments.contains("--help") {
     --audio-report FILE.json                    Save playback telemetry when the app closes
     --capture FILE.png --capture-after SECONDS  Capture the engine picture during a GUI run
     --quit-after SECONDS                        Close after a bounded GUI interval
-    Inputs: player1 and player2 each contain a separate button mask.
+    Inputs: player1 and player2 each contain a separate button mask; optional invincible true/false preserves its state when omitted.
     Flags per player: Up1 Down2 Left4 Right8 Punch16 Kick32 Guard64 Evade128 Start256 Coin512.
-    DualSense: left stick / D-pad moves; Triangle punches, Circle kicks, Cross guards, Square evades.
+    DualSense: left stick / D-pad moves; Square punches, Circle kicks, Cross guards, L1 evades.
+    Triangle / I toggles player-one invincibility while playing. New launches and Reset start OFF.
     R1 inserts a coin; Options starts/resumes; Create pauses/resumes. Stick clicks are unassigned.
     Player 1 keyboard: arrows, Z Punch, X Kick, C Guard, V Evade, 1/Return Start, 5 Coin.
     Player 2 keyboard: WASD, F Punch, G Kick, H Guard, J Evade, 2 Start, 6 Coin.
@@ -155,6 +156,7 @@ final class VF3App: NSObject, NSApplicationDelegate, NSWindowDelegate, NSMenuIte
         app.addItem(menuItem("About Virtua Fighter 3", #selector(about))); app.addItem(.separator())
         app.addItem(menuItem("Quit Virtua Fighter 3", #selector(quit), "q"))
         game.addItem(menuItem("Pause", #selector(pause))); game.addItem(menuItem("Reset Game", #selector(reset), "r"))
+        game.addItem(menuItem("Player 1 Invincibility", #selector(invincibility)))
         game.addItem(menuItem("Mute", #selector(mute), "m"))
         window.addItem(menuItem("Enter Full Screen", #selector(fullscreen), "f"))
         help.addItem(menuItem("Controls", #selector(controls), "/"))
@@ -162,6 +164,10 @@ final class VF3App: NSObject, NSApplicationDelegate, NSWindowDelegate, NSMenuIte
         NSApp.mainMenu = menu; NSApp.windowsMenu = window; NSApp.helpMenu = help
     }
     func validateMenuItem(_ item: NSMenuItem) -> Bool {
+        if item.action == #selector(invincibility) {
+            item.state = scene?.invincible == true ? .on : .off
+            return scene?.canToggleInvincibility == true
+        }
         if item.action == #selector(pause) { item.title = scene?.pausedByHost == true ? "Resume" : "Pause" }
         if item.action == #selector(mute) { item.state = scene?.muted == true ? .on : .off }
         return true
@@ -169,12 +175,13 @@ final class VF3App: NSObject, NSApplicationDelegate, NSWindowDelegate, NSMenuIte
     @objc private func quit() { NSApp.terminate(nil) }
     @objc private func pause() { scene.togglePause() }
     @objc private func reset() { scene.resetGame(); window.makeFirstResponder(view) }
+    @objc private func invincibility() { scene.toggleInvincibility() }
     @objc private func mute() { scene.muted.toggle() }
     @objc private func fullscreen() { window.toggleFullScreen(nil) }
     @objc private func controls() {
         scene.setPaused(true)
         let alert = NSAlert(); alert.messageText = "Virtua Fighter 3 Controls"
-        alert.informativeText = "Move: left stick / D-pad\nPunch: Triangle\nKick: Circle\nGuard: Cross\nEvade: Square\nInsert coin: R1\nStart / resume: Options\nPause / resume: Create (stick clicks are unassigned)\n\nPlayer 1 keyboard: arrows; Z/X/C/V = Punch/Kick/Guard/Evade; 1 or Return = Start; 5 = Coin\nPlayer 2 keyboard: WASD; F/G/H/J = Punch/Kick/Guard/Evade; 2 = Start; 6 = Coin\nP / Escape pauses or resumes.\n\nFactory settings: insert two coins, then press Start.\n\nTwo controllers retain their player assignments. Focus loss, sleep or an assigned-controller disconnection pauses the app. Release held controls before resuming."
+        alert.informativeText = "Move: left stick / D-pad\nPunch: Square\nKick: Circle\nGuard: Cross\nEvade: L1\nInsert coin: R1\nStart / resume: Options\nPause / resume: Create (stick clicks are unassigned)\n\nPlayer 1 invincibility: Triangle / I\nP1 INVINCIBLE appears while enabled. New launches and Reset start OFF.\n\nPlayer 1 keyboard: arrows; Z/X/C/V = Punch/Kick/Guard/Evade; 1 or Return = Start; 5 = Coin\nPlayer 2 keyboard: WASD; F/G/H/J = Punch/Kick/Guard/Evade; 2 = Start; 6 = Coin\nP / Escape pauses or resumes.\n\nFactory settings: insert two coins, then press Start.\n\nTwo controllers retain their player assignments. Focus loss, sleep or an assigned-controller disconnection pauses the app. Release held controls before resuming."
         alert.runModal(); window.makeFirstResponder(view)
     }
     @objc private func about() {

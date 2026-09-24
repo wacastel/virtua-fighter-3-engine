@@ -11,15 +11,24 @@ Open `build/Virtua Fighter 3.app`, or double-click `Play.command`. The original 
 | Action | PS5 DualSense | Player 1 keyboard | Player 2 keyboard |
 | --- | --- | --- | --- |
 | Move / crouch / jump | D-pad or left stick | Arrow keys | W / A / S / D |
-| Punch | Triangle | Z | F |
+| Punch | Square | Z | F |
 | Kick | Circle | X | G |
 | Guard | Cross | C | H |
-| Evade | Square | V | J |
+| Evade | L1 | V | J |
 | Insert coin | R1 | 5 | 6 |
 | Start / resume | Options | 1 or Return | 2 |
 | Pause / resume | Create | P or Escape | P or Escape |
+| Player 1 invincibility | Triangle | I | I |
 
 Controller assignments stay stable for the first two connected controllers. Stick clicks are unassigned. Focus loss or controller disconnection pauses play and clears held controls. The menus provide restart, sound and fullscreen controls. Restart performs a complete cabinet restart while preserving local cabinet settings.
+
+Triangle or I toggles player-one damage protection. It starts OFF, and restarting
+the game turns it OFF. A visible P1 INVINCIBLE indicator shows when protection
+is enabled. Ring-outs and the round timer remain original game rules.
+
+New interactive launches clear unused virtual credits from the previous session
+while retaining scores, cabinet settings and an exact backup of any changed save.
+In-session restart and diagnostic replay keep their original credit behavior.
 
 Saves and preferences use the independent `local.william.virtuafighter3` identity. Prior Daytona and Virtua Fighter applications are not changed.
 
@@ -51,6 +60,12 @@ Current-game reports in `Documentation/` describe the tested routes and bind evi
 
 The accepted gameplay set covers **99,058 frames across 17 routes**, with exact per-frame agreement on pictures, stereo audio and sample counts. It includes all twelve selectable fighters, attract mode, paid arcade play with continue behavior, two-player matches, late starts and joining an active match.
 
-An independent clean build reproduced those results. The packaged app's isolated 80-second live check measured 60.025 game frames per second, with zero audio underruns and no engine faults. Controller routing and connected DualSense profile detection are verified; physical controller button actuation is not part of the recorded automated checks.
+The initial release also passed an independent clean reconstruction. That report
+remains historical evidence for its recorded artifacts. The invincibility update
+has separate damage, startup-save, controller-routing and packaged-host checks;
+the current live report records display and audio performance for the rebuilt
+app: 60.025 game frames per second over 80 seconds, with zero audio underruns and
+no engine faults. Connected DualSense profile detection is verified; physical controller
+button actuation is not part of the recorded automated checks.
 
 Supermodel and included components retain their original licenses and notices in `COPYING` and `Licenses/`. Original game content belongs to its respective rights holders.

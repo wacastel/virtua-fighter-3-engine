@@ -9,6 +9,8 @@ import UniformTypeIdentifiers
 @_silgen_name("vf3_error") private func nativeError(_ context: UnsafeMutableRawPointer?) -> UnsafePointer<CChar>?
 @_silgen_name("vf3_fault_code") private func nativeFaultCode(_ context: UnsafeMutableRawPointer) -> UInt32
 @_silgen_name("vf3_step") private func nativeStep(_ context: UnsafeMutableRawPointer, _ player1: UInt32, _ player2: UInt32) -> Int32
+@_silgen_name("vf3_set_invincible") private func nativeSetInvincible(_ context: UnsafeMutableRawPointer, _ enabled: Int32) -> Int32
+@_silgen_name("vf3_get_invincible") private func nativeGetInvincible(_ context: UnsafeMutableRawPointer) -> Int32
 @_silgen_name("vf3_pixels") private func nativePixels(_ context: UnsafeMutableRawPointer) -> UnsafePointer<UInt8>?
 @_silgen_name("vf3_audio") private func nativeAudio(_ context: UnsafeMutableRawPointer) -> UnsafePointer<Int16>?
 @_silgen_name("vf3_audio_count") private func nativeAudioCount(_ context: UnsafeMutableRawPointer) -> Int32
@@ -54,6 +56,12 @@ final class VF3Game {
 
     init() throws {
         let media = try VF3Media.resolve()
+        do {
+            if VF3CabinetSave.shouldClearCredits(bundleIdentifier: Bundle.main.bundleIdentifier,
+                                                arguments: CommandLine.arguments) {
+                try VF3CabinetSave.prepareInteractiveLaunch(in: media.saves)
+            }
+        } catch { media.removeTemporarySaves(); throw error }
         let pointer = media.assets.path.withCString { assets in media.saves.path.withCString { nativeCreate(assets, $0) } }
         guard let pointer else {
             media.removeTemporarySaves()
@@ -80,6 +88,14 @@ final class VF3Game {
         let text = nativeError(context).map { String(cString: $0) } ?? "The native engine stopped."
         return .message("\(text) (fault \(nativeFaultCode(context)))")
     }
+    var invincible: Bool { !closed && nativeGetInvincible(context) != 0 }
+    func setInvincible(_ enabled: Bool) throws {
+        try requireOpen()
+        guard nativeSetInvincible(context, enabled ? 1 : 0) == 1 else { throw failure }
+        guard nativeFaultCode(context) == 0, invincible == enabled else {
+            throw VirtuaFighter3Error.message("The native engine did not apply player-one invincibility.")
+        }
+    }
     func reset() throws {
         try requireOpen()
         guard nativeFaultCode(context) == 0 else { throw failure }
@@ -103,6 +119,7 @@ final class VF3Game {
     }
     func advance(_ input: VF3Input) throws -> [Int16] {
         try requireOpen(); try input.validate()
+        if let enabled = input.invincible { try setInvincible(enabled) }
         guard nativeStep(context, input.normalized.player1, input.normalized.player2) == 1 else { throw failure }
         guard nativeFaultCode(context) == 0 else { throw failure }
         guard nativeFrameNumber(context) == UInt64(frameCount + 1), let pixels = nativePixels(context) else {
@@ -120,7 +137,7 @@ final class VF3Game {
         return samples
     }
     func diagnostics() -> [String: Any] {
-        ["frame": frameCount, "closed": closed, "faultCode": closed ? 0 : nativeFaultCode(context),
+        ["frame": frameCount, "closed": closed, "invincible": invincible, "faultCode": closed ? 0 : nativeFaultCode(context),
          "framesPerSecond": framesPerSecond,
          "sampleRate": sampleRate, "width": width, "height": height]
     }
@@ -147,7 +164,8 @@ func runVF3Replay(frames: Int, replay: VF3Replay?, capture: URL?, trace: URL? = 
         framedAudio.update(data: pcm)
         if let records, let picture = game.latestFrame {
             let row: [String: Any] = ["frame": frame + 1, "audioFrames": samples.count / 2,
-                "rgba": digest(SHA256.hash(data: picture.rgba)), "pcm": digest(SHA256.hash(data: pcm))]
+                "rgba": digest(SHA256.hash(data: picture.rgba)), "pcm": digest(SHA256.hash(data: pcm)),
+                "invincible": game.invincible]
             var data = try JSONSerialization.data(withJSONObject: row, options: [.sortedKeys])
             data.append(10); try records.write(contentsOf: data)
         }

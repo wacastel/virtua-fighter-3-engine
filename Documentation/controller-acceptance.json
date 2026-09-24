@@ -11,6 +11,6 @@
   "game": "Virtua Fighter 3",
   "physicalActuationTested": false,
   "passed": true,
-  "executableSHA256": "19039f5b414d203dd16d3b9a539b249e9ab38a3526d025cfff5d2d088d44296f",
+  "executableSHA256": "dd00b992e5a7600556c7d4501be4d72d013f87448149f3fae1f7047704b772cb",
   "scope": "Read-only GameController profile enumeration. Connected DualSense extended-gamepad profile found; no physical button actuation claim."
 }

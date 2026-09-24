@@ -1,0 +1,498 @@
+{
+  "passed": true,
+  "target": "Virtua Fighter 3 Japan Revision D (vf3)",
+  "upstreamCommit": "24d2ffcfc7f14229337f05f4920fe26b56633d9d",
+  "programMedia": [
+    {
+      "name": "epr-19230d.20",
+      "size": 524288,
+      "crc32": "43c08240",
+      "sha256": "18c9d8e94e8c7f42bccbf9eccb2d195e792ca3ba527266e2de1c1fe3fadf185f"
+    },
+    {
+      "name": "epr-19229d.19",
+      "size": 524288,
+      "crc32": "6773f715",
+      "sha256": "12e2f266a055824e52b6b2463fe516cbad60c648fb7971bfeda00d2e82ce1615"
+    },
+    {
+      "name": "epr-19228d.18",
+      "size": 524288,
+      "crc32": "a2470c78",
+      "sha256": "e6b4d25104c41c4ee1d86df512cf68aa97035b1f92e8df5ff7c5ed97304d33ca"
+    },
+    {
+      "name": "epr-19227d.17",
+      "size": 524288,
+      "crc32": "8b650966",
+      "sha256": "36ff587199304ad19c49c97537bae931f76bc2ecb2e1b02d2ec9e1866e4f3e95"
+    }
+  ],
+  "originalModel3SourceSHA256": "c5dc67722fade4a2e2919509bfac216bd6ea9a10bb62b5eaedfb366c2a38f385",
+  "originalPPCSources": {
+    "ppc.cpp": "a3d727393052ffa96d32c04866ea619422625bc67d42315a125df9da502b93e5",
+    "ppc603.c": "4cbbd401843f2a42d7175525bf9d28549a05ae9fb93240c611fd182270726e0b",
+    "ppc_ops.c": "ab40520e6d2428cf943b21d2f290531a02f1c83c8dac46319b70d3139c120d3b",
+    "ppc_ops.h": "81c15dd23a131244bce351d80f8b6efd0d9e20ec50ceaf2eb9c20931afa04f58",
+    "ppc.h": "59ca9af75e3cbc399957cb657eb43845cec4e73a390211f401a71b3acfb228b4"
+  },
+  "referenceLibrarySHA256": "d4001754a3b13f8069cea826e9d738224f2125220e189e96780b85b46baca801",
+  "laboratoryObserverLibrarySHA256": "01f4db0ed135a47df7913da63ce2c7ff6042033ff8bc0865854c83fee26279b8",
+  "probeScriptSHA256": "b43774bf69d5944228802b04254015b29bc5e42c5c514fb70abdf5c343fb9791",
+  "labObserverBuildScriptSHA256": "2acb3b9101fc9e4790b73a3a16d074e3067fae0d3483cad350e29cf863c91b50",
+  "analysisScriptSHA256": "8baab8a5126fe27807403466c2d9d71c2680055f2f0d5ac1b9dd9fdf73c6256d",
+  "clockEpoch": 946684800,
+  "helperSHA256": "0895a7461055a80a493a881a2229fc2134a59fd8619b204513612b44d77857dc",
+  "diagnosis": "VF3 retains separate P1/common and P2 credit banks in Backup RAM. The original COMMON configuration combines both coin slots; INDIVIDUAL configuration keeps both banks. Default play costs two credits, so one saved credit displays 1/2 and is still cleared at desktop session start. VF3 stays in attract until Start, unlike Daytona2. Service credits share the credit bank and have separate lifetime accounting.",
+  "creditFields": [
+    {
+      "logicalOffset": "0x22",
+      "rawByteOffset": "0x1e046",
+      "meaning": "P1/common credit bank",
+      "widthBits": 8
+    },
+    {
+      "logicalOffset": "0x23",
+      "rawByteOffset": "0x1e047",
+      "meaning": "P1/common coin-conversion remainder",
+      "widthBits": 8
+    },
+    {
+      "logicalOffset": "0x24",
+      "rawByteOffset": "0x1e04a",
+      "meaning": "P1/common bonus-conversion remainder",
+      "widthBits": 8
+    },
+    {
+      "logicalOffset": "0x25",
+      "rawByteOffset": "0x1e04b",
+      "meaning": "P2 independent credit bank",
+      "widthBits": 8
+    },
+    {
+      "logicalOffset": "0x26",
+      "rawByteOffset": "0x1e04e",
+      "meaning": "P2 coin-conversion remainder",
+      "widthBits": 8
+    },
+    {
+      "logicalOffset": "0x27",
+      "rawByteOffset": "0x1e04f",
+      "meaning": "P2 bonus-conversion remainder",
+      "widthBits": 8
+    }
+  ],
+  "originalProgramEvidence": {
+    "logicalBase": "0x7000f000",
+    "byteReader": "0x00051004..0x00051028 doubles the logical byte address, reads a reversed word and masks one 8-bit lane.",
+    "byteWriter": "0x00051104..0x00051130 reads the reversed word, replaces one 8-bit lane and writes that word back, preserving all other lanes.",
+    "P1CreditPath": "0x0004e260..0x0004e29c updates logical 0x22.",
+    "P2CreditPath": "0x0004e330..0x0004e35c updates logical 0x25.",
+    "conversionRemainders": "0x0004e2a0..0x0004e2f0 computes a division remainder into logical 0x23; 0x0004dfcc..0x0004e164 performs normal/bonus conversions, including logical 0x24/0x26/0x27. These are transient credit conversion state, not the accounting totals.",
+    "originalBoot": "0x0004db14 loads P2 credit; initialization independently clears all four conversion remainders. Thus only the two bank bytes persist into the next original boot, while all six are explicitly zeroed by the host before it creates the engine.",
+    "checksum": "No credit checksum or paired credit copy is needed: exact narrow cleared inputs load byte-for-byte at the first reference frame and reach attract with all other cabinet state intact.",
+    "observationScope": "An isolated copy of the pinned original PPC executor records read-only bus writes; it is never linked into the native product. Instruction disassembly and raw traces stay in ignored build/startup-investigation."
+  },
+  "preservation": {
+    "copiedUserInitialFields": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "realUserSaveReadOnlySHA256": "06aae14e9833603805d52dc16cfe7afc6c0c4388f74a7f0e13abfd69600ba6c9",
+    "realUserSaveUnmodifiedAtAnalysis": true,
+    "copiedUser": {
+      "originalSHA256": "06aae14e9833603805d52dc16cfe7afc6c0c4388f74a7f0e13abfd69600ba6c9",
+      "clearedSHA256": "64271c7ff1f3e6c8c824ee97b7f507a348a237e0e389e4e0856da9f92a183044",
+      "changedFileByteCount": 1,
+      "changedBackupRAMOffsets": [
+        "0x1e046"
+      ],
+      "EEPROMByteIdentical": true,
+      "allOtherFileBytesIdentical": true,
+      "exactSHANamedBackup": true
+    },
+    "ordinaryCommonCoinFixture": {
+      "originalSHA256": "93ad7f17be10205c1d307d12e475e93f86b7ac92b58f3289e50385653f3c5af6",
+      "clearedSHA256": "5dbc5f399f361da90e8cc462b87cbf41dabad79a330bfa10bbda0176adc73f16",
+      "changedFileByteCount": 1,
+      "changedBackupRAMOffsets": [
+        "0x1e046"
+      ],
+      "EEPROMByteIdentical": true,
+      "allOtherFileBytesIdentical": true,
+      "exactSHANamedBackup": true
+    },
+    "ordinaryIndividualCoinFixture": {
+      "originalSHA256": "b78ac250df719fa878845435d84f8cb6fbf33391e2c71c642e31d2a47f9cf76a",
+      "clearedSHA256": "6d8db5094b96dc6ba0db7a98f05ff0ce6c4f69b2f20f48baabfd57a0449d3241",
+      "changedFileByteCount": 2,
+      "changedBackupRAMOffsets": [
+        "0x1e046",
+        "0x1e04b"
+      ],
+      "EEPROMByteIdentical": true,
+      "allOtherFileBytesIdentical": true,
+      "exactSHANamedBackup": true
+    },
+    "firstReferenceFrameMatchesClearedRAMExactly": true,
+    "original1800FrameControlChanges": [
+      "0x1c038",
+      "0x1c039",
+      "0x1c03e",
+      "0x1c03f",
+      "0x1c068",
+      "0x1c069",
+      "0x1c06e",
+      "0x1c06f"
+    ],
+    "cleared1800FrameAdditionalChanges": [
+      "0x1e046"
+    ],
+    "EEPROMIdenticalAfterOriginalRun": true,
+    "originalRunExplanation": "Both original control and cleared run update identical original timing counters at the eight listed offsets. All other original scores/settings/accounting bytes are preserved, with only the deliberately cleared credit byte differing."
+  },
+  "experiments": [
+    {
+      "name": "neutral",
+      "frames": 1000,
+      "coins": 0,
+      "coins2": 0,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": null,
+      "remainingCreditFields": {
+        "0x1e046": 0,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 0,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "attract, zero common credits",
+      "savedNVRAMSHA256": "6dda77985e6cb4ef8701e5e7b1dcd250b2ae9ccf9c938b4dccccddf185b0574b",
+      "lastPictureSHA256": "d79bd7f8db2a0b59ef5cb005862bfe1b973fe652cffaac58b46d20af8b1f2b62",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/neutral"
+    },
+    {
+      "name": "coin1",
+      "frames": 1000,
+      "coins": 1,
+      "coins2": 0,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": null,
+      "remainingCreditFields": {
+        "0x1e046": 1,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 0,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "attract, Credit 1/2, Insert More Coin(s)",
+      "savedNVRAMSHA256": "c3514f4f9c003950b8110a2a0f805960b95591d0c8c475145f02b60630501986",
+      "lastPictureSHA256": "b6a1b0f66516a379bc0707eec758ab3bf6e13ea6d6b65173a86fa9941c3c44bd",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/coin1"
+    },
+    {
+      "name": "coin2",
+      "frames": 1000,
+      "coins": 0,
+      "coins2": 2,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": null,
+      "remainingCreditFields": {
+        "0x1e046": 2,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 0,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "attract, Credits 2/2, Press Start Button",
+      "savedNVRAMSHA256": "93ad7f17be10205c1d307d12e475e93f86b7ac92b58f3289e50385653f3c5af6",
+      "lastPictureSHA256": "c5a674bbc14191c20bc1d0fa275716acc30ca7839ea19334c9da71cd1baeb20d",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/coin2"
+    },
+    {
+      "name": "coin1-reboot",
+      "frames": 1000,
+      "coins": 0,
+      "coins2": 0,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": "c3514f4f9c003950b8110a2a0f805960b95591d0c8c475145f02b60630501986",
+      "remainingCreditFields": {
+        "0x1e046": 1,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 0,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "attract, persisted Credit 1/2",
+      "savedNVRAMSHA256": "3caec396a7d03985b99ffbf1377f50e8082be9326e91dc4412aa421cc965789c",
+      "lastPictureSHA256": "b6a1b0f66516a379bc0707eec758ab3bf6e13ea6d6b65173a86fa9941c3c44bd",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/coin1-reboot"
+    },
+    {
+      "name": "service-held",
+      "frames": 1000,
+      "coins": 0,
+      "coins2": 0,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": null,
+      "remainingCreditFields": {
+        "0x1e046": 3,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 0,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "attract, Credits 3/2",
+      "savedNVRAMSHA256": "5844be29c75a29108f3c5745172e9be0865a39433d22698d3db66c33dbe8de1a",
+      "lastPictureSHA256": "0a5e938ad2af7ed950a65d7fe93c4b58f7906175f4ac62e5a80b837d8b702401",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/service-held",
+      "servicePulses": [
+        [
+          610,
+          630
+        ],
+        [
+          650,
+          670
+        ],
+        [
+          690,
+          710
+        ]
+      ],
+      "allCoinInputsZero": true
+    },
+    {
+      "name": "individual-verified-neutral",
+      "frames": 1800,
+      "coins": 0,
+      "coins2": 0,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": "6d35653623948cedd8d8a5d93d39285398fc6dc5f88c133cff23e03bceec404f",
+      "remainingCreditFields": {
+        "0x1e046": 0,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 0,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "attract, P1 Credit 0/2 and P2 Credit 0/2",
+      "savedNVRAMSHA256": "5a53d2781f0b1d26af48d3627ea511f3a6272958ce39430fe29e25c5976a6b4f",
+      "lastPictureSHA256": "481f81785b2c84ba40da3c783143e183490f7790aeb6409276f2493951d7767f",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/individual-verified-neutral"
+    },
+    {
+      "name": "individual-verified-coins",
+      "frames": 1800,
+      "coins": 1,
+      "coins2": 3,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": "6d35653623948cedd8d8a5d93d39285398fc6dc5f88c133cff23e03bceec404f",
+      "remainingCreditFields": {
+        "0x1e046": 1,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 3,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "attract, P1 Credit 1/2 and P2 Credits 3/2",
+      "savedNVRAMSHA256": "b78ac250df719fa878845435d84f8cb6fbf33391e2c71c642e31d2a47f9cf76a",
+      "lastPictureSHA256": "7b5a917e300a9c0ebc57822c36dbb912a0294c73df392ce0c79feac2c4e4bb4e",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/individual-verified-coins"
+    },
+    {
+      "name": "individual-reboot",
+      "frames": 1800,
+      "coins": 0,
+      "coins2": 0,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": "b78ac250df719fa878845435d84f8cb6fbf33391e2c71c642e31d2a47f9cf76a",
+      "remainingCreditFields": {
+        "0x1e046": 1,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 3,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "attract, P1 Credit 1/2 and P2 Credits 3/2 persist",
+      "savedNVRAMSHA256": "ea9aec5421517d3704e7ef0e5550c29ce0865eb72147848943ffa7f3b1766354",
+      "lastPictureSHA256": "7b5a917e300a9c0ebc57822c36dbb912a0294c73df392ce0c79feac2c4e4bb4e",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/individual-reboot"
+    },
+    {
+      "name": "individual-cleared",
+      "frames": 1800,
+      "coins": 0,
+      "coins2": 0,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": "6d8db5094b96dc6ba0db7a98f05ff0ce6c4f69b2f20f48baabfd57a0449d3241",
+      "remainingCreditFields": {
+        "0x1e046": 0,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 0,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "attract, both Credit 0/2",
+      "savedNVRAMSHA256": "d1a6e5bc8ab7b48f42d3506f51d89fe26eea997ea1db965c366578151501d78d",
+      "lastPictureSHA256": "481f81785b2c84ba40da3c783143e183490f7790aeb6409276f2493951d7767f",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/individual-cleared"
+    },
+    {
+      "name": "user-original",
+      "frames": 1800,
+      "coins": 0,
+      "coins2": 0,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": "06aae14e9833603805d52dc16cfe7afc6c0c4388f74a7f0e13abfd69600ba6c9",
+      "remainingCreditFields": {
+        "0x1e046": 1,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 0,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "attract, Credit 1/2",
+      "savedNVRAMSHA256": "8daf9d0394a20bf36c12eeb10ad459c51ded3a84975965648d6371c94ffc4cb8",
+      "lastPictureSHA256": "8323b322ca542bdfc1994fb6fe31e0ccdd0b523bb99cd9c235684d6c9a027f2b",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/user-original"
+    },
+    {
+      "name": "user-cleared",
+      "frames": 1800,
+      "coins": 0,
+      "coins2": 0,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": "64271c7ff1f3e6c8c824ee97b7f507a348a237e0e389e4e0856da9f92a183044",
+      "remainingCreditFields": {
+        "0x1e046": 0,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 0,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "attract, Credit 0/2",
+      "savedNVRAMSHA256": "4c16b16d9c330c1dae43bb4d35680206868b54bce7171a826174b1e04f045eb9",
+      "lastPictureSHA256": "97d50f61933380b66f144fc5e8b62ae59969bfe6da1dfd53600020798b7e1a0f",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/user-cleared"
+    },
+    {
+      "name": "common-p2-start",
+      "frames": 1800,
+      "coins": 0,
+      "coins2": 0,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": "93ad7f17be10205c1d307d12e475e93f86b7ac92b58f3289e50385653f3c5af6",
+      "remainingCreditFields": {
+        "0x1e046": 0,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 0,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "P2 character selection",
+      "savedNVRAMSHA256": "4b637d1ff3c623f1f8b38444130cc89a4a9861d882002f099ad02796d46ec68f",
+      "lastPictureSHA256": "e19f82735488dde929b246f0ac381739682e4859a49b86062ad0dd422ec407c2",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/common-p2-start",
+      "P2StartFrames": [
+        1300,
+        1340
+      ]
+    },
+    {
+      "name": "common-cleared-start2",
+      "frames": 1800,
+      "coins": 0,
+      "coins2": 0,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": "5dbc5f399f361da90e8cc462b87cbf41dabad79a330bfa10bbda0176adc73f16",
+      "remainingCreditFields": {
+        "0x1e046": 0,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 0,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "attract, Credit 0/2; Start cannot spend cleared credits",
+      "savedNVRAMSHA256": "ceff7ac6b71d364c12da921239d13587ab6634fa93d12085cbb38f1974011f42",
+      "lastPictureSHA256": "97d50f61933380b66f144fc5e8b62ae59969bfe6da1dfd53600020798b7e1a0f",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/common-cleared-start2",
+      "P2StartFrames": [
+        1300,
+        1340
+      ]
+    },
+    {
+      "name": "common-cleared-recoin",
+      "frames": 1800,
+      "coins": 2,
+      "coins2": 0,
+      "service": 0,
+      "start": null,
+      "start2": null,
+      "seedSHA256": "5dbc5f399f361da90e8cc462b87cbf41dabad79a330bfa10bbda0176adc73f16",
+      "remainingCreditFields": {
+        "0x1e046": 0,
+        "0x1e047": 0,
+        "0x1e04a": 0,
+        "0x1e04b": 0,
+        "0x1e04e": 0,
+        "0x1e04f": 0
+      },
+      "observedScreen": "P2 character selection after two new ordinary P1 coins",
+      "savedNVRAMSHA256": "960919bfdf371197b1bdc53c81a08e14b72e9c40d806983f2277eb6b37ee7753",
+      "lastPictureSHA256": "e19f82735488dde929b246f0ac381739682e4859a49b86062ad0dd422ec407c2",
+      "evidenceDirectory": "build/startup-investigation/credit-lab/common-cleared-recoin",
+      "P2StartFrames": [
+        1300,
+        1340
+      ]
+    }
+  ],
+  "launchPolicy": "Only bundled local.william.virtuafighter3 interactive process creation clears credits. --headless, --self-test, --diagnostic-run and --audio-replay bypass it. --audio-report by itself remains interactive; explicit test-copy save directories are supported. In-session engine reset does not run cleanup.",
+  "formatPolicy": "Parse all three exact CBlockFile blocks, lengths and terminators; require the VF3 EEPROM signatures and Backup RAM signature; reject unfamiliar or malformed formats before backup/write. Missing and all-zero saves are no-ops. Preserve a SHA256-named exact original backup before an atomic narrow update.",
+  "scope": "Bounded original-program reference analysis and actual Swift helper tests using isolated save copies and ordinary input. Both P1/P2 and service credits were exercised. Game settings for INDIVIDUAL mode were authored using the original Test/Service menu. This is not physical-board, exhaustive gameplay, native parity, live-performance, or packaged-GUI proof. No supplied ROM, upstream source, real user save, or preferences was modified."
+}

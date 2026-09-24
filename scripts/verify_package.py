@@ -42,6 +42,12 @@ def verify_engine_sources(engine):
         if relative.is_absolute() or '..' in relative.parts or sha(ROOT / relative) != entry['sha256']:
             raise RuntimeError('CPU manifest changed: ' + cpu)
         replacement_hashes[cpu] = entry['sha256']
+    ppc = json.loads((ROOT / engine['cpuReplacements']['PowerPC']['path']).read_text())
+    assist = ppc.get('invincibility', {})
+    if (engine.get('invincibilityAvailable') is not True or not assist.get('implemented')
+            or assist.get('configurationSHA256') != sha(ROOT / 'Configuration/invincibility-ppc.json')
+            or ppc.get('outputSHA256') != sha(ROOT / 'build/generated/ppc/ppc.cpp')):
+        raise RuntimeError('Authenticated native invincibility identity is missing or stale')
     return replacement_hashes
 
 
@@ -61,7 +67,7 @@ def binary_audit(path: Path, *, library=False):
     if bad: raise RuntimeError('Forbidden linked symbols in ' + path.name + ': ' + ', '.join(bad))
     missing = [word for word in FIXED_SYMBOLS if word not in symbols]
     if missing: raise RuntimeError('Fixed execution symbols missing from ' + path.name + ': ' + ', '.join(missing))
-    for name in ['create', 'destroy', 'step', 'pixels', 'audio', 'audio_count']:
+    for name in ['create', 'destroy', 'step', 'pixels', 'audio', 'audio_count', 'set_invincible', 'get_invincible']:
         if '_vf3_' + name not in symbols: raise RuntimeError('Missing host C ABI symbol: ' + name)
     dependencies = [line.strip().split(' (', 1)[0] for line in command(['/usr/bin/otool', '-L', path]).splitlines()[1:] if line.strip()]
     if library: dependencies = dependencies[1:]  # LC_ID_DYLIB is the library's own identity.

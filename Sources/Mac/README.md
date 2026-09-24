@@ -14,7 +14,7 @@ cross to the main thread, and each engine iteration drains an autorelease pool.
 
 Reset saves the current cabinet NVRAM, destroys the native context and creates a
 fresh context on that same engine thread with the same save directory. It clears
-both players' pending controls. A processor fault stops the session; reset does
+both players' pending controls and player-one invincibility. A processor fault stops the session; reset does
 not bypass unknown-instruction checks.
 
 ## Controls
@@ -26,13 +26,21 @@ controller connects. Controller player indicators show the assigned slot.
 | Action | DualSense, either player | Player 1 keyboard | Player 2 keyboard |
 | --- | --- | --- | --- |
 | Move / crouch / jump | D-pad or left stick | Arrow keys | W / A / S / D |
-| Punch | Triangle | Z | F |
+| Punch | Square | Z | F |
 | Kick | Circle | X | G |
 | Guard | Cross | C | H |
-| Evade | Square | V | J |
+| Evade | L1 | V | J |
 | Insert coin | R1 | 5 | 6 |
 | Start / resume | Options | 1 or Return | 2 |
 | Pause / resume | Create, left of the touchpad | P or Escape | P or Escape |
+| Player 1 invincibility | Triangle | I | I |
+
+Triangle/I toggles player-one protection independently of both arcade button
+masks. The routing lock preserves toggle edges until the engine reserves an
+input frame; the engine thread applies the request and publishes its actual
+state. A persistent P1 INVINCIBLE indicator and Game menu checkmark reflect
+that state. Fresh launch and Reset select OFF. Paused/inactive shortcuts and
+held buttons cannot create repeated toggles.
 
 Stick clicks are unassigned. The D-pad overrides both analog movement axes;
 analog values within ±0.3 are neutral. Opposing directions cancel independently
@@ -57,6 +65,8 @@ player. Shipping masks contain only these flags:
 
 JSON replay accepts either `steps` with `frames`, `player1`, and `player2`, or
 `events` with half-open `start` / `end` frame ranges and optional player masks.
+An optional Boolean `invincible` requests the assist state; omission preserves
+the last selection, so ending an ON event requires an explicit OFF request.
 Active events merge each player's mask in file order; an omitted player retains
 the earlier active event's mask. A top-level `frames` value includes a neutral
 tail and bounds all events. Masks reject unknown bits. Unknown input/replay
@@ -85,3 +95,10 @@ diagnostic runs use disposable saves unless explicitly overridden.
 `--assets DIRECTORY` / `VIRTUA_FIGHTER_3_ASSET_DIR` override media, and
 `--save-dir DIRECTORY` / `VIRTUA_FIGHTER_3_SAVE_DIR` override saves. No other
 port's saves or preferences are accessed.
+
+New interactive launches clear unused coin/credit state from existing NVRAM
+before native context creation, with an exact backup under `Backups` before any
+atomic update. Scores, cabinet settings and lifetime accounting are preserved.
+In-session Reset and headless/replay sessions bypass this launch-only policy.
+See the startup analysis and save-handling acceptance reports for confirmed
+fields, validation and preservation checks.

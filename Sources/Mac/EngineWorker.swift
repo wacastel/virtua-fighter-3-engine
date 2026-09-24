@@ -8,6 +8,7 @@ final class VF3EngineWorker {
         let frame: VF3Game.Frame?
         let serial: UInt64
         let failure: String?
+        let invincible: Bool
     }
     private let condition = NSCondition()
     private let inputForFrame: (Int, VF3Input?) -> VF3Input
@@ -82,7 +83,8 @@ final class VF3EngineWorker {
     }
     func presentation() -> Presentation {
         condition.lock(); defer { condition.unlock() }
-        return Presentation(frame: latestFrame, serial: serial, failure: failure)
+        return Presentation(frame: latestFrame, serial: serial, failure: failure,
+                            invincible: gameState["invincible"] as? Bool ?? false)
     }
     func diagnostics() -> [String: Any] {
         condition.lock(); defer { condition.unlock() }
@@ -92,6 +94,7 @@ final class VF3EngineWorker {
             "p95": sorted[min(sorted.count - 1, sorted.count * 95 / 100)] * 1000,
             "maximum": sorted.last! * 1000]
         return ["gameState": gameState, "gameFrames": frameNumber,
+                "invincible": gameState["invincible"] as? Bool ?? false,
                 "lastInput": lastInput.diagnostic, "discardedClockGaps": discardedClockGaps,
                 "engineCallsOnDedicatedThread": callsOnDedicatedThread,
                 "engineTiming": ["engineSeconds": engineSeconds, "audioSeconds": audioSeconds,

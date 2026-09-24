@@ -11,8 +11,8 @@ def put(path,text):
  path.parent.mkdir(parents=True,exist_ok=True)
  if not path.exists() or path.read_text()!=text:path.write_text(text)
 def main():
- ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--kind',choices=['reference','observer','native'],default='reference');ap.add_argument('--jobs',type=int,default=8);ap.add_argument('--output',type=Path);args=ap.parse_args()
- kind=args.kind; out=args.output.resolve() if args.output else ROOT/'build'/kind;out.mkdir(parents=True,exist_ok=True)
+ ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('--kind',choices=['reference','observer','native'],default='reference');ap.add_argument('--jobs',type=int,default=8);ap.add_argument('--output',type=Path);ap.add_argument('--diagnostic',action='store_true');args=ap.parse_args()
+ kind=args.kind; out=args.output.resolve() if args.output else ROOT/'build'/(kind+'-diagnostic' if args.diagnostic else kind);out.mkdir(parents=True,exist_ok=True)
  upstream_report=verify_source()
  derived=ROOT/'build/derived'/kind; derived.mkdir(parents=True,exist_ok=True)
  musashi=ROOT/'build/derived/musashi';musashi.mkdir(parents=True,exist_ok=True)
@@ -80,6 +80,10 @@ def main():
   put(derived/'SCSPDSP.cpp',dsp);replacements['Src/Sound/SCSPDSP.cpp']=derived/'SCSPDSP.cpp'
   sources.append(ROOT/'Tools/ReferenceLab/sound_observe.cpp')
  if kind=='native':
+  ppc_manifest=json.loads((ROOT/'build/generated/ppc/translation-manifest.json').read_text())
+  assist=ppc_manifest.get('invincibility',{})
+  if not assist.get('implemented') or assist.get('configurationSHA256')!=sha(ROOT/'Configuration/invincibility-ppc.json') or ppc_manifest.get('outputSHA256')!=sha(ROOT/'build/generated/ppc/ppc.cpp'):
+   raise RuntimeError('Authenticated native invincibility generation missing or stale')
   replacements.update({'Src/CPU/PowerPC/ppc.cpp':ROOT/'build/generated/ppc/ppc.cpp','Src/CPU/Z80/Z80.cpp':ROOT/'build/generated/z80/Z80.cpp','Src/Sound/SCSPDSP.cpp':ROOT/'build/generated/sound/SCSPDSP.cpp'})
   sources=[p for p in sources if not p.is_relative_to(musashi) and p!=UPSTREAM/'Src/CPU/68K/Musashi/m68kcpu.c']
   sources+=sorted((ROOT/'build/generated/sound/musashi').glob('*.c'))
@@ -98,6 +102,8 @@ def main():
  inc += sorted(set(p.parent for p in (UPSTREAM/'Src').rglob('*') if p.suffix in ['.h','.cpp']))
  flags=['-O2','-arch','arm64','-mmacosx-version-min=14.0','-fexceptions','-fno-strict-aliasing','-ffp-contract=off','-DGLEW_STATIC','-DSUPERMODEL_OSX','-Wno-deprecated-declarations','-Wno-unused-result','-Wno-register','-Wno-incompatible-pointer-types-discards-qualifiers']+['-I'+str(p) for p in inc]
  if kind!='native':flags+=['-DVF3_REFERENCE']
+ else:flags+=['-DVF3_INVINCIBILITY_VERIFIED']
+ if args.diagnostic:flags+=['-DVF3_DIAGNOSTIC']
  headers=sorted(set((UPSTREAM/'Src').rglob('*.h'))|set((ROOT/'Sources/Bridge').glob('*.h'))|set((ROOT/'build/generated').rglob('*.h'))|set(derived.glob('*.h'))|set(musashi.glob('*.h')))
  header_digest=hashlib.sha256(''.join(str(p.relative_to(ROOT))+sha(p) for p in headers).encode()).hexdigest()
  compiler=subprocess.check_output(['clang','--version'],text=True).strip()
@@ -117,7 +123,7 @@ def main():
  run(['clang++','-dynamiclib','-arch','arm64','-mmacosx-version-min=14.0','-Wl,-dead_strip','-o',out/'libvf3.dylib']+objects+['-framework','OpenGL','-framework','Foundation','-lz'])
  fingerprints={str(p.relative_to(ROOT)):sha(p) for p in sources if not p.is_relative_to(ROOT/'build')}
  fingerprints['scripts/build_engine.py']=sha(Path(__file__))
- manifest={'kind':kind,'shippingNative':kind=='native','diagnostics':kind!='native','staticArchiveSHA256':sha(archive),'dynamicLibrarySHA256':sha(out/'libvf3.dylib'),'upstreamCommit':REVISION,'upstreamArchiveSHA256':upstream_report['archiveSHA256'],'sources':fingerprints,'compiledSources':{str(p.relative_to(ROOT)):sha(p) for p in sources},'headersSHA256':header_digest,'compiler':compiler,'target':'arm64-apple-macos14.0','configuration':'Single-threaded hardware, detached networking, offscreen OpenGL 4.1, stereo downmix, boot-sampled UTC clock'}
+ manifest={'invincibilityAvailable':kind=='native','kind':kind,'shippingNative':kind=='native' and not args.diagnostic,'diagnostics':kind!='native' or args.diagnostic,'staticArchiveSHA256':sha(archive),'dynamicLibrarySHA256':sha(out/'libvf3.dylib'),'upstreamCommit':REVISION,'upstreamArchiveSHA256':upstream_report['archiveSHA256'],'sources':fingerprints,'compiledSources':{str(p.relative_to(ROOT)):sha(p) for p in sources},'headersSHA256':header_digest,'compiler':compiler,'target':'arm64-apple-macos14.0','configuration':'Single-threaded hardware, detached networking, offscreen OpenGL 4.1, stereo downmix, boot-sampled UTC clock'}
  if kind=='native':
   manifest['generatedSources']={str(p.relative_to(ROOT)):sha(p) for p in sources if p.is_relative_to(ROOT/'build/generated')}
   manifest['cpuReplacements']={name:{'path':str(path.relative_to(ROOT)),'sha256':sha(path)} for name,path in [('PowerPC',ROOT/'build/generated/ppc/translation-manifest.json'),('Musashi-SCSP',ROOT/'build/generated/sound/manifest.json'),('Z80',ROOT/'build/generated/z80/translation-manifest.json')]}

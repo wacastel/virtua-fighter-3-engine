@@ -1,0 +1,51 @@
+{
+  "passed": true,
+  "game": "Virtua Fighter 3 Japan Revision D",
+  "configurationSHA256": "7dab2025dc9b47b827c82bfc03f0bfb052efe7958d1528b5e9378a1d8c160912",
+  "originalInputEvidence": {
+    "route": "Configuration/replays/versus.json",
+    "routeSHA256": "c9aa3be0f490d318195a39f4b5a8449f6ce4b4d01ba6a7e211e815a3b6fbe5de",
+    "readOnlyStoreTraceSHA256": "ff431ab903a328764f267cdaecbea82bfd40de830c476f6e89acede63089209d",
+    "healthStores": {
+      "00009cf0": 4,
+      "00029474": 1,
+      "00029478": 1,
+      "000104bc": 10
+    },
+    "incomingDamageCalls": 10,
+    "incomingDamageReturnAddresses": [
+      "0000cb4c",
+      "0000dd98",
+      "000148b8"
+    ]
+  },
+  "ownership": {
+    "arcade": {
+      "frames": 4500,
+      "activeFrames": 2005,
+      "ownerValues": [
+        1
+      ],
+      "readOnlyStateTraceSHA256": "ce14ec484dbefcd6e7d0f674cfa1b865d70f8b0fff1c4efe526a69c98a2212ab"
+    },
+    "p2": {
+      "frames": 4500,
+      "activeFrames": 2005,
+      "ownerValues": [
+        2
+      ],
+      "readOnlyStateTraceSHA256": "84cf5ffa97ea4f85501ef6c26f7757a3478e35366d3f368d2e9a2bbcc4863bf4"
+    }
+  },
+  "boundedStaticReview": {
+    "commonDamage": "lhz r10,0x56(r14); authenticated subf. r10,r4,r10; positive branch skips KO flag, then original health store. The assist substitutes zero damage only at that subtraction.",
+    "ownership": "Original 0x2d538 constructs ownership byte from separate cabinet pointers: first contributes1, second2. Separate original-input P1 and P2 solo routes corroborate ownership1 and2.",
+    "roundDispatch": "Original dispatchers copy next main/round bytes to current, then derive mode bits; active current/next pair is7/9.",
+    "otherStores": "Reviewed halfword field0x56 accesses in the fixed RAM copy: fighter initialization, round ending, replay restore, ringout, and separate cabinet-selection objects. No additional incoming subtraction was found in that bounded direct-store scan.",
+    "independentReview": "A separate agent independently reviewed the damage, ownership, phase, cabinet object, replay and ringout contexts."
+  },
+  "limits": [
+    "Source scan does not prove every possible indexed or aliased write or every move.",
+    "Original-input parity and assist semantics are required separately; no physical hardware comparison."
+  ]
+}
