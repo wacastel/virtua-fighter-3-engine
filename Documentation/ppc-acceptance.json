@@ -1,0 +1,570 @@
+{
+  "format": 1,
+  "game": "Virtua Fighter 3 (Japan Revision D)",
+  "gameID": "vf3",
+  "target": "arm64-apple-macosx",
+  "cpu": "PowerPC 603R",
+  "upstreamCommit": "24d2ffcfc7f14229337f05f4920fe26b56633d9d",
+  "passed": true,
+  "productTranslationManifestSHA256": "ac03d300554925f8d099a1f9ec299702eceadfd7ee2b83c9c4dfa282a9c677b8",
+  "productGeneratedSourceSHA256": "05bd08f857cfc403f2b10e463966ba70b40d0afe281570df595ca39c8a02031a",
+  "generatorSHA256": "0326192a2aa922eac21f1dfce45b197906844721eb6e69fa80b00331cfe70714",
+  "verifierSHA256": "da1e9eb91b965ecfbe5c16c2bf00e1f6ae58cc9c63cb51b303333e92e9164b1d",
+  "differentialReport": {
+    "path": "build/validation/ppc/report.json",
+    "sha256": "506664119318cf468eccddf205914f276fa18f8e2e2901330e20825d1490e259"
+  },
+  "generation": {
+    "format": 1,
+    "cpu": "PowerPC 603R",
+    "upstreamCommit": "24d2ffcfc7f14229337f05f4920fe26b56633d9d",
+    "generatorSHA256": "0326192a2aa922eac21f1dfce45b197906844721eb6e69fa80b00331cfe70714",
+    "media": [
+      {
+        "name": "epr-19230d.20",
+        "size": 524288,
+        "crc32": "43c08240",
+        "sha256": "18c9d8e94e8c7f42bccbf9eccb2d195e792ca3ba527266e2de1c1fe3fadf185f"
+      },
+      {
+        "name": "epr-19229d.19",
+        "size": 524288,
+        "crc32": "6773f715",
+        "sha256": "12e2f266a055824e52b6b2463fe516cbad60c648fb7971bfeda00d2e82ce1615"
+      },
+      {
+        "name": "epr-19228d.18",
+        "size": 524288,
+        "crc32": "a2470c78",
+        "sha256": "e6b4d25104c41c4ee1d86df512cf68aa97035b1f92e8df5ff7c5ed97304d33ca"
+      },
+      {
+        "name": "epr-19227d.17",
+        "size": 524288,
+        "crc32": "8b650966",
+        "sha256": "36ff587199304ad19c49c97537bae931f76bc2ecb2e1b02d2ec9e1866e4f3e95"
+      }
+    ],
+    "originalSources": {
+      "ppc.cpp": "a3d727393052ffa96d32c04866ea619422625bc67d42315a125df9da502b93e5",
+      "ppc603.c": "4cbbd401843f2a42d7175525bf9d28549a05ae9fb93240c611fd182270726e0b",
+      "ppc_ops.c": "ab40520e6d2428cf943b21d2f290531a02f1c83c8dac46319b70d3139c120d3b",
+      "ppc_ops.h": "81c15dd23a131244bce351d80f8b6efd0d9e20ec50ceaf2eb9c20931afa04f58",
+      "ppc.h": "59ca9af75e3cbc399957cb657eb43845cec4e73a390211f401a71b3acfb228b4"
+    },
+    "observations": [
+      {
+        "path": "build/coverage/long-attract-ppc.jsonl",
+        "sha256": "afd9d10e0e4130f5ca1c181f7183b6d756ff5c5668f84452b516bb058cd5a38a"
+      },
+      {
+        "path": "build/coverage/versus-ppc.jsonl",
+        "sha256": "1a69dccfc924e735001a1e9ad921746be57288b70d5aad4cad4111a668f66022"
+      },
+      {
+        "path": "build/coverage/arcade-replay-ppc.jsonl",
+        "sha256": "437a1c42a2c35e86d6755faa61ee311a70f13f1936e65495e20a05bc63e4e420"
+      },
+      {
+        "path": "build/coverage/input-replay-ppc.jsonl",
+        "sha256": "feb644232c6510e8e42b57a2b68d8f4433873bd4c75ba3336bfcd06153db0c8d"
+      },
+      {
+        "path": "build/coverage/fighter-akira/ppc-observations.tsv",
+        "sha256": "3b5fb9e49b0faa5448fbaf088b7330aa861caec6137ac6c63a74ca2b23ab4031"
+      },
+      {
+        "path": "build/coverage/fighter-pai/ppc-observations.tsv",
+        "sha256": "f4d1ec89bef3b3765c5ca30e6cf4e1a9a35a38c86b687aceb168539e1041fde3"
+      },
+      {
+        "path": "build/coverage/fighter-lau/ppc-observations.tsv",
+        "sha256": "21e03003722dd44823237a41592aa7a3020a159b9313f4080a626e3ea1266d5d"
+      },
+      {
+        "path": "build/coverage/fighter-wolf/ppc-observations.tsv",
+        "sha256": "8c98ff80420c94fd8c51d3d8e52fa3dcf1cf81c364e4a46e5ae2a5970292287a"
+      },
+      {
+        "path": "build/coverage/fighter-jeffry/ppc-observations.tsv",
+        "sha256": "07c9ecbcbb4e119cb4b2de90b8107e5fb723e69495cba0dc02b2ec98dc8399a6"
+      },
+      {
+        "path": "build/coverage/fighter-kage/ppc-observations.tsv",
+        "sha256": "343791541a53d2fb2fb2c37a0298cf5e59fb1ac17b49c95f2e317bb7f5e8d888"
+      },
+      {
+        "path": "build/coverage/fighter-sarah/ppc-observations.tsv",
+        "sha256": "b465b5435d950fa7e58caea97c580b0a9459be304d4c60740fb0d2d85996608d"
+      },
+      {
+        "path": "build/coverage/fighter-jacky/ppc-observations.tsv",
+        "sha256": "f1f11b747e8c00558245d932df503bcec6788a497a1c354b5fdee8c01d70704c"
+      },
+      {
+        "path": "build/coverage/fighter-shun/ppc-observations.tsv",
+        "sha256": "9de1c356ffa540af758a2c078bcf18743f1647d68a8e89fc32b031d44530c050"
+      },
+      {
+        "path": "build/coverage/fighter-lion/ppc-observations.tsv",
+        "sha256": "57bcb72ad48c0aa49e1e19bf2904659a011064777bdf223772131168e7ed184a"
+      },
+      {
+        "path": "build/coverage/fighter-aoi/ppc-observations.tsv",
+        "sha256": "580c02ec2c11d7edb7bf2c8667cf7a6ac976b271ee0e6010aaa4334a2a09e936"
+      },
+      {
+        "path": "build/coverage/fighter-taka/ppc-observations.tsv",
+        "sha256": "18449787386c9aaf5e84c106a41cf5ca55e74da21a4ee37bf95f928a471ced6b"
+      },
+      {
+        "path": "build/coverage/late-start-ppc.jsonl",
+        "sha256": "39ba9e66535f42def55cfe6e79aef27831aa32ecf7507dfc61aab482c144f1c0"
+      },
+      {
+        "path": "build/coverage/challenger-ppc.jsonl",
+        "sha256": "8544c009c965142c5a769d7043c58681dc5c7718eba7fa5108278abfee75a982"
+      }
+    ],
+    "fixedRAMImages": [],
+    "ramImageObservationChecks": [],
+    "outputSHA256": "05bd08f857cfc403f2b10e463966ba70b40d0afe281570df595ca39c8a02031a",
+    "fixedOperations": 109252,
+    "staticProgramWords": 524288,
+    "observedAddresses": 60373,
+    "observedVariants": 60373,
+    "extraVariants": 0,
+    "extraPages": 0,
+    "templateHandlers": 190,
+    "scope": "Exact fixed program addresses plus observed fixed reset/upload variants; instruction identity guards fail closed; no runtime decoding, dynamic compilation, or interpreter fallback.",
+    "staticRanges": [
+      "0xffe00000..0xffffffff",
+      "0x00000000..0x0009ffff guarded copy of ROM0xfff10000..0xfffaffff"
+    ],
+    "ramCopy": {
+      "source": "0xfff10000",
+      "destination": "0x00000000",
+      "bytes": 655360,
+      "bootLoopPC": "0xfff00198",
+      "bootLoopSHA256": "f12a8c9d9ee6b6f872c691662bf5daca133b7e95d5e0516f72bea661f4083bbf"
+    },
+    "processorConfiguration": {
+      "sourceModel": "PPC_MODEL_603R",
+      "stepping": "1.0",
+      "busMHz": 66,
+      "multiplier": 1
+    }
+  },
+  "differential": {
+    "passed": true,
+    "instructionVariants": 2814,
+    "staticSampleVariants": 2814,
+    "fixedUploadVariants": 0,
+    "handlerFamilies": 155,
+    "registerStates": 8,
+    "comparisons": 22512,
+    "faultChecks": 2,
+    "ramImageObservationChecks": [],
+    "observationChecks": [
+      {
+        "path": "build/coverage/long-attract-ppc.jsonl",
+        "sha256": "afd9d10e0e4130f5ca1c181f7183b6d756ff5c5668f84452b516bb058cd5a38a",
+        "identities": 44728,
+        "romMatches": 50,
+        "ramCopyMatches": 44678,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/versus-ppc.jsonl",
+        "sha256": "1a69dccfc924e735001a1e9ad921746be57288b70d5aad4cad4111a668f66022",
+        "identities": 45444,
+        "romMatches": 50,
+        "ramCopyMatches": 45394,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/arcade-replay-ppc.jsonl",
+        "sha256": "437a1c42a2c35e86d6755faa61ee311a70f13f1936e65495e20a05bc63e4e420",
+        "identities": 47032,
+        "romMatches": 50,
+        "ramCopyMatches": 46982,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/input-replay-ppc.jsonl",
+        "sha256": "feb644232c6510e8e42b57a2b68d8f4433873bd4c75ba3336bfcd06153db0c8d",
+        "identities": 23061,
+        "romMatches": 50,
+        "ramCopyMatches": 23011,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/fighter-akira/ppc-observations.tsv",
+        "sha256": "3b5fb9e49b0faa5448fbaf088b7330aa861caec6137ac6c63a74ca2b23ab4031",
+        "identities": 46646,
+        "romMatches": 50,
+        "ramCopyMatches": 46596,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/fighter-pai/ppc-observations.tsv",
+        "sha256": "f4d1ec89bef3b3765c5ca30e6cf4e1a9a35a38c86b687aceb168539e1041fde3",
+        "identities": 46958,
+        "romMatches": 50,
+        "ramCopyMatches": 46908,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/fighter-lau/ppc-observations.tsv",
+        "sha256": "21e03003722dd44823237a41592aa7a3020a159b9313f4080a626e3ea1266d5d",
+        "identities": 46460,
+        "romMatches": 50,
+        "ramCopyMatches": 46410,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/fighter-wolf/ppc-observations.tsv",
+        "sha256": "8c98ff80420c94fd8c51d3d8e52fa3dcf1cf81c364e4a46e5ae2a5970292287a",
+        "identities": 46747,
+        "romMatches": 50,
+        "ramCopyMatches": 46697,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/fighter-jeffry/ppc-observations.tsv",
+        "sha256": "07c9ecbcbb4e119cb4b2de90b8107e5fb723e69495cba0dc02b2ec98dc8399a6",
+        "identities": 46249,
+        "romMatches": 50,
+        "ramCopyMatches": 46199,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/fighter-kage/ppc-observations.tsv",
+        "sha256": "343791541a53d2fb2fb2c37a0298cf5e59fb1ac17b49c95f2e317bb7f5e8d888",
+        "identities": 46874,
+        "romMatches": 50,
+        "ramCopyMatches": 46824,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/fighter-sarah/ppc-observations.tsv",
+        "sha256": "b465b5435d950fa7e58caea97c580b0a9459be304d4c60740fb0d2d85996608d",
+        "identities": 47076,
+        "romMatches": 50,
+        "ramCopyMatches": 47026,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/fighter-jacky/ppc-observations.tsv",
+        "sha256": "f1f11b747e8c00558245d932df503bcec6788a497a1c354b5fdee8c01d70704c",
+        "identities": 46775,
+        "romMatches": 50,
+        "ramCopyMatches": 46725,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/fighter-shun/ppc-observations.tsv",
+        "sha256": "9de1c356ffa540af758a2c078bcf18743f1647d68a8e89fc32b031d44530c050",
+        "identities": 46819,
+        "romMatches": 50,
+        "ramCopyMatches": 46769,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/fighter-lion/ppc-observations.tsv",
+        "sha256": "57bcb72ad48c0aa49e1e19bf2904659a011064777bdf223772131168e7ed184a",
+        "identities": 45865,
+        "romMatches": 50,
+        "ramCopyMatches": 45815,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/fighter-aoi/ppc-observations.tsv",
+        "sha256": "580c02ec2c11d7edb7bf2c8667cf7a6ac976b271ee0e6010aaa4334a2a09e936",
+        "identities": 46633,
+        "romMatches": 50,
+        "ramCopyMatches": 46583,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/fighter-taka/ppc-observations.tsv",
+        "sha256": "18449787386c9aaf5e84c106a41cf5ca55e74da21a4ee37bf95f928a471ced6b",
+        "identities": 47514,
+        "romMatches": 50,
+        "ramCopyMatches": 47464,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/late-start-ppc.jsonl",
+        "sha256": "39ba9e66535f42def55cfe6e79aef27831aa32ecf7507dfc61aab482c144f1c0",
+        "identities": 47962,
+        "romMatches": 50,
+        "ramCopyMatches": 47912,
+        "extraIdentities": 0
+      },
+      {
+        "path": "build/coverage/challenger-ppc.jsonl",
+        "sha256": "8544c009c965142c5a769d7043c58681dc5c7718eba7fa5108278abfee75a982",
+        "identities": 49895,
+        "romMatches": 50,
+        "ramCopyMatches": 49845,
+        "extraIdentities": 0
+      }
+    ],
+    "observedAddresses": 60373,
+    "observedIdentities": 60373,
+    "results": {
+      "reference": {
+        "sha256": "de9290320011590415a382ded00ba5f6ce7798b7629f40f54f89d00db481348d",
+        "bytes": 14947968
+      },
+      "native": {
+        "sha256": "de9290320011590415a382ded00ba5f6ce7798b7629f40f54f89d00db481348d",
+        "bytes": 14947968
+      }
+    },
+    "scope": "Fixed arithmetic, branches, flags, floating point and bus writes compared with the unchanged instruction implementation; supplied observations are bound and compared with the admitted static mapping, and all supplied fixed upload variants are included; changed opcode and unknown PC reject; separate full frame comparison still required.",
+    "provenance": {
+      "inputs": {
+        "scripts/verify_ppc.py": "da1e9eb91b965ecfbe5c16c2bf00e1f6ae58cc9c63cb51b303333e92e9164b1d",
+        "scripts/compile_ppc.py": "0326192a2aa922eac21f1dfce45b197906844721eb6e69fa80b00331cfe70714",
+        "Tools/ReferenceLab/ppc_operation_fixture.cpp": "7e2b53b0ba0b892e9e08a8ecf9aeac03649e293d647eff349c15645d80f29ad7",
+        "build/upstream/supermodel/Src/CPU/PowerPC/ppc.cpp": "a3d727393052ffa96d32c04866ea619422625bc67d42315a125df9da502b93e5",
+        "build/upstream/supermodel/Src/CPU/PowerPC/ppc603.c": "4cbbd401843f2a42d7175525bf9d28549a05ae9fb93240c611fd182270726e0b",
+        "build/upstream/supermodel/Src/CPU/PowerPC/ppc_ops.c": "ab40520e6d2428cf943b21d2f290531a02f1c83c8dac46319b70d3139c120d3b",
+        "build/upstream/supermodel/Src/CPU/PowerPC/ppc_ops.h": "81c15dd23a131244bce351d80f8b6efd0d9e20ec50ceaf2eb9c20931afa04f58",
+        "build/upstream/supermodel/Src/CPU/PowerPC/ppc.h": "59ca9af75e3cbc399957cb657eb43845cec4e73a390211f401a71b3acfb228b4",
+        "build/coverage/long-attract-ppc.jsonl": "afd9d10e0e4130f5ca1c181f7183b6d756ff5c5668f84452b516bb058cd5a38a",
+        "build/coverage/versus-ppc.jsonl": "1a69dccfc924e735001a1e9ad921746be57288b70d5aad4cad4111a668f66022",
+        "build/coverage/arcade-replay-ppc.jsonl": "437a1c42a2c35e86d6755faa61ee311a70f13f1936e65495e20a05bc63e4e420",
+        "build/coverage/input-replay-ppc.jsonl": "feb644232c6510e8e42b57a2b68d8f4433873bd4c75ba3336bfcd06153db0c8d",
+        "build/coverage/fighter-akira/ppc-observations.tsv": "3b5fb9e49b0faa5448fbaf088b7330aa861caec6137ac6c63a74ca2b23ab4031",
+        "build/coverage/fighter-pai/ppc-observations.tsv": "f4d1ec89bef3b3765c5ca30e6cf4e1a9a35a38c86b687aceb168539e1041fde3",
+        "build/coverage/fighter-lau/ppc-observations.tsv": "21e03003722dd44823237a41592aa7a3020a159b9313f4080a626e3ea1266d5d",
+        "build/coverage/fighter-wolf/ppc-observations.tsv": "8c98ff80420c94fd8c51d3d8e52fa3dcf1cf81c364e4a46e5ae2a5970292287a",
+        "build/coverage/fighter-jeffry/ppc-observations.tsv": "07c9ecbcbb4e119cb4b2de90b8107e5fb723e69495cba0dc02b2ec98dc8399a6",
+        "build/coverage/fighter-kage/ppc-observations.tsv": "343791541a53d2fb2fb2c37a0298cf5e59fb1ac17b49c95f2e317bb7f5e8d888",
+        "build/coverage/fighter-sarah/ppc-observations.tsv": "b465b5435d950fa7e58caea97c580b0a9459be304d4c60740fb0d2d85996608d",
+        "build/coverage/fighter-jacky/ppc-observations.tsv": "f1f11b747e8c00558245d932df503bcec6788a497a1c354b5fdee8c01d70704c",
+        "build/coverage/fighter-shun/ppc-observations.tsv": "9de1c356ffa540af758a2c078bcf18743f1647d68a8e89fc32b031d44530c050",
+        "build/coverage/fighter-lion/ppc-observations.tsv": "57bcb72ad48c0aa49e1e19bf2904659a011064777bdf223772131168e7ed184a",
+        "build/coverage/fighter-aoi/ppc-observations.tsv": "580c02ec2c11d7edb7bf2c8667cf7a6ac976b271ee0e6010aaa4334a2a09e936",
+        "build/coverage/fighter-taka/ppc-observations.tsv": "18449787386c9aaf5e84c106a41cf5ca55e74da21a4ee37bf95f928a471ced6b",
+        "build/coverage/late-start-ppc.jsonl": "39ba9e66535f42def55cfe6e79aef27831aa32ecf7507dfc61aab482c144f1c0",
+        "build/coverage/challenger-ppc.jsonl": "8544c009c965142c5a769d7043c58681dc5c7718eba7fa5108278abfee75a982"
+      },
+      "fixtureCasesSHA256": "08ea610daf2734d4fa0c3e6c2d5d25b9d22578ddf351e184ca92bf85564eed3c",
+      "generatedFixtureSHA256": "60cbe0dc290371999e25ceb8122efd685e4b99c50d9c100644018ef57b09b1bb",
+      "fixtureTranslationManifestSHA256": "8bf331ea48a917096e1d44f754e4db4f847e0ec9c98eb4084717a80ad6b57477",
+      "harnesses": {
+        "reference": "b2f96779662b94f2a8088cb1bf37dba2d87403a441ab2f55bf21e8b8d1ddba10",
+        "native": "742a5230d271b7334799d65cb029a42f94bbf004cf0e0bbb63e8139fb82817cf"
+      },
+      "binaries": {
+        "reference": "dea17807a12dcb89d6d82db84e18cd8754946052161e724c8c36b4112fff039f",
+        "native": "3c2dc3f1b5554e204601d71b6a1fa7b972faca013fa406ef2e55ec6934ed1b7b"
+      },
+      "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin27.0.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O2",
+        "-fno-strict-aliasing",
+        "-ffp-contract=off",
+        "-DSUPERMODEL_OSX"
+      ],
+      "productTranslationManifestSHA256": "ac03d300554925f8d099a1f9ec299702eceadfd7ee2b83c9c4dfa282a9c677b8",
+      "productGeneratedSourceSHA256": "05bd08f857cfc403f2b10e463966ba70b40d0afe281570df595ca39c8a02031a"
+    }
+  },
+  "limitations": [
+    "This is bounded processor evidence from fresh VF3 sources and media, not inherited acceptance from a prior port.",
+    "Separate original/native full-frame and PCM replay, controls, renderer and host lifecycle acceptance are required.",
+    "No physical-board, external billboard-actuation or exhaustive-game equivalence claim.",
+    "The PowerPC fixture compares deterministic representative static operations and all supplied extra upload variants, not every possible processor state.",
+    "The admitted static program is 2MiB at 0xffe00000 and its exact 640KiB reset copy at RAM zero; the lower 6MiB CROM mirror is not admitted automatically."
+  ],
+  "observedStaticMapping": {
+    "passed": true,
+    "captures": [
+      {
+        "path": "build/coverage/long-attract-ppc.jsonl",
+        "sha256": "afd9d10e0e4130f5ca1c181f7183b6d756ff5c5668f84452b516bb058cd5a38a",
+        "identities": 44728,
+        "romMatches": 50,
+        "ramCopyMatches": 44678,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/versus-ppc.jsonl",
+        "sha256": "1a69dccfc924e735001a1e9ad921746be57288b70d5aad4cad4111a668f66022",
+        "identities": 45444,
+        "romMatches": 50,
+        "ramCopyMatches": 45394,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/arcade-replay-ppc.jsonl",
+        "sha256": "437a1c42a2c35e86d6755faa61ee311a70f13f1936e65495e20a05bc63e4e420",
+        "identities": 47032,
+        "romMatches": 50,
+        "ramCopyMatches": 46982,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/input-replay-ppc.jsonl",
+        "sha256": "feb644232c6510e8e42b57a2b68d8f4433873bd4c75ba3336bfcd06153db0c8d",
+        "identities": 23061,
+        "romMatches": 50,
+        "ramCopyMatches": 23011,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/fighter-akira/ppc-observations.tsv",
+        "sha256": "3b5fb9e49b0faa5448fbaf088b7330aa861caec6137ac6c63a74ca2b23ab4031",
+        "identities": 46646,
+        "romMatches": 50,
+        "ramCopyMatches": 46596,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/fighter-pai/ppc-observations.tsv",
+        "sha256": "f4d1ec89bef3b3765c5ca30e6cf4e1a9a35a38c86b687aceb168539e1041fde3",
+        "identities": 46958,
+        "romMatches": 50,
+        "ramCopyMatches": 46908,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/fighter-lau/ppc-observations.tsv",
+        "sha256": "21e03003722dd44823237a41592aa7a3020a159b9313f4080a626e3ea1266d5d",
+        "identities": 46460,
+        "romMatches": 50,
+        "ramCopyMatches": 46410,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/fighter-wolf/ppc-observations.tsv",
+        "sha256": "8c98ff80420c94fd8c51d3d8e52fa3dcf1cf81c364e4a46e5ae2a5970292287a",
+        "identities": 46747,
+        "romMatches": 50,
+        "ramCopyMatches": 46697,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/fighter-jeffry/ppc-observations.tsv",
+        "sha256": "07c9ecbcbb4e119cb4b2de90b8107e5fb723e69495cba0dc02b2ec98dc8399a6",
+        "identities": 46249,
+        "romMatches": 50,
+        "ramCopyMatches": 46199,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/fighter-kage/ppc-observations.tsv",
+        "sha256": "343791541a53d2fb2fb2c37a0298cf5e59fb1ac17b49c95f2e317bb7f5e8d888",
+        "identities": 46874,
+        "romMatches": 50,
+        "ramCopyMatches": 46824,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/fighter-sarah/ppc-observations.tsv",
+        "sha256": "b465b5435d950fa7e58caea97c580b0a9459be304d4c60740fb0d2d85996608d",
+        "identities": 47076,
+        "romMatches": 50,
+        "ramCopyMatches": 47026,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/fighter-jacky/ppc-observations.tsv",
+        "sha256": "f1f11b747e8c00558245d932df503bcec6788a497a1c354b5fdee8c01d70704c",
+        "identities": 46775,
+        "romMatches": 50,
+        "ramCopyMatches": 46725,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/fighter-shun/ppc-observations.tsv",
+        "sha256": "9de1c356ffa540af758a2c078bcf18743f1647d68a8e89fc32b031d44530c050",
+        "identities": 46819,
+        "romMatches": 50,
+        "ramCopyMatches": 46769,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/fighter-lion/ppc-observations.tsv",
+        "sha256": "57bcb72ad48c0aa49e1e19bf2904659a011064777bdf223772131168e7ed184a",
+        "identities": 45865,
+        "romMatches": 50,
+        "ramCopyMatches": 45815,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/fighter-aoi/ppc-observations.tsv",
+        "sha256": "580c02ec2c11d7edb7bf2c8667cf7a6ac976b271ee0e6010aaa4334a2a09e936",
+        "identities": 46633,
+        "romMatches": 50,
+        "ramCopyMatches": 46583,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/fighter-taka/ppc-observations.tsv",
+        "sha256": "18449787386c9aaf5e84c106a41cf5ca55e74da21a4ee37bf95f928a471ced6b",
+        "identities": 47514,
+        "romMatches": 50,
+        "ramCopyMatches": 47464,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/late-start-ppc.jsonl",
+        "sha256": "39ba9e66535f42def55cfe6e79aef27831aa32ecf7507dfc61aab482c144f1c0",
+        "identities": 47962,
+        "romMatches": 50,
+        "ramCopyMatches": 47912,
+        "mismatches": 0
+      },
+      {
+        "path": "build/coverage/challenger-ppc.jsonl",
+        "sha256": "8544c009c965142c5a769d7043c58681dc5c7718eba7fa5108278abfee75a982",
+        "identities": 49895,
+        "romMatches": 50,
+        "ramCopyMatches": 49845,
+        "mismatches": 0
+      }
+    ],
+    "unionAddresses": 60373,
+    "unionIdentities": 60373,
+    "unionROMMatches": 50,
+    "unionRAMCopyMatches": 60323,
+    "mismatches": 0,
+    "scope": "Executed identities from eighteen completed original captures match the fixed program or authenticated reset RAM copy. This includes delayed start and two-player challenger regressions, and does not enumerate all possible game execution paths."
+  },
+  "fighterCoverage": {
+    "path": "Documentation/fighter-coverage.json",
+    "sha256": "1755e3e6a2b77e900257f1db7c2493a72cd4b9678fef8aab814bb450ebd7e36b",
+    "fighters": 12,
+    "completedFrames": 54000,
+    "allSelectionAndFightLabelsVisuallyConfirmed": true
+  },
+  "additionalRegressionCaptures": [
+    {
+      "route": "Configuration/replays/late-start.json",
+      "routeSHA256": "1f5a1e5afc5f6a38b468c394d7714b3206597cfed2c9236ae797e8b1ad6d36b5",
+      "frames": 7000,
+      "report": "build/coverage/late-start/report.json",
+      "reportSHA256": "8b952f0011d182a33b80ce3a8a5d31b30a819227f7adf81826723417221bfb22",
+      "originalObserverLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+      "observations": "build/coverage/late-start-ppc.jsonl",
+      "observationsSHA256": "39ba9e66535f42def55cfe6e79aef27831aa32ecf7507dfc61aab482c144f1c0"
+    },
+    {
+      "route": "Configuration/replays/challenger.json",
+      "routeSHA256": "9a3900ea62404c0b4fc65d706fe16514b11650b14e094f7bf559646b363577df",
+      "frames": 9000,
+      "report": "build/coverage/challenger/report.json",
+      "reportSHA256": "fbe92d3efba5fc7b41fbf7f71e818e79cf46623cd02048cca41d642aa112ed23",
+      "originalObserverLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+      "observations": "build/coverage/challenger-ppc.jsonl",
+      "observationsSHA256": "8544c009c965142c5a769d7043c58681dc5c7718eba7fa5108278abfee75a982"
+    }
+  ]
+}

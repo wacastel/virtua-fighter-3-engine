@@ -1,0 +1,97 @@
+{
+  "checks": {
+    "audioDeviceRunning": true,
+    "audioOpenedWithoutFailure": true,
+    "audioRendered": true,
+    "boundedAudioQueue": true,
+    "frameCaptureWritten": true,
+    "mainThreadUpdates": true,
+    "nativeCallsOnDedicatedThread": true,
+    "near60FramesPerSecond": true,
+    "near60PresentedFramesPerSecond": true,
+    "noAudioBacklogRecovery": true,
+    "noAudioUnderruns": true,
+    "noEngineFault": true,
+    "unpaused": true,
+    "visibleWindow": true
+  },
+  "frameCaptureSHA256": "de851d4d186f41f476d6a81f4bdbbeee9b8df8bb9ffc8b0cd3612471985486c5",
+  "inputs": {
+    "Configuration/replays/arcade.json": "879f5744f4543ab650083247cc9ca2111f90ae9e1224d2ec72a718d28f184770",
+    "build/Virtua Fighter 3.app/Contents/MacOS/VirtuaFighter3": "19039f5b414d203dd16d3b9a539b249e9ab38a3526d025cfff5d2d088d44296f",
+    "build/package-manifest.json": "c5404cbf09ca0137fff790403b444b222619ee830f109c6eb8adf27ec5c04e53",
+    "scripts/verify_live.py": "aafb4ce05b260e56df45dd90f0f4efadadf0253f7f5b68407ea8af4cc350ee27"
+  },
+  "observedFramesPerSecond": 60.025,
+  "passed": true,
+  "presentedFramesPerSecond": 58.175,
+  "scope": "Visible AppKit/SpriteKit fight and AVFoundation output-device counters. Keep the app focused and run without competing engine workloads. No subjective listening, physical button actuation or physical arcade-board accuracy claim.",
+  "seconds": 80,
+  "telemetry": {
+    "assignedControllers": [
+      "DualSense Wireless Controller",
+      "Unassigned"
+    ],
+    "automaticRecoveryCount": 0,
+    "backlogRecoveryCount": 0,
+    "discardedClockGaps": 0,
+    "displayUpdates": 4804,
+    "engineCallsOnDedicatedThread": true,
+    "engineFailureCount": 0,
+    "engineStartCount": 1,
+    "engineTiming": {
+      "audioSeconds": 0.059023125053499825,
+      "engineMilliseconds": {
+        "maximum": 24.837499993736856,
+        "p50": 8.755458329687826,
+        "p95": 9.243666660040617
+      },
+      "engineSeconds": 40.270038500078954,
+      "timingSamples": 4802
+    },
+    "flushCounts": {
+      "host": 1
+    },
+    "gameFrames": 4802,
+    "gameState": {
+      "closed": false,
+      "faultCode": 0,
+      "frame": 4802,
+      "framesPerSecond": 60,
+      "height": 384,
+      "sampleRate": 44100,
+      "width": 496
+    },
+    "isPlaying": true,
+    "isRunning": true,
+    "lastInput": {
+      "player1": 0,
+      "player2": 0
+    },
+    "minPendingFrames": 1940,
+    "outputLatencySeconds": 0.059604166666666666,
+    "outputSampleRate": 48000,
+    "pausedByHost": false,
+    "peakPendingFrames": 3851,
+    "pendingFrames": 3351,
+    "preferredDisplayFramesPerSecond": 60,
+    "presentationTiming": {
+      "textureSeconds": 3.1192292499617906,
+      "timingSamples": 4804,
+      "updateMilliseconds": {
+        "maximum": 5.188375012949109,
+        "p50": 0.6632083386648446,
+        "p95": 0.7777083374094218
+      },
+      "updateSeconds": 3.1730052505154163
+    },
+    "presentedFrames": 4654,
+    "renderedFrames": 3526119,
+    "scheduledFrames": 3529470,
+    "sourceSampleRate": 44100,
+    "underrunCount": 0,
+    "updatesOnMainThread": true,
+    "windowOccluded": false,
+    "windowVisible": true
+  }
+}

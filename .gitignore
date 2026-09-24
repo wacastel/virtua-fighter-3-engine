@@ -1,0 +1,11 @@
+.DS_Store
+build/
+Virtua Fighter 3 ROMs/
+*.zip
+*.7z
+*.rom
+*.nv
+*.st0
+*.log
+__pycache__/
+Publication/

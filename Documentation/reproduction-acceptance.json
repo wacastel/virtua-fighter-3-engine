@@ -1,0 +1,1528 @@
+{
+  "cleanStart": {
+    "acceptanceReportsReused": false,
+    "generatedSourcesReused": false,
+    "mediaFilesVerified": 40,
+    "objectsOrLibrariesReused": false,
+    "observationsReused": false,
+    "originalSourceTreeReused": false,
+    "reusedInputs": [
+      "verified pinned original source archive",
+      "supplied local media read directly without changes"
+    ],
+    "sourceFiles": 81,
+    "upstreamArchiveSHA256": "027c544e0eb223831c3a702fe326f7ac7c9b120c036133f05b52ccf3ca0feb95",
+    "upstreamFilesVerified": 315,
+    "upstreamRevision": "24d2ffcfc7f14229337f05f4920fe26b56633d9d"
+  },
+  "engines": {
+    "native": {
+      "archiveSHA256": "c5a647ee13a1072bfb14451a8fc47ca113b13dc094d865c291bd9d5c1f06ee66",
+      "cpuReplacements": {
+        "Musashi-SCSP": {
+          "path": "build/generated/sound/manifest.json",
+          "sha256": "343b109426f0cc6647ab2560b2bc5b2a20454c4c3e9f88f339db52d9d64dfc79"
+        },
+        "PowerPC": {
+          "path": "build/generated/ppc/translation-manifest.json",
+          "sha256": "1e34b9386ef352daf8565c282bcdd40718704b25e69d7ed34361b093a0c23c93"
+        },
+        "Z80": {
+          "path": "build/generated/z80/translation-manifest.json",
+          "sha256": "1dd03e8b9d484725c5334a3699fc1cd796c19f2cdbb0fb13ac134b928b79c93a"
+        }
+      },
+      "librarySHA256": "41278f2f83881e090876474ff0a3c733f7de856e227fdfaf7929a502e903fc6a",
+      "manifestSHA256": "761f7055415d638f10188e78fdea0402e3bb8834481d2b591686ad14ead7db72"
+    },
+    "reference": {
+      "archiveSHA256": "1cf559a2ae2209359bf815ffbd27f8fbd4e01dc9a5da6a5a68038c7dddbb9066",
+      "librarySHA256": "0eeff2b75d577581b407acbf145d1ee64843d9173c14a07969fd762162d7a7de",
+      "manifestSHA256": "2d1fd51249abef2b87876da1a4a029f9f1dc9b3f7bcae0d5f2e46e2eec9061a9"
+    }
+  },
+  "finalSourceInputs": {
+    ".gitignore": "64c311364b61653d77dfb228214faca21cd952b9620aaf3b8d6eb0ce55efc1b8",
+    "AGENTS.md": "b26573f3885b149f1923a1377f629e8eeb353e19191e1962a38347883b6c2298",
+    "COPYING": "38029eb83f299d3baeed6440e3a992e16d235f818346e54eb8f7ff79d251775f",
+    "Configuration/Games.xml": "cfcc73c3ce69866f96658ba6b8afba5598faecd886546b1bf563351206146e74",
+    "Configuration/media.json": "ef1de99d799808d28620c7f5504fd4d3dfb2c895efe98f8cd36fd4242ddc54a1",
+    "Configuration/replays/arcade.json": "879f5744f4543ab650083247cc9ca2111f90ae9e1224d2ec72a718d28f184770",
+    "Configuration/replays/attract.json": "d7804ac8744357d2311634933e30384c2b7a87ab0313dc921f20d59cb7e9a4b8",
+    "Configuration/replays/challenger.json": "9a3900ea62404c0b4fc65d706fe16514b11650b14e094f7bf559646b363577df",
+    "Configuration/replays/fighter-akira.json": "fd3ad1aa46ffef1ce33a11222f7af4d201caba11fcca5784c0d74e7ba62b5093",
+    "Configuration/replays/fighter-aoi.json": "9ba60a38bb23f81d0e3df649dd6fdc7754bab298d0a08bc4df23c80343796541",
+    "Configuration/replays/fighter-jacky.json": "7d753a0b12344bb8a05806b0c29100697cc2950c417bea938df5150674c9d6a0",
+    "Configuration/replays/fighter-jeffry.json": "beeb2e54a49627b91c2203eaa54c0746885c1a0558b6057f4179d3d660ad4106",
+    "Configuration/replays/fighter-kage.json": "0525eaf78ba1fe620e6a8f8421d8074cca9236f039e6e961a7cef1a3ef5fee15",
+    "Configuration/replays/fighter-lau.json": "c0a5f206e04b5d0db24899c6f07af3813daa05eadc1aa4fa7adc5a643ef09093",
+    "Configuration/replays/fighter-lion.json": "c9d0c272ed4c4c5ca0e9f3b1a828ad2b83a56a3fd444a4c1e08eb012dcd411b6",
+    "Configuration/replays/fighter-pai.json": "f616e2dcbd8b05d5148426de616bad854c7ac7fa8570c398a377a7a614900818",
+    "Configuration/replays/fighter-sarah.json": "1ee3817e89b7b1b119c91e679083d00576c735403f220a2f4ce85bc4450bead4",
+    "Configuration/replays/fighter-shun.json": "4c0fac80d9633f95154f10ad085dbed1182713906ec5b0382f7caf3ddbe3c0cb",
+    "Configuration/replays/fighter-taka.json": "23335b9812bd469da30c3b8254e81bb71f78fe490d563b2d4fee3a0645571677",
+    "Configuration/replays/fighter-wolf.json": "5584ce651b4b7689003e9641dfdfbf91b9894536ec6108f4f0941f4baf2c1f3f",
+    "Configuration/replays/input-diagnostics.json": "52d44b497a8a7e0fecde35fc45ed449b5d8989b0bbcaa2182f9b9923a029b3a3",
+    "Configuration/replays/late-start.json": "1f5a1e5afc5f6a38b468c394d7714b3206597cfed2c9236ae797e8b1ad6d36b5",
+    "Configuration/replays/versus.json": "c9aa3be0f490d318195a39f4b5a8449f6ce4b4d01ba6a7e211e815a3b6fbe5de",
+    "Licenses/Crypto-BSD-3-Clause.txt": "852b73da105436d7f291be15b93b4991bb57508aa8c6edd1a64c4f2b59ef1725",
+    "Licenses/README.md": "38aae0b256f4c2633b0a277b4edc87bf175d42a5aa609772f035373b14e7a151",
+    "Licenses/SourceNotices.txt": "a754196b1325134c9081f91d302f9ff15759133d70c03308dabbe8934b56b062",
+    "Licenses/Supermodel-LICENSE.txt": "38029eb83f299d3baeed6440e3a992e16d235f818346e54eb8f7ff79d251775f",
+    "Licenses/Supermodel-README.txt": "32684f5fbee9d7d9f72b05e6722670d99d5d6c8c94455569c66231a601da933a",
+    "Licenses/manifest.json": "b6eb710fb223a82a8d69d5d7159d338d91a0e46eae766236ebab3b557af8fac3",
+    "Play.command": "a1b6f5e14adc17ae2ce1f352552f919019ea3ab6f185523b9a48b60509e34fcf",
+    "README.md": "9f1eced7105c2c82b5330b5dcf4d0faf2dbaa91d40f8def9b0b00865468ad656",
+    "Resources/Info.plist": "fb5fee9280245f44358eae66292ac6323bf544298732a1a1b0031c586708f689",
+    "Sources/Bridge/DetachedNetwork.h": "f10d87016433195533a76c482b7baea7a33b97c749178f6f2f2bbc25b9d6690b",
+    "Sources/Bridge/Platform.cpp": "07f630db242d3a352b75ee789b3d7548f782cfe4b12514460447cff273fd32a3",
+    "Sources/Bridge/vf3.cpp": "999bc358f9b27aa7f26695ebdbdc2896f8c7ed900d212b02ee4a004a5f29738c",
+    "Sources/Bridge/vf3.h": "fc97b2f6c438bda94dee20290fd58beaed0208a35abda8b1d8c7c9f3279c5085",
+    "Sources/Mac/AudioOutput.swift": "deec57377d8a5bd1d15c66ccaf46aca1d47a5e9644381d0df8e65fbfd6bcd40d",
+    "Sources/Mac/Controls.swift": "5c9653216190e414754d414538a52e1b3535f3ee4ce293583a6e18a93e1498f2",
+    "Sources/Mac/EngineWorker.swift": "38e76f7abca7d0d874faf7cd61658938a1192776363f02f175071ab1a1a76632",
+    "Sources/Mac/GameScene.swift": "7c1265c0938a903bed9df44674dfc5ec70d3066a4826c659eba05d0a7737c4cd",
+    "Sources/Mac/Input.swift": "83671cfd0cb1319714695bf0da0728edb7870eee06613556df054dbd8a2160af",
+    "Sources/Mac/Media.swift": "774588e2deba7d90f0eb127c919e758315a19a3ffd8637b05b25e16e18883ba0",
+    "Sources/Mac/NativeGame.swift": "f07a8766b6d93b7b8089eaa8f92dc9d8e20064a880cec56ac4abd540d805aaa9",
+    "Sources/Mac/README.md": "a84bde2e6254a6c2a5dd9a31d4dca8ab4e595f420699fe2030c77ec0b5fc20ca",
+    "Sources/Mac/Tests/main.swift": "67ca11efcb480a5edd99a4d1b6319d3b5426ad7e7655fd0a8d62c4c8e28735af",
+    "Sources/Mac/main.swift": "791ddae8af19a47aa6f6056366629955f02391f63f76019a1c53ebcd350d5bcf",
+    "Sources/Translated/ppc/README.md": "6c65b2b3d08e8e81872ce75e1ca27b1c31aa8ca1e4df3332975cc89af81a240f",
+    "Sources/Translated/sound/README.md": "59d1c83d0ceaa864602a7c294bc306f79a6eab2dcc2358ec6edc5f46cc66a55d",
+    "Tools/ReferenceLab/control.py": "3ce0a717f0a459a2c2c8a81ce218d7c478f6de1fd98837e36b90c1676be668f2",
+    "Tools/ReferenceLab/fighter_routes.py": "13978ca29a9865d4dd055bb89e1e42b6098e72d140f1a88f89a3214552ed1b22",
+    "Tools/ReferenceLab/ppc_observer.inc": "8e88d279298d81a4335958b5804987ae673ad742bb39d4dd6f62b5bac639c27c",
+    "Tools/ReferenceLab/ppc_operation_fixture.cpp": "7e2b53b0ba0b892e9e08a8ecf9aeac03649e293d647eff349c15645d80f29ad7",
+    "Tools/ReferenceLab/ppc_z80_fixture.cpp": "fe5ce3938fb75d738e040669dd9b6375774062099a5a9a1877a7b38ecb2f0185",
+    "Tools/ReferenceLab/replay.py": "3ac30694e34fa3caea667ca9c998f8c6d4fe8864a503dd2492281db036ffe631",
+    "Tools/ReferenceLab/sound68k_probe.c": "40b7e41aa84f2d00fb064a7e5c11f467f3b16ac00bf8dc00f51b5cb33438fd9e",
+    "Tools/ReferenceLab/sound_captures.py": "b8b8bb2691be41db7909cfd26f930f7bc1a1fe875c0698386c47a451a67f1c25",
+    "Tools/ReferenceLab/sound_dsp_probe.cpp": "e4c8b7907acea2a94087e27479cfd3e15830acedc38a9a8c6f9e0073428c0a88",
+    "Tools/ReferenceLab/sound_lifecycle.py": "b62c0ac85c9a39e00d103057b822b38ecbfba946047b5dc50a19ac13d527cac8",
+    "Tools/ReferenceLab/sound_observe.cpp": "6a17a5df24d349a73dfc6c61d55c669333a70b2f54f055ee5c91e4cb1fa4c691",
+    "Tools/ReferenceLab/sound_observe.h": "2a77089fcb6a853228dc09ac792ad4f02ff2300fe83b7cf13d790cc1df9a338d",
+    "scripts/build.sh": "feb06a3f7671ce5baeb1bef584df0701c94b6bee9742ad29e6bb379276cd049b",
+    "scripts/build_engine.py": "316b7682638e22af8ca01ef004ea8905a8c775948271280e2d1f311bfd03b81a",
+    "scripts/build_host.sh": "4dc3e3bcfa52664f808aa9c52e4abfdc8d8f65a01942c2699c97e784504e25d8",
+    "scripts/build_icon.sh": "11d9434404e6504970bf4a0fa0f8dcee03ad768bf484e616efa9b1d4936e22f5",
+    "scripts/build_icon.swift": "469a37c320ace185b9a4711e1dbb19f8fc5f247640e0eebaa46ff7008efbf26b",
+    "scripts/compile_ppc.py": "0326192a2aa922eac21f1dfce45b197906844721eb6e69fa80b00331cfe70714",
+    "scripts/compile_sound.py": "9a044ac8b1b919e75b22200d36fc5bc51dcac7df7e361d74ae92aef48b2864aa",
+    "scripts/compile_z80.py": "0453535e3cd9e3e5b1f5f901a24cd44bdea5a79bff71ff8ad49dd25e969e45c2",
+    "scripts/import_assets.py": "78aae791f725db44caa6ef27625a226fa44662aad279a9a0d578e9d247f97ac8",
+    "scripts/prepare_licenses.py": "2116c852e13909aeab439b80ce0f00147459c933711fc41517c665c3c1fe41df",
+    "scripts/prepare_native.py": "445517c22949cfa9981bc6ccb348eee59509e580efa49e334658fc52d4216dd3",
+    "scripts/prepare_publication.py": "55db415f34440c4f9c76539df4a87edbf43ac5d08544bbc00b718005c635bae9",
+    "scripts/prepare_source.py": "a6d278780dee974301285851def87bdcb144e6a0ba2c4c53524d46ff2ee1b63e",
+    "scripts/verify_bridge.py": "e723be812d54e07d990d4e9b69d538c56e541c92fef35374dfd1614dd92bf9a8",
+    "scripts/verify_host.py": "19d4eedc5506815b26a33169d0df7fd5b3f567ed7e7df3f0c280498e788e8278",
+    "scripts/verify_integration.py": "49d40f0bdbd9a0d4b33e73c697722c206be4e0cb3142a4773490f35117077933",
+    "scripts/verify_live.py": "aafb4ce05b260e56df45dd90f0f4efadadf0253f7f5b68407ea8af4cc350ee27",
+    "scripts/verify_package.py": "4e7b1b3aaa43717c82fb6b7d84ae372e1050fad2aa310c32b8d39d8254d25661",
+    "scripts/verify_ppc.py": "da1e9eb91b965ecfbe5c16c2bf00e1f6ae58cc9c63cb51b303333e92e9164b1d",
+    "scripts/verify_sound.py": "96540d627d746548ba5483035dd24507141c9baf4f5c27b17d132f228ff8f19c",
+    "scripts/verify_z80.py": "d3a2a906e21c186ab9348e1299cce15b8af1e7caab7e5112691c0725304132ff"
+  },
+  "freshEvidence": {
+    "audioLifecycle": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/Documentation/audio-lifecycle-acceptance.json",
+      "sha256": "3e064fbc3325e29d16a36632715bdc3e639b865353ea31f7da5553f997a3a050"
+    },
+    "bridge": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/Documentation/bridge-acceptance.json",
+      "sha256": "0c609d90e53915ce9fd107ee1e17d0eeeadbd42981fda795a761cae4848c943f"
+    },
+    "host": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/Documentation/host-acceptance.json",
+      "sha256": "408ce7aaa5359c3ded0fb5e9239517d5050a138438b77550a908e664ead56b96"
+    },
+    "input": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/build/host-tests/input-tests.json",
+      "sha256": "e109c7b812aba9f642f83996b11c2baf6d02a96d0e1fdc55d0d211b24602bfd6"
+    },
+    "integration": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/Documentation/integration-acceptance.json",
+      "sha256": "b56d2cdfa08ec2b3cd1a27413316cb0fc5bb1cfb33cdbfa48987513060ecd8ed"
+    },
+    "linkGuard": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/build/host-tests/link-guard/acceptance.json",
+      "sha256": "f4cdc475e40e329cb1328044ec18c52dd700e9dbcbad998e56851020c873dc25"
+    },
+    "media": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/Documentation/media-acceptance.json",
+      "sha256": "6fefb3528c6080d5879bac7008bbc64e48c7caaeacceff041fc6a9f7d6bd1239"
+    },
+    "package": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/build/verification/package-acceptance.json",
+      "sha256": "1e26473150b52eb73f4822a2ded6fa40a824d1fa432b27ba3d5292ad73e943b5"
+    },
+    "ppc": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/Documentation/ppc-acceptance.json",
+      "sha256": "ca089724bec61b737b29073edd6664b218cdacc7a08498ac9665d1f6752065c6"
+    },
+    "sound": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/Documentation/sound-acceptance.json",
+      "sha256": "4812413e1342d6da07a52af3c6fd12ff04706f7340f759b0c8eef33a07eb32db"
+    },
+    "source": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/build/source/source-acceptance.json",
+      "sha256": "6b1812e0b3157a4bdad89b8bc55bfec36f50733e0c6603266d6db1ae045167a3"
+    },
+    "typecheck": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/build/host-tests/typecheck.json",
+      "sha256": "67f4c4c403eff50f684efa04cd09ee728c7b35331e0f1ab668e73c1e6c1a450c"
+    },
+    "z80": {
+      "passed": true,
+      "path": "build/reproduction/clean-plmta9zg/workspace/Documentation/z80-acceptance.json",
+      "sha256": "ba785c249f62f7eba6ff890d5e3c85c340f610d9000734c5bfc01e921f0d36ca"
+    }
+  },
+  "generatedProcessors": {
+    "allFilesIdenticalAfterProjectRootNormalization": true,
+    "byteIdenticalFiles": 77,
+    "cleanDSPImages": 1155,
+    "cleanDSPSlotVariants": 16746,
+    "cleanDSPSpecializedBodies": 15582,
+    "files": {
+      "build/generated/ppc/ppc-observer.cpp": {
+        "byteIdentical": false,
+        "cleanSHA256": "c5cc755ddba15f822f46207803772a6a9ca900fcbb537d5375844437b90579c5",
+        "mainSHA256": "d0cd0366a48ced6ac7bfc8aff824d4b4cc43f543dc70b9debfd7d592a99b4257",
+        "projectRootNormalizedSHA256": "e4d587417f7740d4a78811b6cb9810d234bc177a0238bc2a289356f0ce4a60a2"
+      },
+      "build/generated/ppc/ppc.cpp": {
+        "byteIdentical": false,
+        "cleanSHA256": "281be9ae775c6ce3aad2bef5bbdbda80588196118c11aae37c290575e66f2e9c",
+        "mainSHA256": "05bd08f857cfc403f2b10e463966ba70b40d0afe281570df595ca39c8a02031a",
+        "projectRootNormalizedSHA256": "b4ac1a5f9bf4bbf081d14fc2af9c4610520e3128c78ad3e13d83c9fc43e0a5c5"
+      },
+      "build/generated/sound/SCSPDSP.cpp": {
+        "byteIdentical": true,
+        "cleanSHA256": "efffd824e9c9391131eada6a7ef867103e2aa624e37e85e6fdd272bf84112f21",
+        "mainSHA256": "efffd824e9c9391131eada6a7ef867103e2aa624e37e85e6fdd272bf84112f21",
+        "projectRootNormalizedSHA256": "efffd824e9c9391131eada6a7ef867103e2aa624e37e85e6fdd272bf84112f21"
+      },
+      "build/generated/sound/musashi-original/m68kopac.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "384e1d86dc68f6ea0814f3f46d3fd27320a6b4f584fd9a25f6ac35565874d655",
+        "mainSHA256": "384e1d86dc68f6ea0814f3f46d3fd27320a6b4f584fd9a25f6ac35565874d655",
+        "projectRootNormalizedSHA256": "384e1d86dc68f6ea0814f3f46d3fd27320a6b4f584fd9a25f6ac35565874d655"
+      },
+      "build/generated/sound/musashi-original/m68kopdm.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "d4c9b9933925ef76c13dffbcd6f718d8229aceff2ba53f2b217504a3d725f5bd",
+        "mainSHA256": "d4c9b9933925ef76c13dffbcd6f718d8229aceff2ba53f2b217504a3d725f5bd",
+        "projectRootNormalizedSHA256": "d4c9b9933925ef76c13dffbcd6f718d8229aceff2ba53f2b217504a3d725f5bd"
+      },
+      "build/generated/sound/musashi-original/m68kopnz.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "61b8327b165b324b50d36b1e4ebd5c765d613c32d5fa82c1145aef2db729b77c",
+        "mainSHA256": "61b8327b165b324b50d36b1e4ebd5c765d613c32d5fa82c1145aef2db729b77c",
+        "projectRootNormalizedSHA256": "61b8327b165b324b50d36b1e4ebd5c765d613c32d5fa82c1145aef2db729b77c"
+      },
+      "build/generated/sound/musashi-original/m68kops.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "d0cde0756e1cd3e067b36b55f3ad869bdc9276c2803505e5fede305c6ef577ab",
+        "mainSHA256": "d0cde0756e1cd3e067b36b55f3ad869bdc9276c2803505e5fede305c6ef577ab",
+        "projectRootNormalizedSHA256": "d0cde0756e1cd3e067b36b55f3ad869bdc9276c2803505e5fede305c6ef577ab"
+      },
+      "build/generated/sound/musashi-original/m68kops.h": {
+        "byteIdentical": true,
+        "cleanSHA256": "4d6088baa0ddb37a8905a41fb29e1883197a0870b077fd5eab834a17b96b43b8",
+        "mainSHA256": "4d6088baa0ddb37a8905a41fb29e1883197a0870b077fd5eab834a17b96b43b8",
+        "projectRootNormalizedSHA256": "4d6088baa0ddb37a8905a41fb29e1883197a0870b077fd5eab834a17b96b43b8"
+      },
+      "build/generated/sound/musashi/m68k.h": {
+        "byteIdentical": true,
+        "cleanSHA256": "5d1b2b2e350a12406744025fe5fb619768295a6ffd5814daeaf8f9ad921e5e83",
+        "mainSHA256": "5d1b2b2e350a12406744025fe5fb619768295a6ffd5814daeaf8f9ad921e5e83",
+        "projectRootNormalizedSHA256": "5d1b2b2e350a12406744025fe5fb619768295a6ffd5814daeaf8f9ad921e5e83"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_000.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "603366843700bdeedef2687e4cf47d2585dde3ec9983b5f7767cee618535732a",
+        "mainSHA256": "603366843700bdeedef2687e4cf47d2585dde3ec9983b5f7767cee618535732a",
+        "projectRootNormalizedSHA256": "603366843700bdeedef2687e4cf47d2585dde3ec9983b5f7767cee618535732a"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_001.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "ac3a8cfbcacdef6a5c23ec991083bc5ef9efe740134639a6f7d7c338a4bcc7fa",
+        "mainSHA256": "ac3a8cfbcacdef6a5c23ec991083bc5ef9efe740134639a6f7d7c338a4bcc7fa",
+        "projectRootNormalizedSHA256": "ac3a8cfbcacdef6a5c23ec991083bc5ef9efe740134639a6f7d7c338a4bcc7fa"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_002.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "ae1b78f707f90bdca7bb15f47913d0c8e9c4d0d4f5e4cb8d502dabf3a0ab851e",
+        "mainSHA256": "ae1b78f707f90bdca7bb15f47913d0c8e9c4d0d4f5e4cb8d502dabf3a0ab851e",
+        "projectRootNormalizedSHA256": "ae1b78f707f90bdca7bb15f47913d0c8e9c4d0d4f5e4cb8d502dabf3a0ab851e"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_003.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "6a6b884cd2cc756da71107de068503748453227b7af3a347a8bc5bfe9d6dfc90",
+        "mainSHA256": "6a6b884cd2cc756da71107de068503748453227b7af3a347a8bc5bfe9d6dfc90",
+        "projectRootNormalizedSHA256": "6a6b884cd2cc756da71107de068503748453227b7af3a347a8bc5bfe9d6dfc90"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_004.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "c28affbd2a16bd5b4fc9568782c8539841714aed99ed192ba016afff1e11343a",
+        "mainSHA256": "c28affbd2a16bd5b4fc9568782c8539841714aed99ed192ba016afff1e11343a",
+        "projectRootNormalizedSHA256": "c28affbd2a16bd5b4fc9568782c8539841714aed99ed192ba016afff1e11343a"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_005.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "db1124d92198a3f2729ecfbd2ef873f12c2e65b877605c4f97426f165e49095d",
+        "mainSHA256": "db1124d92198a3f2729ecfbd2ef873f12c2e65b877605c4f97426f165e49095d",
+        "projectRootNormalizedSHA256": "db1124d92198a3f2729ecfbd2ef873f12c2e65b877605c4f97426f165e49095d"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_006.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "3ece2a288658a77abdfec7e5623f5b624acb5ceb6d548e318d5883de65dcecd3",
+        "mainSHA256": "3ece2a288658a77abdfec7e5623f5b624acb5ceb6d548e318d5883de65dcecd3",
+        "projectRootNormalizedSHA256": "3ece2a288658a77abdfec7e5623f5b624acb5ceb6d548e318d5883de65dcecd3"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_007.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "855abb90964af4bdba785fad9c856a51312840bb9fd5718676a8d01e3c8f172d",
+        "mainSHA256": "855abb90964af4bdba785fad9c856a51312840bb9fd5718676a8d01e3c8f172d",
+        "projectRootNormalizedSHA256": "855abb90964af4bdba785fad9c856a51312840bb9fd5718676a8d01e3c8f172d"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_008.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "6ec2c3933be0a1694759830097cfe8d339fa3f55234b94f79665d221c0977624",
+        "mainSHA256": "6ec2c3933be0a1694759830097cfe8d339fa3f55234b94f79665d221c0977624",
+        "projectRootNormalizedSHA256": "6ec2c3933be0a1694759830097cfe8d339fa3f55234b94f79665d221c0977624"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_009.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "058b431df2419e59d8c3b3812e14232eb7de6ba94ed4632f6d2a6365be351347",
+        "mainSHA256": "058b431df2419e59d8c3b3812e14232eb7de6ba94ed4632f6d2a6365be351347",
+        "projectRootNormalizedSHA256": "058b431df2419e59d8c3b3812e14232eb7de6ba94ed4632f6d2a6365be351347"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_010.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "675ae4be987c88d28b261311ec188b32195f4cdc97a3815bff71109ccdbc080b",
+        "mainSHA256": "675ae4be987c88d28b261311ec188b32195f4cdc97a3815bff71109ccdbc080b",
+        "projectRootNormalizedSHA256": "675ae4be987c88d28b261311ec188b32195f4cdc97a3815bff71109ccdbc080b"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_011.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "1d31e9797beedac67f8527437c36f19560b4d8486c6b467e829ec5b15035526c",
+        "mainSHA256": "1d31e9797beedac67f8527437c36f19560b4d8486c6b467e829ec5b15035526c",
+        "projectRootNormalizedSHA256": "1d31e9797beedac67f8527437c36f19560b4d8486c6b467e829ec5b15035526c"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_012.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "c200caf3c40639a232f344635919effcbd0d2f783faa48ba398a76e82fb4f53e",
+        "mainSHA256": "c200caf3c40639a232f344635919effcbd0d2f783faa48ba398a76e82fb4f53e",
+        "projectRootNormalizedSHA256": "c200caf3c40639a232f344635919effcbd0d2f783faa48ba398a76e82fb4f53e"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_013.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "92e7bde1a317e23f2059e57c48da5677c52d700662352c6b2bb225437a59d2e1",
+        "mainSHA256": "92e7bde1a317e23f2059e57c48da5677c52d700662352c6b2bb225437a59d2e1",
+        "projectRootNormalizedSHA256": "92e7bde1a317e23f2059e57c48da5677c52d700662352c6b2bb225437a59d2e1"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_014.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "46033a8c1dd35b438831ed62925dcca6849ea5ceabe6b49392e4a17f102caa96",
+        "mainSHA256": "46033a8c1dd35b438831ed62925dcca6849ea5ceabe6b49392e4a17f102caa96",
+        "projectRootNormalizedSHA256": "46033a8c1dd35b438831ed62925dcca6849ea5ceabe6b49392e4a17f102caa96"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_015.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "e4cf7b03b45371097e19b8ec81d16ecf5062f2e983e0216a41f4ed317666bb2f",
+        "mainSHA256": "e4cf7b03b45371097e19b8ec81d16ecf5062f2e983e0216a41f4ed317666bb2f",
+        "projectRootNormalizedSHA256": "e4cf7b03b45371097e19b8ec81d16ecf5062f2e983e0216a41f4ed317666bb2f"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_016.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "e74784497a85455a88162683efffb5aa1154e8099db9c821fee9e468a2b15302",
+        "mainSHA256": "e74784497a85455a88162683efffb5aa1154e8099db9c821fee9e468a2b15302",
+        "projectRootNormalizedSHA256": "e74784497a85455a88162683efffb5aa1154e8099db9c821fee9e468a2b15302"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_017.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "4b3d227385c295646303a479559c2e19361762a37ff754dcd225fa46b99a60c0",
+        "mainSHA256": "4b3d227385c295646303a479559c2e19361762a37ff754dcd225fa46b99a60c0",
+        "projectRootNormalizedSHA256": "4b3d227385c295646303a479559c2e19361762a37ff754dcd225fa46b99a60c0"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_018.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "37f5783e1f39dc4ba088efd6438970b8024b4d6e9f690b8c357081f3cc5880ed",
+        "mainSHA256": "37f5783e1f39dc4ba088efd6438970b8024b4d6e9f690b8c357081f3cc5880ed",
+        "projectRootNormalizedSHA256": "37f5783e1f39dc4ba088efd6438970b8024b4d6e9f690b8c357081f3cc5880ed"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_019.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "0ca7d7b1e976e62748c4d98f6e8afadb2961a27193fb723d2316d6cf62e57975",
+        "mainSHA256": "0ca7d7b1e976e62748c4d98f6e8afadb2961a27193fb723d2316d6cf62e57975",
+        "projectRootNormalizedSHA256": "0ca7d7b1e976e62748c4d98f6e8afadb2961a27193fb723d2316d6cf62e57975"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_020.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "b1af2ab219b63dac489c4df6e4aba7e56d4d8a0d830879a8f6dbff1589b3255b",
+        "mainSHA256": "b1af2ab219b63dac489c4df6e4aba7e56d4d8a0d830879a8f6dbff1589b3255b",
+        "projectRootNormalizedSHA256": "b1af2ab219b63dac489c4df6e4aba7e56d4d8a0d830879a8f6dbff1589b3255b"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_021.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "ed8b38cfbcdbf1471a9702a3012db021e31e35f3b67e2c15537c8d3882af5311",
+        "mainSHA256": "ed8b38cfbcdbf1471a9702a3012db021e31e35f3b67e2c15537c8d3882af5311",
+        "projectRootNormalizedSHA256": "ed8b38cfbcdbf1471a9702a3012db021e31e35f3b67e2c15537c8d3882af5311"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_022.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "3d2a9415053d1ce94fd03a86a7e7b79212de7de2b01683734b293f87dc1f971e",
+        "mainSHA256": "3d2a9415053d1ce94fd03a86a7e7b79212de7de2b01683734b293f87dc1f971e",
+        "projectRootNormalizedSHA256": "3d2a9415053d1ce94fd03a86a7e7b79212de7de2b01683734b293f87dc1f971e"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_023.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "e3a49cf92fd5f7aeca804cce571d0dcb6ee4a448f8700a0af1d15e7e253c6fab",
+        "mainSHA256": "e3a49cf92fd5f7aeca804cce571d0dcb6ee4a448f8700a0af1d15e7e253c6fab",
+        "projectRootNormalizedSHA256": "e3a49cf92fd5f7aeca804cce571d0dcb6ee4a448f8700a0af1d15e7e253c6fab"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_024.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "5d1d71baad3496c6e265de5b5a99a0a6e185314d1df15275ce84ee741697c949",
+        "mainSHA256": "5d1d71baad3496c6e265de5b5a99a0a6e185314d1df15275ce84ee741697c949",
+        "projectRootNormalizedSHA256": "5d1d71baad3496c6e265de5b5a99a0a6e185314d1df15275ce84ee741697c949"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_025.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "75daf4744c48a85a67a4ce48c776164f8fefa6647042904959b45f77f26ed9b2",
+        "mainSHA256": "75daf4744c48a85a67a4ce48c776164f8fefa6647042904959b45f77f26ed9b2",
+        "projectRootNormalizedSHA256": "75daf4744c48a85a67a4ce48c776164f8fefa6647042904959b45f77f26ed9b2"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_026.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "6d74c803b3d8397a101a0c621173d39618ffda8f94e14a2324929f96da2be944",
+        "mainSHA256": "6d74c803b3d8397a101a0c621173d39618ffda8f94e14a2324929f96da2be944",
+        "projectRootNormalizedSHA256": "6d74c803b3d8397a101a0c621173d39618ffda8f94e14a2324929f96da2be944"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_027.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "0ccbac518f6f2abfbf503768a36aef96fa3acc0489a73e4079beefda2db5c766",
+        "mainSHA256": "0ccbac518f6f2abfbf503768a36aef96fa3acc0489a73e4079beefda2db5c766",
+        "projectRootNormalizedSHA256": "0ccbac518f6f2abfbf503768a36aef96fa3acc0489a73e4079beefda2db5c766"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_028.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "eb08c433b5fc5fa878e6f24719ead436eb97d873c71dcb683774f1b22358cd95",
+        "mainSHA256": "eb08c433b5fc5fa878e6f24719ead436eb97d873c71dcb683774f1b22358cd95",
+        "projectRootNormalizedSHA256": "eb08c433b5fc5fa878e6f24719ead436eb97d873c71dcb683774f1b22358cd95"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_029.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "b147e11b84ab42c39ca1c58b6cbd562916da2f1721452d760cc76f90d5ef3c93",
+        "mainSHA256": "b147e11b84ab42c39ca1c58b6cbd562916da2f1721452d760cc76f90d5ef3c93",
+        "projectRootNormalizedSHA256": "b147e11b84ab42c39ca1c58b6cbd562916da2f1721452d760cc76f90d5ef3c93"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_030.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "0d1113c59523310a122690147192fccce343399bbbc84b647f428a960bee1816",
+        "mainSHA256": "0d1113c59523310a122690147192fccce343399bbbc84b647f428a960bee1816",
+        "projectRootNormalizedSHA256": "0d1113c59523310a122690147192fccce343399bbbc84b647f428a960bee1816"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_031.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "cf9cb0de24f886616beca10876207345fc15cb4403902fdb1bbcc7d83685ed62",
+        "mainSHA256": "cf9cb0de24f886616beca10876207345fc15cb4403902fdb1bbcc7d83685ed62",
+        "projectRootNormalizedSHA256": "cf9cb0de24f886616beca10876207345fc15cb4403902fdb1bbcc7d83685ed62"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_032.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "896639ff46954d10243c4bd386650a1b05cd12a45f42b2cd5b23b2ff94cd9202",
+        "mainSHA256": "896639ff46954d10243c4bd386650a1b05cd12a45f42b2cd5b23b2ff94cd9202",
+        "projectRootNormalizedSHA256": "896639ff46954d10243c4bd386650a1b05cd12a45f42b2cd5b23b2ff94cd9202"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_033.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "78adcd42c83e7ef89671a23f0a6031809edfb39849a91d18c6806b9fba640796",
+        "mainSHA256": "78adcd42c83e7ef89671a23f0a6031809edfb39849a91d18c6806b9fba640796",
+        "projectRootNormalizedSHA256": "78adcd42c83e7ef89671a23f0a6031809edfb39849a91d18c6806b9fba640796"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_034.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "4d2acf34724fdadf82accbec6786992c6679a47efafc6f0198ffdff229f9fdd4",
+        "mainSHA256": "4d2acf34724fdadf82accbec6786992c6679a47efafc6f0198ffdff229f9fdd4",
+        "projectRootNormalizedSHA256": "4d2acf34724fdadf82accbec6786992c6679a47efafc6f0198ffdff229f9fdd4"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_035.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "ddd0881138fb6093d14bd5aa525e7c54cc5a9222bb094b0a4386259bcfefc691",
+        "mainSHA256": "ddd0881138fb6093d14bd5aa525e7c54cc5a9222bb094b0a4386259bcfefc691",
+        "projectRootNormalizedSHA256": "ddd0881138fb6093d14bd5aa525e7c54cc5a9222bb094b0a4386259bcfefc691"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_036.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "1e615744bbdd197f37d7b33ff69ac507aac2d0f8f3e50e0c5b8a3ebecd333f4e",
+        "mainSHA256": "1e615744bbdd197f37d7b33ff69ac507aac2d0f8f3e50e0c5b8a3ebecd333f4e",
+        "projectRootNormalizedSHA256": "1e615744bbdd197f37d7b33ff69ac507aac2d0f8f3e50e0c5b8a3ebecd333f4e"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_037.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "cd2252df6447b43fbf84a888684c39439345923b317f9415dda0e356603ac18d",
+        "mainSHA256": "cd2252df6447b43fbf84a888684c39439345923b317f9415dda0e356603ac18d",
+        "projectRootNormalizedSHA256": "cd2252df6447b43fbf84a888684c39439345923b317f9415dda0e356603ac18d"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_038.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "632909af121bd916d6f323cea271e5df6cc733f6a050b01ff5117d23ef1531f2",
+        "mainSHA256": "632909af121bd916d6f323cea271e5df6cc733f6a050b01ff5117d23ef1531f2",
+        "projectRootNormalizedSHA256": "632909af121bd916d6f323cea271e5df6cc733f6a050b01ff5117d23ef1531f2"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_039.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "95899f5094e549036b16606d96bbb230ca707e0259411ec4cda03a1fd5507500",
+        "mainSHA256": "95899f5094e549036b16606d96bbb230ca707e0259411ec4cda03a1fd5507500",
+        "projectRootNormalizedSHA256": "95899f5094e549036b16606d96bbb230ca707e0259411ec4cda03a1fd5507500"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_040.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "c72e49c2e23f3a077ef47a8cd9f4a75ff4b7399d84772f490fc80fa6eb564375",
+        "mainSHA256": "c72e49c2e23f3a077ef47a8cd9f4a75ff4b7399d84772f490fc80fa6eb564375",
+        "projectRootNormalizedSHA256": "c72e49c2e23f3a077ef47a8cd9f4a75ff4b7399d84772f490fc80fa6eb564375"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_041.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "0703cde87b91e73dba7d7bc596f08d292f171ff23a8a5917f7ba72a17d0309a4",
+        "mainSHA256": "0703cde87b91e73dba7d7bc596f08d292f171ff23a8a5917f7ba72a17d0309a4",
+        "projectRootNormalizedSHA256": "0703cde87b91e73dba7d7bc596f08d292f171ff23a8a5917f7ba72a17d0309a4"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_042.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "06845b8d8caa434f497c3b1918df69d7c4e8893dce1d53fad9bc8a2e942511c0",
+        "mainSHA256": "06845b8d8caa434f497c3b1918df69d7c4e8893dce1d53fad9bc8a2e942511c0",
+        "projectRootNormalizedSHA256": "06845b8d8caa434f497c3b1918df69d7c4e8893dce1d53fad9bc8a2e942511c0"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_043.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "75f3cbd60397319675352f448c2e3c636fbc3cbf2f1259eff62c892bf547f00c",
+        "mainSHA256": "75f3cbd60397319675352f448c2e3c636fbc3cbf2f1259eff62c892bf547f00c",
+        "projectRootNormalizedSHA256": "75f3cbd60397319675352f448c2e3c636fbc3cbf2f1259eff62c892bf547f00c"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_044.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "ceecb2f299ada47ca47dca9b632a488a41267c4b7835f9c2676b3b9258cd1113",
+        "mainSHA256": "ceecb2f299ada47ca47dca9b632a488a41267c4b7835f9c2676b3b9258cd1113",
+        "projectRootNormalizedSHA256": "ceecb2f299ada47ca47dca9b632a488a41267c4b7835f9c2676b3b9258cd1113"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_045.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "d81a1cd6e07d2041b4cb14d4a09061c6f7ea12b550ec04f27f3727c95457d4c4",
+        "mainSHA256": "d81a1cd6e07d2041b4cb14d4a09061c6f7ea12b550ec04f27f3727c95457d4c4",
+        "projectRootNormalizedSHA256": "d81a1cd6e07d2041b4cb14d4a09061c6f7ea12b550ec04f27f3727c95457d4c4"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_046.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "3d71decc64959fd114c83e6c7c91edbbe933378502691a0ba1d0d4317c561aaf",
+        "mainSHA256": "3d71decc64959fd114c83e6c7c91edbbe933378502691a0ba1d0d4317c561aaf",
+        "projectRootNormalizedSHA256": "3d71decc64959fd114c83e6c7c91edbbe933378502691a0ba1d0d4317c561aaf"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_047.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "870c89097a4f67d152b87d898092d793b1012cd257b6db0655b0c0269f3b4501",
+        "mainSHA256": "870c89097a4f67d152b87d898092d793b1012cd257b6db0655b0c0269f3b4501",
+        "projectRootNormalizedSHA256": "870c89097a4f67d152b87d898092d793b1012cd257b6db0655b0c0269f3b4501"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_048.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "3876537d7507f22c8f137c7819e79f651f01a443a66a772e68f818f9598caae5",
+        "mainSHA256": "3876537d7507f22c8f137c7819e79f651f01a443a66a772e68f818f9598caae5",
+        "projectRootNormalizedSHA256": "3876537d7507f22c8f137c7819e79f651f01a443a66a772e68f818f9598caae5"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_049.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "893dc04e0e9a59d8d9b5da80b34cdbfcd1d21705ed04871f5d574151caebe589",
+        "mainSHA256": "893dc04e0e9a59d8d9b5da80b34cdbfcd1d21705ed04871f5d574151caebe589",
+        "projectRootNormalizedSHA256": "893dc04e0e9a59d8d9b5da80b34cdbfcd1d21705ed04871f5d574151caebe589"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_050.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "63250451d78a5ffc0e1a9846ca7e94b544eb865f453d032648e637a32eabbafc",
+        "mainSHA256": "63250451d78a5ffc0e1a9846ca7e94b544eb865f453d032648e637a32eabbafc",
+        "projectRootNormalizedSHA256": "63250451d78a5ffc0e1a9846ca7e94b544eb865f453d032648e637a32eabbafc"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_051.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "6eca5b8f67ec74e51f1ede7b311a9d32eb3d3a1e1fa4fa75f778b30d56616b0d",
+        "mainSHA256": "6eca5b8f67ec74e51f1ede7b311a9d32eb3d3a1e1fa4fa75f778b30d56616b0d",
+        "projectRootNormalizedSHA256": "6eca5b8f67ec74e51f1ede7b311a9d32eb3d3a1e1fa4fa75f778b30d56616b0d"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_052.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "884767e34e410aaef30f0863bfbc904eb1fb6bf62db58267d18b5fe220d0a7c4",
+        "mainSHA256": "884767e34e410aaef30f0863bfbc904eb1fb6bf62db58267d18b5fe220d0a7c4",
+        "projectRootNormalizedSHA256": "884767e34e410aaef30f0863bfbc904eb1fb6bf62db58267d18b5fe220d0a7c4"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_053.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "6f31bb80f09fe374884ced5279335ec575abaa99b9ea00407281205c89fe5daa",
+        "mainSHA256": "6f31bb80f09fe374884ced5279335ec575abaa99b9ea00407281205c89fe5daa",
+        "projectRootNormalizedSHA256": "6f31bb80f09fe374884ced5279335ec575abaa99b9ea00407281205c89fe5daa"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_054.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "e3a65ed1784cc6b0ea811196b9d7deaa2a68c1cbad4dbd4412b35e0f100821ea",
+        "mainSHA256": "e3a65ed1784cc6b0ea811196b9d7deaa2a68c1cbad4dbd4412b35e0f100821ea",
+        "projectRootNormalizedSHA256": "e3a65ed1784cc6b0ea811196b9d7deaa2a68c1cbad4dbd4412b35e0f100821ea"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_055.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "0f1d8f60949317e5a64c7eaedf6318276490383f49cdeaa7bf6550954036f9e9",
+        "mainSHA256": "0f1d8f60949317e5a64c7eaedf6318276490383f49cdeaa7bf6550954036f9e9",
+        "projectRootNormalizedSHA256": "0f1d8f60949317e5a64c7eaedf6318276490383f49cdeaa7bf6550954036f9e9"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_056.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "925c542b7348a997c76f8764aa436764abefe1b1268e3ae983ff4de61510f031",
+        "mainSHA256": "925c542b7348a997c76f8764aa436764abefe1b1268e3ae983ff4de61510f031",
+        "projectRootNormalizedSHA256": "925c542b7348a997c76f8764aa436764abefe1b1268e3ae983ff4de61510f031"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_057.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "ff9221c73e8238bc3403d48417c7da96a95095058b7fa288bc57456c0b893cac",
+        "mainSHA256": "ff9221c73e8238bc3403d48417c7da96a95095058b7fa288bc57456c0b893cac",
+        "projectRootNormalizedSHA256": "ff9221c73e8238bc3403d48417c7da96a95095058b7fa288bc57456c0b893cac"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_058.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "4cc1a1881bad9463994de1f2f9633f01366c407c5806711c6a66ad9f7eb3e583",
+        "mainSHA256": "4cc1a1881bad9463994de1f2f9633f01366c407c5806711c6a66ad9f7eb3e583",
+        "projectRootNormalizedSHA256": "4cc1a1881bad9463994de1f2f9633f01366c407c5806711c6a66ad9f7eb3e583"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_059.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "a2f4f516cb005b82a17321b7be880bfdbb44c814ef12f9a6078862addb00fdc6",
+        "mainSHA256": "a2f4f516cb005b82a17321b7be880bfdbb44c814ef12f9a6078862addb00fdc6",
+        "projectRootNormalizedSHA256": "a2f4f516cb005b82a17321b7be880bfdbb44c814ef12f9a6078862addb00fdc6"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_060.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "2305390f3b5fec13cbc20a6212e17d05ebcba6c8eec9c2ad5e3268c2bdc74c48",
+        "mainSHA256": "2305390f3b5fec13cbc20a6212e17d05ebcba6c8eec9c2ad5e3268c2bdc74c48",
+        "projectRootNormalizedSHA256": "2305390f3b5fec13cbc20a6212e17d05ebcba6c8eec9c2ad5e3268c2bdc74c48"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_061.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "637a5eb6c9bec7dc7aff969ff5964b053a75402b179be612f608676d0bc2dd15",
+        "mainSHA256": "637a5eb6c9bec7dc7aff969ff5964b053a75402b179be612f608676d0bc2dd15",
+        "projectRootNormalizedSHA256": "637a5eb6c9bec7dc7aff969ff5964b053a75402b179be612f608676d0bc2dd15"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_062.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "a7c3b0ee2e46f9ba3d91da8ecd44f037d45a5d90efbd9f077a51444822ca099f",
+        "mainSHA256": "a7c3b0ee2e46f9ba3d91da8ecd44f037d45a5d90efbd9f077a51444822ca099f",
+        "projectRootNormalizedSHA256": "a7c3b0ee2e46f9ba3d91da8ecd44f037d45a5d90efbd9f077a51444822ca099f"
+      },
+      "build/generated/sound/musashi/m68k_fixed_ops_063.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "f8ce8a4417a10eee4896fab1c3f4a007a9b5bcd40acdd951dc82c9a8a429ee67",
+        "mainSHA256": "f8ce8a4417a10eee4896fab1c3f4a007a9b5bcd40acdd951dc82c9a8a429ee67",
+        "projectRootNormalizedSHA256": "f8ce8a4417a10eee4896fab1c3f4a007a9b5bcd40acdd951dc82c9a8a429ee67"
+      },
+      "build/generated/sound/musashi/m68k_fixed_table.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "8714bcb6f31212199aef29ba1a2b099e8ad8891180e7d5e3ebbbb59d7f037ad5",
+        "mainSHA256": "8714bcb6f31212199aef29ba1a2b099e8ad8891180e7d5e3ebbbb59d7f037ad5",
+        "projectRootNormalizedSHA256": "8714bcb6f31212199aef29ba1a2b099e8ad8891180e7d5e3ebbbb59d7f037ad5"
+      },
+      "build/generated/sound/musashi/m68kconf.h": {
+        "byteIdentical": true,
+        "cleanSHA256": "862c1df5841c7c37d2cb6646f11b4bf684656379e9ece5426974846cfbb9ce2f",
+        "mainSHA256": "862c1df5841c7c37d2cb6646f11b4bf684656379e9ece5426974846cfbb9ce2f",
+        "projectRootNormalizedSHA256": "862c1df5841c7c37d2cb6646f11b4bf684656379e9ece5426974846cfbb9ce2f"
+      },
+      "build/generated/sound/musashi/m68kcpu.c": {
+        "byteIdentical": true,
+        "cleanSHA256": "5b0c8493f5525e78d641adf27a8dc328ad02fa7b2b2c6a7d48a162156caed0f0",
+        "mainSHA256": "5b0c8493f5525e78d641adf27a8dc328ad02fa7b2b2c6a7d48a162156caed0f0",
+        "projectRootNormalizedSHA256": "5b0c8493f5525e78d641adf27a8dc328ad02fa7b2b2c6a7d48a162156caed0f0"
+      },
+      "build/generated/sound/musashi/m68kcpu.h": {
+        "byteIdentical": true,
+        "cleanSHA256": "adcea040c0a5e5338374838d5341b05645da879e16093a374f969d9d91b33d87",
+        "mainSHA256": "adcea040c0a5e5338374838d5341b05645da879e16093a374f969d9d91b33d87",
+        "projectRootNormalizedSHA256": "adcea040c0a5e5338374838d5341b05645da879e16093a374f969d9d91b33d87"
+      },
+      "build/generated/sound/musashi/m68kctx.h": {
+        "byteIdentical": true,
+        "cleanSHA256": "2f7f7c7383fb8ded4cbde5f762a5ae2f1ca37263422e92fac6fe068af8750fa7",
+        "mainSHA256": "2f7f7c7383fb8ded4cbde5f762a5ae2f1ca37263422e92fac6fe068af8750fa7",
+        "projectRootNormalizedSHA256": "2f7f7c7383fb8ded4cbde5f762a5ae2f1ca37263422e92fac6fe068af8750fa7"
+      },
+      "build/generated/sound/musashi/m68kops.h": {
+        "byteIdentical": true,
+        "cleanSHA256": "c5ef1cca901833554a2e9e5237b4d168f8d1ed41a5e372f17d736560450a8e83",
+        "mainSHA256": "c5ef1cca901833554a2e9e5237b4d168f8d1ed41a5e372f17d736560450a8e83",
+        "projectRootNormalizedSHA256": "c5ef1cca901833554a2e9e5237b4d168f8d1ed41a5e372f17d736560450a8e83"
+      },
+      "build/generated/z80/Z80.cpp": {
+        "byteIdentical": false,
+        "cleanSHA256": "96fcfd001940bb58debc4a0da8072ba0241d18ce79aee5e0edc0771f800a4120",
+        "mainSHA256": "452f33d9d4eaa2aa894960940ea9f150fb7fdc9747953cb9adb3c55f4d2bb707",
+        "projectRootNormalizedSHA256": "646a0c9d586d424df8468a595b0ec89c5a2a85c917d2c7f549cd1d717fc66b34"
+      }
+    },
+    "filesCompared": 80,
+    "mainDSPImages": 1138,
+    "normalization": "Replace only each workspace absolute root with <PROJECT_ROOT>; no instruction, operation, flow, table, literal or order normalization."
+  },
+  "host": {
+    "exactPictureAudioCountAgreement": true,
+    "frames": 11058,
+    "freshSessions": {
+      "audioSHA256": "f9d10b8484c32e58d240cd21be37f5d0699cb5bf3971e934de3e5857eed6964f",
+      "deterministic": true,
+      "framesEach": 2400,
+      "pictureSHA256": "a6302a3aa9f093788d1209ccbacc71b35ce8ed14171176a96877060a39e49762",
+      "runs": 2,
+      "sameProcess": true,
+      "sampleFramesEach": 1764000
+    },
+    "inputChecks": 121,
+    "linkGuardRejections": 4,
+    "sampleFrames": 8127630,
+    "typecheckPassed": true
+  },
+  "integration": {
+    "allRouteRowsEqualMain": true,
+    "mainReportSHA256": "76dbb5b0807ab3524f08a2953a5d41743a54a87687c1462cc8a22a3e93f92311",
+    "routes": [
+      {
+        "distinctPictures": 8450,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 11058,
+        "nonzeroPCMBytes": 27071967,
+        "pcmSHA256": "71d9dd0eff3682231c2b6e5336c4cf45ae10951f0634918cc2b00b232035e159",
+        "perFrameTraceSHA256": "04115bcf22346d17ede83365f6773b01743d2487cfe4775a1a7a6a03739951b7",
+        "rgbaSHA256": "97ae5d3e88ec6a182fa7030e401579e505541c6db70dfd8dec98600403c0076e",
+        "route": "Configuration/replays/arcade.json",
+        "routeSHA256": "879f5744f4543ab650083247cc9ca2111f90ae9e1224d2ec72a718d28f184770",
+        "sampleFrames": 8127630
+      },
+      {
+        "distinctPictures": 8294,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 12000,
+        "nonzeroPCMBytes": 30695134,
+        "pcmSHA256": "5432e25004fd17f36442b7d7ff64bbfdb7d84c3e06c31e8a49a557f3e777f0c7",
+        "perFrameTraceSHA256": "db4a459003e38e83fcb83a67cac61b114e420995e53a71cdb078aefda7378be1",
+        "rgbaSHA256": "6508e4b56539e3a19a4bdd305e52054cd729575695d5f1fc6b4ce3e88701d159",
+        "route": "Configuration/replays/attract.json",
+        "routeSHA256": "d7804ac8744357d2311634933e30384c2b7a87ab0313dc921f20d59cb7e9a4b8",
+        "sampleFrames": 8820000
+      },
+      {
+        "distinctPictures": 6910,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 9000,
+        "nonzeroPCMBytes": 21373298,
+        "pcmSHA256": "80f9937b7eb6e56c376ce1ca8f3d8cc01b51c654bd62cde1b8f72c2b6b16049b",
+        "perFrameTraceSHA256": "05c46e2331ee714e9f46039edacae8b54e1f368dad585d9d3d6bf7f1bec22cc7",
+        "rgbaSHA256": "cbfbd7546b38d97dba1643c75edd1f7dac876cd6a80175e2c34062a323fdb623",
+        "route": "Configuration/replays/challenger.json",
+        "routeSHA256": "9a3900ea62404c0b4fc65d706fe16514b11650b14e094f7bf559646b363577df",
+        "sampleFrames": 6615000
+      },
+      {
+        "distinctPictures": 2886,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 4500,
+        "nonzeroPCMBytes": 9171270,
+        "pcmSHA256": "e4bfcb9257c5fb4f6c5cb09ef040ab312d34f5772a803a0a524e7e82766256f2",
+        "perFrameTraceSHA256": "3faaaea2415225f213f187bc0470802624a38670a8aba06dc6c0d8c39a771bf9",
+        "rgbaSHA256": "3e7676d81001079e363f3af75c77f12a16e0a9315fa68427111500fd50684e6f",
+        "route": "Configuration/replays/fighter-akira.json",
+        "routeSHA256": "fd3ad1aa46ffef1ce33a11222f7af4d201caba11fcca5784c0d74e7ba62b5093",
+        "sampleFrames": 3307500
+      },
+      {
+        "distinctPictures": 2811,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 4500,
+        "nonzeroPCMBytes": 9169160,
+        "pcmSHA256": "d2fc5ed2b8f0a692bd7a4be63b65502098cb4db5b23bbde66f6b5e43f6b0f0e0",
+        "perFrameTraceSHA256": "9be4ed8ad49b3147f6ea0cbd847fabac243af14425af9a357a22007042e29204",
+        "rgbaSHA256": "738ca300e110c100690f548742268567b73c51b0aca64a8c596462496af8546b",
+        "route": "Configuration/replays/fighter-aoi.json",
+        "routeSHA256": "9ba60a38bb23f81d0e3df649dd6fdc7754bab298d0a08bc4df23c80343796541",
+        "sampleFrames": 3307500
+      },
+      {
+        "distinctPictures": 2855,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 4500,
+        "nonzeroPCMBytes": 9162450,
+        "pcmSHA256": "f3dd00971536630d04979a55cb21db96df98d650bb63d1dfd7ed316e77c78c28",
+        "perFrameTraceSHA256": "e442011a572473fa71139cbb3c29340b15865dd9c043609e0f62330d38ac5f1e",
+        "rgbaSHA256": "c3cd62acb18951b20c72fc53ffdf289f1596ddc245cf6f527ea530c5108bce40",
+        "route": "Configuration/replays/fighter-jacky.json",
+        "routeSHA256": "7d753a0b12344bb8a05806b0c29100697cc2950c417bea938df5150674c9d6a0",
+        "sampleFrames": 3307500
+      },
+      {
+        "distinctPictures": 2816,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 4500,
+        "nonzeroPCMBytes": 9167819,
+        "pcmSHA256": "44c1c88a01f959a9a09bb29a9baadaecd9a6ac0f291b5c5cfdad6d866bc42e9c",
+        "perFrameTraceSHA256": "404daa6e4714011b0c46d60ffa55b5c4ca78efa4f485a57c735457776f01ad42",
+        "rgbaSHA256": "cffd02266c033fa7df3deb9fd02db4036dd86bc2c0c148d633e05da15262ac4c",
+        "route": "Configuration/replays/fighter-jeffry.json",
+        "routeSHA256": "beeb2e54a49627b91c2203eaa54c0746885c1a0558b6057f4179d3d660ad4106",
+        "sampleFrames": 3307500
+      },
+      {
+        "distinctPictures": 2831,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 4500,
+        "nonzeroPCMBytes": 9185616,
+        "pcmSHA256": "330d3deb01de82a59207ccb41d3589e63bfb3d24d78ded857c2baa2d4b62f9ee",
+        "perFrameTraceSHA256": "a7651c1bbd79675f10b62272ae786bdc3fa0d7ac0f507efdb919ab67e1aa6aa2",
+        "rgbaSHA256": "2c5a747f542b0524981faf924e4d31112ec283672964aa5e48c8dc48b7f4c746",
+        "route": "Configuration/replays/fighter-kage.json",
+        "routeSHA256": "0525eaf78ba1fe620e6a8f8421d8074cca9236f039e6e961a7cef1a3ef5fee15",
+        "sampleFrames": 3307500
+      },
+      {
+        "distinctPictures": 2849,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 4500,
+        "nonzeroPCMBytes": 9166931,
+        "pcmSHA256": "099f9af45093b3eb89b7a86cb68ed90500c1006895a91bd41197cdc7887b6806",
+        "perFrameTraceSHA256": "d39fa9e08b68f1bb9ca0d70db5c3190c157e4095b96a17ba1d703dfc1fc0965c",
+        "rgbaSHA256": "8c285545fccb72d0c2ed562430cd9958b0950d68b3e029f452d34bb1c15fc5b5",
+        "route": "Configuration/replays/fighter-lau.json",
+        "routeSHA256": "c0a5f206e04b5d0db24899c6f07af3813daa05eadc1aa4fa7adc5a643ef09093",
+        "sampleFrames": 3307500
+      },
+      {
+        "distinctPictures": 2804,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 4500,
+        "nonzeroPCMBytes": 9169380,
+        "pcmSHA256": "67dbeecf52f1894ec2847bba2002f04b263278b123f820e31130cf6f53bf54ef",
+        "perFrameTraceSHA256": "b0b99fab9d98c78e6629c8db5993594018d424899f340543f432af99718c3aa5",
+        "rgbaSHA256": "11c0c73e53b8019b6994de6a7d3b45760d6e1a4208551dfe7820bf7baad38356",
+        "route": "Configuration/replays/fighter-lion.json",
+        "routeSHA256": "c9d0c272ed4c4c5ca0e9f3b1a828ad2b83a56a3fd444a4c1e08eb012dcd411b6",
+        "sampleFrames": 3307500
+      },
+      {
+        "distinctPictures": 2875,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 4500,
+        "nonzeroPCMBytes": 9168843,
+        "pcmSHA256": "d5f3bbf042a9dd6385bda7fe43cec185448b02615e64e1efbb7de900c3e10e57",
+        "perFrameTraceSHA256": "0e3a1252dc63af079980754fbd0f3817dcfb82b48e287349356f1d13de887334",
+        "rgbaSHA256": "421dbd6c92ca73caddfc2ab19f1a82dfc134760af3273a81ad2c0eff7e9e9709",
+        "route": "Configuration/replays/fighter-pai.json",
+        "routeSHA256": "f616e2dcbd8b05d5148426de616bad854c7ac7fa8570c398a377a7a614900818",
+        "sampleFrames": 3307500
+      },
+      {
+        "distinctPictures": 2861,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 4500,
+        "nonzeroPCMBytes": 9176629,
+        "pcmSHA256": "414efd66d406d09695c77027de709a24d9ff7df310f1152e369259bd76ee036f",
+        "perFrameTraceSHA256": "796f2e5247a487b69b0de1f8c4f01a421083440f4ce803135e97162bfbf7ad54",
+        "rgbaSHA256": "1d92aa4738b433badb2fd080f6a09a46799882dadb073021444c29da554c50e4",
+        "route": "Configuration/replays/fighter-sarah.json",
+        "routeSHA256": "1ee3817e89b7b1b119c91e679083d00576c735403f220a2f4ce85bc4450bead4",
+        "sampleFrames": 3307500
+      },
+      {
+        "distinctPictures": 2833,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 4500,
+        "nonzeroPCMBytes": 9168667,
+        "pcmSHA256": "fdb8a0bb7d1ad1967a500a17a93cf7bd7d3dd1b9d38b53653cc408e0dc6a3ffa",
+        "perFrameTraceSHA256": "3f17b85b0705e60b437a4a00c839914f0d517c121c8b38041faa888efb71a78e",
+        "rgbaSHA256": "8fe315f5b95990ffcb162dee51abd82db1aad67cabb866383154104d53baeaf1",
+        "route": "Configuration/replays/fighter-shun.json",
+        "routeSHA256": "4c0fac80d9633f95154f10ad085dbed1182713906ec5b0382f7caf3ddbe3c0cb",
+        "sampleFrames": 3307500
+      },
+      {
+        "distinctPictures": 2767,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 4500,
+        "nonzeroPCMBytes": 9178153,
+        "pcmSHA256": "1678791c58de3d79c3b264e69ce1a93024b20f6daa91db68aeaf5e6c68ee5d8f",
+        "perFrameTraceSHA256": "5271abc13ff544f9f69efcf3d0747013a82c6022e256b6eb5cc21937e89051e0",
+        "rgbaSHA256": "50c3510d5fcad56bacc6da81fd4f773d8081b167363701c5f6c3bd6e9277d503",
+        "route": "Configuration/replays/fighter-taka.json",
+        "routeSHA256": "23335b9812bd469da30c3b8254e81bb71f78fe490d563b2d4fee3a0645571677",
+        "sampleFrames": 3307500
+      },
+      {
+        "distinctPictures": 2804,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 4500,
+        "nonzeroPCMBytes": 9176404,
+        "pcmSHA256": "05310c5aeb81e323e40c5ff9bf35e05a834654fe19333d2b6c8feaa9be514e2c",
+        "perFrameTraceSHA256": "4d13549c16f2976a155d91be9e826aaf42529a542255e9badac13f340cb8e4bb",
+        "rgbaSHA256": "11f62172b0e349c52766e0c29c757667718d956172930976ac67726feca702d2",
+        "route": "Configuration/replays/fighter-wolf.json",
+        "routeSHA256": "5584ce651b4b7689003e9641dfdfbf91b9894536ec6108f4f0941f4baf2c1f3f",
+        "sampleFrames": 3307500
+      },
+      {
+        "distinctPictures": 5170,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 7000,
+        "nonzeroPCMBytes": 16135569,
+        "pcmSHA256": "2106f29d107f9d1f6aaa40c47ee3e60d33236b156b14276ba71007d97d4c6d35",
+        "perFrameTraceSHA256": "9782199653d2d90b09b323b2921fd8da58883dd15c0c88a54a4b1cd03c389993",
+        "rgbaSHA256": "434e29a7e1e00822d30d480b0fb964d77622574137617b184f917632b0dc8ef9",
+        "route": "Configuration/replays/late-start.json",
+        "routeSHA256": "1f5a1e5afc5f6a38b468c394d7714b3206597cfed2c9236ae797e8b1ad6d36b5",
+        "sampleFrames": 5145000
+      },
+      {
+        "distinctPictures": 4363,
+        "exactPictureAudioCountAgreement": true,
+        "frames": 6000,
+        "nonzeroPCMBytes": 13209799,
+        "pcmSHA256": "9db6c6d4a11a063f821ffc8f3b6bb4ccb3680687f6cb21beae62a86bbf274680",
+        "perFrameTraceSHA256": "dea88811feca7fedd00ebddb7ee0d2367cb6ca3732b4006c14b24f3c37055513",
+        "rgbaSHA256": "4ea48e161ab937e9f1767b37e85bbf26be952b0c901ca9adf78fe128db8146f0",
+        "route": "Configuration/replays/versus.json",
+        "routeSHA256": "c9aa3be0f490d318195a39f4b5a8449f6ce4b4d01ba6a7e211e815a3b6fbe5de",
+        "sampleFrames": 4410000
+      }
+    ],
+    "totalFrames": 99058,
+    "totalStereoFrames": 72807630
+  },
+  "limitations": [
+    "The original recipe was paused during observations when the main GUI exposed the whole-image DSP admission gap. Completed clean captures were retained, interrupted captures were rerun from fresh saves, two regression routes were added, and the corrected generator and qualifier were copied before any clean native translation. Source deltas are recorded explicitly.",
+    "The final clean sound corpus contains all eighteen observer routes; the main product corpus contains sixteen authorizing routes with two held-out regressions. Both independently generate identical DSP source and the same 16,746 slot instruction variants.",
+    "This establishes behavioral reproduction and generated processor-source agreement, not byte-identical linked binaries. Absolute build paths affect some generated include paths and binary identities.",
+    "The clean packaged-host checks are headless. Main-app live presentation, audio-device behavior and UI observations are separate.",
+    "Bounded replay and processor checks do not establish exhaustive gameplay, every possible session input sequence, physical controller operation or physical arcade-board accuracy."
+  ],
+  "originalObservations": {
+    "captureInventorySHA256": "1a234ede0caf5904b6c7e70dcc85797b6ba4eb9468550473cba3116be0232251",
+    "frames": 100386,
+    "perRunIdentities": {
+      "arcade": {
+        "frames": 11058,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "437a1c42a2c35e86d6755faa61ee311a70f13f1936e65495e20a05bc63e4e420",
+        "reportSHA256": "ff89aed5301f68ba342ae4f9f9e3ec729373ff692bfe615ad3b71c3a62e85e1f",
+        "routeSHA256": "879f5744f4543ab650083247cc9ca2111f90ae9e1224d2ec72a718d28f184770",
+        "soundSHA256": "467797bb49751d2656e76572a25f9279201c92771d2d1185ad5142d8d828c1b1"
+      },
+      "attract": {
+        "frames": 12000,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "afd9d10e0e4130f5ca1c181f7183b6d756ff5c5668f84452b516bb058cd5a38a",
+        "reportSHA256": "a61d3c3ad850b30ae3fe71cd036472d06d79e93ae694e79183b7df88610d1027",
+        "routeSHA256": "d7804ac8744357d2311634933e30384c2b7a87ab0313dc921f20d59cb7e9a4b8",
+        "soundSHA256": "d069a738627cb2101c68aa2b1dae486c35b1992477b88e2860c65135ab0b5864"
+      },
+      "challenger": {
+        "frames": 9000,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "8544c009c965142c5a769d7043c58681dc5c7718eba7fa5108278abfee75a982",
+        "reportSHA256": "ea91ce5a88f590568e587f9ff1deb4543f263dee93606f969022a712b14f7f70",
+        "routeSHA256": "9a3900ea62404c0b4fc65d706fe16514b11650b14e094f7bf559646b363577df",
+        "soundSHA256": "e4a6e4c9ab4c68d0db887b1e98cc8cbd9a6626161772ebaee2d519f04a2e8e1a"
+      },
+      "fighter-akira": {
+        "frames": 4500,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "3b5fb9e49b0faa5448fbaf088b7330aa861caec6137ac6c63a74ca2b23ab4031",
+        "reportSHA256": "367acc419c8fc57be979ac1137c11bc4b1c7046ced3b316a9ac87d0f5c302ecc",
+        "routeSHA256": "fd3ad1aa46ffef1ce33a11222f7af4d201caba11fcca5784c0d74e7ba62b5093",
+        "soundSHA256": "1b541f3568538d58f940bdb95793da2d36e32a2a4db5c31a563ca6c4a19e3363"
+      },
+      "fighter-aoi": {
+        "frames": 4500,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "580c02ec2c11d7edb7bf2c8667cf7a6ac976b271ee0e6010aaa4334a2a09e936",
+        "reportSHA256": "0d57271f4e51ed347e349b960b6c00ffd60300b5ffbe28cf890f5f72dad8f400",
+        "routeSHA256": "9ba60a38bb23f81d0e3df649dd6fdc7754bab298d0a08bc4df23c80343796541",
+        "soundSHA256": "d6d73192e3b522bc8caf17abe962310f34c092fcfb202298226dab8d428dd6c4"
+      },
+      "fighter-jacky": {
+        "frames": 4500,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "f1f11b747e8c00558245d932df503bcec6788a497a1c354b5fdee8c01d70704c",
+        "reportSHA256": "7f8ff4c8d6496b2c22c66052a6f98c2b81a09760f28f8611e70edef185a25a50",
+        "routeSHA256": "7d753a0b12344bb8a05806b0c29100697cc2950c417bea938df5150674c9d6a0",
+        "soundSHA256": "7fb8334b26ada0d8d3e71dfb4e3579612469b059d4afccfbc825a1515c7fad33"
+      },
+      "fighter-jeffry": {
+        "frames": 4500,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "07c9ecbcbb4e119cb4b2de90b8107e5fb723e69495cba0dc02b2ec98dc8399a6",
+        "reportSHA256": "be01c6993b61b57c2486d148c5516c07ebeaee8a3d548454fc7c936fcca62b61",
+        "routeSHA256": "beeb2e54a49627b91c2203eaa54c0746885c1a0558b6057f4179d3d660ad4106",
+        "soundSHA256": "aa0e83655e4b9df55609b27dc24e635a6294c88f960a9ea88ee8af3d31a4b938"
+      },
+      "fighter-kage": {
+        "frames": 4500,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "343791541a53d2fb2fb2c37a0298cf5e59fb1ac17b49c95f2e317bb7f5e8d888",
+        "reportSHA256": "e2e168afa055cebeea876e5de055d52abd939b166ab95f65498c00e32638ab62",
+        "routeSHA256": "0525eaf78ba1fe620e6a8f8421d8074cca9236f039e6e961a7cef1a3ef5fee15",
+        "soundSHA256": "1a34cfdd1e2e704ae7ae957341a5acc1e718d20bd32b1f4fb9392046e80e7c5c"
+      },
+      "fighter-lau": {
+        "frames": 4500,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "21e03003722dd44823237a41592aa7a3020a159b9313f4080a626e3ea1266d5d",
+        "reportSHA256": "0b28849cdc2e181e6d0cbf92d1c8c6e536d36e0a5d070fa49edd9072d4248d23",
+        "routeSHA256": "c0a5f206e04b5d0db24899c6f07af3813daa05eadc1aa4fa7adc5a643ef09093",
+        "soundSHA256": "7a797b441ff4604649b054d81faaca714119e093d79aad887d08958984b563b4"
+      },
+      "fighter-lion": {
+        "frames": 4500,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "57bcb72ad48c0aa49e1e19bf2904659a011064777bdf223772131168e7ed184a",
+        "reportSHA256": "4b386bbe172a1e7bc03e896b1af763f66d197319bd2bd60372136c61758b6e8b",
+        "routeSHA256": "c9d0c272ed4c4c5ca0e9f3b1a828ad2b83a56a3fd444a4c1e08eb012dcd411b6",
+        "soundSHA256": "0fc9a051fde042baf2db519e8bd3cea0af76e759b076bbda2036216328cebe14"
+      },
+      "fighter-pai": {
+        "frames": 4500,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "f4d1ec89bef3b3765c5ca30e6cf4e1a9a35a38c86b687aceb168539e1041fde3",
+        "reportSHA256": "b2d3709908b403cf6cf35c4a4b76fb15b2a75905fce13e9f4ebc926538fb063d",
+        "routeSHA256": "f616e2dcbd8b05d5148426de616bad854c7ac7fa8570c398a377a7a614900818",
+        "soundSHA256": "b82e559584475fdc370d408be0eeba72a6c0af727d85fef41eb6126fdcbfe323"
+      },
+      "fighter-sarah": {
+        "frames": 4500,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "b465b5435d950fa7e58caea97c580b0a9459be304d4c60740fb0d2d85996608d",
+        "reportSHA256": "bcf13a6db3e362d79b523a63b5d683199274a7d76171b679a3cf7a1e04b46112",
+        "routeSHA256": "1ee3817e89b7b1b119c91e679083d00576c735403f220a2f4ce85bc4450bead4",
+        "soundSHA256": "fedb5c8086ef322f607e75e7d4d88eb93dbd2c5d6dcd80233ff5af3fe29dc0f4"
+      },
+      "fighter-shun": {
+        "frames": 4500,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "9de1c356ffa540af758a2c078bcf18743f1647d68a8e89fc32b031d44530c050",
+        "reportSHA256": "cc593dafbc53c0d46f86ca1cdb9320cdea98d8f46b7a8388325b6d2fd358a1b2",
+        "routeSHA256": "4c0fac80d9633f95154f10ad085dbed1182713906ec5b0382f7caf3ddbe3c0cb",
+        "soundSHA256": "6b3c329de1a61e4a577de32cc220c3fed231c635db90d0f6c1c270953bee174a"
+      },
+      "fighter-taka": {
+        "frames": 4500,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "18449787386c9aaf5e84c106a41cf5ca55e74da21a4ee37bf95f928a471ced6b",
+        "reportSHA256": "d99c84a0f877bd8639e1ab5a18db38f0ddfdc82afcf58f8e38946b243a55a783",
+        "routeSHA256": "23335b9812bd469da30c3b8254e81bb71f78fe490d563b2d4fee3a0645571677",
+        "soundSHA256": "92d9335512359efc4e6d5a3709c49e4499e94f272c05cf9a92e9bab2f1404a26"
+      },
+      "fighter-wolf": {
+        "frames": 4500,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "8c98ff80420c94fd8c51d3d8e52fa3dcf1cf81c364e4a46e5ae2a5970292287a",
+        "reportSHA256": "04f63517b4f4f547c6afe1745a17546b59d6435ffb839a3d448e9ed3f1146271",
+        "routeSHA256": "5584ce651b4b7689003e9641dfdfbf91b9894536ec6108f4f0941f4baf2c1f3f",
+        "soundSHA256": "c5ac96bfb329a02ca508ca1c7a8e762ec9f9972e588b075a43cc328ef3869e80"
+      },
+      "input-diagnostics": {
+        "frames": 1328,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "feb644232c6510e8e42b57a2b68d8f4433873bd4c75ba3336bfcd06153db0c8d",
+        "reportSHA256": "b6b31f1f834fb531f26b0807e05c0f0204bba1600eeeebf3a7782efc6ed556be",
+        "routeSHA256": "52d44b497a8a7e0fecde35fc45ed449b5d8989b0bbcaa2182f9b9923a029b3a3",
+        "soundSHA256": "24cec1ae47faddfb7650b45f6db2cc2597220a17cb025bb3bd57f73eaa41b5b1"
+      },
+      "late-start": {
+        "frames": 7000,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "39ba9e66535f42def55cfe6e79aef27831aa32ecf7507dfc61aab482c144f1c0",
+        "reportSHA256": "469a11e08a7691b7ae095a48e2d3359b08b04e97e761cb410231f371ca212c41",
+        "routeSHA256": "1f5a1e5afc5f6a38b468c394d7714b3206597cfed2c9236ae797e8b1ad6d36b5",
+        "soundSHA256": "737665e07897252b04d009932f073d3890ea302dd7010a8b1d49339bb161d604"
+      },
+      "versus": {
+        "frames": 6000,
+        "librarySHA256": "60034a4d1e3a7322759a05052dc9c1d233354895b0b9dabb778a89a889dbafd9",
+        "ppcSHA256": "1a69dccfc924e735001a1e9ad921746be57288b70d5aad4cad4111a668f66022",
+        "reportSHA256": "8023b33cde7bd28f3a1d06ed4feaa90200748e06de5dc6d30722fd98bb0fcf85",
+        "routeSHA256": "c9aa3be0f490d318195a39f4b5a8449f6ce4b4d01ba6a7e211e815a3b6fbe5de",
+        "soundSHA256": "754d80279ea5488ff651263933c438a95f9d233d2f552346eb7990cd8726c6c5"
+      }
+    },
+    "runs": 18,
+    "scope": "Every observation was produced in this clean workspace by its freshly built original processor observer. No main-workspace observations were imported."
+  },
+  "package": {
+    "adHocSignatureVerified": true,
+    "architecture": "arm64",
+    "executableSHA256": "96c3811830570b50d48c89ba95f76ec9525e7281f236f9f72040def719e08098",
+    "knownDecoderAndDiagnosticSymbolsAbsent": true,
+    "licenseFilesVerified": 6,
+    "mediaFilesVerified": 2,
+    "minimumMacOS": "14.0"
+  },
+  "passed": true,
+  "postCaptureCommands": [
+    {
+      "command": [
+        "python3",
+        "Tools/ReferenceLab/sound_captures.py",
+        "--run",
+        "build/qualification/attract-sound.jsonl",
+        "build/qualification/attract/report.json",
+        "--run",
+        "build/qualification/arcade-sound.jsonl",
+        "build/qualification/arcade/report.json",
+        "--run",
+        "build/qualification/versus-sound.jsonl",
+        "build/qualification/versus/report.json",
+        "--run",
+        "build/qualification/late-start-sound.jsonl",
+        "build/qualification/late-start/report.json",
+        "--run",
+        "build/qualification/challenger-sound.jsonl",
+        "build/qualification/challenger/report.json",
+        "--run",
+        "build/qualification/fighter-akira-sound.jsonl",
+        "build/qualification/fighter-akira/report.json",
+        "--run",
+        "build/qualification/fighter-pai-sound.jsonl",
+        "build/qualification/fighter-pai/report.json",
+        "--run",
+        "build/qualification/fighter-lau-sound.jsonl",
+        "build/qualification/fighter-lau/report.json",
+        "--run",
+        "build/qualification/fighter-jeffry-sound.jsonl",
+        "build/qualification/fighter-jeffry/report.json",
+        "--run",
+        "build/qualification/fighter-wolf-sound.jsonl",
+        "build/qualification/fighter-wolf/report.json",
+        "--run",
+        "build/qualification/fighter-kage-sound.jsonl",
+        "build/qualification/fighter-kage/report.json",
+        "--run",
+        "build/qualification/fighter-sarah-sound.jsonl",
+        "build/qualification/fighter-sarah/report.json",
+        "--run",
+        "build/qualification/fighter-jacky-sound.jsonl",
+        "build/qualification/fighter-jacky/report.json",
+        "--run",
+        "build/qualification/fighter-shun-sound.jsonl",
+        "build/qualification/fighter-shun/report.json",
+        "--run",
+        "build/qualification/fighter-lion-sound.jsonl",
+        "build/qualification/fighter-lion/report.json",
+        "--run",
+        "build/qualification/fighter-aoi-sound.jsonl",
+        "build/qualification/fighter-aoi/report.json",
+        "--run",
+        "build/qualification/fighter-taka-sound.jsonl",
+        "build/qualification/fighter-taka/report.json",
+        "--run",
+        "build/qualification/input-diagnostics-sound.jsonl",
+        "build/qualification/input-diagnostics/report.json",
+        "--output",
+        "build/qualification/sound-observations.jsonl"
+      ],
+      "elapsedSeconds": 0.8995474589901278,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/compile_ppc.py",
+        "--game",
+        "build/media-source",
+        "--observations",
+        "build/qualification/attract-ppc.tsv",
+        "build/qualification/arcade-ppc.tsv",
+        "build/qualification/versus-ppc.tsv",
+        "build/qualification/late-start-ppc.tsv",
+        "build/qualification/challenger-ppc.tsv",
+        "build/qualification/fighter-akira-ppc.tsv",
+        "build/qualification/fighter-pai-ppc.tsv",
+        "build/qualification/fighter-lau-ppc.tsv",
+        "build/qualification/fighter-jeffry-ppc.tsv",
+        "build/qualification/fighter-wolf-ppc.tsv",
+        "build/qualification/fighter-kage-ppc.tsv",
+        "build/qualification/fighter-sarah-ppc.tsv",
+        "build/qualification/fighter-jacky-ppc.tsv",
+        "build/qualification/fighter-shun-ppc.tsv",
+        "build/qualification/fighter-lion-ppc.tsv",
+        "build/qualification/fighter-aoi-ppc.tsv",
+        "build/qualification/fighter-taka-ppc.tsv",
+        "build/qualification/input-diagnostics-ppc.tsv"
+      ],
+      "elapsedSeconds": 0.7671034170052735,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/compile_sound.py",
+        "--rom-dir",
+        "build/media-source",
+        "--observations",
+        "build/qualification/sound-observations.jsonl"
+      ],
+      "elapsedSeconds": 29.531790208013263,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/compile_z80.py",
+        "--game",
+        "build/media-source"
+      ],
+      "elapsedSeconds": 0.2365378339891322,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/verify_ppc.py",
+        "--game",
+        "build/media-source",
+        "--observations",
+        "build/qualification/attract-ppc.tsv",
+        "build/qualification/arcade-ppc.tsv",
+        "build/qualification/versus-ppc.tsv",
+        "build/qualification/late-start-ppc.tsv",
+        "build/qualification/challenger-ppc.tsv",
+        "build/qualification/fighter-akira-ppc.tsv",
+        "build/qualification/fighter-pai-ppc.tsv",
+        "build/qualification/fighter-lau-ppc.tsv",
+        "build/qualification/fighter-jeffry-ppc.tsv",
+        "build/qualification/fighter-wolf-ppc.tsv",
+        "build/qualification/fighter-kage-ppc.tsv",
+        "build/qualification/fighter-sarah-ppc.tsv",
+        "build/qualification/fighter-jacky-ppc.tsv",
+        "build/qualification/fighter-shun-ppc.tsv",
+        "build/qualification/fighter-lion-ppc.tsv",
+        "build/qualification/fighter-aoi-ppc.tsv",
+        "build/qualification/fighter-taka-ppc.tsv",
+        "build/qualification/input-diagnostics-ppc.tsv"
+      ],
+      "elapsedSeconds": 5.104292083007749,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/verify_z80.py",
+        "--game",
+        "build/media-source"
+      ],
+      "elapsedSeconds": 4.718586334012798,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/verify_sound.py",
+        "--rom-dir",
+        "build/media-source",
+        "--observations",
+        "build/qualification/sound-observations.jsonl",
+        "--acceptance",
+        "Documentation/sound-acceptance.json"
+      ],
+      "elapsedSeconds": 246.44715604100202,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/build_engine.py",
+        "--kind",
+        "native",
+        "--jobs",
+        "6"
+      ],
+      "elapsedSeconds": 49.335486915995716,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/build_engine.py",
+        "--kind",
+        "reference",
+        "--jobs",
+        "6"
+      ],
+      "elapsedSeconds": 16.421201375007513,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/verify_integration.py",
+        "--jobs",
+        "3",
+        "--routes",
+        "Configuration/replays/attract.json",
+        "Configuration/replays/arcade.json",
+        "Configuration/replays/versus.json",
+        "Configuration/replays/late-start.json",
+        "Configuration/replays/challenger.json",
+        "Configuration/replays/fighter-akira.json",
+        "Configuration/replays/fighter-pai.json",
+        "Configuration/replays/fighter-lau.json",
+        "Configuration/replays/fighter-jeffry.json",
+        "Configuration/replays/fighter-wolf.json",
+        "Configuration/replays/fighter-kage.json",
+        "Configuration/replays/fighter-sarah.json",
+        "Configuration/replays/fighter-jacky.json",
+        "Configuration/replays/fighter-shun.json",
+        "Configuration/replays/fighter-lion.json",
+        "Configuration/replays/fighter-aoi.json",
+        "Configuration/replays/fighter-taka.json"
+      ],
+      "elapsedSeconds": 373.53548116699676,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/verify_bridge.py"
+      ],
+      "elapsedSeconds": 32.29149583399703,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "Tools/ReferenceLab/sound_lifecycle.py",
+        "--route",
+        "Configuration/replays/arcade.json",
+        "--baseline",
+        "build/validation/integration/arcade/reference/trace.jsonl"
+      ],
+      "elapsedSeconds": 32.45941733299696,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/prepare_licenses.py"
+      ],
+      "elapsedSeconds": 0.43453012499958277,
+      "passed": true
+    },
+    {
+      "command": [
+        "scripts/build_host.sh",
+        "--self-test"
+      ],
+      "elapsedSeconds": 2.7086344999988796,
+      "passed": true
+    },
+    {
+      "command": [
+        "scripts/build_host.sh",
+        "--typecheck"
+      ],
+      "elapsedSeconds": 1.4775842920062132,
+      "passed": true
+    },
+    {
+      "command": [
+        "scripts/build_host.sh",
+        "--test-link-guard"
+      ],
+      "elapsedSeconds": 0.24356412500492297,
+      "passed": true
+    },
+    {
+      "command": [
+        "scripts/build.sh",
+        "--skip-engine"
+      ],
+      "elapsedSeconds": 6.696688167008688,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/verify_package.py"
+      ],
+      "elapsedSeconds": 0.9386981659918092,
+      "passed": true
+    },
+    {
+      "command": [
+        "python3",
+        "scripts/verify_host.py"
+      ],
+      "elapsedSeconds": 118.21669187500083,
+      "passed": true
+    }
+  ],
+  "postCaptureRunnerSHA256": "709672a83f08476d99d8e552266f4b5e7bee107acf2f46a1abe779a5193239c6",
+  "processorChecks": {
+    "ppcComparisons": 22512,
+    "sound": {
+      "m68k_compared": [
+        "registers",
+        "flags",
+        "pc",
+        "cycles",
+        "ordered_bus_reads",
+        "ordered_bus_writes",
+        "stop_state"
+      ],
+      "m68k_instruction_trials": 42262,
+      "m68k_mirror_trials": 8,
+      "manifest_sha256": "343b109426f0cc6647ab2560b2bc5b2a20454c4c3e9f88f339db52d9d64dfc79",
+      "negative_guards": [
+        "changed opcode rejected",
+        "changed extension rejected",
+        "unknown PC rejected",
+        "absent DSB board rejected",
+        "odd PC rejected",
+        "unknown DSP instruction rejected",
+        "instruction at unknown slot rejected",
+        "changed cached instruction rejected",
+        "invalid DSP execution limit rejected"
+      ],
+      "passed": true,
+      "scspdsp_changing_cached_sequence_trials": 16,
+      "scspdsp_closure_instruction_trials": 33492,
+      "scspdsp_compared": [
+        "entire_dsp_state",
+        "entire_512K_word_sample_ram"
+      ],
+      "scspdsp_held_out_trials": 0,
+      "scspdsp_latched_limit_trials": 5762,
+      "scspdsp_mixed_program_trials": 256,
+      "scspdsp_programs": 1155,
+      "scspdsp_samples_per_cached_sequence": 256,
+      "scspdsp_slot_instruction_variants": 16746,
+      "scspdsp_synthetic_trials": 48,
+      "scspdsp_trials": 18480
+    },
+    "z80Comparisons": 184320
+  },
+  "scope": "Independent clean build from copied source, a byte-verified original source archive and locally supplied media. All processors, observations, engines, app and current-game evidence were newly generated locally; seventeen reference/native routes also reproduce the main accepted outputs exactly.",
+  "sourceChangesDuringRun": [
+    {
+      "initialSHA256": "912e48c764d676e65cb08ea4074613851bd1bb67c39ae0f1d34036e5ae7ac955",
+      "newSHA256": "b26573f3885b149f1923a1377f629e8eeb353e19191e1962a38347883b6c2298",
+      "path": "AGENTS.md",
+      "reason": "Documentation-only update before final source snapshot; runtime generation and validation unchanged."
+    },
+    {
+      "initialSHA256": "9e228d9f2e76886c9a2ba8cf503d89b329efafc44766f4fe97b5124f9aecf53a",
+      "newSHA256": "8f853fd2c9873acd94f4322f2b9e9ccb179eb4ae6ea46ef2dbfacdc7b3462a0c",
+      "path": "Sources/Translated/ppc/README.md",
+      "reason": "Documentation-only update before final source snapshot; runtime generation and validation unchanged."
+    },
+    {
+      "initialSHA256": null,
+      "newSHA256": "1f5a1e5afc5f6a38b468c394d7714b3206597cfed2c9236ae797e8b1ad6d36b5",
+      "path": "Configuration/replays/late-start.json",
+      "reason": "New ordinary-input regression route added after delayed-start GUI exposed the whole-image DSP boundary; will be captured locally with this clean original observer."
+    },
+    {
+      "initialSHA256": null,
+      "newSHA256": "9a3900ea62404c0b4fc65d706fe16514b11650b14e094f7bf559646b363577df",
+      "path": "Configuration/replays/challenger.json",
+      "reason": "New ordinary-input regression route added after delayed-start GUI exposed the whole-image DSP boundary; will be captured locally with this clean original observer."
+    },
+    {
+      "initialSHA256": "d94c378518fb43d371b215035943404434e6acab5b4654519569dd994b92d9c4",
+      "newSHA256": "9a044ac8b1b919e75b22200d36fc5bc51dcac7df7e361d74ae92aef48b2864aa",
+      "path": "scripts/compile_sound.py",
+      "reason": "Updated before clean translation and qualification to exact fixed DSP per-slot instruction admission with byte-store closure and matching regression/packaging policy; original observer and all local captures unchanged."
+    },
+    {
+      "initialSHA256": "f514a368c4f1ea3376124e46dff22d920cb1290c93e39f04e4a5a20ee8162b7f",
+      "newSHA256": "96540d627d746548ba5483035dd24507141c9baf4f5c27b17d132f228ff8f19c",
+      "path": "scripts/verify_sound.py",
+      "reason": "Updated before clean translation and qualification to exact fixed DSP per-slot instruction admission with byte-store closure and matching regression/packaging policy; original observer and all local captures unchanged."
+    },
+    {
+      "initialSHA256": "5918091df86faade1cc1b5be5f098e546c7263734e53b91a04949dc346583f6c",
+      "newSHA256": "e4c8b7907acea2a94087e27479cfd3e15830acedc38a9a8c6f9e0073428c0a88",
+      "path": "Tools/ReferenceLab/sound_dsp_probe.cpp",
+      "reason": "Updated before clean translation and qualification to exact fixed DSP per-slot instruction admission with byte-store closure and matching regression/packaging policy; original observer and all local captures unchanged."
+    },
+    {
+      "initialSHA256": "dd4f80519951521125d7f6f173f9022220705605f30ce7333d797d6d8a9a6566",
+      "newSHA256": "59d1c83d0ceaa864602a7c294bc306f79a6eab2dcc2358ec6edc5f46cc66a55d",
+      "path": "Sources/Translated/sound/README.md",
+      "reason": "Updated before clean translation and qualification to exact fixed DSP per-slot instruction admission with byte-store closure and matching regression/packaging policy; original observer and all local captures unchanged."
+    },
+    {
+      "initialSHA256": "13c2f2f7406a184de2972c86f50257db2a07be7938603fa2a49cc91d43cc3c71",
+      "newSHA256": "445517c22949cfa9981bc6ccb348eee59509e580efa49e334658fc52d4216dd3",
+      "path": "scripts/prepare_native.py",
+      "reason": "Updated before clean translation and qualification to exact fixed DSP per-slot instruction admission with byte-store closure and matching regression/packaging policy; original observer and all local captures unchanged."
+    },
+    {
+      "initialSHA256": "23cc1655c5ad0a2ecc2605d0dcb6a8325421b381c17c029e982891a8d839a5c7",
+      "newSHA256": "4e7b1b3aaa43717c82fb6b7d84ae372e1050fad2aa310c32b8d39d8254d25661",
+      "path": "scripts/verify_package.py",
+      "reason": "Updated before clean translation and qualification to exact fixed DSP per-slot instruction admission with byte-store closure and matching regression/packaging policy; original observer and all local captures unchanged."
+    },
+    {
+      "initialSHA256": "36f5e645b269c069da3d41a84274a74f474e50a070df2e16521ff6020fe49ff3",
+      "newSHA256": "5049b03879c1ef45a7ff93256c019411208927750ba2077145d51d332896d3f2",
+      "path": "README.md",
+      "reason": "Updated before clean translation and qualification to exact fixed DSP per-slot instruction admission with byte-store closure and matching regression/packaging policy; original observer and all local captures unchanged."
+    },
+    {
+      "initialSHA256": "8f853fd2c9873acd94f4322f2b9e9ccb179eb4ae6ea46ef2dbfacdc7b3462a0c",
+      "newSHA256": "6c65b2b3d08e8e81872ce75e1ca27b1c31aa8ca1e4df3332975cc89af81a240f",
+      "path": "Sources/Translated/ppc/README.md",
+      "reason": "Documentation snapshot refreshed immediately before clean translation; executable source and original capture code unchanged."
+    },
+    {
+      "initialSHA256": "5049b03879c1ef45a7ff93256c019411208927750ba2077145d51d332896d3f2",
+      "newSHA256": "4a1dc437aca379816877440e39dd3963fbec9eabe93825e0dce5e81fbb934d3f",
+      "path": "README.md",
+      "reason": "Documentation-only update to final 17-route coverage totals; copied after clean native/reference compilation, without changing executable inputs."
+    },
+    {
+      "initialSHA256": "334bb971193899d7283f49a81d138500211916fafd87b8b2f115c379e750548b",
+      "newSHA256": "cd7f9abce990015285e054182f8d1b8851f9f051967181e2e26cd1019d78b5e7",
+      "path": "scripts/prepare_publication.py",
+      "reason": "Publication-only explicit inventory updated for final routes and acceptance reports. This helper is not called by the clean build or any qualification step; copied for the final source snapshot only."
+    },
+    {
+      "initialSHA256": "cd7f9abce990015285e054182f8d1b8851f9f051967181e2e26cd1019d78b5e7",
+      "newSHA256": "55db415f34440c4f9c76539df4a87edbf43ac5d08544bbc00b718005c635bae9",
+      "path": "scripts/prepare_publication.py",
+      "reason": "Publication-only inventory frozen after live acceptance: final 99 reviewed files. This helper is not part of the build, processor, runtime or host qualification; snapshot metadata refresh only."
+    },
+    {
+      "initialSHA256": "4a1dc437aca379816877440e39dd3963fbec9eabe93825e0dce5e81fbb934d3f",
+      "newSHA256": "9f1eced7105c2c82b5330b5dcf4d0faf2dbaa91d40f8def9b0b00865468ad656",
+      "path": "README.md",
+      "reason": "Documentation-only final live and independent reproduction results plus physical-controller limitation. Snapshot metadata refresh only; no runtime or qualification input changed."
+    }
+  ],
+  "sourceInputManifestSHA256": "72beea2d7c7471565a4711cc215f1e1978589baccf87d65c07e2f2f29d287e1a",
+  "workspace": "build/reproduction/clean-plmta9zg/workspace"
+}

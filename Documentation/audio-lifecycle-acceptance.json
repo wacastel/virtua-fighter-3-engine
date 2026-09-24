@@ -1,0 +1,40 @@
+{
+  "game": "vf3",
+  "revision": "Japan Revision D",
+  "passed": true,
+  "framesPerSession": 2400,
+  "sessions": 2,
+  "processRestartBetweenSessions": false,
+  "globalStatePatching": false,
+  "freshSavesEachSession": true,
+  "librarySHA256": "e248519e5456c1ed9ee0a82f2e1c18c0a05ab0fdcab708be70485a648a0ed252",
+  "verifierSHA256": "b62c0ac85c9a39e00d103057b822b38ecbfba946047b5dc50a19ac13d527cac8",
+  "baselineSHA256": "04115bcf22346d17ede83365f6773b01743d2487cfe4775a1a7a6a03739951b7",
+  "routeSHA256": "879f5744f4543ab650083247cc9ca2111f90ae9e1224d2ec72a718d28f184770",
+  "clockEpoch": 946684800,
+  "results": {
+    "freshSessions": {
+      "differingFrames": 0,
+      "firstMismatch": null
+    },
+    "firstSessionVsBaseline": {
+      "differingFrames": 0,
+      "firstMismatch": null
+    },
+    "secondSessionVsBaseline": {
+      "differingFrames": 0,
+      "firstMismatch": null
+    }
+  },
+  "sessionHashes": [
+    {
+      "pcmSHA256": "f9d10b8484c32e58d240cd21be37f5d0699cb5bf3971e934de3e5857eed6964f",
+      "rgbaSHA256": "a6302a3aa9f093788d1209ccbacc71b35ce8ed14171176a96877060a39e49762"
+    },
+    {
+      "pcmSHA256": "f9d10b8484c32e58d240cd21be37f5d0699cb5bf3971e934de3e5857eed6964f",
+      "rgbaSHA256": "a6302a3aa9f093788d1209ccbacc71b35ce8ed14171176a96877060a39e49762"
+    }
+  ],
+  "elapsedSeconds": 43.157
+}

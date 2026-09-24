@@ -1,0 +1,7173 @@
+{
+  "absentHardware": [
+    "DSB MPEG daughterboard"
+  ],
+  "captureReady": true,
+  "captureSHA256": "d3cadf3ac79307703e05053a90d51f94deb78fd6ca6f1b1f44c7277d5a8c2bb6",
+  "captureSources": {
+    "game": "vf3",
+    "mergeScriptSHA256": "b8b8bb2691be41db7909cfd26f930f7bc1a1fe875c0698386c47a451a67f1c25",
+    "mergedCapture": "build/coverage/sound-observations.jsonl",
+    "mergedCaptureSHA256": "d3cadf3ac79307703e05053a90d51f94deb78fd6ca6f1b1f44c7277d5a8c2bb6",
+    "observerBuildManifest": "build/observer/engine-build-manifest.json",
+    "observerBuildManifestSHA256": "69557517045b7fa606284829da93e39e78827566aead5f1dc1548bae7ec6cbac",
+    "observerSoundSources": {
+      "Tools/ReferenceLab/sound_observe.cpp": "6a17a5df24d349a73dfc6c61d55c669333a70b2f54f055ee5c91e4cb1fa4c691",
+      "build/derived/observer/SCSP.cpp": "ed9debddc5d81337c98aaec5d21ad42f60f99f4d4e70ffcabfe5eb62302ac020",
+      "build/derived/observer/SCSPDSP.cpp": "3681e17935223e90644a360a78837eeea74178cf2d9a081627644e799ad0ecf7",
+      "build/derived/observer/SoundBoard.cpp": "d34b6a6838f8752d7ae00f4580e00d277e4be999afb0260eb7dc61d8b4e92ce8",
+      "build/derived/observer/m68kcpu.c": "35b19dcbe595b3399e1fef191d6b5d05c6cafadfc844d551b1a47a808f68340f"
+    },
+    "observerSourceInputs": {
+      "Sources/Bridge/Platform.cpp": "07f630db242d3a352b75ee789b3d7548f782cfe4b12514460447cff273fd32a3",
+      "Sources/Bridge/vf3.cpp": "999bc358f9b27aa7f26695ebdbdc2896f8c7ed900d212b02ee4a004a5f29738c",
+      "Tools/ReferenceLab/sound_observe.cpp": "6a17a5df24d349a73dfc6c61d55c669333a70b2f54f055ee5c91e4cb1fa4c691",
+      "scripts/build_engine.py": "316b7682638e22af8ca01ef004ea8905a8c775948271280e2d1f311bfd03b81a"
+    },
+    "revision": "Japan Revision D",
+    "runs": [
+      {
+        "capture": "build/coverage/long-attract-sound.jsonl",
+        "captureSHA256": "d069a738627cb2101c68aa2b1dae486c35b1992477b88e2860c65135ab0b5864",
+        "clockEpoch": "946684800",
+        "frames": 12000,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3383,
+        "report": "build/coverage/long-attract/report.json",
+        "reportSHA256": "9b9740320eb2c09ccc1627eea1f37728291df99ee06a21a7f3115a0e79d138e6",
+        "route": {
+          "events": []
+        }
+      },
+      {
+        "capture": "build/coverage/versus-sound.jsonl",
+        "captureSHA256": "754d80279ea5488ff651263933c438a95f9d233d2f552346eb7990cd8726c6c5",
+        "clockEpoch": "946684800",
+        "frames": 6000,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3329,
+        "report": "build/coverage/versus/report.json",
+        "reportSHA256": "b806a9f17678565e9ff778a24001a3f8f4264ed8eb9949eadce778f5967a9ef5",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "player2": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "player2": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "player2": 256,
+              "start": 1240
+            },
+            {
+              "end": 1482,
+              "player1": 2,
+              "player2": 8,
+              "start": 1480
+            },
+            {
+              "end": 1492,
+              "player1": 16,
+              "player2": 16,
+              "start": 1490
+            },
+            {
+              "end": 2110,
+              "player1": 24,
+              "player2": 20,
+              "start": 2100
+            },
+            {
+              "end": 2134,
+              "player1": 40,
+              "player2": 36,
+              "start": 2124
+            },
+            {
+              "end": 2158,
+              "player1": 64,
+              "player2": 128,
+              "start": 2148
+            },
+            {
+              "end": 2182,
+              "player1": 80,
+              "player2": 64,
+              "start": 2172
+            },
+            {
+              "end": 2206,
+              "player1": 144,
+              "player2": 80,
+              "start": 2196
+            },
+            {
+              "end": 2230,
+              "player1": 2,
+              "player2": 2,
+              "start": 2220
+            },
+            {
+              "end": 2254,
+              "player1": 33,
+              "player2": 17,
+              "start": 2244
+            },
+            {
+              "end": 2278,
+              "player1": 8,
+              "player2": 4,
+              "start": 2268
+            },
+            {
+              "end": 2302,
+              "player1": 24,
+              "player2": 20,
+              "start": 2292
+            },
+            {
+              "end": 2326,
+              "player1": 40,
+              "player2": 36,
+              "start": 2316
+            },
+            {
+              "end": 2350,
+              "player1": 64,
+              "player2": 128,
+              "start": 2340
+            },
+            {
+              "end": 2374,
+              "player1": 80,
+              "player2": 64,
+              "start": 2364
+            },
+            {
+              "end": 2398,
+              "player1": 144,
+              "player2": 80,
+              "start": 2388
+            },
+            {
+              "end": 2422,
+              "player1": 2,
+              "player2": 2,
+              "start": 2412
+            },
+            {
+              "end": 2446,
+              "player1": 33,
+              "player2": 17,
+              "start": 2436
+            },
+            {
+              "end": 2470,
+              "player1": 8,
+              "player2": 4,
+              "start": 2460
+            },
+            {
+              "end": 2494,
+              "player1": 24,
+              "player2": 20,
+              "start": 2484
+            },
+            {
+              "end": 2518,
+              "player1": 40,
+              "player2": 36,
+              "start": 2508
+            },
+            {
+              "end": 2542,
+              "player1": 64,
+              "player2": 128,
+              "start": 2532
+            },
+            {
+              "end": 2566,
+              "player1": 80,
+              "player2": 64,
+              "start": 2556
+            },
+            {
+              "end": 2590,
+              "player1": 144,
+              "player2": 80,
+              "start": 2580
+            },
+            {
+              "end": 2614,
+              "player1": 2,
+              "player2": 2,
+              "start": 2604
+            },
+            {
+              "end": 2638,
+              "player1": 33,
+              "player2": 17,
+              "start": 2628
+            },
+            {
+              "end": 2662,
+              "player1": 8,
+              "player2": 4,
+              "start": 2652
+            },
+            {
+              "end": 2686,
+              "player1": 24,
+              "player2": 20,
+              "start": 2676
+            },
+            {
+              "end": 2710,
+              "player1": 40,
+              "player2": 36,
+              "start": 2700
+            },
+            {
+              "end": 2734,
+              "player1": 64,
+              "player2": 128,
+              "start": 2724
+            },
+            {
+              "end": 2758,
+              "player1": 80,
+              "player2": 64,
+              "start": 2748
+            },
+            {
+              "end": 2782,
+              "player1": 144,
+              "player2": 80,
+              "start": 2772
+            },
+            {
+              "end": 2806,
+              "player1": 2,
+              "player2": 2,
+              "start": 2796
+            },
+            {
+              "end": 2830,
+              "player1": 33,
+              "player2": 17,
+              "start": 2820
+            },
+            {
+              "end": 2854,
+              "player1": 8,
+              "player2": 4,
+              "start": 2844
+            },
+            {
+              "end": 2878,
+              "player1": 24,
+              "player2": 20,
+              "start": 2868
+            },
+            {
+              "end": 2902,
+              "player1": 40,
+              "player2": 36,
+              "start": 2892
+            },
+            {
+              "end": 2926,
+              "player1": 64,
+              "player2": 128,
+              "start": 2916
+            },
+            {
+              "end": 2950,
+              "player1": 80,
+              "player2": 64,
+              "start": 2940
+            },
+            {
+              "end": 2974,
+              "player1": 144,
+              "player2": 80,
+              "start": 2964
+            },
+            {
+              "end": 2998,
+              "player1": 2,
+              "player2": 2,
+              "start": 2988
+            },
+            {
+              "end": 3022,
+              "player1": 33,
+              "player2": 17,
+              "start": 3012
+            },
+            {
+              "end": 3046,
+              "player1": 8,
+              "player2": 4,
+              "start": 3036
+            },
+            {
+              "end": 3070,
+              "player1": 24,
+              "player2": 20,
+              "start": 3060
+            },
+            {
+              "end": 3094,
+              "player1": 40,
+              "player2": 36,
+              "start": 3084
+            },
+            {
+              "end": 3118,
+              "player1": 64,
+              "player2": 128,
+              "start": 3108
+            },
+            {
+              "end": 3142,
+              "player1": 80,
+              "player2": 64,
+              "start": 3132
+            },
+            {
+              "end": 3166,
+              "player1": 144,
+              "player2": 80,
+              "start": 3156
+            },
+            {
+              "end": 3190,
+              "player1": 2,
+              "player2": 2,
+              "start": 3180
+            },
+            {
+              "end": 3214,
+              "player1": 33,
+              "player2": 17,
+              "start": 3204
+            },
+            {
+              "end": 3238,
+              "player1": 8,
+              "player2": 4,
+              "start": 3228
+            },
+            {
+              "end": 3262,
+              "player1": 24,
+              "player2": 20,
+              "start": 3252
+            },
+            {
+              "end": 3286,
+              "player1": 40,
+              "player2": 36,
+              "start": 3276
+            },
+            {
+              "end": 3310,
+              "player1": 64,
+              "player2": 128,
+              "start": 3300
+            },
+            {
+              "end": 3334,
+              "player1": 80,
+              "player2": 64,
+              "start": 3324
+            },
+            {
+              "end": 3358,
+              "player1": 144,
+              "player2": 80,
+              "start": 3348
+            },
+            {
+              "end": 3382,
+              "player1": 2,
+              "player2": 2,
+              "start": 3372
+            },
+            {
+              "end": 3406,
+              "player1": 33,
+              "player2": 17,
+              "start": 3396
+            },
+            {
+              "end": 3430,
+              "player1": 8,
+              "player2": 4,
+              "start": 3420
+            },
+            {
+              "end": 3454,
+              "player1": 24,
+              "player2": 20,
+              "start": 3444
+            },
+            {
+              "end": 3478,
+              "player1": 40,
+              "player2": 36,
+              "start": 3468
+            },
+            {
+              "end": 3502,
+              "player1": 64,
+              "player2": 128,
+              "start": 3492
+            },
+            {
+              "end": 3526,
+              "player1": 80,
+              "player2": 64,
+              "start": 3516
+            },
+            {
+              "end": 3550,
+              "player1": 144,
+              "player2": 80,
+              "start": 3540
+            },
+            {
+              "end": 3574,
+              "player1": 2,
+              "player2": 2,
+              "start": 3564
+            },
+            {
+              "end": 3598,
+              "player1": 33,
+              "player2": 17,
+              "start": 3588
+            },
+            {
+              "end": 3622,
+              "player1": 8,
+              "player2": 4,
+              "start": 3612
+            },
+            {
+              "end": 3646,
+              "player1": 24,
+              "player2": 20,
+              "start": 3636
+            },
+            {
+              "end": 3670,
+              "player1": 40,
+              "player2": 36,
+              "start": 3660
+            },
+            {
+              "end": 3694,
+              "player1": 64,
+              "player2": 128,
+              "start": 3684
+            },
+            {
+              "end": 3718,
+              "player1": 80,
+              "player2": 64,
+              "start": 3708
+            },
+            {
+              "end": 3742,
+              "player1": 144,
+              "player2": 80,
+              "start": 3732
+            },
+            {
+              "end": 3766,
+              "player1": 2,
+              "player2": 2,
+              "start": 3756
+            },
+            {
+              "end": 3790,
+              "player1": 33,
+              "player2": 17,
+              "start": 3780
+            },
+            {
+              "end": 3814,
+              "player1": 8,
+              "player2": 4,
+              "start": 3804
+            },
+            {
+              "end": 3838,
+              "player1": 24,
+              "player2": 20,
+              "start": 3828
+            },
+            {
+              "end": 3862,
+              "player1": 40,
+              "player2": 36,
+              "start": 3852
+            },
+            {
+              "end": 3886,
+              "player1": 64,
+              "player2": 128,
+              "start": 3876
+            },
+            {
+              "end": 3910,
+              "player1": 80,
+              "player2": 64,
+              "start": 3900
+            },
+            {
+              "end": 3934,
+              "player1": 144,
+              "player2": 80,
+              "start": 3924
+            },
+            {
+              "end": 3958,
+              "player1": 2,
+              "player2": 2,
+              "start": 3948
+            },
+            {
+              "end": 3982,
+              "player1": 33,
+              "player2": 17,
+              "start": 3972
+            },
+            {
+              "end": 4006,
+              "player1": 8,
+              "player2": 4,
+              "start": 3996
+            },
+            {
+              "end": 4030,
+              "player1": 24,
+              "player2": 20,
+              "start": 4020
+            },
+            {
+              "end": 4054,
+              "player1": 40,
+              "player2": 36,
+              "start": 4044
+            },
+            {
+              "end": 4078,
+              "player1": 64,
+              "player2": 128,
+              "start": 4068
+            },
+            {
+              "end": 4102,
+              "player1": 80,
+              "player2": 64,
+              "start": 4092
+            },
+            {
+              "end": 4126,
+              "player1": 144,
+              "player2": 80,
+              "start": 4116
+            },
+            {
+              "end": 4150,
+              "player1": 2,
+              "player2": 2,
+              "start": 4140
+            },
+            {
+              "end": 4174,
+              "player1": 33,
+              "player2": 17,
+              "start": 4164
+            },
+            {
+              "end": 4198,
+              "player1": 8,
+              "player2": 4,
+              "start": 4188
+            },
+            {
+              "end": 4222,
+              "player1": 24,
+              "player2": 20,
+              "start": 4212
+            },
+            {
+              "end": 4246,
+              "player1": 40,
+              "player2": 36,
+              "start": 4236
+            },
+            {
+              "end": 4270,
+              "player1": 64,
+              "player2": 128,
+              "start": 4260
+            },
+            {
+              "end": 4294,
+              "player1": 80,
+              "player2": 64,
+              "start": 4284
+            },
+            {
+              "end": 4318,
+              "player1": 144,
+              "player2": 80,
+              "start": 4308
+            },
+            {
+              "end": 4342,
+              "player1": 2,
+              "player2": 2,
+              "start": 4332
+            },
+            {
+              "end": 4366,
+              "player1": 33,
+              "player2": 17,
+              "start": 4356
+            },
+            {
+              "end": 4390,
+              "player1": 8,
+              "player2": 4,
+              "start": 4380
+            },
+            {
+              "end": 4414,
+              "player1": 24,
+              "player2": 20,
+              "start": 4404
+            },
+            {
+              "end": 4438,
+              "player1": 40,
+              "player2": 36,
+              "start": 4428
+            },
+            {
+              "end": 4462,
+              "player1": 64,
+              "player2": 128,
+              "start": 4452
+            },
+            {
+              "end": 4486,
+              "player1": 80,
+              "player2": 64,
+              "start": 4476
+            },
+            {
+              "end": 4510,
+              "player1": 144,
+              "player2": 80,
+              "start": 4500
+            },
+            {
+              "end": 4534,
+              "player1": 2,
+              "player2": 2,
+              "start": 4524
+            },
+            {
+              "end": 4558,
+              "player1": 33,
+              "player2": 17,
+              "start": 4548
+            },
+            {
+              "end": 4582,
+              "player1": 8,
+              "player2": 4,
+              "start": 4572
+            },
+            {
+              "end": 4606,
+              "player1": 24,
+              "player2": 20,
+              "start": 4596
+            },
+            {
+              "end": 4630,
+              "player1": 40,
+              "player2": 36,
+              "start": 4620
+            },
+            {
+              "end": 4654,
+              "player1": 64,
+              "player2": 128,
+              "start": 4644
+            },
+            {
+              "end": 4678,
+              "player1": 80,
+              "player2": 64,
+              "start": 4668
+            },
+            {
+              "end": 4702,
+              "player1": 144,
+              "player2": 80,
+              "start": 4692
+            },
+            {
+              "end": 4726,
+              "player1": 2,
+              "player2": 2,
+              "start": 4716
+            },
+            {
+              "end": 4750,
+              "player1": 33,
+              "player2": 17,
+              "start": 4740
+            },
+            {
+              "end": 4774,
+              "player1": 8,
+              "player2": 4,
+              "start": 4764
+            },
+            {
+              "end": 4798,
+              "player1": 24,
+              "player2": 20,
+              "start": 4788
+            },
+            {
+              "end": 4822,
+              "player1": 40,
+              "player2": 36,
+              "start": 4812
+            },
+            {
+              "end": 4846,
+              "player1": 64,
+              "player2": 128,
+              "start": 4836
+            },
+            {
+              "end": 4870,
+              "player1": 80,
+              "player2": 64,
+              "start": 4860
+            },
+            {
+              "end": 4894,
+              "player1": 144,
+              "player2": 80,
+              "start": 4884
+            },
+            {
+              "end": 4918,
+              "player1": 2,
+              "player2": 2,
+              "start": 4908
+            },
+            {
+              "end": 4942,
+              "player1": 33,
+              "player2": 17,
+              "start": 4932
+            },
+            {
+              "end": 4966,
+              "player1": 8,
+              "player2": 4,
+              "start": 4956
+            },
+            {
+              "end": 4990,
+              "player1": 24,
+              "player2": 20,
+              "start": 4980
+            },
+            {
+              "end": 5014,
+              "player1": 40,
+              "player2": 36,
+              "start": 5004
+            },
+            {
+              "end": 5038,
+              "player1": 64,
+              "player2": 128,
+              "start": 5028
+            },
+            {
+              "end": 5062,
+              "player1": 80,
+              "player2": 64,
+              "start": 5052
+            },
+            {
+              "end": 5086,
+              "player1": 144,
+              "player2": 80,
+              "start": 5076
+            },
+            {
+              "end": 5110,
+              "player1": 2,
+              "player2": 2,
+              "start": 5100
+            },
+            {
+              "end": 5134,
+              "player1": 33,
+              "player2": 17,
+              "start": 5124
+            },
+            {
+              "end": 5158,
+              "player1": 8,
+              "player2": 4,
+              "start": 5148
+            },
+            {
+              "end": 5182,
+              "player1": 24,
+              "player2": 20,
+              "start": 5172
+            },
+            {
+              "end": 5206,
+              "player1": 40,
+              "player2": 36,
+              "start": 5196
+            },
+            {
+              "end": 5230,
+              "player1": 64,
+              "player2": 128,
+              "start": 5220
+            },
+            {
+              "end": 5254,
+              "player1": 80,
+              "player2": 64,
+              "start": 5244
+            },
+            {
+              "end": 5278,
+              "player1": 144,
+              "player2": 80,
+              "start": 5268
+            },
+            {
+              "end": 5302,
+              "player1": 2,
+              "player2": 2,
+              "start": 5292
+            },
+            {
+              "end": 5326,
+              "player1": 33,
+              "player2": 17,
+              "start": 5316
+            },
+            {
+              "end": 5350,
+              "player1": 8,
+              "player2": 4,
+              "start": 5340
+            },
+            {
+              "end": 5374,
+              "player1": 24,
+              "player2": 20,
+              "start": 5364
+            },
+            {
+              "end": 5398,
+              "player1": 40,
+              "player2": 36,
+              "start": 5388
+            }
+          ],
+          "frames": 6000
+        }
+      },
+      {
+        "capture": "build/coverage/arcade-replay-sound.jsonl",
+        "captureSHA256": "467797bb49751d2656e76572a25f9279201c92771d2d1185ad5142d8d828c1b1",
+        "clockEpoch": "946684800",
+        "frames": 11058,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3753,
+        "report": "build/coverage/arcade-replay/report.json",
+        "reportSHA256": "2c8f18d8b8e64ac79240857f13e20fbfe0f9088cb3f1a7ecc5f05d898036deb5",
+        "route": {
+          "events": [
+            {
+              "end": 1200,
+              "start": 0
+            },
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1206,
+              "start": 1202
+            },
+            {
+              "end": 1208,
+              "player1": 512,
+              "start": 1206
+            },
+            {
+              "end": 1238,
+              "start": 1208
+            },
+            {
+              "end": 1240,
+              "player1": 256,
+              "start": 1238
+            },
+            {
+              "end": 1300,
+              "start": 1240
+            },
+            {
+              "end": 1480,
+              "start": 1300
+            },
+            {
+              "end": 1482,
+              "player1": 16,
+              "start": 1480
+            },
+            {
+              "end": 1782,
+              "start": 1482
+            },
+            {
+              "end": 2142,
+              "start": 1782
+            },
+            {
+              "end": 2157,
+              "player1": 24,
+              "start": 2142
+            },
+            {
+              "end": 2172,
+              "start": 2157
+            },
+            {
+              "end": 2187,
+              "player1": 40,
+              "start": 2172
+            },
+            {
+              "end": 2202,
+              "player1": 64,
+              "start": 2187
+            },
+            {
+              "end": 2217,
+              "player1": 8,
+              "start": 2202
+            },
+            {
+              "end": 2232,
+              "player1": 144,
+              "start": 2217
+            },
+            {
+              "end": 2247,
+              "player1": 4,
+              "start": 2232
+            },
+            {
+              "end": 2262,
+              "player1": 80,
+              "start": 2247
+            },
+            {
+              "end": 2277,
+              "player1": 24,
+              "start": 2262
+            },
+            {
+              "end": 2292,
+              "start": 2277
+            },
+            {
+              "end": 2307,
+              "player1": 40,
+              "start": 2292
+            },
+            {
+              "end": 2322,
+              "player1": 64,
+              "start": 2307
+            },
+            {
+              "end": 2337,
+              "player1": 8,
+              "start": 2322
+            },
+            {
+              "end": 2352,
+              "player1": 144,
+              "start": 2337
+            },
+            {
+              "end": 2367,
+              "player1": 4,
+              "start": 2352
+            },
+            {
+              "end": 2382,
+              "player1": 80,
+              "start": 2367
+            },
+            {
+              "end": 2397,
+              "player1": 24,
+              "start": 2382
+            },
+            {
+              "end": 2412,
+              "start": 2397
+            },
+            {
+              "end": 2427,
+              "player1": 40,
+              "start": 2412
+            },
+            {
+              "end": 2442,
+              "player1": 64,
+              "start": 2427
+            },
+            {
+              "end": 2457,
+              "player1": 8,
+              "start": 2442
+            },
+            {
+              "end": 2472,
+              "player1": 144,
+              "start": 2457
+            },
+            {
+              "end": 2487,
+              "player1": 4,
+              "start": 2472
+            },
+            {
+              "end": 2502,
+              "player1": 80,
+              "start": 2487
+            },
+            {
+              "end": 2517,
+              "player1": 24,
+              "start": 2502
+            },
+            {
+              "end": 2532,
+              "start": 2517
+            },
+            {
+              "end": 2547,
+              "player1": 40,
+              "start": 2532
+            },
+            {
+              "end": 2562,
+              "player1": 64,
+              "start": 2547
+            },
+            {
+              "end": 2577,
+              "player1": 8,
+              "start": 2562
+            },
+            {
+              "end": 2592,
+              "player1": 144,
+              "start": 2577
+            },
+            {
+              "end": 2607,
+              "player1": 4,
+              "start": 2592
+            },
+            {
+              "end": 2622,
+              "player1": 80,
+              "start": 2607
+            },
+            {
+              "end": 2637,
+              "player1": 24,
+              "start": 2622
+            },
+            {
+              "end": 2652,
+              "start": 2637
+            },
+            {
+              "end": 2667,
+              "player1": 40,
+              "start": 2652
+            },
+            {
+              "end": 2682,
+              "player1": 64,
+              "start": 2667
+            },
+            {
+              "end": 2697,
+              "player1": 8,
+              "start": 2682
+            },
+            {
+              "end": 2712,
+              "player1": 144,
+              "start": 2697
+            },
+            {
+              "end": 2727,
+              "player1": 4,
+              "start": 2712
+            },
+            {
+              "end": 2742,
+              "player1": 80,
+              "start": 2727
+            },
+            {
+              "end": 3642,
+              "start": 2742
+            },
+            {
+              "end": 6042,
+              "start": 3642
+            },
+            {
+              "end": 6044,
+              "player1": 512,
+              "start": 6042
+            },
+            {
+              "end": 6048,
+              "start": 6044
+            },
+            {
+              "end": 6050,
+              "player1": 512,
+              "start": 6048
+            },
+            {
+              "end": 6056,
+              "start": 6050
+            },
+            {
+              "end": 6058,
+              "player1": 256,
+              "start": 6056
+            },
+            {
+              "end": 6158,
+              "start": 6058
+            },
+            {
+              "end": 7558,
+              "start": 6158
+            },
+            {
+              "end": 9558,
+              "player1": 40,
+              "start": 7558
+            },
+            {
+              "end": 11058,
+              "start": 9558
+            }
+          ],
+          "frames": 11058
+        }
+      },
+      {
+        "capture": "build/coverage/input-replay-sound.jsonl",
+        "captureSHA256": "24cec1ae47faddfb7650b45f6db2cc2597220a17cb025bb3bd57f73eaa41b5b1",
+        "clockEpoch": "946684800",
+        "frames": 1328,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 1439,
+        "report": "build/coverage/input-replay/report.json",
+        "reportSHA256": "d03a007cd7313a5a44eb8129cb268cade6e247c17248d9d0026cc01c49d1447f",
+        "route": {
+          "events": [
+            {
+              "end": 1100,
+              "start": 0
+            },
+            {
+              "end": 1102,
+              "player1": 65536,
+              "start": 1100
+            },
+            {
+              "end": 1162,
+              "start": 1102
+            },
+            {
+              "end": 1164,
+              "player1": 131072,
+              "start": 1162
+            },
+            {
+              "end": 1166,
+              "start": 1164
+            },
+            {
+              "end": 1168,
+              "player1": 131072,
+              "start": 1166
+            },
+            {
+              "end": 1170,
+              "start": 1168
+            },
+            {
+              "end": 1172,
+              "player1": 131072,
+              "start": 1170
+            },
+            {
+              "end": 1174,
+              "start": 1172
+            },
+            {
+              "end": 1176,
+              "player1": 131072,
+              "start": 1174
+            },
+            {
+              "end": 1178,
+              "start": 1176
+            },
+            {
+              "end": 1180,
+              "player1": 65536,
+              "start": 1178
+            },
+            {
+              "end": 1200,
+              "start": 1180
+            },
+            {
+              "end": 1230,
+              "player1": 249,
+              "player2": 246,
+              "start": 1200
+            },
+            {
+              "end": 1260,
+              "player1": 246,
+              "player2": 249,
+              "start": 1230
+            },
+            {
+              "end": 1264,
+              "start": 1260
+            },
+            {
+              "end": 1294,
+              "player1": 512,
+              "player2": 512,
+              "start": 1264
+            },
+            {
+              "end": 1298,
+              "start": 1294
+            },
+            {
+              "end": 1328,
+              "player1": 256,
+              "player2": 256,
+              "start": 1298
+            }
+          ],
+          "frames": 1328
+        }
+      },
+      {
+        "capture": "build/coverage/fighter-akira/sound-observations.jsonl",
+        "captureSHA256": "1b541f3568538d58f940bdb95793da2d36e32a2a4db5c31a563ca6c4a19e3363",
+        "clockEpoch": "946684800",
+        "frames": 4500,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3493,
+        "report": "build/coverage/fighter-akira/report.json",
+        "reportSHA256": "b5d48b5bc28aeaaefec415befe5a8f129373725c243730dfe2beb4aa6797ef1b",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "start": 1240
+            },
+            {
+              "end": 1622,
+              "player1": 16,
+              "start": 1620
+            },
+            {
+              "end": 2112,
+              "player1": 24,
+              "start": 2100
+            },
+            {
+              "end": 2140,
+              "player1": 40,
+              "start": 2128
+            },
+            {
+              "end": 2168,
+              "player1": 64,
+              "start": 2156
+            },
+            {
+              "end": 2196,
+              "player1": 80,
+              "start": 2184
+            },
+            {
+              "end": 2224,
+              "player1": 128,
+              "start": 2212
+            },
+            {
+              "end": 2252,
+              "player1": 136,
+              "start": 2240
+            },
+            {
+              "end": 2280,
+              "player1": 2,
+              "start": 2268
+            },
+            {
+              "end": 2308,
+              "player1": 18,
+              "start": 2296
+            },
+            {
+              "end": 2336,
+              "player1": 34,
+              "start": 2324
+            },
+            {
+              "end": 2364,
+              "player1": 33,
+              "start": 2352
+            },
+            {
+              "end": 2392,
+              "player1": 4,
+              "start": 2380
+            },
+            {
+              "end": 2420,
+              "player1": 48,
+              "start": 2408
+            },
+            {
+              "end": 2448,
+              "player1": 24,
+              "start": 2436
+            },
+            {
+              "end": 2476,
+              "player1": 40,
+              "start": 2464
+            },
+            {
+              "end": 2504,
+              "player1": 64,
+              "start": 2492
+            },
+            {
+              "end": 2532,
+              "player1": 80,
+              "start": 2520
+            },
+            {
+              "end": 2560,
+              "player1": 128,
+              "start": 2548
+            },
+            {
+              "end": 2588,
+              "player1": 136,
+              "start": 2576
+            },
+            {
+              "end": 2616,
+              "player1": 2,
+              "start": 2604
+            },
+            {
+              "end": 2644,
+              "player1": 18,
+              "start": 2632
+            },
+            {
+              "end": 2672,
+              "player1": 34,
+              "start": 2660
+            },
+            {
+              "end": 2700,
+              "player1": 33,
+              "start": 2688
+            },
+            {
+              "end": 2728,
+              "player1": 4,
+              "start": 2716
+            },
+            {
+              "end": 2756,
+              "player1": 48,
+              "start": 2744
+            },
+            {
+              "end": 2784,
+              "player1": 24,
+              "start": 2772
+            },
+            {
+              "end": 2812,
+              "player1": 40,
+              "start": 2800
+            },
+            {
+              "end": 2840,
+              "player1": 64,
+              "start": 2828
+            },
+            {
+              "end": 2868,
+              "player1": 80,
+              "start": 2856
+            },
+            {
+              "end": 2896,
+              "player1": 128,
+              "start": 2884
+            },
+            {
+              "end": 2924,
+              "player1": 136,
+              "start": 2912
+            },
+            {
+              "end": 2952,
+              "player1": 2,
+              "start": 2940
+            },
+            {
+              "end": 2980,
+              "player1": 18,
+              "start": 2968
+            },
+            {
+              "end": 3008,
+              "player1": 34,
+              "start": 2996
+            },
+            {
+              "end": 3036,
+              "player1": 33,
+              "start": 3024
+            },
+            {
+              "end": 3064,
+              "player1": 4,
+              "start": 3052
+            },
+            {
+              "end": 3092,
+              "player1": 48,
+              "start": 3080
+            },
+            {
+              "end": 3120,
+              "player1": 24,
+              "start": 3108
+            },
+            {
+              "end": 3148,
+              "player1": 40,
+              "start": 3136
+            },
+            {
+              "end": 3176,
+              "player1": 64,
+              "start": 3164
+            },
+            {
+              "end": 3204,
+              "player1": 80,
+              "start": 3192
+            },
+            {
+              "end": 3232,
+              "player1": 128,
+              "start": 3220
+            },
+            {
+              "end": 3260,
+              "player1": 136,
+              "start": 3248
+            },
+            {
+              "end": 3288,
+              "player1": 2,
+              "start": 3276
+            },
+            {
+              "end": 3316,
+              "player1": 18,
+              "start": 3304
+            },
+            {
+              "end": 3344,
+              "player1": 34,
+              "start": 3332
+            },
+            {
+              "end": 3372,
+              "player1": 33,
+              "start": 3360
+            },
+            {
+              "end": 3400,
+              "player1": 4,
+              "start": 3388
+            },
+            {
+              "end": 3428,
+              "player1": 48,
+              "start": 3416
+            },
+            {
+              "end": 3456,
+              "player1": 24,
+              "start": 3444
+            },
+            {
+              "end": 3484,
+              "player1": 40,
+              "start": 3472
+            },
+            {
+              "end": 3512,
+              "player1": 64,
+              "start": 3500
+            },
+            {
+              "end": 3540,
+              "player1": 80,
+              "start": 3528
+            },
+            {
+              "end": 3568,
+              "player1": 128,
+              "start": 3556
+            },
+            {
+              "end": 3596,
+              "player1": 136,
+              "start": 3584
+            },
+            {
+              "end": 3624,
+              "player1": 2,
+              "start": 3612
+            },
+            {
+              "end": 3652,
+              "player1": 18,
+              "start": 3640
+            },
+            {
+              "end": 3680,
+              "player1": 34,
+              "start": 3668
+            },
+            {
+              "end": 3708,
+              "player1": 33,
+              "start": 3696
+            },
+            {
+              "end": 3736,
+              "player1": 4,
+              "start": 3724
+            },
+            {
+              "end": 3764,
+              "player1": 48,
+              "start": 3752
+            },
+            {
+              "end": 3792,
+              "player1": 24,
+              "start": 3780
+            },
+            {
+              "end": 3820,
+              "player1": 40,
+              "start": 3808
+            },
+            {
+              "end": 3848,
+              "player1": 64,
+              "start": 3836
+            },
+            {
+              "end": 3876,
+              "player1": 80,
+              "start": 3864
+            },
+            {
+              "end": 3904,
+              "player1": 128,
+              "start": 3892
+            },
+            {
+              "end": 3932,
+              "player1": 136,
+              "start": 3920
+            },
+            {
+              "end": 3960,
+              "player1": 2,
+              "start": 3948
+            },
+            {
+              "end": 3988,
+              "player1": 18,
+              "start": 3976
+            },
+            {
+              "end": 4016,
+              "player1": 34,
+              "start": 4004
+            },
+            {
+              "end": 4044,
+              "player1": 33,
+              "start": 4032
+            },
+            {
+              "end": 4072,
+              "player1": 4,
+              "start": 4060
+            },
+            {
+              "end": 4100,
+              "player1": 48,
+              "start": 4088
+            },
+            {
+              "end": 4128,
+              "player1": 24,
+              "start": 4116
+            },
+            {
+              "end": 4156,
+              "player1": 40,
+              "start": 4144
+            },
+            {
+              "end": 4184,
+              "player1": 64,
+              "start": 4172
+            },
+            {
+              "end": 4212,
+              "player1": 80,
+              "start": 4200
+            },
+            {
+              "end": 4240,
+              "player1": 128,
+              "start": 4228
+            },
+            {
+              "end": 4268,
+              "player1": 136,
+              "start": 4256
+            },
+            {
+              "end": 4296,
+              "player1": 2,
+              "start": 4284
+            },
+            {
+              "end": 4324,
+              "player1": 18,
+              "start": 4312
+            },
+            {
+              "end": 4352,
+              "player1": 34,
+              "start": 4340
+            },
+            {
+              "end": 4380,
+              "player1": 33,
+              "start": 4368
+            }
+          ],
+          "frames": 4500
+        }
+      },
+      {
+        "capture": "build/coverage/fighter-pai/sound-observations.jsonl",
+        "captureSHA256": "b82e559584475fdc370d408be0eeba72a6c0af727d85fef41eb6126fdcbfe323",
+        "clockEpoch": "946684800",
+        "frames": 4500,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3474,
+        "report": "build/coverage/fighter-pai/report.json",
+        "reportSHA256": "0d8fab3cfd632d8e47474ecf33fe7233c52eadbd6a31e8b9ea7b615a8456f40c",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "start": 1240
+            },
+            {
+              "end": 1482,
+              "player1": 8,
+              "start": 1480
+            },
+            {
+              "end": 1622,
+              "player1": 16,
+              "start": 1620
+            },
+            {
+              "end": 2112,
+              "player1": 24,
+              "start": 2100
+            },
+            {
+              "end": 2140,
+              "player1": 40,
+              "start": 2128
+            },
+            {
+              "end": 2168,
+              "player1": 64,
+              "start": 2156
+            },
+            {
+              "end": 2196,
+              "player1": 80,
+              "start": 2184
+            },
+            {
+              "end": 2224,
+              "player1": 128,
+              "start": 2212
+            },
+            {
+              "end": 2252,
+              "player1": 136,
+              "start": 2240
+            },
+            {
+              "end": 2280,
+              "player1": 2,
+              "start": 2268
+            },
+            {
+              "end": 2308,
+              "player1": 18,
+              "start": 2296
+            },
+            {
+              "end": 2336,
+              "player1": 34,
+              "start": 2324
+            },
+            {
+              "end": 2364,
+              "player1": 33,
+              "start": 2352
+            },
+            {
+              "end": 2392,
+              "player1": 4,
+              "start": 2380
+            },
+            {
+              "end": 2420,
+              "player1": 48,
+              "start": 2408
+            },
+            {
+              "end": 2448,
+              "player1": 24,
+              "start": 2436
+            },
+            {
+              "end": 2476,
+              "player1": 40,
+              "start": 2464
+            },
+            {
+              "end": 2504,
+              "player1": 64,
+              "start": 2492
+            },
+            {
+              "end": 2532,
+              "player1": 80,
+              "start": 2520
+            },
+            {
+              "end": 2560,
+              "player1": 128,
+              "start": 2548
+            },
+            {
+              "end": 2588,
+              "player1": 136,
+              "start": 2576
+            },
+            {
+              "end": 2616,
+              "player1": 2,
+              "start": 2604
+            },
+            {
+              "end": 2644,
+              "player1": 18,
+              "start": 2632
+            },
+            {
+              "end": 2672,
+              "player1": 34,
+              "start": 2660
+            },
+            {
+              "end": 2700,
+              "player1": 33,
+              "start": 2688
+            },
+            {
+              "end": 2728,
+              "player1": 4,
+              "start": 2716
+            },
+            {
+              "end": 2756,
+              "player1": 48,
+              "start": 2744
+            },
+            {
+              "end": 2784,
+              "player1": 24,
+              "start": 2772
+            },
+            {
+              "end": 2812,
+              "player1": 40,
+              "start": 2800
+            },
+            {
+              "end": 2840,
+              "player1": 64,
+              "start": 2828
+            },
+            {
+              "end": 2868,
+              "player1": 80,
+              "start": 2856
+            },
+            {
+              "end": 2896,
+              "player1": 128,
+              "start": 2884
+            },
+            {
+              "end": 2924,
+              "player1": 136,
+              "start": 2912
+            },
+            {
+              "end": 2952,
+              "player1": 2,
+              "start": 2940
+            },
+            {
+              "end": 2980,
+              "player1": 18,
+              "start": 2968
+            },
+            {
+              "end": 3008,
+              "player1": 34,
+              "start": 2996
+            },
+            {
+              "end": 3036,
+              "player1": 33,
+              "start": 3024
+            },
+            {
+              "end": 3064,
+              "player1": 4,
+              "start": 3052
+            },
+            {
+              "end": 3092,
+              "player1": 48,
+              "start": 3080
+            },
+            {
+              "end": 3120,
+              "player1": 24,
+              "start": 3108
+            },
+            {
+              "end": 3148,
+              "player1": 40,
+              "start": 3136
+            },
+            {
+              "end": 3176,
+              "player1": 64,
+              "start": 3164
+            },
+            {
+              "end": 3204,
+              "player1": 80,
+              "start": 3192
+            },
+            {
+              "end": 3232,
+              "player1": 128,
+              "start": 3220
+            },
+            {
+              "end": 3260,
+              "player1": 136,
+              "start": 3248
+            },
+            {
+              "end": 3288,
+              "player1": 2,
+              "start": 3276
+            },
+            {
+              "end": 3316,
+              "player1": 18,
+              "start": 3304
+            },
+            {
+              "end": 3344,
+              "player1": 34,
+              "start": 3332
+            },
+            {
+              "end": 3372,
+              "player1": 33,
+              "start": 3360
+            },
+            {
+              "end": 3400,
+              "player1": 4,
+              "start": 3388
+            },
+            {
+              "end": 3428,
+              "player1": 48,
+              "start": 3416
+            },
+            {
+              "end": 3456,
+              "player1": 24,
+              "start": 3444
+            },
+            {
+              "end": 3484,
+              "player1": 40,
+              "start": 3472
+            },
+            {
+              "end": 3512,
+              "player1": 64,
+              "start": 3500
+            },
+            {
+              "end": 3540,
+              "player1": 80,
+              "start": 3528
+            },
+            {
+              "end": 3568,
+              "player1": 128,
+              "start": 3556
+            },
+            {
+              "end": 3596,
+              "player1": 136,
+              "start": 3584
+            },
+            {
+              "end": 3624,
+              "player1": 2,
+              "start": 3612
+            },
+            {
+              "end": 3652,
+              "player1": 18,
+              "start": 3640
+            },
+            {
+              "end": 3680,
+              "player1": 34,
+              "start": 3668
+            },
+            {
+              "end": 3708,
+              "player1": 33,
+              "start": 3696
+            },
+            {
+              "end": 3736,
+              "player1": 4,
+              "start": 3724
+            },
+            {
+              "end": 3764,
+              "player1": 48,
+              "start": 3752
+            },
+            {
+              "end": 3792,
+              "player1": 24,
+              "start": 3780
+            },
+            {
+              "end": 3820,
+              "player1": 40,
+              "start": 3808
+            },
+            {
+              "end": 3848,
+              "player1": 64,
+              "start": 3836
+            },
+            {
+              "end": 3876,
+              "player1": 80,
+              "start": 3864
+            },
+            {
+              "end": 3904,
+              "player1": 128,
+              "start": 3892
+            },
+            {
+              "end": 3932,
+              "player1": 136,
+              "start": 3920
+            },
+            {
+              "end": 3960,
+              "player1": 2,
+              "start": 3948
+            },
+            {
+              "end": 3988,
+              "player1": 18,
+              "start": 3976
+            },
+            {
+              "end": 4016,
+              "player1": 34,
+              "start": 4004
+            },
+            {
+              "end": 4044,
+              "player1": 33,
+              "start": 4032
+            },
+            {
+              "end": 4072,
+              "player1": 4,
+              "start": 4060
+            },
+            {
+              "end": 4100,
+              "player1": 48,
+              "start": 4088
+            },
+            {
+              "end": 4128,
+              "player1": 24,
+              "start": 4116
+            },
+            {
+              "end": 4156,
+              "player1": 40,
+              "start": 4144
+            },
+            {
+              "end": 4184,
+              "player1": 64,
+              "start": 4172
+            },
+            {
+              "end": 4212,
+              "player1": 80,
+              "start": 4200
+            },
+            {
+              "end": 4240,
+              "player1": 128,
+              "start": 4228
+            },
+            {
+              "end": 4268,
+              "player1": 136,
+              "start": 4256
+            },
+            {
+              "end": 4296,
+              "player1": 2,
+              "start": 4284
+            },
+            {
+              "end": 4324,
+              "player1": 18,
+              "start": 4312
+            },
+            {
+              "end": 4352,
+              "player1": 34,
+              "start": 4340
+            },
+            {
+              "end": 4380,
+              "player1": 33,
+              "start": 4368
+            }
+          ],
+          "frames": 4500
+        }
+      },
+      {
+        "capture": "build/coverage/fighter-lau/sound-observations.jsonl",
+        "captureSHA256": "7a797b441ff4604649b054d81faaca714119e093d79aad887d08958984b563b4",
+        "clockEpoch": "946684800",
+        "frames": 4500,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3517,
+        "report": "build/coverage/fighter-lau/report.json",
+        "reportSHA256": "4492af25c38322a1378f3383a70eef9502704cd3c2eb437eee22de4847993d5c",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "start": 1240
+            },
+            {
+              "end": 1482,
+              "player1": 8,
+              "start": 1480
+            },
+            {
+              "end": 1502,
+              "player1": 8,
+              "start": 1500
+            },
+            {
+              "end": 1622,
+              "player1": 16,
+              "start": 1620
+            },
+            {
+              "end": 2112,
+              "player1": 24,
+              "start": 2100
+            },
+            {
+              "end": 2140,
+              "player1": 40,
+              "start": 2128
+            },
+            {
+              "end": 2168,
+              "player1": 64,
+              "start": 2156
+            },
+            {
+              "end": 2196,
+              "player1": 80,
+              "start": 2184
+            },
+            {
+              "end": 2224,
+              "player1": 128,
+              "start": 2212
+            },
+            {
+              "end": 2252,
+              "player1": 136,
+              "start": 2240
+            },
+            {
+              "end": 2280,
+              "player1": 2,
+              "start": 2268
+            },
+            {
+              "end": 2308,
+              "player1": 18,
+              "start": 2296
+            },
+            {
+              "end": 2336,
+              "player1": 34,
+              "start": 2324
+            },
+            {
+              "end": 2364,
+              "player1": 33,
+              "start": 2352
+            },
+            {
+              "end": 2392,
+              "player1": 4,
+              "start": 2380
+            },
+            {
+              "end": 2420,
+              "player1": 48,
+              "start": 2408
+            },
+            {
+              "end": 2448,
+              "player1": 24,
+              "start": 2436
+            },
+            {
+              "end": 2476,
+              "player1": 40,
+              "start": 2464
+            },
+            {
+              "end": 2504,
+              "player1": 64,
+              "start": 2492
+            },
+            {
+              "end": 2532,
+              "player1": 80,
+              "start": 2520
+            },
+            {
+              "end": 2560,
+              "player1": 128,
+              "start": 2548
+            },
+            {
+              "end": 2588,
+              "player1": 136,
+              "start": 2576
+            },
+            {
+              "end": 2616,
+              "player1": 2,
+              "start": 2604
+            },
+            {
+              "end": 2644,
+              "player1": 18,
+              "start": 2632
+            },
+            {
+              "end": 2672,
+              "player1": 34,
+              "start": 2660
+            },
+            {
+              "end": 2700,
+              "player1": 33,
+              "start": 2688
+            },
+            {
+              "end": 2728,
+              "player1": 4,
+              "start": 2716
+            },
+            {
+              "end": 2756,
+              "player1": 48,
+              "start": 2744
+            },
+            {
+              "end": 2784,
+              "player1": 24,
+              "start": 2772
+            },
+            {
+              "end": 2812,
+              "player1": 40,
+              "start": 2800
+            },
+            {
+              "end": 2840,
+              "player1": 64,
+              "start": 2828
+            },
+            {
+              "end": 2868,
+              "player1": 80,
+              "start": 2856
+            },
+            {
+              "end": 2896,
+              "player1": 128,
+              "start": 2884
+            },
+            {
+              "end": 2924,
+              "player1": 136,
+              "start": 2912
+            },
+            {
+              "end": 2952,
+              "player1": 2,
+              "start": 2940
+            },
+            {
+              "end": 2980,
+              "player1": 18,
+              "start": 2968
+            },
+            {
+              "end": 3008,
+              "player1": 34,
+              "start": 2996
+            },
+            {
+              "end": 3036,
+              "player1": 33,
+              "start": 3024
+            },
+            {
+              "end": 3064,
+              "player1": 4,
+              "start": 3052
+            },
+            {
+              "end": 3092,
+              "player1": 48,
+              "start": 3080
+            },
+            {
+              "end": 3120,
+              "player1": 24,
+              "start": 3108
+            },
+            {
+              "end": 3148,
+              "player1": 40,
+              "start": 3136
+            },
+            {
+              "end": 3176,
+              "player1": 64,
+              "start": 3164
+            },
+            {
+              "end": 3204,
+              "player1": 80,
+              "start": 3192
+            },
+            {
+              "end": 3232,
+              "player1": 128,
+              "start": 3220
+            },
+            {
+              "end": 3260,
+              "player1": 136,
+              "start": 3248
+            },
+            {
+              "end": 3288,
+              "player1": 2,
+              "start": 3276
+            },
+            {
+              "end": 3316,
+              "player1": 18,
+              "start": 3304
+            },
+            {
+              "end": 3344,
+              "player1": 34,
+              "start": 3332
+            },
+            {
+              "end": 3372,
+              "player1": 33,
+              "start": 3360
+            },
+            {
+              "end": 3400,
+              "player1": 4,
+              "start": 3388
+            },
+            {
+              "end": 3428,
+              "player1": 48,
+              "start": 3416
+            },
+            {
+              "end": 3456,
+              "player1": 24,
+              "start": 3444
+            },
+            {
+              "end": 3484,
+              "player1": 40,
+              "start": 3472
+            },
+            {
+              "end": 3512,
+              "player1": 64,
+              "start": 3500
+            },
+            {
+              "end": 3540,
+              "player1": 80,
+              "start": 3528
+            },
+            {
+              "end": 3568,
+              "player1": 128,
+              "start": 3556
+            },
+            {
+              "end": 3596,
+              "player1": 136,
+              "start": 3584
+            },
+            {
+              "end": 3624,
+              "player1": 2,
+              "start": 3612
+            },
+            {
+              "end": 3652,
+              "player1": 18,
+              "start": 3640
+            },
+            {
+              "end": 3680,
+              "player1": 34,
+              "start": 3668
+            },
+            {
+              "end": 3708,
+              "player1": 33,
+              "start": 3696
+            },
+            {
+              "end": 3736,
+              "player1": 4,
+              "start": 3724
+            },
+            {
+              "end": 3764,
+              "player1": 48,
+              "start": 3752
+            },
+            {
+              "end": 3792,
+              "player1": 24,
+              "start": 3780
+            },
+            {
+              "end": 3820,
+              "player1": 40,
+              "start": 3808
+            },
+            {
+              "end": 3848,
+              "player1": 64,
+              "start": 3836
+            },
+            {
+              "end": 3876,
+              "player1": 80,
+              "start": 3864
+            },
+            {
+              "end": 3904,
+              "player1": 128,
+              "start": 3892
+            },
+            {
+              "end": 3932,
+              "player1": 136,
+              "start": 3920
+            },
+            {
+              "end": 3960,
+              "player1": 2,
+              "start": 3948
+            },
+            {
+              "end": 3988,
+              "player1": 18,
+              "start": 3976
+            },
+            {
+              "end": 4016,
+              "player1": 34,
+              "start": 4004
+            },
+            {
+              "end": 4044,
+              "player1": 33,
+              "start": 4032
+            },
+            {
+              "end": 4072,
+              "player1": 4,
+              "start": 4060
+            },
+            {
+              "end": 4100,
+              "player1": 48,
+              "start": 4088
+            },
+            {
+              "end": 4128,
+              "player1": 24,
+              "start": 4116
+            },
+            {
+              "end": 4156,
+              "player1": 40,
+              "start": 4144
+            },
+            {
+              "end": 4184,
+              "player1": 64,
+              "start": 4172
+            },
+            {
+              "end": 4212,
+              "player1": 80,
+              "start": 4200
+            },
+            {
+              "end": 4240,
+              "player1": 128,
+              "start": 4228
+            },
+            {
+              "end": 4268,
+              "player1": 136,
+              "start": 4256
+            },
+            {
+              "end": 4296,
+              "player1": 2,
+              "start": 4284
+            },
+            {
+              "end": 4324,
+              "player1": 18,
+              "start": 4312
+            },
+            {
+              "end": 4352,
+              "player1": 34,
+              "start": 4340
+            },
+            {
+              "end": 4380,
+              "player1": 33,
+              "start": 4368
+            }
+          ],
+          "frames": 4500
+        }
+      },
+      {
+        "capture": "build/coverage/fighter-wolf/sound-observations.jsonl",
+        "captureSHA256": "c5ac96bfb329a02ca508ca1c7a8e762ec9f9972e588b075a43cc328ef3869e80",
+        "clockEpoch": "946684800",
+        "frames": 4500,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3487,
+        "report": "build/coverage/fighter-wolf/report.json",
+        "reportSHA256": "0caaf372b50ebff57a6fe382a6e236d72a95330af7dbd72e89d2fcd79a804b9d",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "start": 1240
+            },
+            {
+              "end": 1482,
+              "player1": 8,
+              "start": 1480
+            },
+            {
+              "end": 1502,
+              "player1": 8,
+              "start": 1500
+            },
+            {
+              "end": 1522,
+              "player1": 8,
+              "start": 1520
+            },
+            {
+              "end": 1622,
+              "player1": 16,
+              "start": 1620
+            },
+            {
+              "end": 2112,
+              "player1": 24,
+              "start": 2100
+            },
+            {
+              "end": 2140,
+              "player1": 40,
+              "start": 2128
+            },
+            {
+              "end": 2168,
+              "player1": 64,
+              "start": 2156
+            },
+            {
+              "end": 2196,
+              "player1": 80,
+              "start": 2184
+            },
+            {
+              "end": 2224,
+              "player1": 128,
+              "start": 2212
+            },
+            {
+              "end": 2252,
+              "player1": 136,
+              "start": 2240
+            },
+            {
+              "end": 2280,
+              "player1": 2,
+              "start": 2268
+            },
+            {
+              "end": 2308,
+              "player1": 18,
+              "start": 2296
+            },
+            {
+              "end": 2336,
+              "player1": 34,
+              "start": 2324
+            },
+            {
+              "end": 2364,
+              "player1": 33,
+              "start": 2352
+            },
+            {
+              "end": 2392,
+              "player1": 4,
+              "start": 2380
+            },
+            {
+              "end": 2420,
+              "player1": 48,
+              "start": 2408
+            },
+            {
+              "end": 2448,
+              "player1": 24,
+              "start": 2436
+            },
+            {
+              "end": 2476,
+              "player1": 40,
+              "start": 2464
+            },
+            {
+              "end": 2504,
+              "player1": 64,
+              "start": 2492
+            },
+            {
+              "end": 2532,
+              "player1": 80,
+              "start": 2520
+            },
+            {
+              "end": 2560,
+              "player1": 128,
+              "start": 2548
+            },
+            {
+              "end": 2588,
+              "player1": 136,
+              "start": 2576
+            },
+            {
+              "end": 2616,
+              "player1": 2,
+              "start": 2604
+            },
+            {
+              "end": 2644,
+              "player1": 18,
+              "start": 2632
+            },
+            {
+              "end": 2672,
+              "player1": 34,
+              "start": 2660
+            },
+            {
+              "end": 2700,
+              "player1": 33,
+              "start": 2688
+            },
+            {
+              "end": 2728,
+              "player1": 4,
+              "start": 2716
+            },
+            {
+              "end": 2756,
+              "player1": 48,
+              "start": 2744
+            },
+            {
+              "end": 2784,
+              "player1": 24,
+              "start": 2772
+            },
+            {
+              "end": 2812,
+              "player1": 40,
+              "start": 2800
+            },
+            {
+              "end": 2840,
+              "player1": 64,
+              "start": 2828
+            },
+            {
+              "end": 2868,
+              "player1": 80,
+              "start": 2856
+            },
+            {
+              "end": 2896,
+              "player1": 128,
+              "start": 2884
+            },
+            {
+              "end": 2924,
+              "player1": 136,
+              "start": 2912
+            },
+            {
+              "end": 2952,
+              "player1": 2,
+              "start": 2940
+            },
+            {
+              "end": 2980,
+              "player1": 18,
+              "start": 2968
+            },
+            {
+              "end": 3008,
+              "player1": 34,
+              "start": 2996
+            },
+            {
+              "end": 3036,
+              "player1": 33,
+              "start": 3024
+            },
+            {
+              "end": 3064,
+              "player1": 4,
+              "start": 3052
+            },
+            {
+              "end": 3092,
+              "player1": 48,
+              "start": 3080
+            },
+            {
+              "end": 3120,
+              "player1": 24,
+              "start": 3108
+            },
+            {
+              "end": 3148,
+              "player1": 40,
+              "start": 3136
+            },
+            {
+              "end": 3176,
+              "player1": 64,
+              "start": 3164
+            },
+            {
+              "end": 3204,
+              "player1": 80,
+              "start": 3192
+            },
+            {
+              "end": 3232,
+              "player1": 128,
+              "start": 3220
+            },
+            {
+              "end": 3260,
+              "player1": 136,
+              "start": 3248
+            },
+            {
+              "end": 3288,
+              "player1": 2,
+              "start": 3276
+            },
+            {
+              "end": 3316,
+              "player1": 18,
+              "start": 3304
+            },
+            {
+              "end": 3344,
+              "player1": 34,
+              "start": 3332
+            },
+            {
+              "end": 3372,
+              "player1": 33,
+              "start": 3360
+            },
+            {
+              "end": 3400,
+              "player1": 4,
+              "start": 3388
+            },
+            {
+              "end": 3428,
+              "player1": 48,
+              "start": 3416
+            },
+            {
+              "end": 3456,
+              "player1": 24,
+              "start": 3444
+            },
+            {
+              "end": 3484,
+              "player1": 40,
+              "start": 3472
+            },
+            {
+              "end": 3512,
+              "player1": 64,
+              "start": 3500
+            },
+            {
+              "end": 3540,
+              "player1": 80,
+              "start": 3528
+            },
+            {
+              "end": 3568,
+              "player1": 128,
+              "start": 3556
+            },
+            {
+              "end": 3596,
+              "player1": 136,
+              "start": 3584
+            },
+            {
+              "end": 3624,
+              "player1": 2,
+              "start": 3612
+            },
+            {
+              "end": 3652,
+              "player1": 18,
+              "start": 3640
+            },
+            {
+              "end": 3680,
+              "player1": 34,
+              "start": 3668
+            },
+            {
+              "end": 3708,
+              "player1": 33,
+              "start": 3696
+            },
+            {
+              "end": 3736,
+              "player1": 4,
+              "start": 3724
+            },
+            {
+              "end": 3764,
+              "player1": 48,
+              "start": 3752
+            },
+            {
+              "end": 3792,
+              "player1": 24,
+              "start": 3780
+            },
+            {
+              "end": 3820,
+              "player1": 40,
+              "start": 3808
+            },
+            {
+              "end": 3848,
+              "player1": 64,
+              "start": 3836
+            },
+            {
+              "end": 3876,
+              "player1": 80,
+              "start": 3864
+            },
+            {
+              "end": 3904,
+              "player1": 128,
+              "start": 3892
+            },
+            {
+              "end": 3932,
+              "player1": 136,
+              "start": 3920
+            },
+            {
+              "end": 3960,
+              "player1": 2,
+              "start": 3948
+            },
+            {
+              "end": 3988,
+              "player1": 18,
+              "start": 3976
+            },
+            {
+              "end": 4016,
+              "player1": 34,
+              "start": 4004
+            },
+            {
+              "end": 4044,
+              "player1": 33,
+              "start": 4032
+            },
+            {
+              "end": 4072,
+              "player1": 4,
+              "start": 4060
+            },
+            {
+              "end": 4100,
+              "player1": 48,
+              "start": 4088
+            },
+            {
+              "end": 4128,
+              "player1": 24,
+              "start": 4116
+            },
+            {
+              "end": 4156,
+              "player1": 40,
+              "start": 4144
+            },
+            {
+              "end": 4184,
+              "player1": 64,
+              "start": 4172
+            },
+            {
+              "end": 4212,
+              "player1": 80,
+              "start": 4200
+            },
+            {
+              "end": 4240,
+              "player1": 128,
+              "start": 4228
+            },
+            {
+              "end": 4268,
+              "player1": 136,
+              "start": 4256
+            },
+            {
+              "end": 4296,
+              "player1": 2,
+              "start": 4284
+            },
+            {
+              "end": 4324,
+              "player1": 18,
+              "start": 4312
+            },
+            {
+              "end": 4352,
+              "player1": 34,
+              "start": 4340
+            },
+            {
+              "end": 4380,
+              "player1": 33,
+              "start": 4368
+            }
+          ],
+          "frames": 4500
+        }
+      },
+      {
+        "capture": "build/coverage/fighter-jeffry/sound-observations.jsonl",
+        "captureSHA256": "aa0e83655e4b9df55609b27dc24e635a6294c88f960a9ea88ee8af3d31a4b938",
+        "clockEpoch": "946684800",
+        "frames": 4500,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3470,
+        "report": "build/coverage/fighter-jeffry/report.json",
+        "reportSHA256": "f262630ab9c7e10346963711126010a7963e8360f586bc53965652be14476861",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "start": 1240
+            },
+            {
+              "end": 1482,
+              "player1": 8,
+              "start": 1480
+            },
+            {
+              "end": 1502,
+              "player1": 8,
+              "start": 1500
+            },
+            {
+              "end": 1522,
+              "player1": 8,
+              "start": 1520
+            },
+            {
+              "end": 1542,
+              "player1": 8,
+              "start": 1540
+            },
+            {
+              "end": 1622,
+              "player1": 16,
+              "start": 1620
+            },
+            {
+              "end": 2112,
+              "player1": 24,
+              "start": 2100
+            },
+            {
+              "end": 2140,
+              "player1": 40,
+              "start": 2128
+            },
+            {
+              "end": 2168,
+              "player1": 64,
+              "start": 2156
+            },
+            {
+              "end": 2196,
+              "player1": 80,
+              "start": 2184
+            },
+            {
+              "end": 2224,
+              "player1": 128,
+              "start": 2212
+            },
+            {
+              "end": 2252,
+              "player1": 136,
+              "start": 2240
+            },
+            {
+              "end": 2280,
+              "player1": 2,
+              "start": 2268
+            },
+            {
+              "end": 2308,
+              "player1": 18,
+              "start": 2296
+            },
+            {
+              "end": 2336,
+              "player1": 34,
+              "start": 2324
+            },
+            {
+              "end": 2364,
+              "player1": 33,
+              "start": 2352
+            },
+            {
+              "end": 2392,
+              "player1": 4,
+              "start": 2380
+            },
+            {
+              "end": 2420,
+              "player1": 48,
+              "start": 2408
+            },
+            {
+              "end": 2448,
+              "player1": 24,
+              "start": 2436
+            },
+            {
+              "end": 2476,
+              "player1": 40,
+              "start": 2464
+            },
+            {
+              "end": 2504,
+              "player1": 64,
+              "start": 2492
+            },
+            {
+              "end": 2532,
+              "player1": 80,
+              "start": 2520
+            },
+            {
+              "end": 2560,
+              "player1": 128,
+              "start": 2548
+            },
+            {
+              "end": 2588,
+              "player1": 136,
+              "start": 2576
+            },
+            {
+              "end": 2616,
+              "player1": 2,
+              "start": 2604
+            },
+            {
+              "end": 2644,
+              "player1": 18,
+              "start": 2632
+            },
+            {
+              "end": 2672,
+              "player1": 34,
+              "start": 2660
+            },
+            {
+              "end": 2700,
+              "player1": 33,
+              "start": 2688
+            },
+            {
+              "end": 2728,
+              "player1": 4,
+              "start": 2716
+            },
+            {
+              "end": 2756,
+              "player1": 48,
+              "start": 2744
+            },
+            {
+              "end": 2784,
+              "player1": 24,
+              "start": 2772
+            },
+            {
+              "end": 2812,
+              "player1": 40,
+              "start": 2800
+            },
+            {
+              "end": 2840,
+              "player1": 64,
+              "start": 2828
+            },
+            {
+              "end": 2868,
+              "player1": 80,
+              "start": 2856
+            },
+            {
+              "end": 2896,
+              "player1": 128,
+              "start": 2884
+            },
+            {
+              "end": 2924,
+              "player1": 136,
+              "start": 2912
+            },
+            {
+              "end": 2952,
+              "player1": 2,
+              "start": 2940
+            },
+            {
+              "end": 2980,
+              "player1": 18,
+              "start": 2968
+            },
+            {
+              "end": 3008,
+              "player1": 34,
+              "start": 2996
+            },
+            {
+              "end": 3036,
+              "player1": 33,
+              "start": 3024
+            },
+            {
+              "end": 3064,
+              "player1": 4,
+              "start": 3052
+            },
+            {
+              "end": 3092,
+              "player1": 48,
+              "start": 3080
+            },
+            {
+              "end": 3120,
+              "player1": 24,
+              "start": 3108
+            },
+            {
+              "end": 3148,
+              "player1": 40,
+              "start": 3136
+            },
+            {
+              "end": 3176,
+              "player1": 64,
+              "start": 3164
+            },
+            {
+              "end": 3204,
+              "player1": 80,
+              "start": 3192
+            },
+            {
+              "end": 3232,
+              "player1": 128,
+              "start": 3220
+            },
+            {
+              "end": 3260,
+              "player1": 136,
+              "start": 3248
+            },
+            {
+              "end": 3288,
+              "player1": 2,
+              "start": 3276
+            },
+            {
+              "end": 3316,
+              "player1": 18,
+              "start": 3304
+            },
+            {
+              "end": 3344,
+              "player1": 34,
+              "start": 3332
+            },
+            {
+              "end": 3372,
+              "player1": 33,
+              "start": 3360
+            },
+            {
+              "end": 3400,
+              "player1": 4,
+              "start": 3388
+            },
+            {
+              "end": 3428,
+              "player1": 48,
+              "start": 3416
+            },
+            {
+              "end": 3456,
+              "player1": 24,
+              "start": 3444
+            },
+            {
+              "end": 3484,
+              "player1": 40,
+              "start": 3472
+            },
+            {
+              "end": 3512,
+              "player1": 64,
+              "start": 3500
+            },
+            {
+              "end": 3540,
+              "player1": 80,
+              "start": 3528
+            },
+            {
+              "end": 3568,
+              "player1": 128,
+              "start": 3556
+            },
+            {
+              "end": 3596,
+              "player1": 136,
+              "start": 3584
+            },
+            {
+              "end": 3624,
+              "player1": 2,
+              "start": 3612
+            },
+            {
+              "end": 3652,
+              "player1": 18,
+              "start": 3640
+            },
+            {
+              "end": 3680,
+              "player1": 34,
+              "start": 3668
+            },
+            {
+              "end": 3708,
+              "player1": 33,
+              "start": 3696
+            },
+            {
+              "end": 3736,
+              "player1": 4,
+              "start": 3724
+            },
+            {
+              "end": 3764,
+              "player1": 48,
+              "start": 3752
+            },
+            {
+              "end": 3792,
+              "player1": 24,
+              "start": 3780
+            },
+            {
+              "end": 3820,
+              "player1": 40,
+              "start": 3808
+            },
+            {
+              "end": 3848,
+              "player1": 64,
+              "start": 3836
+            },
+            {
+              "end": 3876,
+              "player1": 80,
+              "start": 3864
+            },
+            {
+              "end": 3904,
+              "player1": 128,
+              "start": 3892
+            },
+            {
+              "end": 3932,
+              "player1": 136,
+              "start": 3920
+            },
+            {
+              "end": 3960,
+              "player1": 2,
+              "start": 3948
+            },
+            {
+              "end": 3988,
+              "player1": 18,
+              "start": 3976
+            },
+            {
+              "end": 4016,
+              "player1": 34,
+              "start": 4004
+            },
+            {
+              "end": 4044,
+              "player1": 33,
+              "start": 4032
+            },
+            {
+              "end": 4072,
+              "player1": 4,
+              "start": 4060
+            },
+            {
+              "end": 4100,
+              "player1": 48,
+              "start": 4088
+            },
+            {
+              "end": 4128,
+              "player1": 24,
+              "start": 4116
+            },
+            {
+              "end": 4156,
+              "player1": 40,
+              "start": 4144
+            },
+            {
+              "end": 4184,
+              "player1": 64,
+              "start": 4172
+            },
+            {
+              "end": 4212,
+              "player1": 80,
+              "start": 4200
+            },
+            {
+              "end": 4240,
+              "player1": 128,
+              "start": 4228
+            },
+            {
+              "end": 4268,
+              "player1": 136,
+              "start": 4256
+            },
+            {
+              "end": 4296,
+              "player1": 2,
+              "start": 4284
+            },
+            {
+              "end": 4324,
+              "player1": 18,
+              "start": 4312
+            },
+            {
+              "end": 4352,
+              "player1": 34,
+              "start": 4340
+            },
+            {
+              "end": 4380,
+              "player1": 33,
+              "start": 4368
+            }
+          ],
+          "frames": 4500
+        }
+      },
+      {
+        "capture": "build/coverage/fighter-kage/sound-observations.jsonl",
+        "captureSHA256": "1a34cfdd1e2e704ae7ae957341a5acc1e718d20bd32b1f4fb9392046e80e7c5c",
+        "clockEpoch": "946684800",
+        "frames": 4500,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3432,
+        "report": "build/coverage/fighter-kage/report.json",
+        "reportSHA256": "f34cc255ca0cb492a02f9af7d1329b1ed80124860e608caa2cb9fe18ace389af",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "start": 1240
+            },
+            {
+              "end": 1482,
+              "player1": 8,
+              "start": 1480
+            },
+            {
+              "end": 1502,
+              "player1": 8,
+              "start": 1500
+            },
+            {
+              "end": 1522,
+              "player1": 8,
+              "start": 1520
+            },
+            {
+              "end": 1542,
+              "player1": 8,
+              "start": 1540
+            },
+            {
+              "end": 1562,
+              "player1": 8,
+              "start": 1560
+            },
+            {
+              "end": 1622,
+              "player1": 16,
+              "start": 1620
+            },
+            {
+              "end": 2112,
+              "player1": 24,
+              "start": 2100
+            },
+            {
+              "end": 2140,
+              "player1": 40,
+              "start": 2128
+            },
+            {
+              "end": 2168,
+              "player1": 64,
+              "start": 2156
+            },
+            {
+              "end": 2196,
+              "player1": 80,
+              "start": 2184
+            },
+            {
+              "end": 2224,
+              "player1": 128,
+              "start": 2212
+            },
+            {
+              "end": 2252,
+              "player1": 136,
+              "start": 2240
+            },
+            {
+              "end": 2280,
+              "player1": 2,
+              "start": 2268
+            },
+            {
+              "end": 2308,
+              "player1": 18,
+              "start": 2296
+            },
+            {
+              "end": 2336,
+              "player1": 34,
+              "start": 2324
+            },
+            {
+              "end": 2364,
+              "player1": 33,
+              "start": 2352
+            },
+            {
+              "end": 2392,
+              "player1": 4,
+              "start": 2380
+            },
+            {
+              "end": 2420,
+              "player1": 48,
+              "start": 2408
+            },
+            {
+              "end": 2448,
+              "player1": 24,
+              "start": 2436
+            },
+            {
+              "end": 2476,
+              "player1": 40,
+              "start": 2464
+            },
+            {
+              "end": 2504,
+              "player1": 64,
+              "start": 2492
+            },
+            {
+              "end": 2532,
+              "player1": 80,
+              "start": 2520
+            },
+            {
+              "end": 2560,
+              "player1": 128,
+              "start": 2548
+            },
+            {
+              "end": 2588,
+              "player1": 136,
+              "start": 2576
+            },
+            {
+              "end": 2616,
+              "player1": 2,
+              "start": 2604
+            },
+            {
+              "end": 2644,
+              "player1": 18,
+              "start": 2632
+            },
+            {
+              "end": 2672,
+              "player1": 34,
+              "start": 2660
+            },
+            {
+              "end": 2700,
+              "player1": 33,
+              "start": 2688
+            },
+            {
+              "end": 2728,
+              "player1": 4,
+              "start": 2716
+            },
+            {
+              "end": 2756,
+              "player1": 48,
+              "start": 2744
+            },
+            {
+              "end": 2784,
+              "player1": 24,
+              "start": 2772
+            },
+            {
+              "end": 2812,
+              "player1": 40,
+              "start": 2800
+            },
+            {
+              "end": 2840,
+              "player1": 64,
+              "start": 2828
+            },
+            {
+              "end": 2868,
+              "player1": 80,
+              "start": 2856
+            },
+            {
+              "end": 2896,
+              "player1": 128,
+              "start": 2884
+            },
+            {
+              "end": 2924,
+              "player1": 136,
+              "start": 2912
+            },
+            {
+              "end": 2952,
+              "player1": 2,
+              "start": 2940
+            },
+            {
+              "end": 2980,
+              "player1": 18,
+              "start": 2968
+            },
+            {
+              "end": 3008,
+              "player1": 34,
+              "start": 2996
+            },
+            {
+              "end": 3036,
+              "player1": 33,
+              "start": 3024
+            },
+            {
+              "end": 3064,
+              "player1": 4,
+              "start": 3052
+            },
+            {
+              "end": 3092,
+              "player1": 48,
+              "start": 3080
+            },
+            {
+              "end": 3120,
+              "player1": 24,
+              "start": 3108
+            },
+            {
+              "end": 3148,
+              "player1": 40,
+              "start": 3136
+            },
+            {
+              "end": 3176,
+              "player1": 64,
+              "start": 3164
+            },
+            {
+              "end": 3204,
+              "player1": 80,
+              "start": 3192
+            },
+            {
+              "end": 3232,
+              "player1": 128,
+              "start": 3220
+            },
+            {
+              "end": 3260,
+              "player1": 136,
+              "start": 3248
+            },
+            {
+              "end": 3288,
+              "player1": 2,
+              "start": 3276
+            },
+            {
+              "end": 3316,
+              "player1": 18,
+              "start": 3304
+            },
+            {
+              "end": 3344,
+              "player1": 34,
+              "start": 3332
+            },
+            {
+              "end": 3372,
+              "player1": 33,
+              "start": 3360
+            },
+            {
+              "end": 3400,
+              "player1": 4,
+              "start": 3388
+            },
+            {
+              "end": 3428,
+              "player1": 48,
+              "start": 3416
+            },
+            {
+              "end": 3456,
+              "player1": 24,
+              "start": 3444
+            },
+            {
+              "end": 3484,
+              "player1": 40,
+              "start": 3472
+            },
+            {
+              "end": 3512,
+              "player1": 64,
+              "start": 3500
+            },
+            {
+              "end": 3540,
+              "player1": 80,
+              "start": 3528
+            },
+            {
+              "end": 3568,
+              "player1": 128,
+              "start": 3556
+            },
+            {
+              "end": 3596,
+              "player1": 136,
+              "start": 3584
+            },
+            {
+              "end": 3624,
+              "player1": 2,
+              "start": 3612
+            },
+            {
+              "end": 3652,
+              "player1": 18,
+              "start": 3640
+            },
+            {
+              "end": 3680,
+              "player1": 34,
+              "start": 3668
+            },
+            {
+              "end": 3708,
+              "player1": 33,
+              "start": 3696
+            },
+            {
+              "end": 3736,
+              "player1": 4,
+              "start": 3724
+            },
+            {
+              "end": 3764,
+              "player1": 48,
+              "start": 3752
+            },
+            {
+              "end": 3792,
+              "player1": 24,
+              "start": 3780
+            },
+            {
+              "end": 3820,
+              "player1": 40,
+              "start": 3808
+            },
+            {
+              "end": 3848,
+              "player1": 64,
+              "start": 3836
+            },
+            {
+              "end": 3876,
+              "player1": 80,
+              "start": 3864
+            },
+            {
+              "end": 3904,
+              "player1": 128,
+              "start": 3892
+            },
+            {
+              "end": 3932,
+              "player1": 136,
+              "start": 3920
+            },
+            {
+              "end": 3960,
+              "player1": 2,
+              "start": 3948
+            },
+            {
+              "end": 3988,
+              "player1": 18,
+              "start": 3976
+            },
+            {
+              "end": 4016,
+              "player1": 34,
+              "start": 4004
+            },
+            {
+              "end": 4044,
+              "player1": 33,
+              "start": 4032
+            },
+            {
+              "end": 4072,
+              "player1": 4,
+              "start": 4060
+            },
+            {
+              "end": 4100,
+              "player1": 48,
+              "start": 4088
+            },
+            {
+              "end": 4128,
+              "player1": 24,
+              "start": 4116
+            },
+            {
+              "end": 4156,
+              "player1": 40,
+              "start": 4144
+            },
+            {
+              "end": 4184,
+              "player1": 64,
+              "start": 4172
+            },
+            {
+              "end": 4212,
+              "player1": 80,
+              "start": 4200
+            },
+            {
+              "end": 4240,
+              "player1": 128,
+              "start": 4228
+            },
+            {
+              "end": 4268,
+              "player1": 136,
+              "start": 4256
+            },
+            {
+              "end": 4296,
+              "player1": 2,
+              "start": 4284
+            },
+            {
+              "end": 4324,
+              "player1": 18,
+              "start": 4312
+            },
+            {
+              "end": 4352,
+              "player1": 34,
+              "start": 4340
+            },
+            {
+              "end": 4380,
+              "player1": 33,
+              "start": 4368
+            }
+          ],
+          "frames": 4500
+        }
+      },
+      {
+        "capture": "build/coverage/fighter-sarah/sound-observations.jsonl",
+        "captureSHA256": "fedb5c8086ef322f607e75e7d4d88eb93dbd2c5d6dcd80233ff5af3fe29dc0f4",
+        "clockEpoch": "946684800",
+        "frames": 4500,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3455,
+        "report": "build/coverage/fighter-sarah/report.json",
+        "reportSHA256": "34680608401c62f1e99c3ce7715b8d11f8730abc1b3284b9f7e6f936cdf0cbbd",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "start": 1240
+            },
+            {
+              "end": 1582,
+              "player1": 2,
+              "start": 1580
+            },
+            {
+              "end": 1622,
+              "player1": 16,
+              "start": 1620
+            },
+            {
+              "end": 2112,
+              "player1": 24,
+              "start": 2100
+            },
+            {
+              "end": 2140,
+              "player1": 40,
+              "start": 2128
+            },
+            {
+              "end": 2168,
+              "player1": 64,
+              "start": 2156
+            },
+            {
+              "end": 2196,
+              "player1": 80,
+              "start": 2184
+            },
+            {
+              "end": 2224,
+              "player1": 128,
+              "start": 2212
+            },
+            {
+              "end": 2252,
+              "player1": 136,
+              "start": 2240
+            },
+            {
+              "end": 2280,
+              "player1": 2,
+              "start": 2268
+            },
+            {
+              "end": 2308,
+              "player1": 18,
+              "start": 2296
+            },
+            {
+              "end": 2336,
+              "player1": 34,
+              "start": 2324
+            },
+            {
+              "end": 2364,
+              "player1": 33,
+              "start": 2352
+            },
+            {
+              "end": 2392,
+              "player1": 4,
+              "start": 2380
+            },
+            {
+              "end": 2420,
+              "player1": 48,
+              "start": 2408
+            },
+            {
+              "end": 2448,
+              "player1": 24,
+              "start": 2436
+            },
+            {
+              "end": 2476,
+              "player1": 40,
+              "start": 2464
+            },
+            {
+              "end": 2504,
+              "player1": 64,
+              "start": 2492
+            },
+            {
+              "end": 2532,
+              "player1": 80,
+              "start": 2520
+            },
+            {
+              "end": 2560,
+              "player1": 128,
+              "start": 2548
+            },
+            {
+              "end": 2588,
+              "player1": 136,
+              "start": 2576
+            },
+            {
+              "end": 2616,
+              "player1": 2,
+              "start": 2604
+            },
+            {
+              "end": 2644,
+              "player1": 18,
+              "start": 2632
+            },
+            {
+              "end": 2672,
+              "player1": 34,
+              "start": 2660
+            },
+            {
+              "end": 2700,
+              "player1": 33,
+              "start": 2688
+            },
+            {
+              "end": 2728,
+              "player1": 4,
+              "start": 2716
+            },
+            {
+              "end": 2756,
+              "player1": 48,
+              "start": 2744
+            },
+            {
+              "end": 2784,
+              "player1": 24,
+              "start": 2772
+            },
+            {
+              "end": 2812,
+              "player1": 40,
+              "start": 2800
+            },
+            {
+              "end": 2840,
+              "player1": 64,
+              "start": 2828
+            },
+            {
+              "end": 2868,
+              "player1": 80,
+              "start": 2856
+            },
+            {
+              "end": 2896,
+              "player1": 128,
+              "start": 2884
+            },
+            {
+              "end": 2924,
+              "player1": 136,
+              "start": 2912
+            },
+            {
+              "end": 2952,
+              "player1": 2,
+              "start": 2940
+            },
+            {
+              "end": 2980,
+              "player1": 18,
+              "start": 2968
+            },
+            {
+              "end": 3008,
+              "player1": 34,
+              "start": 2996
+            },
+            {
+              "end": 3036,
+              "player1": 33,
+              "start": 3024
+            },
+            {
+              "end": 3064,
+              "player1": 4,
+              "start": 3052
+            },
+            {
+              "end": 3092,
+              "player1": 48,
+              "start": 3080
+            },
+            {
+              "end": 3120,
+              "player1": 24,
+              "start": 3108
+            },
+            {
+              "end": 3148,
+              "player1": 40,
+              "start": 3136
+            },
+            {
+              "end": 3176,
+              "player1": 64,
+              "start": 3164
+            },
+            {
+              "end": 3204,
+              "player1": 80,
+              "start": 3192
+            },
+            {
+              "end": 3232,
+              "player1": 128,
+              "start": 3220
+            },
+            {
+              "end": 3260,
+              "player1": 136,
+              "start": 3248
+            },
+            {
+              "end": 3288,
+              "player1": 2,
+              "start": 3276
+            },
+            {
+              "end": 3316,
+              "player1": 18,
+              "start": 3304
+            },
+            {
+              "end": 3344,
+              "player1": 34,
+              "start": 3332
+            },
+            {
+              "end": 3372,
+              "player1": 33,
+              "start": 3360
+            },
+            {
+              "end": 3400,
+              "player1": 4,
+              "start": 3388
+            },
+            {
+              "end": 3428,
+              "player1": 48,
+              "start": 3416
+            },
+            {
+              "end": 3456,
+              "player1": 24,
+              "start": 3444
+            },
+            {
+              "end": 3484,
+              "player1": 40,
+              "start": 3472
+            },
+            {
+              "end": 3512,
+              "player1": 64,
+              "start": 3500
+            },
+            {
+              "end": 3540,
+              "player1": 80,
+              "start": 3528
+            },
+            {
+              "end": 3568,
+              "player1": 128,
+              "start": 3556
+            },
+            {
+              "end": 3596,
+              "player1": 136,
+              "start": 3584
+            },
+            {
+              "end": 3624,
+              "player1": 2,
+              "start": 3612
+            },
+            {
+              "end": 3652,
+              "player1": 18,
+              "start": 3640
+            },
+            {
+              "end": 3680,
+              "player1": 34,
+              "start": 3668
+            },
+            {
+              "end": 3708,
+              "player1": 33,
+              "start": 3696
+            },
+            {
+              "end": 3736,
+              "player1": 4,
+              "start": 3724
+            },
+            {
+              "end": 3764,
+              "player1": 48,
+              "start": 3752
+            },
+            {
+              "end": 3792,
+              "player1": 24,
+              "start": 3780
+            },
+            {
+              "end": 3820,
+              "player1": 40,
+              "start": 3808
+            },
+            {
+              "end": 3848,
+              "player1": 64,
+              "start": 3836
+            },
+            {
+              "end": 3876,
+              "player1": 80,
+              "start": 3864
+            },
+            {
+              "end": 3904,
+              "player1": 128,
+              "start": 3892
+            },
+            {
+              "end": 3932,
+              "player1": 136,
+              "start": 3920
+            },
+            {
+              "end": 3960,
+              "player1": 2,
+              "start": 3948
+            },
+            {
+              "end": 3988,
+              "player1": 18,
+              "start": 3976
+            },
+            {
+              "end": 4016,
+              "player1": 34,
+              "start": 4004
+            },
+            {
+              "end": 4044,
+              "player1": 33,
+              "start": 4032
+            },
+            {
+              "end": 4072,
+              "player1": 4,
+              "start": 4060
+            },
+            {
+              "end": 4100,
+              "player1": 48,
+              "start": 4088
+            },
+            {
+              "end": 4128,
+              "player1": 24,
+              "start": 4116
+            },
+            {
+              "end": 4156,
+              "player1": 40,
+              "start": 4144
+            },
+            {
+              "end": 4184,
+              "player1": 64,
+              "start": 4172
+            },
+            {
+              "end": 4212,
+              "player1": 80,
+              "start": 4200
+            },
+            {
+              "end": 4240,
+              "player1": 128,
+              "start": 4228
+            },
+            {
+              "end": 4268,
+              "player1": 136,
+              "start": 4256
+            },
+            {
+              "end": 4296,
+              "player1": 2,
+              "start": 4284
+            },
+            {
+              "end": 4324,
+              "player1": 18,
+              "start": 4312
+            },
+            {
+              "end": 4352,
+              "player1": 34,
+              "start": 4340
+            },
+            {
+              "end": 4380,
+              "player1": 33,
+              "start": 4368
+            }
+          ],
+          "frames": 4500
+        }
+      },
+      {
+        "capture": "build/coverage/fighter-jacky/sound-observations.jsonl",
+        "captureSHA256": "7fb8334b26ada0d8d3e71dfb4e3579612469b059d4afccfbc825a1515c7fad33",
+        "clockEpoch": "946684800",
+        "frames": 4500,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3469,
+        "report": "build/coverage/fighter-jacky/report.json",
+        "reportSHA256": "9b7e6c45e9517df85b841ae38c082f20bad02967cbc684d14911f656cd7cd69f",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "start": 1240
+            },
+            {
+              "end": 1482,
+              "player1": 8,
+              "start": 1480
+            },
+            {
+              "end": 1582,
+              "player1": 2,
+              "start": 1580
+            },
+            {
+              "end": 1622,
+              "player1": 16,
+              "start": 1620
+            },
+            {
+              "end": 2112,
+              "player1": 24,
+              "start": 2100
+            },
+            {
+              "end": 2140,
+              "player1": 40,
+              "start": 2128
+            },
+            {
+              "end": 2168,
+              "player1": 64,
+              "start": 2156
+            },
+            {
+              "end": 2196,
+              "player1": 80,
+              "start": 2184
+            },
+            {
+              "end": 2224,
+              "player1": 128,
+              "start": 2212
+            },
+            {
+              "end": 2252,
+              "player1": 136,
+              "start": 2240
+            },
+            {
+              "end": 2280,
+              "player1": 2,
+              "start": 2268
+            },
+            {
+              "end": 2308,
+              "player1": 18,
+              "start": 2296
+            },
+            {
+              "end": 2336,
+              "player1": 34,
+              "start": 2324
+            },
+            {
+              "end": 2364,
+              "player1": 33,
+              "start": 2352
+            },
+            {
+              "end": 2392,
+              "player1": 4,
+              "start": 2380
+            },
+            {
+              "end": 2420,
+              "player1": 48,
+              "start": 2408
+            },
+            {
+              "end": 2448,
+              "player1": 24,
+              "start": 2436
+            },
+            {
+              "end": 2476,
+              "player1": 40,
+              "start": 2464
+            },
+            {
+              "end": 2504,
+              "player1": 64,
+              "start": 2492
+            },
+            {
+              "end": 2532,
+              "player1": 80,
+              "start": 2520
+            },
+            {
+              "end": 2560,
+              "player1": 128,
+              "start": 2548
+            },
+            {
+              "end": 2588,
+              "player1": 136,
+              "start": 2576
+            },
+            {
+              "end": 2616,
+              "player1": 2,
+              "start": 2604
+            },
+            {
+              "end": 2644,
+              "player1": 18,
+              "start": 2632
+            },
+            {
+              "end": 2672,
+              "player1": 34,
+              "start": 2660
+            },
+            {
+              "end": 2700,
+              "player1": 33,
+              "start": 2688
+            },
+            {
+              "end": 2728,
+              "player1": 4,
+              "start": 2716
+            },
+            {
+              "end": 2756,
+              "player1": 48,
+              "start": 2744
+            },
+            {
+              "end": 2784,
+              "player1": 24,
+              "start": 2772
+            },
+            {
+              "end": 2812,
+              "player1": 40,
+              "start": 2800
+            },
+            {
+              "end": 2840,
+              "player1": 64,
+              "start": 2828
+            },
+            {
+              "end": 2868,
+              "player1": 80,
+              "start": 2856
+            },
+            {
+              "end": 2896,
+              "player1": 128,
+              "start": 2884
+            },
+            {
+              "end": 2924,
+              "player1": 136,
+              "start": 2912
+            },
+            {
+              "end": 2952,
+              "player1": 2,
+              "start": 2940
+            },
+            {
+              "end": 2980,
+              "player1": 18,
+              "start": 2968
+            },
+            {
+              "end": 3008,
+              "player1": 34,
+              "start": 2996
+            },
+            {
+              "end": 3036,
+              "player1": 33,
+              "start": 3024
+            },
+            {
+              "end": 3064,
+              "player1": 4,
+              "start": 3052
+            },
+            {
+              "end": 3092,
+              "player1": 48,
+              "start": 3080
+            },
+            {
+              "end": 3120,
+              "player1": 24,
+              "start": 3108
+            },
+            {
+              "end": 3148,
+              "player1": 40,
+              "start": 3136
+            },
+            {
+              "end": 3176,
+              "player1": 64,
+              "start": 3164
+            },
+            {
+              "end": 3204,
+              "player1": 80,
+              "start": 3192
+            },
+            {
+              "end": 3232,
+              "player1": 128,
+              "start": 3220
+            },
+            {
+              "end": 3260,
+              "player1": 136,
+              "start": 3248
+            },
+            {
+              "end": 3288,
+              "player1": 2,
+              "start": 3276
+            },
+            {
+              "end": 3316,
+              "player1": 18,
+              "start": 3304
+            },
+            {
+              "end": 3344,
+              "player1": 34,
+              "start": 3332
+            },
+            {
+              "end": 3372,
+              "player1": 33,
+              "start": 3360
+            },
+            {
+              "end": 3400,
+              "player1": 4,
+              "start": 3388
+            },
+            {
+              "end": 3428,
+              "player1": 48,
+              "start": 3416
+            },
+            {
+              "end": 3456,
+              "player1": 24,
+              "start": 3444
+            },
+            {
+              "end": 3484,
+              "player1": 40,
+              "start": 3472
+            },
+            {
+              "end": 3512,
+              "player1": 64,
+              "start": 3500
+            },
+            {
+              "end": 3540,
+              "player1": 80,
+              "start": 3528
+            },
+            {
+              "end": 3568,
+              "player1": 128,
+              "start": 3556
+            },
+            {
+              "end": 3596,
+              "player1": 136,
+              "start": 3584
+            },
+            {
+              "end": 3624,
+              "player1": 2,
+              "start": 3612
+            },
+            {
+              "end": 3652,
+              "player1": 18,
+              "start": 3640
+            },
+            {
+              "end": 3680,
+              "player1": 34,
+              "start": 3668
+            },
+            {
+              "end": 3708,
+              "player1": 33,
+              "start": 3696
+            },
+            {
+              "end": 3736,
+              "player1": 4,
+              "start": 3724
+            },
+            {
+              "end": 3764,
+              "player1": 48,
+              "start": 3752
+            },
+            {
+              "end": 3792,
+              "player1": 24,
+              "start": 3780
+            },
+            {
+              "end": 3820,
+              "player1": 40,
+              "start": 3808
+            },
+            {
+              "end": 3848,
+              "player1": 64,
+              "start": 3836
+            },
+            {
+              "end": 3876,
+              "player1": 80,
+              "start": 3864
+            },
+            {
+              "end": 3904,
+              "player1": 128,
+              "start": 3892
+            },
+            {
+              "end": 3932,
+              "player1": 136,
+              "start": 3920
+            },
+            {
+              "end": 3960,
+              "player1": 2,
+              "start": 3948
+            },
+            {
+              "end": 3988,
+              "player1": 18,
+              "start": 3976
+            },
+            {
+              "end": 4016,
+              "player1": 34,
+              "start": 4004
+            },
+            {
+              "end": 4044,
+              "player1": 33,
+              "start": 4032
+            },
+            {
+              "end": 4072,
+              "player1": 4,
+              "start": 4060
+            },
+            {
+              "end": 4100,
+              "player1": 48,
+              "start": 4088
+            },
+            {
+              "end": 4128,
+              "player1": 24,
+              "start": 4116
+            },
+            {
+              "end": 4156,
+              "player1": 40,
+              "start": 4144
+            },
+            {
+              "end": 4184,
+              "player1": 64,
+              "start": 4172
+            },
+            {
+              "end": 4212,
+              "player1": 80,
+              "start": 4200
+            },
+            {
+              "end": 4240,
+              "player1": 128,
+              "start": 4228
+            },
+            {
+              "end": 4268,
+              "player1": 136,
+              "start": 4256
+            },
+            {
+              "end": 4296,
+              "player1": 2,
+              "start": 4284
+            },
+            {
+              "end": 4324,
+              "player1": 18,
+              "start": 4312
+            },
+            {
+              "end": 4352,
+              "player1": 34,
+              "start": 4340
+            },
+            {
+              "end": 4380,
+              "player1": 33,
+              "start": 4368
+            }
+          ],
+          "frames": 4500
+        }
+      },
+      {
+        "capture": "build/coverage/fighter-shun/sound-observations.jsonl",
+        "captureSHA256": "6b3c329de1a61e4a577de32cc220c3fed231c635db90d0f6c1c270953bee174a",
+        "clockEpoch": "946684800",
+        "frames": 4500,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3495,
+        "report": "build/coverage/fighter-shun/report.json",
+        "reportSHA256": "0bc3414022e015daa0530c3b870c420a318d0a96fa52010b63e78ba57368dc44",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "start": 1240
+            },
+            {
+              "end": 1482,
+              "player1": 8,
+              "start": 1480
+            },
+            {
+              "end": 1502,
+              "player1": 8,
+              "start": 1500
+            },
+            {
+              "end": 1582,
+              "player1": 2,
+              "start": 1580
+            },
+            {
+              "end": 1622,
+              "player1": 16,
+              "start": 1620
+            },
+            {
+              "end": 2112,
+              "player1": 24,
+              "start": 2100
+            },
+            {
+              "end": 2140,
+              "player1": 40,
+              "start": 2128
+            },
+            {
+              "end": 2168,
+              "player1": 64,
+              "start": 2156
+            },
+            {
+              "end": 2196,
+              "player1": 80,
+              "start": 2184
+            },
+            {
+              "end": 2224,
+              "player1": 128,
+              "start": 2212
+            },
+            {
+              "end": 2252,
+              "player1": 136,
+              "start": 2240
+            },
+            {
+              "end": 2280,
+              "player1": 2,
+              "start": 2268
+            },
+            {
+              "end": 2308,
+              "player1": 18,
+              "start": 2296
+            },
+            {
+              "end": 2336,
+              "player1": 34,
+              "start": 2324
+            },
+            {
+              "end": 2364,
+              "player1": 33,
+              "start": 2352
+            },
+            {
+              "end": 2392,
+              "player1": 4,
+              "start": 2380
+            },
+            {
+              "end": 2420,
+              "player1": 48,
+              "start": 2408
+            },
+            {
+              "end": 2448,
+              "player1": 24,
+              "start": 2436
+            },
+            {
+              "end": 2476,
+              "player1": 40,
+              "start": 2464
+            },
+            {
+              "end": 2504,
+              "player1": 64,
+              "start": 2492
+            },
+            {
+              "end": 2532,
+              "player1": 80,
+              "start": 2520
+            },
+            {
+              "end": 2560,
+              "player1": 128,
+              "start": 2548
+            },
+            {
+              "end": 2588,
+              "player1": 136,
+              "start": 2576
+            },
+            {
+              "end": 2616,
+              "player1": 2,
+              "start": 2604
+            },
+            {
+              "end": 2644,
+              "player1": 18,
+              "start": 2632
+            },
+            {
+              "end": 2672,
+              "player1": 34,
+              "start": 2660
+            },
+            {
+              "end": 2700,
+              "player1": 33,
+              "start": 2688
+            },
+            {
+              "end": 2728,
+              "player1": 4,
+              "start": 2716
+            },
+            {
+              "end": 2756,
+              "player1": 48,
+              "start": 2744
+            },
+            {
+              "end": 2784,
+              "player1": 24,
+              "start": 2772
+            },
+            {
+              "end": 2812,
+              "player1": 40,
+              "start": 2800
+            },
+            {
+              "end": 2840,
+              "player1": 64,
+              "start": 2828
+            },
+            {
+              "end": 2868,
+              "player1": 80,
+              "start": 2856
+            },
+            {
+              "end": 2896,
+              "player1": 128,
+              "start": 2884
+            },
+            {
+              "end": 2924,
+              "player1": 136,
+              "start": 2912
+            },
+            {
+              "end": 2952,
+              "player1": 2,
+              "start": 2940
+            },
+            {
+              "end": 2980,
+              "player1": 18,
+              "start": 2968
+            },
+            {
+              "end": 3008,
+              "player1": 34,
+              "start": 2996
+            },
+            {
+              "end": 3036,
+              "player1": 33,
+              "start": 3024
+            },
+            {
+              "end": 3064,
+              "player1": 4,
+              "start": 3052
+            },
+            {
+              "end": 3092,
+              "player1": 48,
+              "start": 3080
+            },
+            {
+              "end": 3120,
+              "player1": 24,
+              "start": 3108
+            },
+            {
+              "end": 3148,
+              "player1": 40,
+              "start": 3136
+            },
+            {
+              "end": 3176,
+              "player1": 64,
+              "start": 3164
+            },
+            {
+              "end": 3204,
+              "player1": 80,
+              "start": 3192
+            },
+            {
+              "end": 3232,
+              "player1": 128,
+              "start": 3220
+            },
+            {
+              "end": 3260,
+              "player1": 136,
+              "start": 3248
+            },
+            {
+              "end": 3288,
+              "player1": 2,
+              "start": 3276
+            },
+            {
+              "end": 3316,
+              "player1": 18,
+              "start": 3304
+            },
+            {
+              "end": 3344,
+              "player1": 34,
+              "start": 3332
+            },
+            {
+              "end": 3372,
+              "player1": 33,
+              "start": 3360
+            },
+            {
+              "end": 3400,
+              "player1": 4,
+              "start": 3388
+            },
+            {
+              "end": 3428,
+              "player1": 48,
+              "start": 3416
+            },
+            {
+              "end": 3456,
+              "player1": 24,
+              "start": 3444
+            },
+            {
+              "end": 3484,
+              "player1": 40,
+              "start": 3472
+            },
+            {
+              "end": 3512,
+              "player1": 64,
+              "start": 3500
+            },
+            {
+              "end": 3540,
+              "player1": 80,
+              "start": 3528
+            },
+            {
+              "end": 3568,
+              "player1": 128,
+              "start": 3556
+            },
+            {
+              "end": 3596,
+              "player1": 136,
+              "start": 3584
+            },
+            {
+              "end": 3624,
+              "player1": 2,
+              "start": 3612
+            },
+            {
+              "end": 3652,
+              "player1": 18,
+              "start": 3640
+            },
+            {
+              "end": 3680,
+              "player1": 34,
+              "start": 3668
+            },
+            {
+              "end": 3708,
+              "player1": 33,
+              "start": 3696
+            },
+            {
+              "end": 3736,
+              "player1": 4,
+              "start": 3724
+            },
+            {
+              "end": 3764,
+              "player1": 48,
+              "start": 3752
+            },
+            {
+              "end": 3792,
+              "player1": 24,
+              "start": 3780
+            },
+            {
+              "end": 3820,
+              "player1": 40,
+              "start": 3808
+            },
+            {
+              "end": 3848,
+              "player1": 64,
+              "start": 3836
+            },
+            {
+              "end": 3876,
+              "player1": 80,
+              "start": 3864
+            },
+            {
+              "end": 3904,
+              "player1": 128,
+              "start": 3892
+            },
+            {
+              "end": 3932,
+              "player1": 136,
+              "start": 3920
+            },
+            {
+              "end": 3960,
+              "player1": 2,
+              "start": 3948
+            },
+            {
+              "end": 3988,
+              "player1": 18,
+              "start": 3976
+            },
+            {
+              "end": 4016,
+              "player1": 34,
+              "start": 4004
+            },
+            {
+              "end": 4044,
+              "player1": 33,
+              "start": 4032
+            },
+            {
+              "end": 4072,
+              "player1": 4,
+              "start": 4060
+            },
+            {
+              "end": 4100,
+              "player1": 48,
+              "start": 4088
+            },
+            {
+              "end": 4128,
+              "player1": 24,
+              "start": 4116
+            },
+            {
+              "end": 4156,
+              "player1": 40,
+              "start": 4144
+            },
+            {
+              "end": 4184,
+              "player1": 64,
+              "start": 4172
+            },
+            {
+              "end": 4212,
+              "player1": 80,
+              "start": 4200
+            },
+            {
+              "end": 4240,
+              "player1": 128,
+              "start": 4228
+            },
+            {
+              "end": 4268,
+              "player1": 136,
+              "start": 4256
+            },
+            {
+              "end": 4296,
+              "player1": 2,
+              "start": 4284
+            },
+            {
+              "end": 4324,
+              "player1": 18,
+              "start": 4312
+            },
+            {
+              "end": 4352,
+              "player1": 34,
+              "start": 4340
+            },
+            {
+              "end": 4380,
+              "player1": 33,
+              "start": 4368
+            }
+          ],
+          "frames": 4500
+        }
+      },
+      {
+        "capture": "build/coverage/fighter-lion/sound-observations.jsonl",
+        "captureSHA256": "0fc9a051fde042baf2db519e8bd3cea0af76e759b076bbda2036216328cebe14",
+        "clockEpoch": "946684800",
+        "frames": 4500,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3513,
+        "report": "build/coverage/fighter-lion/report.json",
+        "reportSHA256": "9f20c5adfa89671476350eb31d12b001a5a232530cd320a291c32b1219a7e74c",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "start": 1240
+            },
+            {
+              "end": 1482,
+              "player1": 8,
+              "start": 1480
+            },
+            {
+              "end": 1502,
+              "player1": 8,
+              "start": 1500
+            },
+            {
+              "end": 1522,
+              "player1": 8,
+              "start": 1520
+            },
+            {
+              "end": 1582,
+              "player1": 2,
+              "start": 1580
+            },
+            {
+              "end": 1622,
+              "player1": 16,
+              "start": 1620
+            },
+            {
+              "end": 2112,
+              "player1": 24,
+              "start": 2100
+            },
+            {
+              "end": 2140,
+              "player1": 40,
+              "start": 2128
+            },
+            {
+              "end": 2168,
+              "player1": 64,
+              "start": 2156
+            },
+            {
+              "end": 2196,
+              "player1": 80,
+              "start": 2184
+            },
+            {
+              "end": 2224,
+              "player1": 128,
+              "start": 2212
+            },
+            {
+              "end": 2252,
+              "player1": 136,
+              "start": 2240
+            },
+            {
+              "end": 2280,
+              "player1": 2,
+              "start": 2268
+            },
+            {
+              "end": 2308,
+              "player1": 18,
+              "start": 2296
+            },
+            {
+              "end": 2336,
+              "player1": 34,
+              "start": 2324
+            },
+            {
+              "end": 2364,
+              "player1": 33,
+              "start": 2352
+            },
+            {
+              "end": 2392,
+              "player1": 4,
+              "start": 2380
+            },
+            {
+              "end": 2420,
+              "player1": 48,
+              "start": 2408
+            },
+            {
+              "end": 2448,
+              "player1": 24,
+              "start": 2436
+            },
+            {
+              "end": 2476,
+              "player1": 40,
+              "start": 2464
+            },
+            {
+              "end": 2504,
+              "player1": 64,
+              "start": 2492
+            },
+            {
+              "end": 2532,
+              "player1": 80,
+              "start": 2520
+            },
+            {
+              "end": 2560,
+              "player1": 128,
+              "start": 2548
+            },
+            {
+              "end": 2588,
+              "player1": 136,
+              "start": 2576
+            },
+            {
+              "end": 2616,
+              "player1": 2,
+              "start": 2604
+            },
+            {
+              "end": 2644,
+              "player1": 18,
+              "start": 2632
+            },
+            {
+              "end": 2672,
+              "player1": 34,
+              "start": 2660
+            },
+            {
+              "end": 2700,
+              "player1": 33,
+              "start": 2688
+            },
+            {
+              "end": 2728,
+              "player1": 4,
+              "start": 2716
+            },
+            {
+              "end": 2756,
+              "player1": 48,
+              "start": 2744
+            },
+            {
+              "end": 2784,
+              "player1": 24,
+              "start": 2772
+            },
+            {
+              "end": 2812,
+              "player1": 40,
+              "start": 2800
+            },
+            {
+              "end": 2840,
+              "player1": 64,
+              "start": 2828
+            },
+            {
+              "end": 2868,
+              "player1": 80,
+              "start": 2856
+            },
+            {
+              "end": 2896,
+              "player1": 128,
+              "start": 2884
+            },
+            {
+              "end": 2924,
+              "player1": 136,
+              "start": 2912
+            },
+            {
+              "end": 2952,
+              "player1": 2,
+              "start": 2940
+            },
+            {
+              "end": 2980,
+              "player1": 18,
+              "start": 2968
+            },
+            {
+              "end": 3008,
+              "player1": 34,
+              "start": 2996
+            },
+            {
+              "end": 3036,
+              "player1": 33,
+              "start": 3024
+            },
+            {
+              "end": 3064,
+              "player1": 4,
+              "start": 3052
+            },
+            {
+              "end": 3092,
+              "player1": 48,
+              "start": 3080
+            },
+            {
+              "end": 3120,
+              "player1": 24,
+              "start": 3108
+            },
+            {
+              "end": 3148,
+              "player1": 40,
+              "start": 3136
+            },
+            {
+              "end": 3176,
+              "player1": 64,
+              "start": 3164
+            },
+            {
+              "end": 3204,
+              "player1": 80,
+              "start": 3192
+            },
+            {
+              "end": 3232,
+              "player1": 128,
+              "start": 3220
+            },
+            {
+              "end": 3260,
+              "player1": 136,
+              "start": 3248
+            },
+            {
+              "end": 3288,
+              "player1": 2,
+              "start": 3276
+            },
+            {
+              "end": 3316,
+              "player1": 18,
+              "start": 3304
+            },
+            {
+              "end": 3344,
+              "player1": 34,
+              "start": 3332
+            },
+            {
+              "end": 3372,
+              "player1": 33,
+              "start": 3360
+            },
+            {
+              "end": 3400,
+              "player1": 4,
+              "start": 3388
+            },
+            {
+              "end": 3428,
+              "player1": 48,
+              "start": 3416
+            },
+            {
+              "end": 3456,
+              "player1": 24,
+              "start": 3444
+            },
+            {
+              "end": 3484,
+              "player1": 40,
+              "start": 3472
+            },
+            {
+              "end": 3512,
+              "player1": 64,
+              "start": 3500
+            },
+            {
+              "end": 3540,
+              "player1": 80,
+              "start": 3528
+            },
+            {
+              "end": 3568,
+              "player1": 128,
+              "start": 3556
+            },
+            {
+              "end": 3596,
+              "player1": 136,
+              "start": 3584
+            },
+            {
+              "end": 3624,
+              "player1": 2,
+              "start": 3612
+            },
+            {
+              "end": 3652,
+              "player1": 18,
+              "start": 3640
+            },
+            {
+              "end": 3680,
+              "player1": 34,
+              "start": 3668
+            },
+            {
+              "end": 3708,
+              "player1": 33,
+              "start": 3696
+            },
+            {
+              "end": 3736,
+              "player1": 4,
+              "start": 3724
+            },
+            {
+              "end": 3764,
+              "player1": 48,
+              "start": 3752
+            },
+            {
+              "end": 3792,
+              "player1": 24,
+              "start": 3780
+            },
+            {
+              "end": 3820,
+              "player1": 40,
+              "start": 3808
+            },
+            {
+              "end": 3848,
+              "player1": 64,
+              "start": 3836
+            },
+            {
+              "end": 3876,
+              "player1": 80,
+              "start": 3864
+            },
+            {
+              "end": 3904,
+              "player1": 128,
+              "start": 3892
+            },
+            {
+              "end": 3932,
+              "player1": 136,
+              "start": 3920
+            },
+            {
+              "end": 3960,
+              "player1": 2,
+              "start": 3948
+            },
+            {
+              "end": 3988,
+              "player1": 18,
+              "start": 3976
+            },
+            {
+              "end": 4016,
+              "player1": 34,
+              "start": 4004
+            },
+            {
+              "end": 4044,
+              "player1": 33,
+              "start": 4032
+            },
+            {
+              "end": 4072,
+              "player1": 4,
+              "start": 4060
+            },
+            {
+              "end": 4100,
+              "player1": 48,
+              "start": 4088
+            },
+            {
+              "end": 4128,
+              "player1": 24,
+              "start": 4116
+            },
+            {
+              "end": 4156,
+              "player1": 40,
+              "start": 4144
+            },
+            {
+              "end": 4184,
+              "player1": 64,
+              "start": 4172
+            },
+            {
+              "end": 4212,
+              "player1": 80,
+              "start": 4200
+            },
+            {
+              "end": 4240,
+              "player1": 128,
+              "start": 4228
+            },
+            {
+              "end": 4268,
+              "player1": 136,
+              "start": 4256
+            },
+            {
+              "end": 4296,
+              "player1": 2,
+              "start": 4284
+            },
+            {
+              "end": 4324,
+              "player1": 18,
+              "start": 4312
+            },
+            {
+              "end": 4352,
+              "player1": 34,
+              "start": 4340
+            },
+            {
+              "end": 4380,
+              "player1": 33,
+              "start": 4368
+            }
+          ],
+          "frames": 4500
+        }
+      },
+      {
+        "capture": "build/coverage/fighter-aoi/sound-observations.jsonl",
+        "captureSHA256": "d6d73192e3b522bc8caf17abe962310f34c092fcfb202298226dab8d428dd6c4",
+        "clockEpoch": "946684800",
+        "frames": 4500,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3427,
+        "report": "build/coverage/fighter-aoi/report.json",
+        "reportSHA256": "224959d3c428dbbff658f1261e338f960bf84c08045f6edddba9d0d0c519189d",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "start": 1240
+            },
+            {
+              "end": 1482,
+              "player1": 8,
+              "start": 1480
+            },
+            {
+              "end": 1502,
+              "player1": 8,
+              "start": 1500
+            },
+            {
+              "end": 1522,
+              "player1": 8,
+              "start": 1520
+            },
+            {
+              "end": 1542,
+              "player1": 8,
+              "start": 1540
+            },
+            {
+              "end": 1582,
+              "player1": 2,
+              "start": 1580
+            },
+            {
+              "end": 1622,
+              "player1": 16,
+              "start": 1620
+            },
+            {
+              "end": 2112,
+              "player1": 24,
+              "start": 2100
+            },
+            {
+              "end": 2140,
+              "player1": 40,
+              "start": 2128
+            },
+            {
+              "end": 2168,
+              "player1": 64,
+              "start": 2156
+            },
+            {
+              "end": 2196,
+              "player1": 80,
+              "start": 2184
+            },
+            {
+              "end": 2224,
+              "player1": 128,
+              "start": 2212
+            },
+            {
+              "end": 2252,
+              "player1": 136,
+              "start": 2240
+            },
+            {
+              "end": 2280,
+              "player1": 2,
+              "start": 2268
+            },
+            {
+              "end": 2308,
+              "player1": 18,
+              "start": 2296
+            },
+            {
+              "end": 2336,
+              "player1": 34,
+              "start": 2324
+            },
+            {
+              "end": 2364,
+              "player1": 33,
+              "start": 2352
+            },
+            {
+              "end": 2392,
+              "player1": 4,
+              "start": 2380
+            },
+            {
+              "end": 2420,
+              "player1": 48,
+              "start": 2408
+            },
+            {
+              "end": 2448,
+              "player1": 24,
+              "start": 2436
+            },
+            {
+              "end": 2476,
+              "player1": 40,
+              "start": 2464
+            },
+            {
+              "end": 2504,
+              "player1": 64,
+              "start": 2492
+            },
+            {
+              "end": 2532,
+              "player1": 80,
+              "start": 2520
+            },
+            {
+              "end": 2560,
+              "player1": 128,
+              "start": 2548
+            },
+            {
+              "end": 2588,
+              "player1": 136,
+              "start": 2576
+            },
+            {
+              "end": 2616,
+              "player1": 2,
+              "start": 2604
+            },
+            {
+              "end": 2644,
+              "player1": 18,
+              "start": 2632
+            },
+            {
+              "end": 2672,
+              "player1": 34,
+              "start": 2660
+            },
+            {
+              "end": 2700,
+              "player1": 33,
+              "start": 2688
+            },
+            {
+              "end": 2728,
+              "player1": 4,
+              "start": 2716
+            },
+            {
+              "end": 2756,
+              "player1": 48,
+              "start": 2744
+            },
+            {
+              "end": 2784,
+              "player1": 24,
+              "start": 2772
+            },
+            {
+              "end": 2812,
+              "player1": 40,
+              "start": 2800
+            },
+            {
+              "end": 2840,
+              "player1": 64,
+              "start": 2828
+            },
+            {
+              "end": 2868,
+              "player1": 80,
+              "start": 2856
+            },
+            {
+              "end": 2896,
+              "player1": 128,
+              "start": 2884
+            },
+            {
+              "end": 2924,
+              "player1": 136,
+              "start": 2912
+            },
+            {
+              "end": 2952,
+              "player1": 2,
+              "start": 2940
+            },
+            {
+              "end": 2980,
+              "player1": 18,
+              "start": 2968
+            },
+            {
+              "end": 3008,
+              "player1": 34,
+              "start": 2996
+            },
+            {
+              "end": 3036,
+              "player1": 33,
+              "start": 3024
+            },
+            {
+              "end": 3064,
+              "player1": 4,
+              "start": 3052
+            },
+            {
+              "end": 3092,
+              "player1": 48,
+              "start": 3080
+            },
+            {
+              "end": 3120,
+              "player1": 24,
+              "start": 3108
+            },
+            {
+              "end": 3148,
+              "player1": 40,
+              "start": 3136
+            },
+            {
+              "end": 3176,
+              "player1": 64,
+              "start": 3164
+            },
+            {
+              "end": 3204,
+              "player1": 80,
+              "start": 3192
+            },
+            {
+              "end": 3232,
+              "player1": 128,
+              "start": 3220
+            },
+            {
+              "end": 3260,
+              "player1": 136,
+              "start": 3248
+            },
+            {
+              "end": 3288,
+              "player1": 2,
+              "start": 3276
+            },
+            {
+              "end": 3316,
+              "player1": 18,
+              "start": 3304
+            },
+            {
+              "end": 3344,
+              "player1": 34,
+              "start": 3332
+            },
+            {
+              "end": 3372,
+              "player1": 33,
+              "start": 3360
+            },
+            {
+              "end": 3400,
+              "player1": 4,
+              "start": 3388
+            },
+            {
+              "end": 3428,
+              "player1": 48,
+              "start": 3416
+            },
+            {
+              "end": 3456,
+              "player1": 24,
+              "start": 3444
+            },
+            {
+              "end": 3484,
+              "player1": 40,
+              "start": 3472
+            },
+            {
+              "end": 3512,
+              "player1": 64,
+              "start": 3500
+            },
+            {
+              "end": 3540,
+              "player1": 80,
+              "start": 3528
+            },
+            {
+              "end": 3568,
+              "player1": 128,
+              "start": 3556
+            },
+            {
+              "end": 3596,
+              "player1": 136,
+              "start": 3584
+            },
+            {
+              "end": 3624,
+              "player1": 2,
+              "start": 3612
+            },
+            {
+              "end": 3652,
+              "player1": 18,
+              "start": 3640
+            },
+            {
+              "end": 3680,
+              "player1": 34,
+              "start": 3668
+            },
+            {
+              "end": 3708,
+              "player1": 33,
+              "start": 3696
+            },
+            {
+              "end": 3736,
+              "player1": 4,
+              "start": 3724
+            },
+            {
+              "end": 3764,
+              "player1": 48,
+              "start": 3752
+            },
+            {
+              "end": 3792,
+              "player1": 24,
+              "start": 3780
+            },
+            {
+              "end": 3820,
+              "player1": 40,
+              "start": 3808
+            },
+            {
+              "end": 3848,
+              "player1": 64,
+              "start": 3836
+            },
+            {
+              "end": 3876,
+              "player1": 80,
+              "start": 3864
+            },
+            {
+              "end": 3904,
+              "player1": 128,
+              "start": 3892
+            },
+            {
+              "end": 3932,
+              "player1": 136,
+              "start": 3920
+            },
+            {
+              "end": 3960,
+              "player1": 2,
+              "start": 3948
+            },
+            {
+              "end": 3988,
+              "player1": 18,
+              "start": 3976
+            },
+            {
+              "end": 4016,
+              "player1": 34,
+              "start": 4004
+            },
+            {
+              "end": 4044,
+              "player1": 33,
+              "start": 4032
+            },
+            {
+              "end": 4072,
+              "player1": 4,
+              "start": 4060
+            },
+            {
+              "end": 4100,
+              "player1": 48,
+              "start": 4088
+            },
+            {
+              "end": 4128,
+              "player1": 24,
+              "start": 4116
+            },
+            {
+              "end": 4156,
+              "player1": 40,
+              "start": 4144
+            },
+            {
+              "end": 4184,
+              "player1": 64,
+              "start": 4172
+            },
+            {
+              "end": 4212,
+              "player1": 80,
+              "start": 4200
+            },
+            {
+              "end": 4240,
+              "player1": 128,
+              "start": 4228
+            },
+            {
+              "end": 4268,
+              "player1": 136,
+              "start": 4256
+            },
+            {
+              "end": 4296,
+              "player1": 2,
+              "start": 4284
+            },
+            {
+              "end": 4324,
+              "player1": 18,
+              "start": 4312
+            },
+            {
+              "end": 4352,
+              "player1": 34,
+              "start": 4340
+            },
+            {
+              "end": 4380,
+              "player1": 33,
+              "start": 4368
+            }
+          ],
+          "frames": 4500
+        }
+      },
+      {
+        "capture": "build/coverage/fighter-taka/sound-observations.jsonl",
+        "captureSHA256": "92d9335512359efc4e6d5a3709c49e4499e94f272c05cf9a92e9bab2f1404a26",
+        "clockEpoch": "946684800",
+        "frames": 4500,
+        "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+        "records": 3524,
+        "report": "build/coverage/fighter-taka/report.json",
+        "reportSHA256": "50966be948a66104589ca4fd95ee21c743409c97a993d1f130601e5b085645ee",
+        "route": {
+          "events": [
+            {
+              "end": 1202,
+              "player1": 512,
+              "start": 1200
+            },
+            {
+              "end": 1212,
+              "player1": 512,
+              "start": 1210
+            },
+            {
+              "end": 1242,
+              "player1": 256,
+              "start": 1240
+            },
+            {
+              "end": 1482,
+              "player1": 8,
+              "start": 1480
+            },
+            {
+              "end": 1502,
+              "player1": 8,
+              "start": 1500
+            },
+            {
+              "end": 1522,
+              "player1": 8,
+              "start": 1520
+            },
+            {
+              "end": 1542,
+              "player1": 8,
+              "start": 1540
+            },
+            {
+              "end": 1562,
+              "player1": 8,
+              "start": 1560
+            },
+            {
+              "end": 1582,
+              "player1": 2,
+              "start": 1580
+            },
+            {
+              "end": 1622,
+              "player1": 16,
+              "start": 1620
+            },
+            {
+              "end": 2112,
+              "player1": 24,
+              "start": 2100
+            },
+            {
+              "end": 2140,
+              "player1": 40,
+              "start": 2128
+            },
+            {
+              "end": 2168,
+              "player1": 64,
+              "start": 2156
+            },
+            {
+              "end": 2196,
+              "player1": 80,
+              "start": 2184
+            },
+            {
+              "end": 2224,
+              "player1": 128,
+              "start": 2212
+            },
+            {
+              "end": 2252,
+              "player1": 136,
+              "start": 2240
+            },
+            {
+              "end": 2280,
+              "player1": 2,
+              "start": 2268
+            },
+            {
+              "end": 2308,
+              "player1": 18,
+              "start": 2296
+            },
+            {
+              "end": 2336,
+              "player1": 34,
+              "start": 2324
+            },
+            {
+              "end": 2364,
+              "player1": 33,
+              "start": 2352
+            },
+            {
+              "end": 2392,
+              "player1": 4,
+              "start": 2380
+            },
+            {
+              "end": 2420,
+              "player1": 48,
+              "start": 2408
+            },
+            {
+              "end": 2448,
+              "player1": 24,
+              "start": 2436
+            },
+            {
+              "end": 2476,
+              "player1": 40,
+              "start": 2464
+            },
+            {
+              "end": 2504,
+              "player1": 64,
+              "start": 2492
+            },
+            {
+              "end": 2532,
+              "player1": 80,
+              "start": 2520
+            },
+            {
+              "end": 2560,
+              "player1": 128,
+              "start": 2548
+            },
+            {
+              "end": 2588,
+              "player1": 136,
+              "start": 2576
+            },
+            {
+              "end": 2616,
+              "player1": 2,
+              "start": 2604
+            },
+            {
+              "end": 2644,
+              "player1": 18,
+              "start": 2632
+            },
+            {
+              "end": 2672,
+              "player1": 34,
+              "start": 2660
+            },
+            {
+              "end": 2700,
+              "player1": 33,
+              "start": 2688
+            },
+            {
+              "end": 2728,
+              "player1": 4,
+              "start": 2716
+            },
+            {
+              "end": 2756,
+              "player1": 48,
+              "start": 2744
+            },
+            {
+              "end": 2784,
+              "player1": 24,
+              "start": 2772
+            },
+            {
+              "end": 2812,
+              "player1": 40,
+              "start": 2800
+            },
+            {
+              "end": 2840,
+              "player1": 64,
+              "start": 2828
+            },
+            {
+              "end": 2868,
+              "player1": 80,
+              "start": 2856
+            },
+            {
+              "end": 2896,
+              "player1": 128,
+              "start": 2884
+            },
+            {
+              "end": 2924,
+              "player1": 136,
+              "start": 2912
+            },
+            {
+              "end": 2952,
+              "player1": 2,
+              "start": 2940
+            },
+            {
+              "end": 2980,
+              "player1": 18,
+              "start": 2968
+            },
+            {
+              "end": 3008,
+              "player1": 34,
+              "start": 2996
+            },
+            {
+              "end": 3036,
+              "player1": 33,
+              "start": 3024
+            },
+            {
+              "end": 3064,
+              "player1": 4,
+              "start": 3052
+            },
+            {
+              "end": 3092,
+              "player1": 48,
+              "start": 3080
+            },
+            {
+              "end": 3120,
+              "player1": 24,
+              "start": 3108
+            },
+            {
+              "end": 3148,
+              "player1": 40,
+              "start": 3136
+            },
+            {
+              "end": 3176,
+              "player1": 64,
+              "start": 3164
+            },
+            {
+              "end": 3204,
+              "player1": 80,
+              "start": 3192
+            },
+            {
+              "end": 3232,
+              "player1": 128,
+              "start": 3220
+            },
+            {
+              "end": 3260,
+              "player1": 136,
+              "start": 3248
+            },
+            {
+              "end": 3288,
+              "player1": 2,
+              "start": 3276
+            },
+            {
+              "end": 3316,
+              "player1": 18,
+              "start": 3304
+            },
+            {
+              "end": 3344,
+              "player1": 34,
+              "start": 3332
+            },
+            {
+              "end": 3372,
+              "player1": 33,
+              "start": 3360
+            },
+            {
+              "end": 3400,
+              "player1": 4,
+              "start": 3388
+            },
+            {
+              "end": 3428,
+              "player1": 48,
+              "start": 3416
+            },
+            {
+              "end": 3456,
+              "player1": 24,
+              "start": 3444
+            },
+            {
+              "end": 3484,
+              "player1": 40,
+              "start": 3472
+            },
+            {
+              "end": 3512,
+              "player1": 64,
+              "start": 3500
+            },
+            {
+              "end": 3540,
+              "player1": 80,
+              "start": 3528
+            },
+            {
+              "end": 3568,
+              "player1": 128,
+              "start": 3556
+            },
+            {
+              "end": 3596,
+              "player1": 136,
+              "start": 3584
+            },
+            {
+              "end": 3624,
+              "player1": 2,
+              "start": 3612
+            },
+            {
+              "end": 3652,
+              "player1": 18,
+              "start": 3640
+            },
+            {
+              "end": 3680,
+              "player1": 34,
+              "start": 3668
+            },
+            {
+              "end": 3708,
+              "player1": 33,
+              "start": 3696
+            },
+            {
+              "end": 3736,
+              "player1": 4,
+              "start": 3724
+            },
+            {
+              "end": 3764,
+              "player1": 48,
+              "start": 3752
+            },
+            {
+              "end": 3792,
+              "player1": 24,
+              "start": 3780
+            },
+            {
+              "end": 3820,
+              "player1": 40,
+              "start": 3808
+            },
+            {
+              "end": 3848,
+              "player1": 64,
+              "start": 3836
+            },
+            {
+              "end": 3876,
+              "player1": 80,
+              "start": 3864
+            },
+            {
+              "end": 3904,
+              "player1": 128,
+              "start": 3892
+            },
+            {
+              "end": 3932,
+              "player1": 136,
+              "start": 3920
+            },
+            {
+              "end": 3960,
+              "player1": 2,
+              "start": 3948
+            },
+            {
+              "end": 3988,
+              "player1": 18,
+              "start": 3976
+            },
+            {
+              "end": 4016,
+              "player1": 34,
+              "start": 4004
+            },
+            {
+              "end": 4044,
+              "player1": 33,
+              "start": 4032
+            },
+            {
+              "end": 4072,
+              "player1": 4,
+              "start": 4060
+            },
+            {
+              "end": 4100,
+              "player1": 48,
+              "start": 4088
+            },
+            {
+              "end": 4128,
+              "player1": 24,
+              "start": 4116
+            },
+            {
+              "end": 4156,
+              "player1": 40,
+              "start": 4144
+            },
+            {
+              "end": 4184,
+              "player1": 64,
+              "start": 4172
+            },
+            {
+              "end": 4212,
+              "player1": 80,
+              "start": 4200
+            },
+            {
+              "end": 4240,
+              "player1": 128,
+              "start": 4228
+            },
+            {
+              "end": 4268,
+              "player1": 136,
+              "start": 4256
+            },
+            {
+              "end": 4296,
+              "player1": 2,
+              "start": 4284
+            },
+            {
+              "end": 4324,
+              "player1": 18,
+              "start": 4312
+            },
+            {
+              "end": 4352,
+              "player1": 34,
+              "start": 4340
+            },
+            {
+              "end": 4380,
+              "player1": 33,
+              "start": 4368
+            }
+          ],
+          "frames": 4500
+        }
+      }
+    ],
+    "scope": "Union of supplied current-game original-processor observer outputs. Game ROM mapping and every observed 68K word are separately authenticated by compile_sound.py; generated programs and raw captures remain local.",
+    "uniqueRecords": 4076,
+    "upstreamCommit": "24d2ffcfc7f14229337f05f4920fe26b56633d9d"
+  },
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin27.0.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+  "cpus": [
+    "SCSP sound-board 68000",
+    "two SCSP DSPs"
+  ],
+  "differential": {
+    "m68k_compared": [
+      "registers",
+      "flags",
+      "pc",
+      "cycles",
+      "ordered_bus_reads",
+      "ordered_bus_writes",
+      "stop_state"
+    ],
+    "m68k_instruction_trials": 42262,
+    "m68k_mirror_trials": 8,
+    "manifest_sha256": "7029b1c4a4fe4ca5a980b14edcc3930f0fb492679022ae87d20cd26a83b56a3e",
+    "negative_guards": [
+      "changed opcode rejected",
+      "changed extension rejected",
+      "unknown PC rejected",
+      "absent DSB board rejected",
+      "odd PC rejected",
+      "unknown DSP instruction rejected",
+      "instruction at unknown slot rejected",
+      "changed cached instruction rejected",
+      "invalid DSP execution limit rejected"
+    ],
+    "passed": true,
+    "scspdsp_changing_cached_sequence_trials": 16,
+    "scspdsp_closure_instruction_trials": 33492,
+    "scspdsp_compared": [
+      "entire_dsp_state",
+      "entire_512K_word_sample_ram"
+    ],
+    "scspdsp_held_out_trials": 3416,
+    "scspdsp_latched_limit_trials": 5677,
+    "scspdsp_mixed_program_trials": 256,
+    "scspdsp_programs": 1138,
+    "scspdsp_samples_per_cached_sequence": 256,
+    "scspdsp_slot_instruction_variants": 16746,
+    "scspdsp_synthetic_trials": 48,
+    "scspdsp_trials": 18208
+  },
+  "fixtureBuildReceiptSHA256": "a262dd2f0f0ee785165b3faa69066cf765e7f617e610a89ed366f266f6ef4146",
+  "fixtures": {
+    "sound68k_probe.c": "40b7e41aa84f2d00fb064a7e5c11f467f3b16ac00bf8dc00f51b5cb33438fd9e",
+    "sound_dsp_probe.cpp": "e4c8b7907acea2a94087e27479cfd3e15830acedc38a9a8c6f9e0073428c0a88"
+  },
+  "fixturesAndBinaries": {
+    "native.dylib": "099e95161317a60ea84dfeacb60d4ef2aa45603e52b2780d8f039f1e4996b166",
+    "native_dsp.dylib": "ca91187bf3d7e63d5d2074b360076c1bc18b896238672f1ffaa00aa8d9928925",
+    "reference.dylib": "1066fefb38ead92477ebedf677ea9c89101e45914596e0a61974683795050b52",
+    "reference_dsp.dylib": "03ef23daf265ef8f0bbfe3b5847ffb84058b2ce09463243560ebf9eff2281bef",
+    "synthetic_dsp.dylib": "d31883e3978fa85009aba3e4b511b3dbcd2bf0229d1474717450974aff363f5c"
+  },
+  "flags": [
+    "-O2",
+    "-arch",
+    "arm64",
+    "-mmacosx-version-min=14.0",
+    "-fexceptions",
+    "-fno-strict-aliasing",
+    "-ffp-contract=off",
+    "-DSUPERMODEL_OSX"
+  ],
+  "format": 1,
+  "game": "vf3",
+  "generation": {
+    "m68k": {
+      "absentBoards": [
+        1
+      ],
+      "aligned_rom_entries": 262144,
+      "boards": [
+        0
+      ],
+      "canonicalRange": "0x600000..0x67ffff",
+      "fallback": false,
+      "mirrorRange": "0x680000..0x6fffff",
+      "otherBoardsFailClosed": true,
+      "ram_word_entries": 0,
+      "romWordOrder": "little-endian raw halfwords after pinned loader/board transformations",
+      "roms": [
+        {
+          "bytes": 524288,
+          "crc32": "b416fe96",
+          "name": "epr-19231.21",
+          "sha256": "33b02da29908f4b348c3442ecd2118ffafba8bb6ebcae862ffe708f58ab15a0a"
+        }
+      ],
+      "runtime_opcode_decoder": false,
+      "specialized_operation_bodies": 16217
+    },
+    "scspdsp": {
+      "admission": "Exact slot-specific four-word instructions from the offline per-byte upload closure of observed images and zero reset",
+      "captured_program_images": 1138,
+      "fallback": false,
+      "instruction_slot_bound": true,
+      "observed_slot_instructions": 964,
+      "original_execution_limit_preserved": true,
+      "runtime_instruction_decoder": false,
+      "slot_variant_counts": [
+        8,
+        2,
+        16,
+        2,
+        16,
+        2,
+        16,
+        2,
+        24,
+        2,
+        8,
+        32,
+        16,
+        8,
+        16,
+        16,
+        16,
+        4,
+        8,
+        32,
+        16,
+        16,
+        16,
+        16,
+        32,
+        4,
+        16,
+        3,
+        8,
+        2,
+        8,
+        288,
+        36,
+        192,
+        108,
+        192,
+        108,
+        288,
+        72,
+        864,
+        36,
+        864,
+        72,
+        288,
+        162,
+        576,
+        16,
+        96,
+        32,
+        576,
+        108,
+        324,
+        144,
+        1944,
+        54,
+        216,
+        162,
+        864,
+        72,
+        192,
+        108,
+        288,
+        108,
+        24,
+        108,
+        24,
+        54,
+        24,
+        72,
+        48,
+        72,
+        1296,
+        72,
+        864,
+        36,
+        384,
+        216,
+        12,
+        72,
+        162,
+        36,
+        64,
+        54,
+        108,
+        216,
+        192,
+        16,
+        9,
+        8,
+        18,
+        54,
+        144,
+        48,
+        576,
+        48,
+        432,
+        216,
+        216,
+        24,
+        216,
+        72,
+        324,
+        36,
+        32,
+        72,
+        32,
+        54,
+        4,
+        16,
+        2,
+        16,
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "specialized_operation_bodies": 15582,
+      "static_slot_instruction_variants": 16746,
+      "unknown_byte_values_rejected": true,
+      "upload_write_widths": [
+        8,
+        16,
+        32
+      ],
+      "zero_length_uploads_execute_no_instructions": true
+    }
+  },
+  "generatorSHA256": "9a044ac8b1b919e75b22200d36fc5bc51dcac7df7e361d74ae92aef48b2864aa",
+  "heldOutCaptures": [
+    {
+      "capture": "build/coverage/late-start-sound.jsonl",
+      "captureSHA256": "737665e07897252b04d009932f073d3890ea302dd7010a8b1d49339bb161d604",
+      "capturedDSPImages": 794,
+      "differentialTrials": 1588,
+      "frames": 7000,
+      "includedInAuthorizingCorpus": false,
+      "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+      "replayReport": "build/coverage/late-start/report.json",
+      "replayReportSHA256": "8b952f0011d182a33b80ce3a8a5d31b30a819227f7adf81826723417221bfb22",
+      "unseenObservedSlotQuads": 5,
+      "unsupportedSlotQuads": 0
+    },
+    {
+      "capture": "build/coverage/challenger-sound.jsonl",
+      "captureSHA256": "e4a6e4c9ab4c68d0db887b1e98cc8cbd9a6626161772ebaee2d519f04a2e8e1a",
+      "capturedDSPImages": 914,
+      "differentialTrials": 1828,
+      "frames": 9000,
+      "includedInAuthorizingCorpus": false,
+      "observerLibrarySHA256": "e339322f5aa5a0fbae239965d746cd63eb66737fab59778738215059232019ba",
+      "replayReport": "build/coverage/challenger/report.json",
+      "replayReportSHA256": "fbe92d3efba5fc7b41fbf7f71e818e79cf46623cd02048cca41d642aa112ed23",
+      "unseenObservedSlotQuads": 3,
+      "unsupportedSlotQuads": 0
+    }
+  ],
+  "limitations": [
+    "68000 comparison covers every distinct word from the verified 512 KiB sound ROM as an opcode at a representative address in two register/flag states; it does not enumerate every address or machine state.",
+    "DSP comparison covers captured images, every exact slot-specific instruction from the finite per-byte upload closure, mixed programs and changing cached instructions, plus three synthetic programs. This admits new combinations of known byte values at their observed positions, not only observed whole images.",
+    "The original board permits independent 8-, 16-, and 32-bit program-memory writes while LastStep remains latched. The offline Cartesian byte closure supports arbitrary progress/interruption between observed uploads. Unknown slot-specific quads, byte values, and invalid execution limits fail explicitly.",
+    "A zero LastStep executes no DSP instructions during program upload. Nonzero limits select only exact guarded offline-specialized operations; no runtime instruction-field decoding occurs.",
+    "Full-game frame/audio replay and physical audio/controller acceptance are separate integration requirements."
+  ],
+  "media": [
+    {
+      "bytes": 524288,
+      "crc32": "b416fe96",
+      "name": "epr-19231.21",
+      "sha256": "33b02da29908f4b348c3442ecd2118ffafba8bb6ebcae862ffe708f58ab15a0a"
+    }
+  ],
+  "originalSources": {
+    "Config/Games.xml": "48c56b24ea720fb66188c0b2d94579a110be24971ac215ea808c563c665cf655",
+    "Src/CPU/68K/Musashi/m68k.h": "5d1b2b2e350a12406744025fe5fb619768295a6ffd5814daeaf8f9ad921e5e83",
+    "Src/CPU/68K/Musashi/m68k_in.c": "a3700dadaceb14b1a480abd889ec632cdd66220ba49c854f54207d12b37a1d33",
+    "Src/CPU/68K/Musashi/m68kconf.h": "862c1df5841c7c37d2cb6646f11b4bf684656379e9ece5426974846cfbb9ce2f",
+    "Src/CPU/68K/Musashi/m68kcpu.c": "4cd333e010a76597bb8ed8444f3de814bf4915771d069c222f01f0fd0ef4d12f",
+    "Src/CPU/68K/Musashi/m68kcpu.h": "a2b9c832567f4c085adf74ebe8b989a1dd7c192760c8106cac31ca81d8985bb5",
+    "Src/CPU/68K/Musashi/m68kctx.h": "2f7f7c7383fb8ded4cbde5f762a5ae2f1ca37263422e92fac6fe068af8750fa7",
+    "Src/CPU/68K/Musashi/m68kdasm.c": "24321039c439f3846988508713e5a3edc9b54cb4cb857314ecc4c5c7a1a4c259",
+    "Src/CPU/68K/Musashi/m68kmake.c": "b30b3644adc9cc89bb07fbfba74ef1ce8d05e5f5d86edd902051c0e7669684b9",
+    "Src/Model3/Model3.cpp": "c5dc67722fade4a2e2919509bfac216bd6ea9a10bb62b5eaedfb366c2a38f385",
+    "Src/Model3/SoundBoard.cpp": "4eaa01e5cd4c034ba2ad503ac1c4af5439f09e63a916275389f289a66a263b12",
+    "Src/Sound/SCSPDSP.cpp": "d184c8cd283ffab51922c38e19b2ebb371fd32d3f1c15dafcada1602d7ca27e5",
+    "Src/Sound/SCSPDSP.h": "62c4c441e12bfe7a4af7482ad9e600125f6a712283348206d719134cb1eb702e"
+  },
+  "passed": true,
+  "productTranslationManifestSHA256": "7029b1c4a4fe4ca5a980b14edcc3930f0fb492679022ae87d20cd26a83b56a3e",
+  "referenceGeneratedSources": {
+    "m68kopac.c": "384e1d86dc68f6ea0814f3f46d3fd27320a6b4f584fd9a25f6ac35565874d655",
+    "m68kopdm.c": "d4c9b9933925ef76c13dffbcd6f718d8229aceff2ba53f2b217504a3d725f5bd",
+    "m68kopnz.c": "61b8327b165b324b50d36b1e4ebd5c765d613c32d5fa82c1145aef2db729b77c",
+    "m68kops.c": "d0cde0756e1cd3e067b36b55f3ad869bdc9276c2803505e5fede305c6ef577ab",
+    "m68kops.h": "4d6088baa0ddb37a8905a41fb29e1883197a0870b077fd5eab834a17b96b43b8"
+  },
+  "revision": "Japan Revision D",
+  "sourceInputs": {
+    "Tools/ReferenceLab/sound68k_probe.c": "40b7e41aa84f2d00fb064a7e5c11f467f3b16ac00bf8dc00f51b5cb33438fd9e",
+    "Tools/ReferenceLab/sound_dsp_probe.cpp": "e4c8b7907acea2a94087e27479cfd3e15830acedc38a9a8c6f9e0073428c0a88",
+    "scripts/compile_sound.py": "9a044ac8b1b919e75b22200d36fc5bc51dcac7df7e361d74ae92aef48b2864aa",
+    "scripts/verify_sound.py": "96540d627d746548ba5483035dd24507141c9baf4f5c27b17d132f228ff8f19c"
+  },
+  "target": "arm64-apple-macosx",
+  "upstreamCommit": "24d2ffcfc7f14229337f05f4920fe26b56633d9d",
+  "verifierSHA256": "96540d627d746548ba5483035dd24507141c9baf4f5c27b17d132f228ff8f19c"
+}

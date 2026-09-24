@@ -1,0 +1,104 @@
+{
+  "format": 1,
+  "game": "Virtua Fighter 3 (Japan Revision D)",
+  "gameID": "vf3",
+  "target": "arm64-apple-macosx",
+  "cpu": "billboard Z80",
+  "upstreamCommit": "24d2ffcfc7f14229337f05f4920fe26b56633d9d",
+  "passed": true,
+  "productTranslationManifestSHA256": "b5f00addb15c05ade2788cb5d3a6039b01e01252658a71eb69d59cd4a52231c6",
+  "productGeneratedSourceSHA256": "452f33d9d4eaa2aa894960940ea9f150fb7fdc9747953cb9adb3c55f4d2bb707",
+  "generatorSHA256": "0453535e3cd9e3e5b1f5f901a24cd44bdea5a79bff71ff8ad49dd25e969e45c2",
+  "verifierSHA256": "d3a2a906e21c186ab9348e1299cce15b8af1e7caab7e5112691c0725304132ff",
+  "differentialReport": {
+    "path": "build/validation/z80/report.json",
+    "sha256": "dbf489a5420c8fde63f7b99b98afe97d04a6a1f08c09da6f3b56936baa699a3f"
+  },
+  "generation": {
+    "format": 1,
+    "cpu": "billboard-board Z80",
+    "upstreamCommit": "24d2ffcfc7f14229337f05f4920fe26b56633d9d",
+    "romName": "epr-18022.ic2",
+    "romBytes": 65536,
+    "romCRC32": "0ca70f80",
+    "romSHA256": "111427213e2635b18753cbfb7cc4a0bffdd7c71cedec5cacadb11eec0211afda",
+    "sourceSHA256": "a567409c47dad5acbf22b6b8f9b11f64ea1cd3d61e64ca94d517f73bd0fe0594",
+    "generatorSHA256": "0453535e3cd9e3e5b1f5f901a24cd44bdea5a79bff71ff8ad49dd25e969e45c2",
+    "sourceHeaderSHA256": "46d94063c1113a7dd912b72fcfc18fc8afd15fb2de28b38eee36f532d845d64c",
+    "boardSources": {
+      "Src/Model3/DriveBoard/DriveBoard.cpp": "1057b4bac7a90f4b1db9443bb20520eb4a76cf97fe3ca6220b118ffd5e239a98",
+      "Src/Model3/DriveBoard/BillBoard.cpp": "9aef954613d4e8e1a1a59740bfa8845540ce38fa0ce156d33b2f34298a899cff"
+    },
+    "outputSHA256": "452f33d9d4eaa2aa894960940ea9f150fb7fdc9747953cb9adb3c55f4d2bb707",
+    "fixedStarts": 36864,
+    "fixedVariants": 3126,
+    "scope": "All 0x9000 ROM byte starts of the pinned billboard map; four-byte guards including unmapped FF after 8fff; fixed generated operands; RAM execution fails closed; inherited interrupt modes, HALT and prefix behavior."
+  },
+  "differential": {
+    "passed": true,
+    "fixedStarts": 36864,
+    "registerInterruptStates": 5,
+    "comparisons": 184320,
+    "interruptStates": [
+      "no pending interrupt",
+      "enabled IM0 with RST 38 callback",
+      "enabled IM1",
+      "enabled IM2 with RAM vector",
+      "NMI"
+    ],
+    "romSHA256": "111427213e2635b18753cbfb7cc4a0bffdd7c71cedec5cacadb11eec0211afda",
+    "nativeSourceSHA256": "452f33d9d4eaa2aa894960940ea9f150fb7fdc9747953cb9adb3c55f4d2bb707",
+    "faultChecks": 5,
+    "results": {
+      "reference": {
+        "sha256": "d58c6003a97f035fae4c136bff02d32b1b42f8bc1a24543b461b661b202e6bad",
+        "bytes": 30965760
+      },
+      "native": {
+        "sha256": "d58c6003a97f035fae4c136bff02d32b1b42f8bc1a24543b461b661b202e6bad",
+        "bytes": 30965760
+      }
+    },
+    "scope": "One instruction including its immediate interrupt boundary at every admitted billboard ROM byte start; each of four changed guard bytes and unknown PC reject; no full-game or physical billboard claim.",
+    "provenance": {
+      "inputs": {
+        "scripts/verify_z80.py": "d3a2a906e21c186ab9348e1299cce15b8af1e7caab7e5112691c0725304132ff",
+        "scripts/compile_z80.py": "0453535e3cd9e3e5b1f5f901a24cd44bdea5a79bff71ff8ad49dd25e969e45c2",
+        "Tools/ReferenceLab/ppc_z80_fixture.cpp": "fe5ce3938fb75d738e040669dd9b6375774062099a5a9a1877a7b38ecb2f0185",
+        "build/generated/z80/Z80.cpp": "452f33d9d4eaa2aa894960940ea9f150fb7fdc9747953cb9adb3c55f4d2bb707",
+        "build/upstream/supermodel/Src/CPU/Z80/Z80.cpp": "a567409c47dad5acbf22b6b8f9b11f64ea1cd3d61e64ca94d517f73bd0fe0594",
+        "build/upstream/supermodel/Src/CPU/Z80/Z80.h": "46d94063c1113a7dd912b72fcfc18fc8afd15fb2de28b38eee36f532d845d64c",
+        "build/upstream/supermodel/Src/Model3/DriveBoard/DriveBoard.cpp": "1057b4bac7a90f4b1db9443bb20520eb4a76cf97fe3ca6220b118ffd5e239a98",
+        "build/upstream/supermodel/Src/Model3/DriveBoard/BillBoard.cpp": "9aef954613d4e8e1a1a59740bfa8845540ce38fa0ce156d33b2f34298a899cff"
+      },
+      "harnesses": {
+        "reference": "592bcee7ace0b073ae943236a455b85f866696e2b66e9985ab90e7c4e56d399e",
+        "native": "2da9393380cbe703ed035923aef968993e25bfdf235e2944d0c0ce8c00c7c229"
+      },
+      "binaries": {
+        "reference": "f1c39c6f5d60e3759223f26adebaea3f513c2122910f2c4b34737180c84d832e",
+        "native": "d327f7fa9b7ba3d1325b26dc22d1763fb258689687d18ccae36bc05a0803c2e9"
+      },
+      "cores": {
+        "reference": "ca910e76e68e8d8fed9d7c6da8089c598e91d7d78aac1e02d413e429f1a6cb23",
+        "native": "6148f56327ddc89673f4a55ba597b31fd2a9042ff4b8e24092b41b791c4962c3"
+      },
+      "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin27.0.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin",
+      "flags": [
+        "-std=c++17",
+        "-O2",
+        "-fno-strict-aliasing",
+        "-ffp-contract=off",
+        "-DSUPERMODEL_OSX"
+      ],
+      "translationManifestSHA256": "b5f00addb15c05ade2788cb5d3a6039b01e01252658a71eb69d59cd4a52231c6"
+    }
+  },
+  "limitations": [
+    "This is bounded processor evidence from fresh VF3 sources and media, not inherited acceptance from a prior port.",
+    "Separate original/native full-frame and PCM replay, controls, renderer and host lifecycle acceptance are required.",
+    "No physical-board, external billboard-actuation or exhaustive-game equivalence claim.",
+    "The Z80 fixture forces a single-instruction boundary at every admitted ROM byte start and tests five register/interrupt states; it does not enumerate every possible state.",
+    "The pinned Z80 implementation retains its documented HALT and interrupt limitations."
+  ]
+}

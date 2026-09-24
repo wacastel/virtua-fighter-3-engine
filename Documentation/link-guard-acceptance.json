@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "cases": [
+    {
+      "case": "vf3_reference_probe_marker",
+      "rejected": true,
+      "exitCode": 1,
+      "hostProduced": false,
+      "symbolFileCleaned": true,
+      "archiveSHA256": "ffb48cc4a74c01e86939def0893a6a4713cd4db8205094e900c05717b8495bbd"
+    },
+    {
+      "case": "vf3_diagnostic_engine_marker",
+      "rejected": true,
+      "exitCode": 1,
+      "hostProduced": false,
+      "symbolFileCleaned": true,
+      "archiveSHA256": "80a476a74d555c017ccf584f9a87508fc9a380fcd27cd23232c8427f313f6c35"
+    },
+    {
+      "case": "vf3_test_stub_marker",
+      "rejected": true,
+      "exitCode": 1,
+      "hostProduced": false,
+      "symbolFileCleaned": true,
+      "archiveSHA256": "87f06b2a4ad0ea1bd33743a6d19752256e4aa5e9ac119d504e637ed5d2a4ee09"
+    },
+    {
+      "case": "invalid-archive",
+      "rejected": true,
+      "exitCode": 1,
+      "hostProduced": false,
+      "symbolFileCleaned": true,
+      "archiveSHA256": "f01c1686074db0a9196187d5d2fa44c7ed873739d69d0191e223a1c3592ad9c5"
+    }
+  ],
+  "buildScriptSHA256": "4dc3e3bcfa52664f808aa9c52e4abfdc8d8f65a01942c2699c97e784504e25d8",
+  "scope": "Actual build entry rejects marker-bearing arm64 archives and a real nm error before Swift linking; no app rebuilt."
+}

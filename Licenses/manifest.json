@@ -1,0 +1,2804 @@
+{
+  "archiveSHA256": "027c544e0eb223831c3a702fe326f7ac7c9b120c036133f05b52ccf3ca0feb95",
+  "copiedFiles": [
+    {
+      "path": "Supermodel-LICENSE.txt",
+      "sha256": "38029eb83f299d3baeed6440e3a992e16d235f818346e54eb8f7ff79d251775f",
+      "source": "Docs/LICENSE.txt"
+    },
+    {
+      "path": "Supermodel-README.txt",
+      "sha256": "32684f5fbee9d7d9f72b05e6722670d99d5d6c8c94455569c66231a601da933a",
+      "source": "Docs/README.txt"
+    }
+  ],
+  "cryptoBSDTermsSHA256": "852b73da105436d7f291be15b93b4991bb57508aa8c6edd1a64c4f2b59ef1725",
+  "noticeFile": "SourceNotices.txt",
+  "noticeSHA256": "a754196b1325134c9081f91d302f9ff15759133d70c03308dabbe8934b56b062",
+  "revision": "24d2ffcfc7f14229337f05f4920fe26b56633d9d",
+  "rootCopyingSHA256": "38029eb83f299d3baeed6440e3a992e16d235f818346e54eb8f7ff79d251775f",
+  "scope": "Exact pinned upstream license/manual and embedded source comment notices, plus Musashi binary copyright strings. Preserves attributions; does not change upstream component terms.",
+  "scriptSHA256": "2116c852e13909aeab439b80ce0f00147459c933711fc41517c665c3c1fe41df",
+  "sourceFilesWithNotices": 208,
+  "sourceNotices": [
+    {
+      "fragments": [
+        {
+          "bytes": 807,
+          "noticeByteStart": 178,
+          "sourceByteEnd": 807,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/BlockFile.cpp",
+      "sourceSHA256": "1d3ab6ee044956622a2b100795b16f8008ffdeefd2f422236ae26e8d95f0395b"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 807,
+          "noticeByteStart": 1016,
+          "sourceByteEnd": 807,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/BlockFile.h",
+      "sourceSHA256": "42dc9088862295b8e3db0af2201a306eb162924328a2c418c7ed4e38ec04be77"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 1858,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/CPU/68K/68K.cpp",
+      "sourceSHA256": "5ca3f2aacb90c228b77425f9d108c851d3a1743847fc63a9eceaf7d5279fbc73"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 2710,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/CPU/68K/68K.h",
+      "sourceSHA256": "bcc7c6abe861731c0a962569820e071e0f694f43163891905865ed090169da93"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 808,
+          "noticeByteStart": 3578,
+          "sourceByteEnd": 808,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 155,
+          "noticeByteStart": 4388,
+          "sourceByteEnd": 966,
+          "sourceByteStart": 811
+        },
+        {
+          "bytes": 78,
+          "noticeByteStart": 4545,
+          "sourceByteEnd": 1209,
+          "sourceByteStart": 1131
+        },
+        {
+          "bytes": 589,
+          "noticeByteStart": 4625,
+          "sourceByteEnd": 1878,
+          "sourceByteStart": 1289
+        }
+      ],
+      "source": "Src/CPU/68K/Musashi/m68k.h",
+      "sourceSHA256": "5d1b2b2e350a12406744025fe5fb619768295a6ffd5814daeaf8f9ad921e5e83"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 808,
+          "noticeByteStart": 5259,
+          "sourceByteEnd": 808,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 168,
+          "noticeByteStart": 6069,
+          "sourceByteEnd": 979,
+          "sourceByteStart": 811
+        },
+        {
+          "bytes": 78,
+          "noticeByteStart": 6239,
+          "sourceByteEnd": 1166,
+          "sourceByteStart": 1088
+        },
+        {
+          "bytes": 589,
+          "noticeByteStart": 6319,
+          "sourceByteEnd": 1835,
+          "sourceByteStart": 1246
+        }
+      ],
+      "source": "Src/CPU/68K/Musashi/m68k_in.c",
+      "sourceSHA256": "a3700dadaceb14b1a480abd889ec632cdd66220ba49c854f54207d12b37a1d33"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 800,
+          "noticeByteStart": 6954,
+          "sourceByteEnd": 800,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 140,
+          "noticeByteStart": 7756,
+          "sourceByteEnd": 942,
+          "sourceByteStart": 802
+        },
+        {
+          "bytes": 78,
+          "noticeByteStart": 7898,
+          "sourceByteEnd": 1101,
+          "sourceByteStart": 1023
+        },
+        {
+          "bytes": 589,
+          "noticeByteStart": 7978,
+          "sourceByteEnd": 1770,
+          "sourceByteStart": 1181
+        }
+      ],
+      "source": "Src/CPU/68K/Musashi/m68kconf.h",
+      "sourceSHA256": "862c1df5841c7c37d2cb6646f11b4bf684656379e9ece5426974846cfbb9ce2f"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 801,
+          "noticeByteStart": 8612,
+          "sourceByteEnd": 801,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 380,
+          "noticeByteStart": 9415,
+          "sourceByteEnd": 1184,
+          "sourceByteStart": 804
+        },
+        {
+          "bytes": 78,
+          "noticeByteStart": 9797,
+          "sourceByteEnd": 1343,
+          "sourceByteStart": 1265
+        },
+        {
+          "bytes": 586,
+          "noticeByteStart": 9877,
+          "sourceByteEnd": 2016,
+          "sourceByteStart": 1430
+        }
+      ],
+      "source": "Src/CPU/68K/Musashi/m68kcpu.c",
+      "sourceSHA256": "4cd333e010a76597bb8ed8444f3de814bf4915771d069c222f01f0fd0ef4d12f"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 808,
+          "noticeByteStart": 10508,
+          "sourceByteEnd": 808,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 146,
+          "noticeByteStart": 11318,
+          "sourceByteEnd": 957,
+          "sourceByteStart": 811
+        },
+        {
+          "bytes": 78,
+          "noticeByteStart": 11466,
+          "sourceByteEnd": 1116,
+          "sourceByteStart": 1038
+        },
+        {
+          "bytes": 589,
+          "noticeByteStart": 11546,
+          "sourceByteEnd": 1785,
+          "sourceByteStart": 1196
+        }
+      ],
+      "source": "Src/CPU/68K/Musashi/m68kcpu.h",
+      "sourceSHA256": "a2b9c832567f4c085adf74ebe8b989a1dd7c192760c8106cac31ca81d8985bb5"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 801,
+          "noticeByteStart": 12180,
+          "sourceByteEnd": 801,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/CPU/68K/Musashi/m68kctx.h",
+      "sourceSHA256": "2f7f7c7383fb8ded4cbde5f762a5ae2f1ca37263422e92fac6fe068af8750fa7"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 807,
+          "noticeByteStart": 13027,
+          "sourceByteEnd": 807,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 143,
+          "noticeByteStart": 13836,
+          "sourceByteEnd": 953,
+          "sourceByteStart": 810
+        },
+        {
+          "bytes": 78,
+          "noticeByteStart": 13981,
+          "sourceByteEnd": 1112,
+          "sourceByteStart": 1034
+        },
+        {
+          "bytes": 589,
+          "noticeByteStart": 14061,
+          "sourceByteEnd": 1781,
+          "sourceByteStart": 1192
+        }
+      ],
+      "source": "Src/CPU/68K/Musashi/m68kdasm.c",
+      "sourceSHA256": "24321039c439f3846988508713e5a3edc9b54cb4cb857314ecc4c5c7a1a4c259"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 801,
+          "noticeByteStart": 14696,
+          "sourceByteEnd": 801,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 159,
+          "noticeByteStart": 15499,
+          "sourceByteEnd": 963,
+          "sourceByteStart": 804
+        },
+        {
+          "bytes": 78,
+          "noticeByteStart": 15660,
+          "sourceByteEnd": 1122,
+          "sourceByteStart": 1044
+        },
+        {
+          "bytes": 589,
+          "noticeByteStart": 15740,
+          "sourceByteEnd": 1791,
+          "sourceByteStart": 1202
+        }
+      ],
+      "source": "Src/CPU/68K/Musashi/m68kmake.c",
+      "sourceSHA256": "b30b3644adc9cc89bb07fbfba74ef1ce8d05e5f5d86edd902051c0e7669684b9"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 16375,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 123,
+          "noticeByteStart": 17203,
+          "sourceByteEnd": 953,
+          "sourceByteStart": 830
+        }
+      ],
+      "source": "Src/CPU/68K/Turbo68K/Make68K.c",
+      "sourceSHA256": "7b857e40c234e61ef522c5d778b07c2d9a2cf59a8167af17bf8dee5377afa478"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 17373,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 123,
+          "noticeByteStart": 18201,
+          "sourceByteEnd": 953,
+          "sourceByteStart": 830
+        }
+      ],
+      "source": "Src/CPU/68K/Turbo68K/Turbo68K.h",
+      "sourceSHA256": "38089fc56d074d380b0a258bfd4f976a96482f1e7548d7a692b4d29e2382b706"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 18353,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/CPU/Bus.h",
+      "sourceSHA256": "d69b0f3a5aed1bef1ccceb04b002057728ff4378e7f8de426764b18fdcdca3a8"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 19224,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 395,
+          "noticeByteStart": 20045,
+          "sourceByteEnd": 1218,
+          "sourceByteStart": 823
+        }
+      ],
+      "source": "Src/CPU/PowerPC/PPCDisasm.cpp",
+      "sourceSHA256": "29f154d761ac9815d9b2c69429ce5abf3a207f7fd4d021ab1cfb9d5ecd39eac4"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 20483,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/CPU/PowerPC/PPCDisasm.h",
+      "sourceSHA256": "b802e4e3b6f90514500661353506316ac21ea4ac1818bf758893cefc5b1f34c1"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 21342,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/CPU/PowerPC/ppc.cpp",
+      "sourceSHA256": "a3d727393052ffa96d32c04866ea619422625bc67d42315a125df9da502b93e5"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 22199,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/CPU/PowerPC/ppc.h",
+      "sourceSHA256": "59ca9af75e3cbc399957cb657eb43845cec4e73a390211f401a71b3acfb228b4"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 23065,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/CPU/PowerPC/ppc603.c",
+      "sourceSHA256": "4cbbd401843f2a42d7175525bf9d28549a05ae9fb93240c611fd182270726e0b"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 23926,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/CPU/PowerPC/ppc_ops.c",
+      "sourceSHA256": "ab40520e6d2428cf943b21d2f290531a02f1c83c8dac46319b70d3139c120d3b"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 24787,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/CPU/PowerPC/ppc_ops.h",
+      "sourceSHA256": "81c15dd23a131244bce351d80f8b6efd0d9e20ec50ceaf2eb9c20931afa04f58"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 25648,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 238,
+          "noticeByteStart": 26470,
+          "sourceByteEnd": 1063,
+          "sourceByteStart": 825
+        }
+      ],
+      "source": "Src/CPU/Z80/Z80.cpp",
+      "sourceSHA256": "a567409c47dad5acbf22b6b8f9b11f64ea1cd3d61e64ca94d517f73bd0fe0594"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 26741,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/CPU/Z80/Z80.h",
+      "sourceSHA256": "46d94063c1113a7dd912b72fcfc18fc8afd15fb2de28b38eee36f532d845d64c"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 27613,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/AddressTable.cpp",
+      "sourceSHA256": "1acfa7ca41e66811efb3ce6c3330d3c9060613bb69ddf932b6cbdbfa2ff120b6"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 28482,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/AddressTable.h",
+      "sourceSHA256": "c65d224a54702093c47615d8cb102432583d123718787ac83ee73516e26204e5"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 29351,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Breakpoint.cpp",
+      "sourceSHA256": "0ccac3bcbe01743052fe26dfbc69c3d19b8d70b5e22429fbae24d42af0d14979"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 30218,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Breakpoint.h",
+      "sourceSHA256": "2797e6929333f28dca5d5d54499cac2ac46a9f96d3824a751f37ba6d264891c1"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 31089,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CPU/68KDebug.cpp",
+      "sourceSHA256": "5bdfa9923fe0bc1a9d01db36ec45a936a03add8c5c72822ce986bdd108e39cbe"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 31958,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CPU/68KDebug.h",
+      "sourceSHA256": "b2d1086b1a9dbdedcf3d7e6269762e5b29e1a9aedadbad095a5a4f53fff7a4fc"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 32836,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CPU/Musashi68KDebug.cpp",
+      "sourceSHA256": "583cf4e718c45802a178711f41a833124f668ae5235516950f324ded6fb6ee70"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 33712,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CPU/Musashi68KDebug.h",
+      "sourceSHA256": "fd38a2980be12c3517aca6fff1b75f7a7229405af2a8e74b3c96809eed029571"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 34583,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CPU/PPCDebug.cpp",
+      "sourceSHA256": "5743b898493eba5b80e5f7a79552610c881ee4bf28a0a8c2a42e4916779dcbad"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 35446,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CPU/PPCDebug.h",
+      "sourceSHA256": "fd6906394e9186089fdf4471366755cef1727eb53811aab8c2ec694ea4124a75"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 36322,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CPU/Turbo68KDebug.cpp",
+      "sourceSHA256": "8a94e28d4eca13762ad7f5edad0a540eafc776b51421a820c4ff99cfe305aabd"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 37196,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CPU/Turbo68KDebug.h",
+      "sourceSHA256": "c0bf6ae2dd4720e1d362fdc07eb0279dae134bbd41db0e77221935a5becb1623"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 38067,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CPU/Z80Debug.cpp",
+      "sourceSHA256": "59faffe0af1729dfb2dd9c294cf33149b5b77f44718f37ba5640f39743a041e2"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 38936,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CPU/Z80Debug.h",
+      "sourceSHA256": "4b6faea053f7cb04930faa4da7bac7939858f81605f417f82719068981e70d66"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 39803,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CPUDebug.cpp",
+      "sourceSHA256": "5bbcba8889ce080c02edfdd675fcdefddb2ef0d6d6079e081c7be723a6ba5795"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 40668,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CPUDebug.h",
+      "sourceSHA256": "018ea81830ba7a01c314693cabdf03ef0d9b5666c6f1aca391a5c6ef83164d0f"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 41539,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CodeAnalyser.cpp",
+      "sourceSHA256": "569e8833b13272dab863736377d502c7ac29fa1b2b350f234b541923636c4a9c"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 42408,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/CodeAnalyser.h",
+      "sourceSHA256": "2355d9aab87dff31b844259a9bc3a9f1e757d6b9a60e507d307894e6abbbb6d7"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 807,
+          "noticeByteStart": 43282,
+          "sourceByteEnd": 807,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/ConsoleDebugger.cpp",
+      "sourceSHA256": "d7c3e0a0e33ae75ba7c333ce8c2b4fc7e6e7f60b2594b3fefd2a5fdd2bb0c93b"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 44135,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/ConsoleDebugger.h",
+      "sourceSHA256": "0c24838eed4fa92a93ba9e43ccd111e6f526e549cb8c5e82a025f5b199126866"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 45002,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Debugger.cpp",
+      "sourceSHA256": "3cd9c51a6250e8be4232ba3743f39e5242a4ab45ea6178a04f056139754426ed"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 45867,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Debugger.h",
+      "sourceSHA256": "113459a2dad5d269756dd2dff1e67f6bb857c135cfaa6fdecd079cdba4114236"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 46736,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/DebuggerIO.cpp",
+      "sourceSHA256": "3e4442864f6ad16c346f11d7d326740fe190e435d208785ba4b0af96a8071979"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 807,
+          "noticeByteStart": 47603,
+          "sourceByteEnd": 807,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/DebuggerIO.h",
+      "sourceSHA256": "ecb8afead6bb04991dbc00b39b9bfb909a31bbbad3700109ed9aa6a7cf7e550b"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 48452,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Exception.cpp",
+      "sourceSHA256": "582265e9fb9848408970c3b7e9292223e93810eed8509579726bbc6152761b95"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 49318,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Exception.h",
+      "sourceSHA256": "3482e4db1b3d553be1e67ab5fe7ea3346641c2137ffd264c33405c1efa198cb0"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 50186,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Interrupt.cpp",
+      "sourceSHA256": "2fb6d79e56a1434fa16990789f83ed4552bf69157718cf86fd0cdb70cfcf9fbb"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 51052,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Interrupt.h",
+      "sourceSHA256": "8d7ded748e60e9d9e7036c9e1f6696b79f935170036f1134a3fd791f481f028f"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 51916,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Label.cpp",
+      "sourceSHA256": "1602940899f9adb8911e18425b9dda3b9de57ede0c9f88f0736fe13ed27656c7"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 52778,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Label.h",
+      "sourceSHA256": "c6bbd1698a1d15c4d28a0bb446fe60adbd09da307a5724707d337eba3f3fa892"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 53645,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Register.cpp",
+      "sourceSHA256": "015ec09127cc08e77efa2ae46f8b262579e33a9913d0ade437a87e6c9142760c"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 54510,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Register.h",
+      "sourceSHA256": "ff43c0494cf1ed6ee4451e6874bd65fb04889ad2dc61dddabcc3c3e112f6b467"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 825,
+          "noticeByteStart": 55387,
+          "sourceByteEnd": 825,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/SupermodelDebugger.cpp",
+      "sourceSHA256": "7f85976c0ecc1b24a85fc5f4c722a892b59f97787a2f45e769f9006b3cd1fc9a"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 825,
+          "noticeByteStart": 56261,
+          "sourceByteEnd": 825,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/SupermodelDebugger.h",
+      "sourceSHA256": "2d7fea834de566c272bec9af6b54994809eb33ffd081f01dfa7c9e9c69ffdcf2"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 57124,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Watch.cpp",
+      "sourceSHA256": "ad38e85458f46021daedcb6e65779f7d1b90bc48a91ab5174e7d499fbdd26028"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 57986,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Debugger/Watch.h",
+      "sourceSHA256": "0cf6afce22bc6f08406f925b281776f0d93701cb6177fdb9f5bc740a251e0d2b"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 58859,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/Legacy3D/Error.cpp",
+      "sourceSHA256": "33bf48f6c0f55fd1ae274cc262a9ae219d22f707640b768d023cae73591320e0"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 832,
+          "noticeByteStart": 59736,
+          "sourceByteEnd": 832,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/Legacy3D/Legacy3D.cpp",
+      "sourceSHA256": "b5da89b7a3145df367ea99164a828d9ec1bd79dbb09945fefe5cd5a6dd165b15"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 60616,
+          "sourceByteEnd": 828,
+          "sourceByteStart": 1
+        }
+      ],
+      "source": "Src/Graphics/Legacy3D/Legacy3D.h",
+      "sourceSHA256": "66645e940afa1e8e22569bb8c2f2e3d99ca5dac1dc897b2e5805cf4941234687"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 832,
+          "noticeByteStart": 61491,
+          "sourceByteEnd": 832,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/Legacy3D/Models.cpp",
+      "sourceSHA256": "f43885ca14acdd2d0165e5d3ade05f4f94d7e931d9184e281cca6567029318d5"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 832,
+          "noticeByteStart": 62372,
+          "sourceByteEnd": 832,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 908,
+          "noticeByteStart": 63206,
+          "sourceByteEnd": 1994,
+          "sourceByteStart": 1086
+        },
+        {
+          "bytes": 908,
+          "noticeByteStart": 64116,
+          "sourceByteEnd": 11076,
+          "sourceByteStart": 10168
+        },
+        {
+          "bytes": 908,
+          "noticeByteStart": 65026,
+          "sourceByteEnd": 20094,
+          "sourceByteStart": 19186
+        }
+      ],
+      "source": "Src/Graphics/Legacy3D/Shaders3D.h",
+      "sourceSHA256": "b4be21bda0ee9f0decc68e920b5147153d84cd2e025f3362123b544efb6c8717"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 808,
+          "noticeByteStart": 65987,
+          "sourceByteEnd": 808,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 48,
+          "noticeByteStart": 66797,
+          "sourceByteEnd": 5931,
+          "sourceByteStart": 5883
+        }
+      ],
+      "source": "Src/Graphics/Legacy3D/TextureRefs.cpp",
+      "sourceSHA256": "b28f878d75a2184b472b6c8503b608d112f5ece1341d83de96aa049333e30f74"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 808,
+          "noticeByteStart": 66896,
+          "sourceByteEnd": 808,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/Legacy3D/TextureRefs.h",
+      "sourceSHA256": "1fcc5f60597353943539e9184973a060442744ebfd7c2becf2d48fbc0744447b"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 67748,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/New3D/New3D.cpp",
+      "sourceSHA256": "31c537dd390d5455f385b6776ac54abc97826d11212757a3f20487b41ef4235d"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 806,
+          "noticeByteStart": 68609,
+          "sourceByteEnd": 806,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/New3D/New3D.h",
+      "sourceSHA256": "d7813437d3adf9c914ea7a67fab68915534d346e274501b2203a9ca02f095f46"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 69466,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/New3D/R3DScrollFog.cpp",
+      "sourceSHA256": "b03e9d0005e9c6387818397837dd14086de6d5dad1cac9fc3ee2a013d0a317a6"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 70334,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/New3D/R3DScrollFog.h",
+      "sourceSHA256": "dd6ce2e2173d5e69cda05b6992a282d6789377eedf058a5c7a995e4960a22a31"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 830,
+          "noticeByteStart": 71194,
+          "sourceByteEnd": 830,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/Render2D.cpp",
+      "sourceSHA256": "6b7f704c3d79aee485e5de0568963d1115b2b77e5f08741e70d5d60271e06bf4"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 830,
+          "noticeByteStart": 72063,
+          "sourceByteEnd": 830,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/Render2D.h",
+      "sourceSHA256": "374e2559c7e0b13f3c9b1494757acb8d51b6aa7c550a5653eb467c3f9e02ff59"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 832,
+          "noticeByteStart": 72932,
+          "sourceByteEnd": 832,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/Shader.cpp",
+      "sourceSHA256": "c34bb14fc0a748853a9e562b3788b61415b7ed39d92a722e1e6622a52fa7bdb5"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 73801,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/Shader.h",
+      "sourceSHA256": "037e76cb0288620baa87ae589d104234ffc82698eae899b341172edfd2793d39"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 832,
+          "noticeByteStart": 74668,
+          "sourceByteEnd": 832,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Graphics/Shaders2D.h",
+      "sourceSHA256": "fad9978db519fc81cd3d63c814039b2e8a68a4872310a4819fca614eb3c70fcf"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 75536,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Inputs/Input.cpp",
+      "sourceSHA256": "43a35010062a0097f1d2aed2220de5ff210cbbcaa0fba760cc35f9ff55a97a0b"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 76390,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Inputs/Input.h",
+      "sourceSHA256": "9407fafb01403e6a7571cad2aba496c3caa882717d976f1a9c9dbd5f4ea2784e"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 77258,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Inputs/InputSource.cpp",
+      "sourceSHA256": "3b3061711a95549ce4e0c0bb1a23581f33bfc621139e087c8630044ed8d6de15"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 78124,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Inputs/InputSource.h",
+      "sourceSHA256": "a4bc08d5e050c22668ccaf2e84eb999c4cf7cfebf716d86cb909f9ddceaf2345"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 825,
+          "noticeByteStart": 78992,
+          "sourceByteEnd": 825,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Inputs/InputSystem.cpp",
+      "sourceSHA256": "1bef0b593e4afdfb8e3745027a9332f3a6704ad196392bf6533405fd3814d451"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 825,
+          "noticeByteStart": 79857,
+          "sourceByteEnd": 825,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Inputs/InputSystem.h",
+      "sourceSHA256": "87f4bb70472959ef5afcf25d7a92aabb7327b43e4dcb8bc39ae823c53ab73401"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 80723,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Inputs/InputTypes.cpp",
+      "sourceSHA256": "4e50358668c6cf6256027c91d3cd117f072ec1ef64bb13d923416200436ea9e0"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 897,
+          "noticeByteStart": 81586,
+          "sourceByteEnd": 897,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Inputs/Inputs.cpp",
+      "sourceSHA256": "fba9c89f3f3a3dae69fee14935d719d72ba148f644613993e45f6e46cc9af4c4"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 82518,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Inputs/Inputs.h",
+      "sourceSHA256": "112345304d0e6aa846715b8ee27c82fb22fcabacb15e12cc60ee7737e8c4d9d0"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 83391,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Inputs/MultiInputSource.cpp",
+      "sourceSHA256": "9575ae44dcf3c8a1c9739cd241557532f125a0c5518ce2777c6d216f3bae895a"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 84262,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Inputs/MultiInputSource.h",
+      "sourceSHA256": "630f60dea0a5685153b1029fe2099875821b7b40bc9e44ea9b0c16cc5aa66672"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 85125,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/53C810.cpp",
+      "sourceSHA256": "bde698dc36cb4e061f5687bd49601c3ca4566a9bcdad7b280af7d3c0a233302f"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 85980,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/53C810.h",
+      "sourceSHA256": "417e7303ee780bfa29937df0dcf63830698fa09f62b82ef208d09006fb04556a"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 86850,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/53C810Disasm.cpp",
+      "sourceSHA256": "16f36d130b88962f56f11c8050767babba52b14ca9f8e28793b36d0e1c09fc54"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 87713,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/93C46.cpp",
+      "sourceSHA256": "afc2a13013551492ef44da055a5b31c50d5240036d56b7f78437128b097ca7a0"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 88574,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/93C46.h",
+      "sourceSHA256": "df43ba7d4357567f24e82f3ba51381db21b1470bc04bb55d0c119fd255a47390"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 813,
+          "noticeByteStart": 89438,
+          "sourceByteEnd": 813,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 91,
+          "noticeByteStart": 90253,
+          "sourceByteEnd": 1034,
+          "sourceByteStart": 943
+        }
+      ],
+      "source": "Src/Model3/Crypto.cpp",
+      "sourceSHA256": "dff38e467aa197fd8265cedfd6e548427317b81849e8944907a76b289585ebfd"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 813,
+          "noticeByteStart": 90379,
+          "sourceByteEnd": 813,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 58,
+          "noticeByteStart": 91194,
+          "sourceByteEnd": 1004,
+          "sourceByteStart": 946
+        }
+      ],
+      "source": "Src/Model3/Crypto.h",
+      "sourceSHA256": "19af4e169b56d00769795f1337491f70104b9c3963f1b73ac25ee9f0d58e4e91"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 91286,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/DSB.cpp",
+      "sourceSHA256": "6fc8669a1d91ec3d013a216d4ba486f3a469433cb9c9708fdaff2f9e4b1cd8c5"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 92137,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/DSB.h",
+      "sourceSHA256": "817e7239a15b40ebee88097eb6529a7fc2a64f46aa0b5d2273ca0521e56de5f7"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 93084,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/DriveBoard/BillBoard.cpp",
+      "sourceSHA256": "9aef954613d4e8e1a1a59740bfa8845540ce38fa0ce156d33b2f34298a899cff"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 94029,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/DriveBoard/BillBoard.h",
+      "sourceSHA256": "e58810395603bee56de3819e35280fac132326c42c4439ebfd7c67b38947f2f0"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 94977,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/DriveBoard/DriveBoard.cpp",
+      "sourceSHA256": "1057b4bac7a90f4b1db9443bb20520eb4a76cf97fe3ca6220b118ffd5e239a98"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 95923,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/DriveBoard/DriveBoard.h",
+      "sourceSHA256": "35b4842c168c08f99c638ea5bba76932813f6e5a3c9ea47d5b2b93506bf78c6f"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 96874,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/DriveBoard/JoystickBoard.cpp",
+      "sourceSHA256": "b293a8974c9aaa37d43321bf624698bc1deb41485a3a74a0f6b39bd00b50b774"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 97823,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/DriveBoard/JoystickBoard.h",
+      "sourceSHA256": "a770c10a2d88056376eb81b971c0f596b2baf0090b1eb42e70e072d71ecaf0ae"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 98769,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/DriveBoard/SkiBoard.cpp",
+      "sourceSHA256": "64d6a249f4b06ee4878cc47468eb1e5ac73e9a8a7221af9a6bbc046e46cf1e05"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 99713,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/DriveBoard/SkiBoard.h",
+      "sourceSHA256": "d809b0a57689f73f57025a05bb937403e6d43047f88130e6c36259bd5c0364bd"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 100661,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/DriveBoard/WheelBoard.cpp",
+      "sourceSHA256": "2b5fad4d21527e17a3c9572ae178750c29b1cc6261148fa935c70dedbab3c0f9"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 101607,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/DriveBoard/WheelBoard.h",
+      "sourceSHA256": "124397d1da5abf26f67c96d4b4b7753bfa6beeded6119c1a1e3e55fc30910b5c"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 102541,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/IEmulator.h",
+      "sourceSHA256": "6bb5a05a191591b7b2bc3730bed89887bc46355ed74bfde824533a2b2f4e3d82"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 103402,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/IRQ.cpp",
+      "sourceSHA256": "446bddce4c1d303130c2c3ae7e9a233964eaff42f946c97c16256decfdd9ba21"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 104261,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/IRQ.h",
+      "sourceSHA256": "3e76c734cf926d63691e67bfec9ac69f64209749233bcab6cefe1ff4d6133b70"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 105123,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/JTAG.cpp",
+      "sourceSHA256": "a6a1b806f24596e10b7847c0b0bb4798064aa85a89da59e41e45436a396962a5"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 105976,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/JTAG.h",
+      "sourceSHA256": "ff0b9ef7e6d46fb1ce4ba23ff1c25df2e37b7c375a3d6442fce3141b78d03b5b"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 843,
+          "noticeByteStart": 106833,
+          "sourceByteEnd": 843,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/MPC10x.cpp",
+      "sourceSHA256": "143df31bf7972f1ae068c64345aced1548835b572d68cd18d34ce85f6cca9648"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 107711,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/MPC10x.h",
+      "sourceSHA256": "d10f113324c4f44c9feb07a0d2c6280d0f3fe70148f7c5bec22219e47acf80f9"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 108575,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/Model3.cpp",
+      "sourceSHA256": "c5dc67722fade4a2e2919509bfac216bd6ea9a10bb62b5eaedfb366c2a38f385"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 109429,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/Model3.h",
+      "sourceSHA256": "2dbd597416e4225442e6aca8ed2f517d83f7ab9ed47a5c5851db76a341a71d0f"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 830,
+          "noticeByteStart": 110373,
+          "sourceByteEnd": 830,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/Model3GraphicsState.h",
+      "sourceSHA256": "9dcf71512b38c156a5e40e7d4df28c55063c81e8abb93421faa7f69f103f0704"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 111237,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/PCI.cpp",
+      "sourceSHA256": "7c8e525e18c844508ab5fc68b73997a2511e3907e516fd8d6d23aff2e6cb6fec"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 112096,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/PCI.h",
+      "sourceSHA256": "7860c92afd04606fb90cb486287103839a568ec51fe327fe60dec54daeff487c"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 112962,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/RTC72421.cpp",
+      "sourceSHA256": "6a194833db2a2133d10c64b20909d2919b6633557310e5c69e23587936896843"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 113826,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/RTC72421.h",
+      "sourceSHA256": "358fd5ad42d4ca32b09670633fca4c3498bd0ad8e1665f34e9956fccc5f4e783"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 114690,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/Real3D.cpp",
+      "sourceSHA256": "ffbb704ddf9e2c69eb1ae44b6e2ea1886ca8e0def05b7a39e3c2fb27820c7984"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 115544,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/Real3D.h",
+      "sourceSHA256": "d310edf99f529b721da8018abfd2ae47a4e6d4ae330c2b917215169110558d99"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 116412,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/SoundBoard.cpp",
+      "sourceSHA256": "4eaa01e5cd4c034ba2ad503ac1c4af5439f09e63a916275389f289a66a263b12"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 117278,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/SoundBoard.h",
+      "sourceSHA256": "e261fbd92e5fe90cb706d93a18b984f7e59946f9974126f81845a1673e073a96"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 832,
+          "noticeByteStart": 118143,
+          "sourceByteEnd": 832,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/TileGen.cpp",
+      "sourceSHA256": "123416558f54891fc5ad1860aba98cc73a801e706bf86fc5f9942cd8cf5743c7"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 830,
+          "noticeByteStart": 119011,
+          "sourceByteEnd": 830,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Model3/TileGen.h",
+      "sourceSHA256": "8bb6b06df818a37399a25d2520805415e5fa7fe1b1f9ddf94dbcfef656a02897"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 119880,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Network/INetBoard.h",
+      "sourceSHA256": "85fbf8ca3f2b3ae3cfd330cdedec167d7c77cf67086db5fbab0c5460589c443e"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 120816,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Network/NetBoard.cpp",
+      "sourceSHA256": "4618746e54db804659dc22b933bc37dc224f912ccc18bae51b57e9ad44042e59"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 121750,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Network/NetBoard.h",
+      "sourceSHA256": "ced9a95f42a4978c234a776c6c00076d9a2e4866aab5f07f7607be1d50c06a2c"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 122689,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Network/SimNetBoard.cpp",
+      "sourceSHA256": "464d8d6d23b214624dd3d0ff7ff142d315fb8855627e8bf1a28954f648e55be2"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 123626,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Network/SimNetBoard.h",
+      "sourceSHA256": "a5bbb82ad3cd2d0fa68ba853556adbf6ba9202f32c0c9e8440157217ba322892"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 124564,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Network/TCPReceive.cpp",
+      "sourceSHA256": "de9d981124bc8a7393caa8fe9b14b2e9708b3af85c6fb70ecc7bf07c744f9e57"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 125500,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Network/TCPReceive.h",
+      "sourceSHA256": "55f0d45ce6a456d530acdb859f64f602233fd845596a9996857fb6a810c9d603"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 126435,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Network/TCPSend.cpp",
+      "sourceSHA256": "f7799b8e9742f2ad3327bab4b0017b22744362504268f4c2b69818e26dceb446"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 127368,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Network/TCPSend.h",
+      "sourceSHA256": "e36bb8aefc129a61b2d8b8af75fdb0a5555c45a6169422acaed64ff3247717f3"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 128308,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Network/TCPSendAsync.cpp",
+      "sourceSHA256": "64df9c2b4d6213a510546d7efe2e2434905d592b7d61d406d6252745884b0dbf"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 129246,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Network/TCPSendAsync.h",
+      "sourceSHA256": "3a98ee85cf2de03f1be09bc21104ce1ec186e6dbe1cd807609c27f6582ec3b4d"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 130173,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Audio.h",
+      "sourceSHA256": "e75a97abe83dfa93f253f9d1446950aa6c5bf95b66731d1fb1e0d150013bdae6"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 800,
+          "noticeByteStart": 131042,
+          "sourceByteEnd": 800,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/DefaultConfigFile.h",
+      "sourceSHA256": "213231ca15e974fa1b5d0199446df5f2ca32e966647e85155b15b20773cba735"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 131882,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/FileSystemPath.h",
+      "sourceSHA256": "4ca60ecd1d9cd3bab601435df2849968e97ecbeb2aac4ee933c4accf6bf75e1b"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 132735,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Logger.cpp",
+      "sourceSHA256": "38ffa2ecd0794da19a7c5f83c44825ef283f7070e69fb6d6fbe4df6968513d29"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 133586,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Logger.h",
+      "sourceSHA256": "776c88f3e62876197f84ad3dab3e63548f27e33d24fab1030fb4cb21509879e6"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 134528,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/OSX/FileSystemPath.cpp",
+      "sourceSHA256": "656efa3f8d68a302fec85e866ceb4d6bde00eb5d36378247a0185c6e13118490"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 135382,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Outputs.cpp",
+      "sourceSHA256": "751e4a1e15d9164449bf105972799b4f3a428849e060031ff03363117c812a85"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 807,
+          "noticeByteStart": 136241,
+          "sourceByteEnd": 807,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Outputs.h",
+      "sourceSHA256": "02cde918d64f8b9c5b21e04fa9b734380d6ee183fb75a433a989a4ca0b0ddbcf"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 137085,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/SDL/Audio.cpp",
+      "sourceSHA256": "eb45cf40d30ecc611fa4ce571e978db3efa024c3f45cfa516f2d9d456dbabdff"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 800,
+          "noticeByteStart": 137945,
+          "sourceByteEnd": 800,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/SDL/Crosshair.cpp",
+      "sourceSHA256": "86d51e7bb7cf003d9b3070da332288296ab7202f5e9ac0156650704140b1e60b"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 800,
+          "noticeByteStart": 138784,
+          "sourceByteEnd": 800,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/SDL/Crosshair.h",
+      "sourceSHA256": "365821247a9d5e76fa761413cfc7d0bb1e2c4957a212db8b96b6293eca881fd6"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 139620,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/SDL/Main.cpp",
+      "sourceSHA256": "16630f73e98bb8708284d206bcd23a40119bc1c81962603e4cd13d89e3670828"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 800,
+          "noticeByteStart": 140481,
+          "sourceByteEnd": 800,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/SDL/NetOutputs.cpp",
+      "sourceSHA256": "8aa2406615322be9578485f7af8ddd1af5f92824579ab701132f14a7273a6245"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 800,
+          "noticeByteStart": 141321,
+          "sourceByteEnd": 800,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/SDL/NetOutputs.h",
+      "sourceSHA256": "03519fcde92d68c5f8be630d18ae36a6319d105b7c06c2dbeedd11dcb1f4e875"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 832,
+          "noticeByteStart": 142163,
+          "sourceByteEnd": 832,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/SDL/PolyAnalysis.h",
+      "sourceSHA256": "e2218ae0ca347bfdad7ac863cd3752efb305fc25739b4aea8c8fa1bbf25ba72f"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 896,
+          "noticeByteStart": 143036,
+          "sourceByteEnd": 896,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/SDL/SDLIncludes.h",
+      "sourceSHA256": "7861a50bfea38f0c00af13d13c0fd6250b7206be202bfa21d00d1d3e238b597f"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 143978,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/SDL/SDLInputSystem.cpp",
+      "sourceSHA256": "aaf506072c2feff6cc15b96c51bf78e7582a7f7e85d926e94569bc9f26120214"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 825,
+          "noticeByteStart": 144841,
+          "sourceByteEnd": 825,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/SDL/SDLInputSystem.h",
+      "sourceSHA256": "7bc023a7e211398c73425398bb1e9f2220e17e05846c43506100a2802beaf3bd"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 806,
+          "noticeByteStart": 145704,
+          "sourceByteEnd": 806,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/SDL/Thread.cpp",
+      "sourceSHA256": "867c06374e75b0bede7c6e86e5e807603e7ca7fe67db00e5996b98fd6494cb94"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 827,
+          "noticeByteStart": 146545,
+          "sourceByteEnd": 827,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/SDL/Types.h",
+      "sourceSHA256": "442c2db504445888a0ab6f04261a974bf7b732cf7bb673a4d324de8e3ce8bbd1"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 807,
+          "noticeByteStart": 147404,
+          "sourceByteEnd": 807,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Thread.h",
+      "sourceSHA256": "888059775a59ed04546daf263b4505e047bf9d2cda912e0c195bf37634b6b945"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 148258,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Unix/FileSystemPath.cpp",
+      "sourceSHA256": "450d846ca081964b740d2965a8688ab7410f4d351f3557431e9a203b6a57f5dc"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 149108,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Video.h",
+      "sourceSHA256": "0bb16f4c23da8ef19a0b7502041664d027b31fc3c9b343d6706e1402e6647bac"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 149987,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Windows/DirectInputSystem.cpp",
+      "sourceSHA256": "1009ece83199c44fab432266893a6e069eea3c8c2a6f88dd497c755dd7a066b3"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 150858,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Windows/DirectInputSystem.h",
+      "sourceSHA256": "9dc75e297644d3063ec900e9f3a65c666d8abe1e1fcb0ca3c6cc1511757fc4e1"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 151728,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Windows/FileSystemPath.cpp",
+      "sourceSHA256": "57cc087b8623d4d718073648e217c26a20b0d759d1eae468a339a1c8c106f3a1"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 152593,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Windows/WinOutputs.cpp",
+      "sourceSHA256": "6e14768c3c96464b7a5b15fb8bba61c9d13275e44ef4c483f04a30f7bcbc4d94"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 153463,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/OSD/Windows/WinOutputs.h",
+      "sourceSHA256": "7899bdf8996f2f7168c969d24f5ffdec41bf861bedac9ea7c9c07cb1d42670a1"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 1803,
+          "noticeByteStart": 154323,
+          "sourceByteEnd": 1803,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 1190,
+          "noticeByteStart": 156128,
+          "sourceByteEnd": 2997,
+          "sourceByteStart": 1807
+        },
+        {
+          "bytes": 1165,
+          "noticeByteStart": 157320,
+          "sourceByteEnd": 4166,
+          "sourceByteStart": 3001
+        }
+      ],
+      "source": "Src/Pkgs/GL/glew.h",
+      "sourceSHA256": "1a2d50dc00a69940838cb3b5413cf7a7ac3cee8078672f27ffbfa2d3b88ad344"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 1803,
+          "noticeByteStart": 158520,
+          "sourceByteEnd": 1803,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 1190,
+          "noticeByteStart": 160325,
+          "sourceByteEnd": 2997,
+          "sourceByteStart": 1807
+        },
+        {
+          "bytes": 1165,
+          "noticeByteStart": 161517,
+          "sourceByteEnd": 4166,
+          "sourceByteStart": 3001
+        }
+      ],
+      "source": "Src/Pkgs/GL/glxew.h",
+      "sourceSHA256": "256193e4dd38182e587a108c8c28af4544b1f791ef4c6af2198627fbab521748"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 1803,
+          "noticeByteStart": 162717,
+          "sourceByteEnd": 1803,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 1165,
+          "noticeByteStart": 164522,
+          "sourceByteEnd": 2972,
+          "sourceByteStart": 1807
+        }
+      ],
+      "source": "Src/Pkgs/GL/wglew.h",
+      "sourceSHA256": "ac387f7872aa02e85b7e81ceec39ab2d9663fe354c6d95321fde985a18d6e9fb"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 1102,
+          "noticeByteStart": 165719,
+          "sourceByteEnd": 1102,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Pkgs/crypt.h",
+      "sourceSHA256": "5c978923cff1e80f76baf437eed699d5b4ad1bf515008d669475d3dd0d89ef70"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 1803,
+          "noticeByteStart": 166852,
+          "sourceByteEnd": 1803,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Pkgs/glew.c",
+      "sourceSHA256": "35ff5574458f18b60f646f0f5879c010c4015c48a53b36ec176edc49bab438e4"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 648,
+          "noticeByteStart": 168696,
+          "sourceByteEnd": 9588,
+          "sourceByteStart": 8940
+        }
+      ],
+      "source": "Src/Pkgs/imgui/imconfig.h",
+      "sourceSHA256": "6e5687893594ebfaf8569280cfea83d025904a8a4e23bec073086f6c5bc8f7fb"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 605,
+          "noticeByteStart": 169384,
+          "sourceByteEnd": 2845,
+          "sourceByteStart": 2240
+        },
+        {
+          "bytes": 127477,
+          "noticeByteStart": 169991,
+          "sourceByteEnd": 132953,
+          "sourceByteStart": 5476
+        }
+      ],
+      "source": "Src/Pkgs/imgui/imgui.cpp",
+      "sourceSHA256": "1b26f4b5ca1445e1a0b58c109fa77470df04fd8409e1ffaa568c217675041cac"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 1525,
+          "noticeByteStart": 297513,
+          "sourceByteEnd": 237864,
+          "sourceByteStart": 236339
+        },
+        {
+          "bytes": 669,
+          "noticeByteStart": 299040,
+          "sourceByteEnd": 293382,
+          "sourceByteStart": 292713
+        },
+        {
+          "bytes": 656,
+          "noticeByteStart": 299711,
+          "sourceByteEnd": 298350,
+          "sourceByteStart": 297694
+        },
+        {
+          "bytes": 772,
+          "noticeByteStart": 300369,
+          "sourceByteEnd": 330414,
+          "sourceByteStart": 329642
+        }
+      ],
+      "source": "Src/Pkgs/imgui/imgui_draw.cpp",
+      "sourceSHA256": "e1bd246eba7270b9e67aac917b77aa83e7d645f07ebdbffe27ddbcf006a409c0"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 1338,
+          "noticeByteStart": 301199,
+          "sourceByteEnd": 3032,
+          "sourceByteStart": 1694
+        },
+        {
+          "bytes": 338,
+          "noticeByteStart": 302539,
+          "sourceByteEnd": 4527,
+          "sourceByteStart": 4189
+        }
+      ],
+      "source": "Src/Pkgs/imgui/imgui_impl_opengl3_loader.h",
+      "sourceSHA256": "d3aa3e1f3d23c8c88817832e17d8dd0f2d0b599ae28430067c3fad563b8b7cd5"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 277,
+          "noticeByteStart": 302924,
+          "sourceByteEnd": 45256,
+          "sourceByteStart": 44979
+        },
+        {
+          "bytes": 204,
+          "noticeByteStart": 303203,
+          "sourceByteEnd": 64118,
+          "sourceByteStart": 63914
+        }
+      ],
+      "source": "Src/Pkgs/imgui/imgui_tables.cpp",
+      "sourceSHA256": "41d4ace94847fd6b9d149082efa88b7f8e488504bc07541a852e26da377e8b28"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 203,
+          "noticeByteStart": 303455,
+          "sourceByteEnd": 90232,
+          "sourceByteStart": 90029
+        }
+      ],
+      "source": "Src/Pkgs/imgui/imgui_widgets.cpp",
+      "sourceSHA256": "01b0796ed5a0651484de3569a6975d0f5190dcbc121519f6830ad61d52230bd0"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 2054,
+          "noticeByteStart": 303705,
+          "sourceByteEnd": 2054,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 2673,
+          "noticeByteStart": 305761,
+          "sourceByteEnd": 20343,
+          "sourceByteStart": 17670
+        }
+      ],
+      "source": "Src/Pkgs/imgui/imstb_rectpack.h",
+      "sourceSHA256": "2efa3d5f7d003c19743b15155dad9f46d9f9fc783a18893d703b431d3c990972"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 15033,
+          "noticeByteStart": 308481,
+          "sourceByteEnd": 15856,
+          "sourceByteStart": 823
+        },
+        {
+          "bytes": 2673,
+          "noticeByteStart": 323516,
+          "sourceByteEnd": 60110,
+          "sourceByteStart": 57437
+        }
+      ],
+      "source": "Src/Pkgs/imgui/imstb_textedit.h",
+      "sourceSHA256": "a985f5fa0ed97353d493b497961e9eef52082edcd045cf6954b69990ec9d0741"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 12156,
+          "noticeByteStart": 326236,
+          "sourceByteEnd": 12342,
+          "sourceByteStart": 186
+        },
+        {
+          "bytes": 2673,
+          "noticeByteStart": 338394,
+          "sourceByteEnd": 199502,
+          "sourceByteStart": 196829
+        }
+      ],
+      "source": "Src/Pkgs/imgui/imstb_truetype.h",
+      "sourceSHA256": "88f0a25e27f5eefd6ec50c42fc5fe3026aa8170603efa08aa18d622db8660923"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 422,
+          "noticeByteStart": 341099,
+          "sourceByteEnd": 422,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Pkgs/ioapi.c",
+      "sourceSHA256": "45720661239dae5429445577548a3ad91b7f53ef5c868e2dbf416a5b395c3331"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 905,
+          "noticeByteStart": 341553,
+          "sourceByteEnd": 905,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Pkgs/ioapi.h",
+      "sourceSHA256": "6d2f2c3520dfc3061ea9128a1afb843f5cfe8d7317adcefe3a45884bc06e06a1"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 323,
+          "noticeByteStart": 342492,
+          "sourceByteEnd": 359,
+          "sourceByteStart": 36
+        }
+      ],
+      "source": "Src/Pkgs/minimp3.h",
+      "sourceSHA256": "a6010cd855f1bcd0aaa07e8e9c2bde1d2a1b8e238271ffd4aad0d9a475aa155d"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 890,
+          "noticeByteStart": 342852,
+          "sourceByteEnd": 890,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Pkgs/tinyxml2.cpp",
+      "sourceSHA256": "bfd9594b13a9335b4fef8a8a8175894e50892703a62b1f259057b6f1a14c3bb3"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 890,
+          "noticeByteStart": 343777,
+          "sourceByteEnd": 890,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Pkgs/tinyxml2.h",
+      "sourceSHA256": "05ec876c3072867253d8841bd833917b21094844ebaf5c8070659ebf1d68452d"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 3175,
+          "noticeByteStart": 344699,
+          "sourceByteEnd": 3175,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 115,
+          "noticeByteStart": 347876,
+          "sourceByteEnd": 4084,
+          "sourceByteStart": 3969
+        }
+      ],
+      "source": "Src/Pkgs/unzip.c",
+      "sourceSHA256": "10881ab576f49fe0825a21f77e322ece6ee88d34ed66fb3a3ce7a22f4b6cd2d9"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 1696,
+          "noticeByteStart": 348023,
+          "sourceByteEnd": 1696,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Pkgs/unzip.h",
+      "sourceSHA256": "2ff9df0b1da7499adc806bc0ec098ef1c7b9d361a8fd5b08a98299a1a4e88399"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 1728,
+          "noticeByteStart": 349751,
+          "sourceByteEnd": 1728,
+          "sourceByteStart": 0
+        },
+        {
+          "bytes": 1165,
+          "noticeByteStart": 351481,
+          "sourceByteEnd": 2897,
+          "sourceByteStart": 1732
+        }
+      ],
+      "source": "Src/Pkgs/wglew.h",
+      "sourceSHA256": "20d4514ed5f16db369137f8696b66eeb82ca7856d779eadcccce8bfa5aa60c37"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 352690,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Sound/MPEG/MpegAudio.cpp",
+      "sourceSHA256": "5ee83583322a5c52b72c85e16d6112cee8c9aec57d1db999651ef03f98d23b49"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 353543,
+          "sourceByteEnd": 821,
+          "sourceByteStart": 2
+        }
+      ],
+      "source": "Src/Sound/SCSP.cpp",
+      "sourceSHA256": "9c45800b61053cc3c8d64c03ceb7433f9a2f58df52f9b0d67412e709d1e83082"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 354394,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Sound/SCSP.h",
+      "sourceSHA256": "c135823eb79025efd015bc1018ff8b3faede700623d0215d19577a5b8b9e209d"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 820,
+          "noticeByteStart": 355257,
+          "sourceByteEnd": 820,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Sound/SCSPDSP.cpp",
+      "sourceSHA256": "d184c8cd283ffab51922c38e19b2ebb371fd32d3f1c15dafcada1602d7ca27e5"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 356112,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Sound/SCSPDSP.h",
+      "sourceSHA256": "62c4c441e12bfe7a4af7482ad9e600125f6a712283348206d719134cb1eb702e"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 826,
+          "noticeByteStart": 356975,
+          "sourceByteEnd": 826,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Sound/SCSPLFO.cpp",
+      "sourceSHA256": "c45ebcc83ccee82d2fadd7e9aa9eb538449d93fbb411117463c64aaac95300e5"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 831,
+          "noticeByteStart": 357833,
+          "sourceByteEnd": 831,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Supermodel.h",
+      "sourceSHA256": "309c4bc5919bda17c6e62ef78849117b8993f2205a0b5ed73813b2fa5d8359ee"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 358698,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/BMPFile.h",
+      "sourceSHA256": "081f729f75a352a0a531d9e13b8a25e8de11f16be4999aeeaca443371dae619f"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 800,
+          "noticeByteStart": 359551,
+          "sourceByteEnd": 800,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/BitCast.h",
+      "sourceSHA256": "d3b0f0c4403b4038b1ad1f08e45cc9d75debc8381c3a73be45e47f2e5aefa4ca"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 360388,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/ByteSwap.cpp",
+      "sourceSHA256": "dd501ad9a58509a531b5764a333bce9c8485c5bcd568cb180a616b7f20e3a6aa"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 361242,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/ByteSwap.h",
+      "sourceSHA256": "548bff5e56a4a1d62e9036fa934858123ea27c142f11c523217c87f97f5601e1"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 362104,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/ConfigBuilders.cpp",
+      "sourceSHA256": "e7106685059138827229cf2c5972fe74112e12b493009a9512b901ea78801f97"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 362964,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/ConfigBuilders.h",
+      "sourceSHA256": "12898633a3654623b50821ef1b683d1878bf811c3bc91f0bf57b26ed2d1e47a3"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 363818,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/Format.cpp",
+      "sourceSHA256": "a661409b53da32d8c1cc8a72b07034a3e8c8343d727c90842f87c5e5ef8b2a60"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 364670,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/Format.h",
+      "sourceSHA256": "c367b5735b6b46af9483b984757e57ba9c54782a54f70d1f4f2207224be0327f"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 365528,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/GenericValue.h",
+      "sourceSHA256": "9fab5974125f811280954b10b5ff6cc2970020fbc0ba56a16802804c45338f63"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 366385,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/NewConfig.cpp",
+      "sourceSHA256": "314bd99495c390bbc431ad2767d596f8307cb15c4df2cf164c98578336026449"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 367240,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/NewConfig.h",
+      "sourceSHA256": "2e025341272f7dbbb1065fd9ba528e0cbf98fed4bab26e5dca83cc1013c94ea5"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 368104,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/Test_BitRegister.cpp",
+      "sourceSHA256": "d1e62ff5f7d30796e52d4331a6d64617a19ec25b4b9e2b89181e24b03b615d52"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 819,
+          "noticeByteStart": 368963,
+          "sourceByteEnd": 819,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Util/Test_Config.cpp",
+      "sourceSHA256": "98b4f5efe23f61f74e1361935988e0558c32824f4fcfbea154c29b1efad38249"
+    },
+    {
+      "fragments": [
+        {
+          "bytes": 830,
+          "noticeByteStart": 369811,
+          "sourceByteEnd": 830,
+          "sourceByteStart": 0
+        }
+      ],
+      "source": "Src/Version.h",
+      "sourceSHA256": "e612b952ac85ed9a8d19a9ff4417ac5e4dc46b85bc7026b6adaf544c2d6126ea"
+    }
+  ],
+  "upstream": "https://github.com/trzy/Supermodel"
+}

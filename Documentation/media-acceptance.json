@@ -1,0 +1,20 @@
+{
+  "bytes": 111738880,
+  "fileCount": 40,
+  "identity": {
+    "files": [
+      {
+        "bytes": 111742894,
+        "path": "vf3.zip",
+        "sha256": "040e038dcaae4147d82bb8d42dde49471ec4b4b5407c251d16615f87337d1f4b"
+      },
+      {
+        "bytes": 3964,
+        "path": "Games.xml",
+        "sha256": "cfcc73c3ce69866f96658ba6b8afba5598faecd886546b1bf563351206146e74"
+      }
+    ]
+  },
+  "passed": true,
+  "scope": "Exact supplied media lengths, CRC32, SHA1 and SHA256. Other sets remain untouched."
+}

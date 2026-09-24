@@ -1,0 +1,195 @@
+{
+  "format": 1,
+  "game": "Virtua Fighter 3 (Japan Revision D)",
+  "passed": true,
+  "completedFrames": 54000,
+  "fighters": 12,
+  "captureSummary": {
+    "path": "build/coverage/fighter-route-captures.json",
+    "sha256": "c2a158e1f1e2145d8f2a4ab2304344970e4e0227ea7c742df3d9440546ba6f38"
+  },
+  "selectionReview": {
+    "reviews": [
+      {
+        "fighter": "akira",
+        "observedSelectionName": "Akira Yuki",
+        "selectionFrame": 1600,
+        "selectionCaptureSHA256": "48a7d1bf5ec731943a174abe1c41f9e7425ec14c47a1eb1575130973a543cc68",
+        "observedFightHUD": "AKIRA",
+        "fightFrame": 4500,
+        "fightCaptureSHA256": "da5142dbfe8e7ad09efa70c1d1cf653a4bdd1f5631c5b01d2c24d4eb565583e9",
+        "completedFrames": 4500,
+        "selectionVisuallyConfirmed": true,
+        "fightHUDVisuallyConfirmed": true
+      },
+      {
+        "fighter": "pai",
+        "observedSelectionName": "Pai Chan",
+        "selectionFrame": 1600,
+        "selectionCaptureSHA256": "e171a2b303a0428139f9085ca5370be924ba419eb53db1a6a5c84196257b882d",
+        "observedFightHUD": "PAI",
+        "fightFrame": 3200,
+        "fightCaptureSHA256": "ed0a906be9f6031a628d60abd929aeb6a957f97495f4c70618f336d2ec19721b",
+        "completedFrames": 4500,
+        "selectionVisuallyConfirmed": true,
+        "fightHUDVisuallyConfirmed": true
+      },
+      {
+        "fighter": "lau",
+        "observedSelectionName": "Lau Chan",
+        "selectionFrame": 1600,
+        "selectionCaptureSHA256": "1a18480ea9e1a51e087267ae8a36dbb082711cfa020c38e5e7fdca9f1e01c0f4",
+        "observedFightHUD": "LAU",
+        "fightFrame": 3200,
+        "fightCaptureSHA256": "afe05dce3a752f3be45c14b07c5115d095a2aa542d83d73450e53918adae3db8",
+        "completedFrames": 4500,
+        "selectionVisuallyConfirmed": true,
+        "fightHUDVisuallyConfirmed": true
+      },
+      {
+        "fighter": "wolf",
+        "observedSelectionName": "Wolf Hawkfield",
+        "selectionFrame": 1600,
+        "selectionCaptureSHA256": "b4a0ffc519d63c1200d1978bab8f805cc067361da4cc78df53b490a234897a23",
+        "observedFightHUD": "WOLF",
+        "fightFrame": 4500,
+        "fightCaptureSHA256": "02c9d2c625892a956b4750802099dc83c83775158f74e58c8ef10fe1257d21aa",
+        "completedFrames": 4500,
+        "selectionVisuallyConfirmed": true,
+        "fightHUDVisuallyConfirmed": true
+      },
+      {
+        "fighter": "jeffry",
+        "observedSelectionName": "Jeffry McWild",
+        "selectionFrame": 1600,
+        "selectionCaptureSHA256": "acb6ea1da1f5920236d1ef6f4112f280689a80b2baedf87f1cd16749e501fdb2",
+        "observedFightHUD": "JEFFRY",
+        "fightFrame": 3200,
+        "fightCaptureSHA256": "609eaa8d5dcdfc7deb5e89d7de44f098ac89b31ce172a71af8226db5c07bc1ca",
+        "completedFrames": 4500,
+        "selectionVisuallyConfirmed": true,
+        "fightHUDVisuallyConfirmed": true
+      },
+      {
+        "fighter": "kage",
+        "observedSelectionName": "Kage-Maru",
+        "selectionFrame": 1600,
+        "selectionCaptureSHA256": "6df14d45f2cfdb40ddf0b979bfb81d8dc50056c08099a00571583a6f3994d34a",
+        "observedFightHUD": "KAGE",
+        "fightFrame": 3200,
+        "fightCaptureSHA256": "19352be64f464e7ea0d3e26a6d6b4bf1a756338cd8ee529d2224f6698a30f741",
+        "completedFrames": 4500,
+        "selectionVisuallyConfirmed": true,
+        "fightHUDVisuallyConfirmed": true
+      },
+      {
+        "fighter": "sarah",
+        "observedSelectionName": "Sarah Bryant",
+        "selectionFrame": 1600,
+        "selectionCaptureSHA256": "7ad9dcabe9af19c8e584d7f3005698c7800b79a882d4840b296a3d6f717ce755",
+        "observedFightHUD": "SARAH",
+        "fightFrame": 4500,
+        "fightCaptureSHA256": "b4147439c457d3f68490afa00f17c642f74b9c25b352d304fb808f7663fd5869",
+        "completedFrames": 4500,
+        "selectionVisuallyConfirmed": true,
+        "fightHUDVisuallyConfirmed": true
+      },
+      {
+        "fighter": "jacky",
+        "observedSelectionName": "Jacky Bryant",
+        "selectionFrame": 1600,
+        "selectionCaptureSHA256": "f042d0db37cae12a28fc28fa82c5b468f966cad1c98e928d78ed6c5f64e9bcda",
+        "observedFightHUD": "JACKY",
+        "fightFrame": 3200,
+        "fightCaptureSHA256": "c20c0bf5237212e3474dd575779aa66b0f52c7ce97f3a1bb578ac5900aae62b1",
+        "completedFrames": 4500,
+        "selectionVisuallyConfirmed": true,
+        "fightHUDVisuallyConfirmed": true
+      },
+      {
+        "fighter": "shun",
+        "observedSelectionName": "Shun Di",
+        "selectionFrame": 1600,
+        "selectionCaptureSHA256": "a6ee5597f0054d9ca168f2cf687ac1aa9333cf4aba9baa824e4152059bd993d5",
+        "observedFightHUD": "SHUN",
+        "fightFrame": 3200,
+        "fightCaptureSHA256": "121c2bbcf7822c3ef9247c32cdd6b016e5962a4465b022b665e7db4be036d28f",
+        "completedFrames": 4500,
+        "selectionVisuallyConfirmed": true,
+        "fightHUDVisuallyConfirmed": true
+      },
+      {
+        "fighter": "lion",
+        "observedSelectionName": "Lion Rafale",
+        "selectionFrame": 1600,
+        "selectionCaptureSHA256": "84d6527a4f6700ef3fa408fe2796d624497c239a862bcd5819a728db654ac070",
+        "observedFightHUD": "LION",
+        "fightFrame": 3200,
+        "fightCaptureSHA256": "ebb81a5739fcaa4e71d1d8d2521ecce39791e05d927261a089118a583cb89ae7",
+        "completedFrames": 4500,
+        "selectionVisuallyConfirmed": true,
+        "fightHUDVisuallyConfirmed": true
+      },
+      {
+        "fighter": "aoi",
+        "observedSelectionName": "Aoi Umenokoji",
+        "selectionFrame": 1600,
+        "selectionCaptureSHA256": "5af8cbec98b5bca0291c01a5101846a2534ff7240d49559b6dc21f1fcdf1e4b9",
+        "observedFightHUD": "AOI",
+        "fightFrame": 3200,
+        "fightCaptureSHA256": "6444649dd67e0a46361a8ceb620080b04799ae8a3de12458d3b01ed8ea034a85",
+        "completedFrames": 4500,
+        "selectionVisuallyConfirmed": true,
+        "fightHUDVisuallyConfirmed": true
+      },
+      {
+        "fighter": "taka",
+        "observedSelectionName": "Taka-Arashi",
+        "selectionFrame": 1600,
+        "selectionCaptureSHA256": "b49ee8e42e3f2aa06edec83f156e5297fc95fb54e92d57f20ee275c548aa4139",
+        "observedFightHUD": "TAKA-ARASHI",
+        "fightFrame": 3200,
+        "fightCaptureSHA256": "934b73763d745b729c3dcce8f412e0e26cfbd23556e7919779671522f9848c4a",
+        "completedFrames": 4500,
+        "selectionVisuallyConfirmed": true,
+        "fightHUDVisuallyConfirmed": true
+      }
+    ],
+    "reviewMethod": "Direct visual inspection of unmodified engine PNG captures at frame 1600 and fight/HUD captures at frame 3200 or 4500",
+    "complete": true,
+    "selectionGrid": [
+      [
+        "akira",
+        "pai",
+        "lau",
+        "wolf",
+        "jeffry",
+        "kage"
+      ],
+      [
+        "sarah",
+        "jacky",
+        "shun",
+        "lion",
+        "aoi",
+        "taka"
+      ]
+    ]
+  },
+  "routeSHA256": {
+    "Configuration/replays/fighter-akira.json": "fd3ad1aa46ffef1ce33a11222f7af4d201caba11fcca5784c0d74e7ba62b5093",
+    "Configuration/replays/fighter-pai.json": "f616e2dcbd8b05d5148426de616bad854c7ac7fa8570c398a377a7a614900818",
+    "Configuration/replays/fighter-lau.json": "c0a5f206e04b5d0db24899c6f07af3813daa05eadc1aa4fa7adc5a643ef09093",
+    "Configuration/replays/fighter-wolf.json": "5584ce651b4b7689003e9641dfdfbf91b9894536ec6108f4f0941f4baf2c1f3f",
+    "Configuration/replays/fighter-jeffry.json": "beeb2e54a49627b91c2203eaa54c0746885c1a0558b6057f4179d3d660ad4106",
+    "Configuration/replays/fighter-kage.json": "0525eaf78ba1fe620e6a8f8421d8074cca9236f039e6e961a7cef1a3ef5fee15",
+    "Configuration/replays/fighter-sarah.json": "1ee3817e89b7b1b119c91e679083d00576c735403f220a2f4ce85bc4450bead4",
+    "Configuration/replays/fighter-jacky.json": "7d753a0b12344bb8a05806b0c29100697cc2950c417bea938df5150674c9d6a0",
+    "Configuration/replays/fighter-shun.json": "4c0fac80d9633f95154f10ad085dbed1182713906ec5b0382f7caf3ddbe3c0cb",
+    "Configuration/replays/fighter-lion.json": "c9d0c272ed4c4c5ca0e9f3b1a828ad2b83a56a3fd444a4c1e08eb012dcd411b6",
+    "Configuration/replays/fighter-aoi.json": "9ba60a38bb23f81d0e3df649dd6fdc7754bab298d0a08bc4df23c80343796541",
+    "Configuration/replays/fighter-taka.json": "23335b9812bd469da30c3b8254e81bb71f78fe490d563b2d4fee3a0645571677"
+  },
+  "currentRouteGeneratorSHA256": "13978ca29a9865d4dd055bb89e1e42b6098e72d140f1a88f89a3214552ed1b22",
+  "scope": "Twelve completed ordinary-input original-processor routes, each selected fighter and fight HUD visually confirmed. The original receipts retain the exact historical generator identity; each route also matches the current corrected generator. This is neither native parity nor exhaustive-game proof."
+}

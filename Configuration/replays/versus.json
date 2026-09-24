@@ -1,0 +1,863 @@
+{
+  "frames": 6000,
+  "events": [
+    {
+      "start": 1200,
+      "end": 1202,
+      "player1": 512,
+      "player2": 512
+    },
+    {
+      "start": 1210,
+      "end": 1212,
+      "player1": 512,
+      "player2": 512
+    },
+    {
+      "start": 1240,
+      "end": 1242,
+      "player1": 256,
+      "player2": 256
+    },
+    {
+      "start": 1480,
+      "end": 1482,
+      "player1": 2,
+      "player2": 8
+    },
+    {
+      "start": 1490,
+      "end": 1492,
+      "player1": 16,
+      "player2": 16
+    },
+    {
+      "start": 2100,
+      "end": 2110,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 2124,
+      "end": 2134,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 2148,
+      "end": 2158,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 2172,
+      "end": 2182,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 2196,
+      "end": 2206,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 2220,
+      "end": 2230,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 2244,
+      "end": 2254,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 2268,
+      "end": 2278,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 2292,
+      "end": 2302,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 2316,
+      "end": 2326,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 2340,
+      "end": 2350,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 2364,
+      "end": 2374,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 2388,
+      "end": 2398,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 2412,
+      "end": 2422,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 2436,
+      "end": 2446,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 2460,
+      "end": 2470,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 2484,
+      "end": 2494,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 2508,
+      "end": 2518,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 2532,
+      "end": 2542,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 2556,
+      "end": 2566,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 2580,
+      "end": 2590,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 2604,
+      "end": 2614,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 2628,
+      "end": 2638,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 2652,
+      "end": 2662,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 2676,
+      "end": 2686,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 2700,
+      "end": 2710,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 2724,
+      "end": 2734,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 2748,
+      "end": 2758,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 2772,
+      "end": 2782,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 2796,
+      "end": 2806,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 2820,
+      "end": 2830,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 2844,
+      "end": 2854,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 2868,
+      "end": 2878,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 2892,
+      "end": 2902,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 2916,
+      "end": 2926,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 2940,
+      "end": 2950,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 2964,
+      "end": 2974,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 2988,
+      "end": 2998,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 3012,
+      "end": 3022,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 3036,
+      "end": 3046,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 3060,
+      "end": 3070,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 3084,
+      "end": 3094,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 3108,
+      "end": 3118,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 3132,
+      "end": 3142,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 3156,
+      "end": 3166,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 3180,
+      "end": 3190,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 3204,
+      "end": 3214,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 3228,
+      "end": 3238,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 3252,
+      "end": 3262,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 3276,
+      "end": 3286,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 3300,
+      "end": 3310,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 3324,
+      "end": 3334,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 3348,
+      "end": 3358,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 3372,
+      "end": 3382,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 3396,
+      "end": 3406,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 3420,
+      "end": 3430,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 3444,
+      "end": 3454,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 3468,
+      "end": 3478,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 3492,
+      "end": 3502,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 3516,
+      "end": 3526,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 3540,
+      "end": 3550,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 3564,
+      "end": 3574,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 3588,
+      "end": 3598,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 3612,
+      "end": 3622,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 3636,
+      "end": 3646,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 3660,
+      "end": 3670,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 3684,
+      "end": 3694,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 3708,
+      "end": 3718,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 3732,
+      "end": 3742,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 3756,
+      "end": 3766,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 3780,
+      "end": 3790,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 3804,
+      "end": 3814,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 3828,
+      "end": 3838,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 3852,
+      "end": 3862,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 3876,
+      "end": 3886,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 3900,
+      "end": 3910,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 3924,
+      "end": 3934,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 3948,
+      "end": 3958,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 3972,
+      "end": 3982,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 3996,
+      "end": 4006,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 4020,
+      "end": 4030,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 4044,
+      "end": 4054,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 4068,
+      "end": 4078,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 4092,
+      "end": 4102,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 4116,
+      "end": 4126,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 4140,
+      "end": 4150,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 4164,
+      "end": 4174,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 4188,
+      "end": 4198,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 4212,
+      "end": 4222,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 4236,
+      "end": 4246,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 4260,
+      "end": 4270,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 4284,
+      "end": 4294,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 4308,
+      "end": 4318,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 4332,
+      "end": 4342,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 4356,
+      "end": 4366,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 4380,
+      "end": 4390,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 4404,
+      "end": 4414,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 4428,
+      "end": 4438,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 4452,
+      "end": 4462,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 4476,
+      "end": 4486,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 4500,
+      "end": 4510,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 4524,
+      "end": 4534,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 4548,
+      "end": 4558,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 4572,
+      "end": 4582,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 4596,
+      "end": 4606,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 4620,
+      "end": 4630,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 4644,
+      "end": 4654,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 4668,
+      "end": 4678,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 4692,
+      "end": 4702,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 4716,
+      "end": 4726,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 4740,
+      "end": 4750,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 4764,
+      "end": 4774,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 4788,
+      "end": 4798,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 4812,
+      "end": 4822,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 4836,
+      "end": 4846,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 4860,
+      "end": 4870,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 4884,
+      "end": 4894,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 4908,
+      "end": 4918,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 4932,
+      "end": 4942,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 4956,
+      "end": 4966,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 4980,
+      "end": 4990,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 5004,
+      "end": 5014,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 5028,
+      "end": 5038,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 5052,
+      "end": 5062,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 5076,
+      "end": 5086,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 5100,
+      "end": 5110,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 5124,
+      "end": 5134,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 5148,
+      "end": 5158,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 5172,
+      "end": 5182,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 5196,
+      "end": 5206,
+      "player1": 40,
+      "player2": 36
+    },
+    {
+      "start": 5220,
+      "end": 5230,
+      "player1": 64,
+      "player2": 128
+    },
+    {
+      "start": 5244,
+      "end": 5254,
+      "player1": 80,
+      "player2": 64
+    },
+    {
+      "start": 5268,
+      "end": 5278,
+      "player1": 144,
+      "player2": 80
+    },
+    {
+      "start": 5292,
+      "end": 5302,
+      "player1": 2,
+      "player2": 2
+    },
+    {
+      "start": 5316,
+      "end": 5326,
+      "player1": 33,
+      "player2": 17
+    },
+    {
+      "start": 5340,
+      "end": 5350,
+      "player1": 8,
+      "player2": 4
+    },
+    {
+      "start": 5364,
+      "end": 5374,
+      "player1": 24,
+      "player2": 20
+    },
+    {
+      "start": 5388,
+      "end": 5398,
+      "player1": 40,
+      "player2": 36
+    }
+  ]
+}

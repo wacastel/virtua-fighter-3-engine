@@ -1,0 +1,26 @@
+{
+  "elapsedSeconds": 115.66160011291504,
+  "exactPictureAudioCountAgreement": true,
+  "finalFaultCode": 0,
+  "frames": 11058,
+  "freshSessions": {
+    "audioSHA256": "f9d10b8484c32e58d240cd21be37f5d0699cb5bf3971e934de3e5857eed6964f",
+    "deterministic": true,
+    "framesEach": 2400,
+    "pictureSHA256": "a6302a3aa9f093788d1209ccbacc71b35ce8ed14171176a96877060a39e49762",
+    "runs": 2,
+    "sameProcess": true,
+    "sampleFramesEach": 1764000
+  },
+  "inputs": {
+    "Configuration/replays/arcade.json": "879f5744f4543ab650083247cc9ca2111f90ae9e1224d2ec72a718d28f184770",
+    "Documentation/integration-acceptance.json": "76dbb5b0807ab3524f08a2953a5d41743a54a87687c1462cc8a22a3e93f92311",
+    "build/Virtua Fighter 3.app/Contents/MacOS/VirtuaFighter3": "19039f5b414d203dd16d3b9a539b249e9ab38a3526d025cfff5d2d088d44296f",
+    "build/package-manifest.json": "c5404cbf09ca0137fff790403b444b222619ee830f109c6eb8adf27ec5c04e53",
+    "scripts/verify_host.py": "19d4eedc5506815b26a33169d0df7fd5b3f567ed7e7df3f0c280498e788e8278"
+  },
+  "passed": true,
+  "route": "Configuration/replays/arcade.json",
+  "sampleFrames": 8127630,
+  "scope": "Real packaged Swift executable and bundled media match every accepted direct-engine RGBA/PCM/count frame; two additional fresh sessions in one process agree on picture, PCM and count. These headless runs do not exercise the display or audio device."
+}

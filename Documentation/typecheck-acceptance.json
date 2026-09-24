@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "mode": "typecheck",
+  "engineLinked": false,
+  "appProduced": false,
+  "sources": {
+    "Sources/Mac/AudioOutput.swift": "deec57377d8a5bd1d15c66ccaf46aca1d47a5e9644381d0df8e65fbfd6bcd40d",
+    "Sources/Mac/Controls.swift": "5c9653216190e414754d414538a52e1b3535f3ee4ce293583a6e18a93e1498f2",
+    "Sources/Mac/EngineWorker.swift": "38e76f7abca7d0d874faf7cd61658938a1192776363f02f175071ab1a1a76632",
+    "Sources/Mac/GameScene.swift": "7c1265c0938a903bed9df44674dfc5ec70d3066a4826c659eba05d0a7737c4cd",
+    "Sources/Mac/Input.swift": "83671cfd0cb1319714695bf0da0728edb7870eee06613556df054dbd8a2160af",
+    "Sources/Mac/Media.swift": "774588e2deba7d90f0eb127c919e758315a19a3ffd8637b05b25e16e18883ba0",
+    "Sources/Mac/NativeGame.swift": "f07a8766b6d93b7b8089eaa8f92dc9d8e20064a880cec56ac4abd540d805aaa9",
+    "Sources/Mac/main.swift": "791ddae8af19a47aa6f6056366629955f02391f63f76019a1c53ebcd350d5bcf"
+  },
+  "buildScriptSHA256": "4dc3e3bcfa52664f808aa9c52e4abfdc8d8f65a01942c2699c97e784504e25d8",
+  "compiler": "Apple Swift version 6.4 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)\nTarget: arm64-apple-macosx27.0.0",
+  "target": "arm64-apple-macosx14.0"
+}
